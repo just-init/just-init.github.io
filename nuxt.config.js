@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'just-init-office',
+    title: 'Just Init',
     htmlAttrs: {
       lang: 'en',
     },
