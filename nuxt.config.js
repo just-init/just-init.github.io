@@ -1,3 +1,5 @@
+import colors from 'vuetify/es5/util/colors'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -18,7 +20,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ["~/assets/scss/style.scss"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -30,13 +32,40 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    // https://go.nuxtjs.dev/vuetify
+    '@nuxtjs/vuetify',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
-  ],
+  modules: [],
+  
+  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
+  vuetify: {
+    customVariables: ['~/assets/variables.scss'],
+    theme: {
+      dark: false,
+      themes: {
+        dark: {
+          primary: "#316ce8",
+          accent: "#607df9",
+          secondary: "#a73aeb",
+          info: "#0164d3",
+          warning: "#fec500",
+          error: "#ff4d7e",
+          success: "#2cdd9b"
+        },
+        light: {
+          primary: "#316ce8",
+          accent: "#607df9",
+          secondary: "#a73aeb",
+          info: "#0164d3",
+          warning: "#fec500",
+          error: "#ff4d7e",
+          success: "#2cdd9b"
+        }
+      }
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
