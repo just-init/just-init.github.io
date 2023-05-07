@@ -13,7 +13,7 @@
           <v-app-bar-nav-icon class="white--text" />
         </v-btn> -->
         <!-- Desktop view Navigation -->
-        <div class="navigation" v-bind:class="[isActive ? 'd-block' : '']" @click="isActive = !isActive">
+        <!-- <div class="navigation" v-bind:class="[isActive ? 'd-block' : '']" @click="isActive = !isActive">
           <ul class="navbar-nav">
             <li class="nav-item" text>
               <n-link class="nav-link" nuxt to="/just-clock"> Custom Components </n-link>
@@ -24,14 +24,14 @@
               </n-link>
             </li>
             <li class="nav-item">
-              <!-- login-regiter -->
+
               <v-btn color="white" nuxt target="_blank"
                 href="https://www.wrappixel.com/templates/nextkit-nuxtjs-free-uikit/" elevation="0">
                 Download Free
               </v-btn>
             </li>
           </ul>
-        </div>
+        </div> -->
       </v-container>
     </v-app-bar>
     <!-- -----------------------------------------------
