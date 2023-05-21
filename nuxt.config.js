@@ -72,4 +72,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  generate: {
+    crawler: false // link href 에 html 도 파일 찾다가 실패해서 추가
+  }
 }
