@@ -122,7 +122,7 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-    layout: "default-page",
+    layout: "just-init-other-page",
     data: () => {
         return {
             shortName: "저스트이닛",
