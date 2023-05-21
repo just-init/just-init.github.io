@@ -11,7 +11,7 @@
                             안녕하세요. Just Init 입니다.
                         </h1>
                         <h4 class="banner-subtitle white--text font-weight-regular">
-                            저희 앱을 통해 당신의 삶이 좀 더 즐겁고 윤택해지길 바랍니다.
+                            당신이 할 수 있거나 할 수 있다고 꿈꾸는 그 일을 지금 당장 시작하라.
                         </h4>
                         <div class="mt-16 pt-2">
                             <v-btn v-for="item in items" :key="item.title" nuxt large :href="item.url"

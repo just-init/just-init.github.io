@@ -2,6 +2,7 @@
   <div>
     <MainHeader />
     <MainSection1 />
+    <MainSection2 />
     <!-- <MainContact /> -->
     <MainFooter />
   </div>

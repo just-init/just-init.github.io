@@ -31,8 +31,8 @@
           </p>
           <div class="ml-auto">
             <div class="d-flex align-center">
-              <a href="terms.html" class="link px-4">디지털 컨텐츠 이용약관</a>
-              <a href="privacy.html" class="link px-4">개인정보 방침</a>
+              <a href="/terms" class="link px-4">디지털 컨텐츠 이용약관</a>
+              <a href="/privacy" class="link px-4">개인정보 방침</a>
             </div>
           </div>
         </div>
@@ -42,36 +42,7 @@
   <!-- -----------------------------------------------
         End Footer
   ----------------------------------------------- -->
-</template> </v-col>
-</v-row>
-<div class="footer-bottom-bar font-14">
-  <div class="d-block d-md-flex align-center">
-    <p>
-      All Rights Reserved by
-      <a href="https://www.wrappixel.com/" class="link">wrappixel.com</a>
-    </p>
-    <div class="ml-auto">
-      <div class="d-flex align-center">
-        <a href="/" class="link px-4">Terms of Use</a>
-        <a href="/" class="link px-4">Legal Disclaimer</a>
-        <a href="/" class="link px-4">Privacy Policy</a>
-      </div>
-    </div>
-  </div>
-</div>
-</v-container>
-</v-footer>
-<!-- -----------------------------------------------
-        End Footer
-  ----------------------------------------------- -->
-
-
-
-
-
-
-
-
+</template> 
 
 
 
