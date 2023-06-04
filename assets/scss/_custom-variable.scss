@@ -62,8 +62,12 @@ $nav-link-font-family: "DM Sans", sans-serif;
 /*===================================
         Heading Fonts
 ====================================*/
-$heading-color: #eeeeee;
-//$heading-color: #3e4555;
+//$heading-color: #eeeeee;
+$heading-color: #3e4555;
 
 // Border
 $border-color: #e5e7ec;
+
+.light-font {
+  color: #eeeeee;
+}

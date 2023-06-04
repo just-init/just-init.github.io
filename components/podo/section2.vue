@@ -4,7 +4,7 @@
             <v-row align="center" justify="center">
                 <v-col cols="10">
                     <v-row align="center" justify="center">
-                        <h2 class="font-weight-light text-pre-line">
+                        <h2 class="font-weight-light text-pre-line light-font">
                             {{ text }}
                         </h2>
                     </v-row>
