@@ -51,6 +51,8 @@
             <v-btn variant="text"
                    elevation="0"
                    class="bg-dark"
+                   href="/"
+
             >
                 <v-img :src="require('@/assets/images/logo-header.png')" alt="logo"/>
             </v-btn>
@@ -66,6 +68,7 @@
                             variant="plain"
                             elevation="0"
                             class="bg-dark theme--dark"
+                            :href="link.url"
                     >
                         {{ link.text }}
                     </v-btn>
@@ -90,13 +93,13 @@ export default Vue.extend({
         return {
             "links": [{
                 "text": "디지털 컨텐츠 이용약관",
-                "url": "./terms"
+                "url": "./terms.html"
             }, {
                 "text": "개인정보 방침",
-                "url": "./terms"
+                "url": "./privacy.html"
                 // }, {
                 //     "text": "Copyright",
-                //     "url": "./terms"
+                //     "url": "./license.html"
             }],
             "name": "제이미 대표 이채은 ",
             "number": "사업자등록번호 601-31-69602",
