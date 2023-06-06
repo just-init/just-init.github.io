@@ -64,7 +64,7 @@
                 <div class="d-flex flex-row">
                     <v-btn
                             v-for="link in links"
-                            :key="link"
+                            :key="link.text"
                             variant="plain"
                             elevation="0"
                             class="bg-dark theme--dark"

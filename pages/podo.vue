@@ -11,5 +11,15 @@
 import Vue from 'vue'
 
 export default Vue.extend({
+    head: {
+        title: '진지한 포도',
+        meta: [
+            { charset: 'utf-8' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            { hid: 'description', name: 'description', content: '목표달성을 위한 칭찬스티커 앱' },
+            { name: 'format-detection', content: 'telephone=no' },
+        ],
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    },
 })
 </script>
