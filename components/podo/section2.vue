@@ -20,7 +20,13 @@ import Vue from 'vue'
 export default Vue.extend({
     data() {
         return {
-            text: "어렸을적 포도스티커를 붙여 보신 적이 있나요?\n내적 동기를 부여하는게 조금 어렵게 느껴진다면,\n스티커를 붙여 보면서 성취감을 느껴보세요.\n\n점차 채워지는 스티커판이 직관적으로 눈에 들어와,\n자신감과 자아존중감을 높일 수 있습니다.",
+            text: "스티커 붙이기를 매번 깜박하시나요?\n" +
+                "진지한 포도와 함께라면 스티커 붙이기가 더 즐거워질 거예요.\n" +
+                "\n" +
+                "지인을 초대하여 서로의 포도를 볼 수 있고, \n" +
+                "응원 메시지도 보낼 수 있어요.\n" +
+                "\n" +
+                "스티커를 붙 일 동기가 더 강해집니다.",
         }
     }
 })
@@ -29,7 +35,7 @@ export default Vue.extend({
 <style scoped>
 #section2 {
     background-color: #7B4C87;
-    height: 600px;
+    height: 100vh;
 }
 
 #section2 .container,

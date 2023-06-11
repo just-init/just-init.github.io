@@ -74,7 +74,7 @@
                     </v-btn>
                 </div>
                 <span class="text-center mt-2 pr-4 sm1">
-                    {{ name }}  |{{ number }} |    {{ email }} |
+                    {{ name }} | {{ number }} | {{ email }}
                 </span>
                 <span class="text-center mt-2 align-self-end pr-4">
                     {{ copyRight }}

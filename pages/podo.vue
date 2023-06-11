@@ -2,6 +2,7 @@
   <div>
     <PodoSection1 />
     <PodoSection2 />
+    <PodoSection3 />
     <PodoReview />
     <PodoFooter />
   </div>

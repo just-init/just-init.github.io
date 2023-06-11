@@ -65,7 +65,7 @@ export default Vue.extend({
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 100vh;
 }
 
 #section1 .container,
