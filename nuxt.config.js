@@ -16,6 +16,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'height=device-height, initial-scale=1' },
       { hid: 'description', name: 'description', content: '저희는 당신의 삶을 좀 더 즐겁고 윤택해지길 바랍니다.' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
