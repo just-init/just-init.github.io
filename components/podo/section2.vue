@@ -1,13 +1,16 @@
 <template>
     <section id="section2">
-        <v-container fluid>
-            <v-row align="center" justify="center">
-                <v-col cols="10">
-                    <v-row align="center" justify="center">
-                        <h3 class="font-weight-light text-pre-line light-font">
+        <v-container fluid class="overflow-hidden">
+            <v-row align="end" justify="center">
+                <v-col>
+                    <div class="text-center">
+                        <h4 class="font-weight-light text-pre-line dark-font">
                             {{ text }}
-                        </h3>
-                    </v-row>
+                        </h4>
+                    </div>
+                    <div id="reaction-img">
+                        <v-img :src="require('@/assets/images/reaction3.png')" alt="reaction"/>
+                    </div>
                 </v-col>
             </v-row>
         </v-container>
@@ -35,12 +38,20 @@ export default Vue.extend({
 
 <style scoped>
 #section2 {
-    background-color: #7B4C87;
+    background-color: #eeeeee;
+    color: #333333;
     height: 100vh;
+    overflow: hidden;
+}
+
+#reaction-img {
+    overflow: hidden;
+    margin: 0 auto;
+    //max-width: 600px;
 }
 
 #section2 .container,
 #section2 .row {
-    height: 100%;
+    height: 100vh;
 }
 </style>

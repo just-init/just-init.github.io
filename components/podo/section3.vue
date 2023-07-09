@@ -32,7 +32,9 @@ export default Vue.extend({
 
 <style scoped>
 #section3 {
-    background-color: #B192B5;
+    background-color: #7B4C87;
+
+    //background-color: #B192B5;
     height: 100vh;
 }
 
