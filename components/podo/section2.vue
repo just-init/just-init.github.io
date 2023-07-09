@@ -4,9 +4,9 @@
             <v-row align="center" justify="center">
                 <v-col cols="10">
                     <v-row align="center" justify="center">
-                        <h2 class="font-weight-light text-pre-line light-font">
+                        <h3 class="font-weight-light text-pre-line light-font">
                             {{ text }}
-                        </h2>
+                        </h3>
                     </v-row>
                 </v-col>
             </v-row>
@@ -20,8 +20,9 @@ import Vue from 'vue'
 export default Vue.extend({
     data() {
         return {
-            text: "스티커 붙이기를 매번 깜박하시나요?\n" +
-                "진지한 포도와 함께라면 스티커 붙이기가 더 즐거워질 거예요.\n" +
+            text: "스티커 붙이기를 매번 깜박하시나요?\n\n" +
+                "진지한 포도와 함께라면\n" +
+                "스티커 붙이기가 더 즐거워질 거예요.\n" +
                 "\n" +
                 "지인을 초대하여 서로의 포도를 볼 수 있고, \n" +
                 "응원 메시지도 보낼 수 있어요.\n" +

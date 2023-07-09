@@ -2,6 +2,7 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   server: {
+    host: '0', // default: localhost : https://debbie.codes/blog/nuxt-configure-server-to-see-site-on-mobile/
     port: 3001 // default: 3000
   },
   // Target: https://go.nuxtjs.dev/config-target

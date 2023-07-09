@@ -69,7 +69,7 @@ export default Vue.extend({
 
 #image-background1 {
     background-image: url("~@/assets/images/podo-background.jpg");
-    background-attachment: inherit;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
