@@ -1,7 +1,7 @@
 window.onload = (event) => {
     console.log("page is fully loaded");
     const queryString = window.location.search;
-    const deeplinkUrl = `com.brenin.excercise://share${queryString}`;
+    const deeplinkUrl = `com.brenin.excercise://com.brenin.excercise/share${queryString}`;
     console.log(deeplinkUrl);
 
     //variable will check app installed or not
