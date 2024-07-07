@@ -3,10 +3,10 @@ window.onload = (event) => {
     const queryString = window.location.search;
     const systemPlatformName = getMobileOperatingSystem()
     var deeplinkUrl = `com.brenin.excercise://com.brenin.excercise/share${queryString}`;
-    if (systemPlatformName === "Android") {
+    // if (systemPlatformName === "Android") {
     // if (systemPlatformName === "Android" && queryString.includes("version=2")) {
-        deeplinkUrl = `https://just-init.github.io/smart-workout-counter-link/share${queryString}`;
-    }
+    //     deeplinkUrl = `https://just-init.github.io/smart-workout-counter-link/share${queryString}`;
+    // }
     console.log(deeplinkUrl);
 
     //variable will check app installed or not
