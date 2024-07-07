@@ -1,14 +1,18 @@
 window.onload = (event) => {
     console.log("page is fully loaded");
     const queryString = window.location.search;
-    const deeplinkUrl = `com.brenin.excercise://com.brenin.excercise/share${queryString}`;
+    const systemPlatformName = getMobileOperatingSystem()
+    var deeplinkUrl = `com.brenin.excercise://com.brenin.excercise/share${queryString}`;
+    if (systemPlatformName === "Android") {
+    // if (systemPlatformName === "Android" && queryString.includes("version=2")) {
+        deeplinkUrl = `https://just-init.github.io/smart-workout-counter-link/share${queryString}`;
+    }
     console.log(deeplinkUrl);
 
     //variable will check app installed or not
     let change = false;
     setTimeout(() => {
         if (!change) {
-            var systemPlatformName = getMobileOperatingSystem()
             if (systemPlatformName === "iOS") {
                 window.location = "https://apps.apple.com/kr/app/%EB%82%B4%EA%B0%80%EB%A7%8C%EB%93%A0%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%84%88/id1546110594";
             } else if (systemPlatformName === "Android") {
