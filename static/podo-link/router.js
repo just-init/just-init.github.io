@@ -2,14 +2,7 @@ window.onload = (event) => {
     console.log("page is fully loaded");
     const queryString = window.location.search;
     const systemPlatformName = getMobileOperatingSystem()
-    var deeplinkUrl = `com.dsdc.podo://just-init.github.io/share${queryString}`;
-    // if (systemPlatformName === "Android") {
-    // if (systemPlatformName === "Android" && queryString.includes("version=2")) {
-    //     deeplinkUrl = `https://just-init.github.io/smart-workout-counter-link/share${queryString}`;
-    // }
-    if (systemPlatformName === "iOS") {
-        deeplinkUrl = `applinks://just-init.github.io/friend/invite/confirm${queryString}`;
-    }
+    var deeplinkUrl = `com.dsdc.podo://just-init.github.io/friend/invite/confirm${queryString}`;
     console.log(deeplinkUrl);
 
     //variable will check app installed or not
