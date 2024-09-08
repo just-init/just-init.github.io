@@ -2,7 +2,7 @@ window.onload = (event) => {
     console.log("page is fully loaded");
     const queryString = window.location.search;
     const systemPlatformName = getMobileOperatingSystem()
-    var deeplinkUrl = `com.dsdc.podo://just-init.github.io/friend/invite/confirm${queryString}`;
+    var deeplinkUrl = `com.dsdc.podo://just-init.github.io/share${queryString}`;
     console.log(deeplinkUrl);
 
     //variable will check app installed or not
