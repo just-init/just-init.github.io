@@ -7,15 +7,15 @@
       <v-row class="py-0 py-md-4">
         <v-col cols="12" sm="12" md="12" lg="3" class="px-xs-0">
           <h4 class="font-weight-regular font-18">대표</h4>
-          <p class="mt-4">이채은</p>
+          <p class="mt-4">최정심</p>
         </v-col>
         <v-col cols="12" sm="12" md="12" lg="3" class="px-xs-0">
           <h4 class="font-weight-regular font-18">사업자등록번호</h4>
-          <p class="mt-4">601-31-69602</p>
+          <p class="mt-4">524-44-01023</p>
         </v-col>
         <v-col cols="12" sm="12" md="12" lg="3" class="px-xs-0">
           <h4 class="font-weight-regular font-18">Phone</h4>
-          <p class="mt-4 mb-0">Office : 0507 13036449</p>
+          <p class="mt-4 mb-0">Office : 010 6822 9802</p>
         </v-col>
         <v-col cols="12" sm="12" md="12" lg="3" class="px-xs-0">
           <h4 class="font-weight-regular font-18">Email</h4>
