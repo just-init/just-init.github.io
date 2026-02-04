@@ -44,7 +44,8 @@ export default Vue.extend({
                 { url: '/just-clock', title: "JUST-CLOCK" },
                 { url: '/good-job', title: "바른생활" },
                 { url: '/marriage-mind', title: "결혼하는 마음" },
-                { url: "/cwr", title: "고양이 글방" }
+                { url: "/cwr", title: "고양이 글방" },
+                { url: "/still-left", title: "Still Left" }
             ]
         }
     }
