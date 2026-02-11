@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4,680주 인생 그리드 - 남은 시간을 시각화하세요</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+          --purple: #7C5CFC;
+          --purple-light: #A78BFA;
+          --purple-glow: rgba(124, 92, 252, 0.3);
+          --bg-deep: #0A0A12;
+          --bg-card: #13131F;
+          --bg-card-border: rgba(124, 92, 252, 0.15);
+          --text-primary: #F0EFF4;
+          --text-secondary: #8B8A95;
+          --text-muted: #5A5968;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+          font-family: 'Noto Sans KR', -apple-system, sans-serif;
+          background: var(--bg-deep);
+          color: var(--text-primary);
+          overflow-x: hidden;
+          -webkit-font-smoothing: antialiased;
+        }
+
+        /* ─── Noise overlay ─── */
+        body::before {
+          content: '';
+          position: fixed;
+          inset: 0;
+          background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+          pointer-events: none;
+          z-index: 9999;
+        }
+
+        /* ─── Ambient glow ─── */
+        .glow-orb {
+          position: absolute;
+          border-radius: 50%;
+          filter: blur(120px);
+          pointer-events: none;
+          z-index: 0;
+        }
+        .glow-orb--hero {
+          width: 600px; height: 600px;
+          background: radial-gradient(circle, rgba(124,92,252,0.18), transparent 70%);
+          top: -200px; left: 50%;
+          transform: translateX(-50%);
+        }
+        .glow-orb--mid {
+          width: 500px; height: 500px;
+          background: radial-gradient(circle, rgba(124,92,252,0.1), transparent 70%);
+          top: 50%; right: -200px;
+        }
+
+        /* ─── Section shared ─── */
+        section { position: relative; z-index: 1; }
+
+        /* ─── Hero ─── */
+        .hero {
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 80px 24px 60px;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .hero__badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 8px 20px;
+          border-radius: 100px;
+          border: 1px solid var(--bg-card-border);
+          background: rgba(124,92,252,0.08);
+          font-size: 14px;
+          color: var(--purple-light);
+          font-weight: 500;
+          margin-bottom: 32px;
+          animation: fadeUp 0.8s ease both;
+        }
+        .hero__badge::before {
+          content: '';
+          width: 8px; height: 8px;
+          background: var(--purple);
+          border-radius: 50%;
+          animation: pulse 2s ease-in-out infinite;
+        }
+
+        .hero__title {
+          font-size: clamp(36px, 7vw, 72px);
+          font-weight: 900;
+          line-height: 1.2;
+          letter-spacing: -2px;
+          margin-bottom: 20px;
+          animation: fadeUp 0.8s 0.15s ease both;
+        }
+        .hero__title span {
+          background: linear-gradient(135deg, var(--purple), var(--purple-light));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        .hero__sub {
+          font-size: clamp(16px, 2.5vw, 22px);
+          color: var(--text-secondary);
+          max-width: 520px;
+          line-height: 1.7;
+          font-weight: 300;
+          margin-bottom: 44px;
+          animation: fadeUp 0.8s 0.3s ease both;
+        }
+
+        .hero__cta-group {
+          display: flex;
+          gap: 16px;
+          flex-wrap: wrap;
+          justify-content: center;
+          animation: fadeUp 0.8s 0.45s ease both;
+        }
+
+        .btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 16px 36px;
+          border-radius: 16px;
+          font-size: 17px;
+          font-weight: 700;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          border: none;
+          font-family: inherit;
+        }
+        .btn--primary {
+          background: linear-gradient(135deg, var(--purple), #6246EA);
+          color: white;
+          box-shadow: 0 4px 24px var(--purple-glow);
+        }
+        .btn--primary:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 40px rgba(124,92,252,0.45);
+        }
+        .btn--ghost {
+          background: rgba(255,255,255,0.05);
+          color: var(--text-primary);
+          border: 1px solid rgba(255,255,255,0.1);
+        }
+        .btn--ghost:hover {
+          background: rgba(255,255,255,0.1);
+          border-color: rgba(255,255,255,0.2);
+        }
+
+        .hero__scroll-hint {
+          position: absolute;
+          bottom: 40px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          color: var(--text-muted);
+          font-size: 12px;
+          animation: fadeUp 0.8s 0.8s ease both;
+        }
+        .hero__scroll-hint .arrow {
+          width: 20px; height: 20px;
+          border-right: 2px solid var(--text-muted);
+          border-bottom: 2px solid var(--text-muted);
+          transform: rotate(45deg);
+          animation: bounceDown 2s infinite;
+        }
+
+        /* ─── Life Grid Visualization ─── */
+        .life-grid-section {
+          padding: 100px 24px;
+          text-align: center;
+        }
+        .life-grid-wrapper {
+          max-width: 700px;
+          margin: 0 auto;
+        }
+        .life-grid-wrapper h2 {
+          font-size: clamp(28px, 5vw, 48px);
+          font-weight: 900;
+          letter-spacing: -1.5px;
+          margin-bottom: 12px;
+        }
+        .life-grid-wrapper h2 span { color: var(--purple); }
+        .life-grid-wrapper p {
+          color: var(--text-secondary);
+          font-size: 16px;
+          margin-bottom: 48px;
+          line-height: 1.6;
+        }
+
+        .life-grid {
+          display: grid;
+          grid-template-columns: repeat(52, 1fr);
+          gap: 2px;
+          max-width: 520px;
+          margin: 0 auto 24px;
+        }
+        .life-grid .dot {
+          aspect-ratio: 1;
+          border-radius: 1.5px;
+          background: rgba(124,92,252,0.12);
+          transition: background 0.3s;
+        }
+        .life-grid .dot.filled {
+          background: var(--purple);
+        }
+        .life-grid .dot.current {
+          background: #FF6B6B;
+          box-shadow: 0 0 6px rgba(255,107,107,0.6);
+          animation: pulse 2s ease-in-out infinite;
+        }
+
+        .life-grid-legend {
+          display: flex;
+          justify-content: center;
+          gap: 24px;
+          font-size: 13px;
+          color: var(--text-secondary);
+        }
+        .life-grid-legend span {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+        .life-grid-legend .dot-sample {
+          width: 10px; height: 10px;
+          border-radius: 2px;
+        }
+
+        /* ─── Features / Screenshots ─── */
+        .features {
+          padding: 80px 24px 120px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .feature-block {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 80px;
+          align-items: center;
+          margin-bottom: 140px;
+        }
+        .feature-block:nth-child(even) { direction: rtl; }
+        .feature-block:nth-child(even) > * { direction: ltr; }
+
+        .feature-block__text {
+          padding: 20px 0;
+        }
+        .feature-block__label {
+          display: inline-block;
+          font-size: 13px;
+          font-weight: 700;
+          color: var(--purple);
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          margin-bottom: 16px;
+        }
+        .feature-block__title {
+          font-size: clamp(26px, 4vw, 40px);
+          font-weight: 900;
+          letter-spacing: -1px;
+          line-height: 1.3;
+          margin-bottom: 18px;
+        }
+        .feature-block__title span { color: var(--purple-light); }
+        .feature-block__desc {
+          font-size: 16px;
+          color: var(--text-secondary);
+          line-height: 1.8;
+          font-weight: 300;
+        }
+
+        .feature-block__phone {
+          display: flex;
+          justify-content: center;
+        }
+        .phone-frame {
+          width: 280px;
+          border-radius: 36px;
+          overflow: hidden;
+          border: 2px solid rgba(255,255,255,0.08);
+          box-shadow: 0 20px 80px rgba(0,0,0,0.5), 0 0 60px var(--purple-glow);
+          transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        .phone-frame:hover {
+          transform: translateY(-8px) scale(1.02);
+          box-shadow: 0 30px 100px rgba(0,0,0,0.6), 0 0 80px rgba(124,92,252,0.25);
+        }
+        .phone-frame img {
+          width: 100%;
+          display: block;
+        }
+
+        /* ─── Stats Bar ─── */
+        .stats-bar {
+          padding: 60px 24px;
+          border-top: 1px solid rgba(255,255,255,0.05);
+          border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .stats-bar__inner {
+          max-width: 900px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 40px;
+          text-align: center;
+        }
+        .stat__number {
+          font-size: clamp(36px, 6vw, 56px);
+          font-weight: 900;
+          background: linear-gradient(135deg, var(--purple-light), var(--purple));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          letter-spacing: -2px;
+        }
+        .stat__label {
+          font-size: 14px;
+          color: var(--text-secondary);
+          margin-top: 4px;
+        }
+
+        /* ─── CTA Bottom ─── */
+        .cta-bottom {
+          padding: 120px 24px;
+          text-align: center;
+          position: relative;
+        }
+        .cta-bottom__glow {
+          position: absolute;
+          width: 500px; height: 500px;
+          background: radial-gradient(circle, rgba(124,92,252,0.15), transparent 70%);
+          filter: blur(100px);
+          top: 50%; left: 50%;
+          transform: translate(-50%, -50%);
+          pointer-events: none;
+        }
+        .cta-bottom h2 {
+          font-size: clamp(32px, 6vw, 56px);
+          font-weight: 900;
+          letter-spacing: -2px;
+          margin-bottom: 16px;
+          position: relative;
+        }
+        .cta-bottom h2 span { color: var(--purple); }
+        .cta-bottom p {
+          color: var(--text-secondary);
+          font-size: 18px;
+          margin-bottom: 40px;
+          font-weight: 300;
+          position: relative;
+        }
+        .cta-bottom .btn { position: relative; }
+
+        /* ─── Footer ─── */
+        footer {
+          padding: 40px 24px;
+          text-align: center;
+          color: var(--text-muted);
+          font-size: 13px;
+          border-top: 1px solid rgba(255,255,255,0.04);
+        }
+
+        /* ─── Animations ─── */
+        @keyframes fadeUp {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounceDown {
+          0%, 100% { transform: rotate(45deg) translateY(0); }
+          50% { transform: rotate(45deg) translateY(6px); }
+        }
+        @keyframes pulse {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.5; }
+        }
+
+        /* Scroll reveal */
+        .reveal {
+          opacity: 0;
+          transform: translateY(40px);
+          transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        /* ─── Responsive ─── */
+        @media (max-width: 768px) {
+          .feature-block {
+            grid-template-columns: 1fr;
+            gap: 40px;
+            text-align: center;
+          }
+          .feature-block:nth-child(even) { direction: ltr; }
+          .phone-frame { width: 240px; }
+          .stats-bar__inner {
+            grid-template-columns: 1fr;
+            gap: 32px;
+          }
+          .hero__cta-group { flex-direction: column; align-items: center; }
+          .life-grid { gap: 1.5px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Ambient glow -->
+<div class="glow-orb glow-orb--hero"></div>
+<div class="glow-orb glow-orb--mid"></div>
+
+<!-- ─── Hero ─── -->
+<section class="hero">
+<!--    <div class="hero__badge">App Store 출시</div>-->
+    <h1 class="hero__title">
+        인생은 <span>4,680주</span>입니다
+    </h1>
+    <p class="hero__sub">
+        남은 시간을 시각화하여<br>
+        의도적인 삶을 살도록 돕는 앱
+    </p>
+    <div class="hero__cta-group">
+        <a href="https://apps.apple.com/kr/app/StillLeft/id6758637568" class="btn btn--primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            App Store
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.brenin.stillleft&hl=ko" class="btn btn--primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.5 1.449a1 1 0 0 1 0 1.488l-2.5 1.449-2.527-2.527 2.527-2.86zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.635z"/></svg>
+            Google Play
+        </a>
+        <a href="#features" class="btn btn--ghost">자세히 보기</a>
+    </div>
+    <div class="hero__scroll-hint">
+        <div class="arrow"></div>
+    </div>
+</section>
+
+<!-- ─── Life Grid Visualization ─── -->
+<section class="life-grid-section">
+    <div class="life-grid-wrapper reveal">
+        <h2>당신의 인생, <span>한 눈에</span></h2>
+        <p>90년의 인생을 4,680개의 점으로 표현합니다.<br>지나간 주와 남은 주를 직관적으로 확인하세요.</p>
+        <div class="life-grid" id="lifeGrid"></div>
+        <div class="life-grid-legend">
+            <span><span class="dot-sample" style="background:var(--purple)"></span> 지나간 시간</span>
+            <span><span class="dot-sample" style="background:#FF6B6B"></span> 지금</span>
+            <span><span class="dot-sample" style="background:rgba(124,92,252,0.12)"></span> 남은 시간</span>
+        </div>
+    </div>
+</section>
+
+<!-- ─── Features ─── -->
+<section class="features" id="features">
+
+    <div class="feature-block reveal">
+        <div class="feature-block__text">
+            <span class="feature-block__label">Left Time</span>
+            <h3 class="feature-block__title">나에게 <span>남은 시간</span>을<br>확인해보세요</h3>
+            <p class="feature-block__desc">
+                인생 진행률, 남은 봄의 횟수, 남은 주말의 수까지.
+                익숙한 단위로 남은 시간을 체감할 수 있습니다.
+            </p>
+        </div>
+        <div class="feature-block__phone">
+            <div class="phone-frame">
+                <img src="images/5.5-inch.jpg" alt="나에게 남은 시간 화면">
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-block reveal">
+        <div class="feature-block__text">
+            <span class="feature-block__label">Real Free Time</span>
+            <h3 class="feature-block__title"><span>온전한 내 시간</span>을<br>확인해보세요</h3>
+            <p class="feature-block__desc">
+                수면, 근무, 씻기 시간을 제외하면 하루에 정말 쓸 수 있는
+                자유 시간은 5.6시간뿐. 남은 활동 횟수도 함께 확인하세요.
+            </p>
+        </div>
+        <div class="feature-block__phone">
+            <div class="phone-frame">
+                <img src="images/5.5-inch-1.jpg" alt="온전한 내 시간 화면">
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-block reveal">
+        <div class="feature-block__text">
+            <span class="feature-block__label">People</span>
+            <h3 class="feature-block__title"><span>소중한 사람</span>과<br>남은 시간</h3>
+            <p class="feature-block__desc">
+                부모님, 친구, 연인과 앞으로 만날 수 있는 횟수를 계산합니다.
+                연락 주기를 설정하고, 목소리 듣기 버튼으로 바로 전화하세요.
+            </p>
+        </div>
+        <div class="feature-block__phone">
+            <div class="phone-frame">
+                <img src="images/5.5-inch-2.jpg" alt="함께할 사람 화면">
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-block reveal">
+        <div class="feature-block__text">
+            <span class="feature-block__label">Quick Setup</span>
+            <h3 class="feature-block__title"><span>3분</span>이면<br>내 인생이 보입니다</h3>
+            <p class="feature-block__desc">
+                간단한 설문 5단계로 나의 기대 수명과 자유 시간을 계산합니다.
+                입력된 정보는 기기에만 안전하게 저장됩니다.
+            </p>
+        </div>
+        <div class="feature-block__phone">
+            <div class="phone-frame">
+                <img src="images/5.5-inch-3.jpg" alt="설문 화면">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ─── Stats ─── -->
+<section class="stats-bar reveal">
+    <div class="stats-bar__inner">
+        <div>
+            <div class="stat__number">4,680</div>
+            <div class="stat__label">90년의 인생 = 4,680주</div>
+        </div>
+        <div>
+            <div class="stat__number">5.6h</div>
+            <div class="stat__label">하루 평균 자유 시간</div>
+        </div>
+        <div>
+            <div class="stat__number">3분</div>
+            <div class="stat__label">설정 완료까지 걸리는 시간</div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── CTA Bottom ─── -->
+<section class="cta-bottom">
+    <div class="cta-bottom__glow"></div>
+    <h2 class="reveal">오늘이 <span>가장 많이</span><br>남은 날입니다</h2>
+    <p class="reveal">지금 시작하세요.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a href="https://apps.apple.com/kr/app/StillLeft/id6758637568" class="btn btn--primary reveal">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            App Store
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.brenin.stillleft&hl=ko" class="btn btn--primary reveal">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.5 1.449a1 1 0 0 1 0 1.488l-2.5 1.449-2.527-2.527 2.527-2.86zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.635z"/></svg>
+            Google Play
+        </a>
+    </div>
+</section>
+
+<!-- ─── Footer ─── -->
+<footer>
+    <p>제이미 대표 최정심 | 사업자등록번호 524-44-01023 | 이메일 : brenin0408@gmail.com | 번호 : 010-6822-9802</p>
+    <p style="margin-top:8px">Copyright &copy; 2026 Still Left. All rights reserved.</p>
+</footer>
+
+<script>
+    // ─── Life Grid ───
+    const grid = document.getElementById('lifeGrid');
+    const totalWeeks = 4680;
+    const filledWeeks = Math.floor(totalWeeks * 0.394); // 39.4% 기준
+
+    for (let i = 0; i < totalWeeks; i++) {
+      const dot = document.createElement('div');
+      dot.className = 'dot';
+      if (i < filledWeeks) dot.classList.add('filled');
+      else if (i === filledWeeks) dot.classList.add('current');
+      grid.appendChild(dot);
+    }
+
+    // ─── Scroll Reveal ───
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
