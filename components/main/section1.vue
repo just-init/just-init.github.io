@@ -46,7 +46,8 @@ export default Vue.extend({
                 { url: '/marriage-mind', title: "결혼하는 마음" },
                 { url: "/cwr", title: "고양이 글방" },
                 { url: "/your_name", title: "아기이름 연구소" },
-                { url: "/still_left", title: "Still Left" }
+                { url: "/still_left", title: "Still Left" },
+                { url: "/unsubmitted", title: "Unsubmitted" }
             ]
         }
     }
