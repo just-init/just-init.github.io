@@ -3,613 +3,365 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4,680주 인생 그리드 - 남은 시간을 시각화하세요</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>내 마음속 사직서 - Unsubmitted</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
     <style>
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{
+          --bg:#111010;
+          --bg2:#1a1816;
+          --bg3:#231f1c;
+          --accent:#e8a992;
+          --accent2:#d4856b;
+          --accent-glow:rgba(232,169,146,0.12);
+          --text:#f5f0eb;
+          --text2:#c4bab2;
+          --text3:#8a807a;
+        }
+        html{scroll-behavior:smooth}
+        body{background:var(--bg);color:var(--text);font-family:'Noto Sans KR',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
-        :root {
-          --purple: #7C5CFC;
-          --purple-light: #A78BFA;
-          --purple-glow: rgba(124, 92, 252, 0.3);
-          --bg-deep: #0A0A12;
-          --bg-card: #13131F;
-          --bg-card-border: rgba(124, 92, 252, 0.15);
-          --text-primary: #F0EFF4;
-          --text-secondary: #8B8A95;
-          --text-muted: #5A5968;
-        }
+        /* ── NAV ── */
+        nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 48px;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(20px);background:rgba(17,16,16,0.7);border-bottom:1px solid rgba(232,169,146,0.06);transition:all 0.3s}
+        nav.scrolled{padding:14px 48px;background:rgba(17,16,16,0.92)}
+        .nav-logo{font-family:'Noto Sans KR','Playfair Display',serif;font-size:1.3rem;font-style:italic;color:var(--accent);letter-spacing:-0.02em}
+        .nav-links{display:flex;gap:32px;align-items:center}
+        .nav-links a{color:var(--text3);text-decoration:none;font-size:0.85rem;font-weight:400;letter-spacing:0.03em;transition:color 0.3s}
+        .nav-links a:hover{color:var(--accent)}
+        .nav-cta{background:var(--accent)!important;color:var(--bg)!important;padding:10px 24px;border-radius:100px;font-weight:600!important;font-size:0.82rem!important;transition:all 0.3s!important}
+        .nav-cta:hover{background:var(--accent2)!important;transform:translateY(-1px)}
 
-        html { scroll-behavior: smooth; }
+        /* ── HERO ── */
+        .hero{min-height:100vh;display:flex;align-items:center;position:relative;padding:120px 48px 80px;overflow:hidden}
+        .hero::before{content:'';position:absolute;top:-200px;right:-200px;width:800px;height:800px;background:radial-gradient(circle,rgba(232,169,146,0.06) 0%,transparent 70%);pointer-events:none}
+        .hero::after{content:'';position:absolute;bottom:-100px;left:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,169,146,0.04) 0%,transparent 70%);pointer-events:none}
+        .hero-content{max-width:1280px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+        .hero-text{position:relative;z-index:2}
+        .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:rgba(232,169,146,0.08);border:1px solid rgba(232,169,146,0.15);border-radius:100px;font-size:0.75rem;color:var(--accent);letter-spacing:0.05em;margin-bottom:32px}
+        .hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
+        @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+        .hero h1{font-family:'Noto Sans KR','Playfair Display',serif;font-size:3.8rem;font-weight:900;line-height:1.2;letter-spacing:-0.03em;margin-bottom:24px;color:var(--text)}
+        .hero h1 em{font-style:italic;color:var(--accent);display:block}
+        .hero-desc{font-size:1.05rem;line-height:1.8;color:var(--text2);font-weight:300;margin-bottom:40px;max-width:440px}
+        .hero-actions{display:flex;gap:16px;align-items:center}
+        .btn-primary{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:var(--accent);color:var(--bg);border-radius:100px;text-decoration:none;font-weight:700;font-size:0.95rem;transition:all 0.3s;border:none;cursor:pointer}
+        .btn-primary:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 12px 40px rgba(232,169,146,0.25)}
+        .btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:16px 28px;background:transparent;color:var(--text2);border:1px solid rgba(255,255,255,0.1);border-radius:100px;text-decoration:none;font-weight:400;font-size:0.9rem;transition:all 0.3s}
+        .btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
 
-        body {
-          font-family: 'Noto Sans KR', -apple-system, sans-serif;
-          background: var(--bg-deep);
-          color: var(--text-primary);
-          overflow-x: hidden;
-          -webkit-font-smoothing: antialiased;
-        }
+        .hero-phone-group{position:relative;display:flex;justify-content:center;align-items:center;height:580px}
+        .hero-phone{position:absolute;width:240px;height:480px;border-radius:30px;overflow:hidden;background:#000;box-shadow:0 8px 60px rgba(0,0,0,0.6),0 0 0 1px rgba(255,255,255,0.05)}
+        .hero-phone img{width:100%;height:100%;object-fit:cover}
+        .hero-phone:nth-child(1){z-index:3;transform:translateX(-30px) rotate(-3deg)}
+        .hero-phone:nth-child(2){z-index:4;transform:translateX(30px) translateY(-10px) rotate(2deg)}
+        .hero-phone::after{content:'';position:absolute;inset:0;border-radius:30px;box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08)}
 
-        /* ─── Noise overlay ─── */
-        body::before {
-          content: '';
-          position: fixed;
-          inset: 0;
-          background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
-          pointer-events: none;
-          z-index: 9999;
-        }
+        .hero-stat{position:absolute;bottom:-60px;left:50%;transform:translateX(-50%);display:flex;gap:40px;z-index:5}
+        .hero-stat-item{text-align:center}
+        .hero-stat-item .num{font-family:'Noto Sans KR','Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--accent)}
+        .hero-stat-item .label{font-size:0.7rem;color:var(--text3);margin-top:2px;letter-spacing:0.05em}
 
-        /* ─── Ambient glow ─── */
-        .glow-orb {
-          position: absolute;
-          border-radius: 50%;
-          filter: blur(120px);
-          pointer-events: none;
-          z-index: 0;
-        }
-        .glow-orb--hero {
-          width: 600px; height: 600px;
-          background: radial-gradient(circle, rgba(124,92,252,0.18), transparent 70%);
-          top: -200px; left: 50%;
-          transform: translateX(-50%);
-        }
-        .glow-orb--mid {
-          width: 500px; height: 500px;
-          background: radial-gradient(circle, rgba(124,92,252,0.1), transparent 70%);
-          top: 50%; right: -200px;
-        }
+        /* ── SECTION COMMON ── */
+        section{padding:120px 48px}
+        .section-label{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;font-weight:500}
+        .section-title{font-family:'Noto Sans KR','Playfair Display',serif;font-size:2.6rem;font-weight:700;line-height:1.3;margin-bottom:20px;letter-spacing:-0.02em}
+        .section-desc{font-size:1rem;color:var(--text2);font-weight:300;line-height:1.7;max-width:500px}
 
-        /* ─── Section shared ─── */
-        section { position: relative; z-index: 1; }
+        /* ── HOW IT WORKS ── */
+        .how-section{background:var(--bg2);position:relative}
+        .how-section::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(232,169,146,0.15),transparent)}
+        .how-header{text-align:center;margin-bottom:80px}
+        .how-header .section-desc{margin:0 auto}
+        .how-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;max-width:1200px;margin:0 auto}
+        .step-card{text-align:center;padding:40px 20px;border-radius:24px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.04);transition:all 0.4s}
+        .step-card:hover{background:rgba(232,169,146,0.04);border-color:rgba(232,169,146,0.1);transform:translateY(-4px)}
+        .step-num{font-family:'Noto Sans KR','Playfair Display',serif;font-size:2.4rem;font-weight:700;color:var(--accent);opacity:0.5;margin-bottom:20px}
+        .step-phone{width:160px;height:320px;border-radius:22px;overflow:hidden;margin:0 auto 24px;background:#000;box-shadow:0 4px 30px rgba(0,0,0,0.4)}
+        .step-phone img{width:100%;height:100%;object-fit:cover}
+        .step-title{font-size:1rem;font-weight:700;margin-bottom:8px;line-height:1.4}
+        .step-desc{font-size:0.82rem;color:var(--text3);line-height:1.6;font-weight:300}
 
-        /* ─── Hero ─── */
-        .hero {
-          min-height: 100vh;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          padding: 80px 24px 60px;
-          position: relative;
-          overflow: hidden;
-        }
+        /* ── FEATURES ── */
+        .features-section{background:var(--bg)}
+        .features-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;max-width:1200px;margin:0 auto;align-items:center}
+        .features-list{display:flex;flex-direction:column;gap:24px}
+        .feature-item{padding:28px 32px;border-radius:20px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.02);transition:all 0.3s;cursor:default}
+        .feature-item:hover{background:rgba(232,169,146,0.05);border-color:rgba(232,169,146,0.12)}
+        .feature-icon{font-size:1.6rem;margin-bottom:12px}
+        .feature-name{font-size:1rem;font-weight:700;margin-bottom:6px}
+        .feature-desc{font-size:0.85rem;color:var(--text3);line-height:1.6;font-weight:300}
+        .features-visual{display:flex;justify-content:center;position:relative}
+        .features-phone{width:260px;height:520px;border-radius:32px;overflow:hidden;background:#000;box-shadow:0 8px 60px rgba(0,0,0,0.5),0 0 80px rgba(232,169,146,0.06);position:relative}
+        .features-phone img{width:100%;height:100%;object-fit:cover}
+        .features-phone::after{content:'';position:absolute;inset:0;border-radius:32px;box-shadow:inset 0 0 0 1px rgba(255,255,255,0.06)}
+        .features-glow{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(232,169,146,0.08),transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0}
 
-        .hero__badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          padding: 8px 20px;
-          border-radius: 100px;
-          border: 1px solid var(--bg-card-border);
-          background: rgba(124,92,252,0.08);
-          font-size: 14px;
-          color: var(--purple-light);
-          font-weight: 500;
-          margin-bottom: 32px;
-          animation: fadeUp 0.8s ease both;
-        }
-        .hero__badge::before {
-          content: '';
-          width: 8px; height: 8px;
-          background: var(--purple);
-          border-radius: 50%;
-          animation: pulse 2s ease-in-out infinite;
-        }
+        /* ── TESTIMONIAL ── */
+        .testimonial-section{background:var(--bg2);text-align:center;position:relative}
+        .testimonial-section::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(232,169,146,0.15),transparent)}
+        .quote-mark{font-family:'Noto Sans KR','Playfair Display',serif;font-size:6rem;color:var(--accent);opacity:0.2;line-height:1;margin-bottom:-20px}
+        .testimonial-text{font-size:1.4rem;font-weight:300;line-height:1.8;max-width:680px;margin:0 auto 32px;color:var(--text2)}
+        .testimonial-author{font-size:0.85rem;color:var(--text3)}
+        .testimonial-author strong{color:var(--accent);font-weight:500}
 
-        .hero__title {
-          font-size: clamp(36px, 7vw, 72px);
-          font-weight: 900;
-          line-height: 1.2;
-          letter-spacing: -2px;
-          margin-bottom: 20px;
-          animation: fadeUp 0.8s 0.15s ease both;
-        }
-        .hero__title span {
-          background: linear-gradient(135deg, var(--purple), var(--purple-light));
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
+        /* ── CTA ── */
+        .cta-section{text-align:center;padding:140px 48px;position:relative}
+        .cta-section::before{content:'';position:absolute;top:50%;left:50%;width:600px;height:600px;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(232,169,146,0.06),transparent 60%);pointer-events:none}
+        .cta-title{font-family:'Noto Sans KR','Playfair Display',serif;font-size:3rem;font-weight:900;margin-bottom:16px;letter-spacing:-0.02em}
+        .cta-title em{font-style:italic;color:var(--accent)}
+        .cta-desc{font-size:1rem;color:var(--text2);font-weight:300;margin-bottom:40px;line-height:1.7}
+        .cta-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+        .store-btn{display:inline-flex;align-items:center;gap:12px;padding:14px 28px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;text-decoration:none;color:var(--text);transition:all 0.3s}
+        .store-btn:hover{background:rgba(232,169,146,0.08);border-color:rgba(232,169,146,0.2);transform:translateY(-2px)}
+        .store-btn svg{width:28px;height:28px;fill:var(--text)}
+        .store-label{text-align:left}
+        .store-label small{font-size:0.65rem;color:var(--text3);display:block}
+        .store-label span{font-size:0.95rem;font-weight:600}
 
-        .hero__sub {
-          font-size: clamp(16px, 2.5vw, 22px);
-          color: var(--text-secondary);
-          max-width: 520px;
-          line-height: 1.7;
-          font-weight: 300;
-          margin-bottom: 44px;
-          animation: fadeUp 0.8s 0.3s ease both;
-        }
+        /* ── FOOTER ── */
+        footer{padding:40px 48px;border-top:1px solid rgba(255,255,255,0.04);display:flex;justify-content:space-between;align-items:center}
+        .footer-left{font-size:0.75rem;color:var(--text3)}
+        .footer-right{display:flex;gap:20px}
+        .footer-right a{color:var(--text3);text-decoration:none;font-size:0.75rem;transition:color 0.3s}
+        .footer-right a:hover{color:var(--accent)}
 
-        .hero__cta-group {
-          display: flex;
-          gap: 16px;
-          flex-wrap: wrap;
-          justify-content: center;
-          animation: fadeUp 0.8s 0.45s ease both;
-        }
+        /* ── ANIMATIONS ── */
+        .fade-in{opacity:0;transform:translateY(30px);transition:all 0.8s cubic-bezier(0.23,1,0.32,1)}
+        .fade-in.visible{opacity:1;transform:translateY(0)}
 
-        .btn {
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          padding: 16px 36px;
-          border-radius: 16px;
-          font-size: 17px;
-          font-weight: 700;
-          text-decoration: none;
-          transition: all 0.3s ease;
-          cursor: pointer;
-          border: none;
-          font-family: inherit;
+        /* ── RESPONSIVE ── */
+        @media(max-width:1024px){
+          .hero-content{grid-template-columns:1fr;text-align:center;gap:60px}
+          .hero-desc{margin:0 auto 40px}
+          .hero-actions{justify-content:center}
+          .hero-phone-group{height:400px}
+          .hero-phone{width:180px;height:360px;border-radius:24px}
+          .how-steps{grid-template-columns:repeat(2,1fr)}
+          .features-grid{grid-template-columns:1fr;text-align:center}
+          .features-list{order:2}
+          .features-visual{order:1}
+          section{padding:80px 24px}
         }
-        .btn--primary {
-          background: linear-gradient(135deg, var(--purple), #6246EA);
-          color: white;
-          box-shadow: 0 4px 24px var(--purple-glow);
-        }
-        .btn--primary:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 8px 40px rgba(124,92,252,0.45);
-        }
-        .btn--ghost {
-          background: rgba(255,255,255,0.05);
-          color: var(--text-primary);
-          border: 1px solid rgba(255,255,255,0.1);
-        }
-        .btn--ghost:hover {
-          background: rgba(255,255,255,0.1);
-          border-color: rgba(255,255,255,0.2);
-        }
-
-        .hero__scroll-hint {
-          position: absolute;
-          bottom: 40px;
-          left: 50%;
-          transform: translateX(-50%);
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 8px;
-          color: var(--text-muted);
-          font-size: 12px;
-          animation: fadeUp 0.8s 0.8s ease both;
-        }
-        .hero__scroll-hint .arrow {
-          width: 20px; height: 20px;
-          border-right: 2px solid var(--text-muted);
-          border-bottom: 2px solid var(--text-muted);
-          transform: rotate(45deg);
-          animation: bounceDown 2s infinite;
-        }
-
-        /* ─── Life Grid Visualization ─── */
-        .life-grid-section {
-          padding: 100px 24px;
-          text-align: center;
-        }
-        .life-grid-wrapper {
-          max-width: 700px;
-          margin: 0 auto;
-        }
-        .life-grid-wrapper h2 {
-          font-size: clamp(28px, 5vw, 48px);
-          font-weight: 900;
-          letter-spacing: -1.5px;
-          margin-bottom: 12px;
-        }
-        .life-grid-wrapper h2 span { color: var(--purple); }
-        .life-grid-wrapper p {
-          color: var(--text-secondary);
-          font-size: 16px;
-          margin-bottom: 48px;
-          line-height: 1.6;
-        }
-
-        .life-grid {
-          display: grid;
-          grid-template-columns: repeat(52, 1fr);
-          gap: 2px;
-          max-width: 520px;
-          margin: 0 auto 24px;
-        }
-        .life-grid .dot {
-          aspect-ratio: 1;
-          border-radius: 1.5px;
-          background: rgba(124,92,252,0.12);
-          transition: background 0.3s;
-        }
-        .life-grid .dot.filled {
-          background: var(--purple);
-        }
-        .life-grid .dot.current {
-          background: #FF6B6B;
-          box-shadow: 0 0 6px rgba(255,107,107,0.6);
-          animation: pulse 2s ease-in-out infinite;
-        }
-
-        .life-grid-legend {
-          display: flex;
-          justify-content: center;
-          gap: 24px;
-          font-size: 13px;
-          color: var(--text-secondary);
-        }
-        .life-grid-legend span {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-        }
-        .life-grid-legend .dot-sample {
-          width: 10px; height: 10px;
-          border-radius: 2px;
-        }
-
-        /* ─── Features / Screenshots ─── */
-        .features {
-          padding: 80px 24px 120px;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .feature-block {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 80px;
-          align-items: center;
-          margin-bottom: 140px;
-        }
-        .feature-block:nth-child(even) { direction: rtl; }
-        .feature-block:nth-child(even) > * { direction: ltr; }
-
-        .feature-block__text {
-          padding: 20px 0;
-        }
-        .feature-block__label {
-          display: inline-block;
-          font-size: 13px;
-          font-weight: 700;
-          color: var(--purple);
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          margin-bottom: 16px;
-        }
-        .feature-block__title {
-          font-size: clamp(26px, 4vw, 40px);
-          font-weight: 900;
-          letter-spacing: -1px;
-          line-height: 1.3;
-          margin-bottom: 18px;
-        }
-        .feature-block__title span { color: var(--purple-light); }
-        .feature-block__desc {
-          font-size: 16px;
-          color: var(--text-secondary);
-          line-height: 1.8;
-          font-weight: 300;
-        }
-
-        .feature-block__phone {
-          display: flex;
-          justify-content: center;
-        }
-        .phone-frame {
-          width: 280px;
-          border-radius: 36px;
-          overflow: hidden;
-          border: 2px solid rgba(255,255,255,0.08);
-          box-shadow: 0 20px 80px rgba(0,0,0,0.5), 0 0 60px var(--purple-glow);
-          transition: transform 0.5s ease, box-shadow 0.5s ease;
-        }
-        .phone-frame:hover {
-          transform: translateY(-8px) scale(1.02);
-          box-shadow: 0 30px 100px rgba(0,0,0,0.6), 0 0 80px rgba(124,92,252,0.25);
-        }
-        .phone-frame img {
-          width: 100%;
-          display: block;
-        }
-
-        /* ─── Stats Bar ─── */
-        .stats-bar {
-          padding: 60px 24px;
-          border-top: 1px solid rgba(255,255,255,0.05);
-          border-bottom: 1px solid rgba(255,255,255,0.05);
-        }
-        .stats-bar__inner {
-          max-width: 900px;
-          margin: 0 auto;
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 40px;
-          text-align: center;
-        }
-        .stat__number {
-          font-size: clamp(36px, 6vw, 56px);
-          font-weight: 900;
-          background: linear-gradient(135deg, var(--purple-light), var(--purple));
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          letter-spacing: -2px;
-        }
-        .stat__label {
-          font-size: 14px;
-          color: var(--text-secondary);
-          margin-top: 4px;
-        }
-
-        /* ─── CTA Bottom ─── */
-        .cta-bottom {
-          padding: 120px 24px;
-          text-align: center;
-          position: relative;
-        }
-        .cta-bottom__glow {
-          position: absolute;
-          width: 500px; height: 500px;
-          background: radial-gradient(circle, rgba(124,92,252,0.15), transparent 70%);
-          filter: blur(100px);
-          top: 50%; left: 50%;
-          transform: translate(-50%, -50%);
-          pointer-events: none;
-        }
-        .cta-bottom h2 {
-          font-size: clamp(32px, 6vw, 56px);
-          font-weight: 900;
-          letter-spacing: -2px;
-          margin-bottom: 16px;
-          position: relative;
-        }
-        .cta-bottom h2 span { color: var(--purple); }
-        .cta-bottom p {
-          color: var(--text-secondary);
-          font-size: 18px;
-          margin-bottom: 40px;
-          font-weight: 300;
-          position: relative;
-        }
-        .cta-bottom .btn { position: relative; }
-
-        /* ─── Footer ─── */
-        footer {
-          padding: 40px 24px;
-          text-align: center;
-          color: var(--text-muted);
-          font-size: 13px;
-          border-top: 1px solid rgba(255,255,255,0.04);
-        }
-
-        /* ─── Animations ─── */
-        @keyframes fadeUp {
-          from { opacity: 0; transform: translateY(30px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes bounceDown {
-          0%, 100% { transform: rotate(45deg) translateY(0); }
-          50% { transform: rotate(45deg) translateY(6px); }
-        }
-        @keyframes pulse {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0.5; }
-        }
-
-        /* Scroll reveal */
-        .reveal {
-          opacity: 0;
-          transform: translateY(40px);
-          transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-        .reveal.visible {
-          opacity: 1;
-          transform: translateY(0);
-        }
-
-        /* ─── Responsive ─── */
-        @media (max-width: 768px) {
-          .feature-block {
-            grid-template-columns: 1fr;
-            gap: 40px;
-            text-align: center;
-          }
-          .feature-block:nth-child(even) { direction: ltr; }
-          .phone-frame { width: 240px; }
-          .stats-bar__inner {
-            grid-template-columns: 1fr;
-            gap: 32px;
-          }
-          .hero__cta-group { flex-direction: column; align-items: center; }
-          .life-grid { gap: 1.5px; }
+        @media(max-width:640px){
+          nav{padding:16px 20px}
+          .nav-links{display:none}
+          .hero{padding:100px 24px 60px}
+          .hero h1{font-size:2.4rem}
+          .hero-phone-group{height:340px}
+          .hero-phone{width:150px;height:300px}
+          .how-steps{grid-template-columns:1fr 1fr;gap:16px}
+          .step-phone{width:120px;height:240px;border-radius:18px}
+          .section-title{font-size:2rem}
+          .cta-title{font-size:2.2rem}
+          footer{flex-direction:column;gap:16px;text-align:center}
         }
     </style>
 </head>
 <body>
 
-<!-- Ambient glow -->
-<div class="glow-orb glow-orb--hero"></div>
-<div class="glow-orb glow-orb--mid"></div>
+<!-- NAV -->
+<nav id="nav">
+    <div class="nav-logo">Unsubmitted</div>
+    <div class="nav-links">
+        <a href="#how">사용법</a>
+        <a href="#features">기능</a>
+        <a href="#download" class="nav-cta">다운로드</a>
+    </div>
+</nav>
 
-<!-- ─── Hero ─── -->
+<!-- HERO -->
 <section class="hero">
-<!--    <div class="hero__badge">App Store 출시</div>-->
-    <h1 class="hero__title">
-        인생은 <span>4,680주</span>입니다
-    </h1>
-    <p class="hero__sub">
-        남은 시간을 시각화하여<br>
-        의도적인 삶을 살도록 돕는 앱
-    </p>
-    <div class="hero__cta-group">
-        <a href="https://apps.apple.com/kr/app/StillLeft/id6758637568" class="btn btn--primary">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            App Store
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.brenin.stillleft&hl=ko" class="btn btn--primary">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.5 1.449a1 1 0 0 1 0 1.488l-2.5 1.449-2.527-2.527 2.527-2.86zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.635z"/></svg>
-            Google Play
-        </a>
-        <a href="#features" class="btn btn--ghost">자세히 보기</a>
-    </div>
-    <div class="hero__scroll-hint">
-        <div class="arrow"></div>
+    <div class="hero-content">
+        <div class="hero-text">
+            <div class="hero-badge">
+                <span>익명 보장 · 감정 기록 앱</span>
+            </div>
+            <h1>
+                퇴사하고 싶을 때,
+                <em>마음속 사직서</em>
+            </h1>
+            <p class="hero-desc">
+                꾹꾹 눌러 참았던 마음, 여기에 쏟아내세요.<br>
+                AI가 격식 있는 사직서로 바꿔드리고,<br>
+                따뜻한 위로까지 전합니다.
+            </p>
+            <div class="hero-actions">
+                <a href="#download" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    무료 다운로드
+                </a>
+                <a href="#how" class="btn-secondary">어떻게 쓰나요?</a>
+            </div>
+        </div>
+        <div class="hero-phone-group">
+            <div class="hero-phone" style="z-index:3;transform:translateX(-40px) rotate(-4deg)">
+                <img src="images/main1.PNG" alt="작성화면">
+            </div>
+            <div class="hero-phone" style="z-index:4;transform:translateX(40px) translateY(-10px) rotate(3deg)">
+                <img src="images/main2.PNG" alt="변환결과">
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-item">
+                    <div class="num">100%</div>
+                    <div class="label">익명 보장</div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="num">AI</div>
+                    <div class="label">사직서 변환</div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="num">24h</div>
+                    <div class="label">봉인 후 열람</div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- ─── Life Grid Visualization ─── -->
-<section class="life-grid-section">
-    <div class="life-grid-wrapper reveal">
-        <h2>당신의 인생, <span>한 눈에</span></h2>
-        <p>90년의 인생을 4,680개의 점으로 표현합니다.<br>지나간 주와 남은 주를 직관적으로 확인하세요.</p>
-        <div class="life-grid" id="lifeGrid"></div>
-        <div class="life-grid-legend">
-            <span><span class="dot-sample" style="background:var(--purple)"></span> 지나간 시간</span>
-            <span><span class="dot-sample" style="background:#FF6B6B"></span> 지금</span>
-            <span><span class="dot-sample" style="background:rgba(124,92,252,0.12)"></span> 남은 시간</span>
+<!-- HOW IT WORKS -->
+<section class="how-section" id="how">
+    <div class="how-header">
+        <div class="section-label">How it works</div>
+        <h2 class="section-title">3단계로 마음을 정리하세요</h2>
+        <p class="section-desc">복잡한 건 없어요. 감정을 적고, 봉인하고, 다음 날 열어보세요.</p>
+    </div>
+    <div class="how-steps">
+        <div class="step-card fade-in">
+            <div class="step-num">01</div>
+            <div class="step-phone">
+                <img src="images/main1.PNG" alt="작성">
+            </div>
+            <div class="step-title">감정을 쏟아내세요</div>
+            <div class="step-desc">대충 적어도 괜찮아요.<br>지금 느끼는 그대로.</div>
+        </div>
+        <div class="step-card fade-in">
+            <div class="step-num">02</div>
+            <div class="step-phone">
+                <img src="images/main2.PNG" alt="변환">
+            </div>
+            <div class="step-title">AI가 변환해드려요</div>
+            <div class="step-desc">날것의 감정이 격식 있는<br>사직서로 다시 태어납니다.</div>
+        </div>
+        <div class="step-card fade-in">
+            <div class="step-num">03</div>
+            <div class="step-phone">
+                <img src="images/main3.PNG" alt="보관">
+            </div>
+            <div class="step-title">마음속에 간직하세요</div>
+            <div class="step-desc">봉인한 사직서와 함께<br>위로 메시지를 받아보세요.</div>
+        </div>
+        <div class="step-card fade-in">
+            <div class="step-num">04</div>
+            <div class="step-phone">
+                <img src="images/main4.PNG" alt="피드">
+            </div>
+            <div class="step-title">나만 힘든 게 아니었어</div>
+            <div class="step-desc">익명 피드에서 서로의<br>마음을 들여다보세요.</div>
         </div>
     </div>
 </section>
 
-<!-- ─── Features ─── -->
-<section class="features" id="features">
-
-    <div class="feature-block reveal">
-        <div class="feature-block__text">
-            <span class="feature-block__label">Left Time</span>
-            <h3 class="feature-block__title">나에게 <span>남은 시간</span>을<br>확인해보세요</h3>
-            <p class="feature-block__desc">
-                인생 진행률, 남은 봄의 횟수, 남은 주말의 수까지.
-                익숙한 단위로 남은 시간을 체감할 수 있습니다.
-            </p>
-        </div>
-        <div class="feature-block__phone">
-            <div class="phone-frame">
-                <img src="images/5.5-inch.jpg" alt="나에게 남은 시간 화면">
+<!-- FEATURES -->
+<section class="features-section" id="features">
+    <div class="features-grid">
+        <div class="features-visual">
+            <div class="features-glow"></div>
+            <div class="features-phone" style="position:relative;z-index:1">
+                <img src="images/main2.PNG" alt="기능">
             </div>
-        </div>
-    </div>
-
-    <div class="feature-block reveal">
-        <div class="feature-block__text">
-            <span class="feature-block__label">Real Free Time</span>
-            <h3 class="feature-block__title"><span>온전한 내 시간</span>을<br>확인해보세요</h3>
-            <p class="feature-block__desc">
-                수면, 근무, 씻기 시간을 제외하면 하루에 정말 쓸 수 있는
-                자유 시간은 5.6시간뿐. 남은 활동 횟수도 함께 확인하세요.
-            </p>
-        </div>
-        <div class="feature-block__phone">
-            <div class="phone-frame">
-                <img src="images/5.5-inch-1.jpg" alt="온전한 내 시간 화면">
-            </div>
-        </div>
-    </div>
-
-    <div class="feature-block reveal">
-        <div class="feature-block__text">
-            <span class="feature-block__label">People</span>
-            <h3 class="feature-block__title"><span>소중한 사람</span>과<br>남은 시간</h3>
-            <p class="feature-block__desc">
-                부모님, 친구, 연인과 앞으로 만날 수 있는 횟수를 계산합니다.
-                연락 주기를 설정하고, 목소리 듣기 버튼으로 바로 전화하세요.
-            </p>
-        </div>
-        <div class="feature-block__phone">
-            <div class="phone-frame">
-                <img src="images/5.5-inch-2.jpg" alt="함께할 사람 화면">
-            </div>
-        </div>
-    </div>
-
-    <div class="feature-block reveal">
-        <div class="feature-block__text">
-            <span class="feature-block__label">Quick Setup</span>
-            <h3 class="feature-block__title"><span>3분</span>이면<br>내 인생이 보입니다</h3>
-            <p class="feature-block__desc">
-                간단한 설문 5단계로 나의 기대 수명과 자유 시간을 계산합니다.
-                입력된 정보는 기기에만 안전하게 저장됩니다.
-            </p>
-        </div>
-        <div class="feature-block__phone">
-            <div class="phone-frame">
-                <img src="images/5.5-inch-3.jpg" alt="설문 화면">
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<!-- ─── Stats ─── -->
-<section class="stats-bar reveal">
-    <div class="stats-bar__inner">
-        <div>
-            <div class="stat__number">4,680</div>
-            <div class="stat__label">90년의 인생 = 4,680주</div>
         </div>
         <div>
-            <div class="stat__number">5.6h</div>
-            <div class="stat__label">하루 평균 자유 시간</div>
-        </div>
-        <div>
-            <div class="stat__number">3분</div>
-            <div class="stat__label">설정 완료까지 걸리는 시간</div>
+            <div class="section-label">Features</div>
+            <h2 class="section-title" style="margin-bottom:40px">당신의 감정을<br>소중히 다룹니다</h2>
+            <div class="features-list">
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">🔒</div>
+                    <div class="feature-name">완전한 익명 보장</div>
+                    <div class="feature-desc">누가 썼는지 절대 알 수 없습니다. 안심하고 솔직해지세요.</div>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">✨</div>
+                    <div class="feature-name">AI 사직서 변환</div>
+                    <div class="feature-desc">날것의 감정이 격식 있는 사직서로 변환됩니다.</div>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">💌</div>
+                    <div class="feature-name">위로 메시지</div>
+                    <div class="feature-desc">AI가 당신의 마음을 읽고 따뜻한 공감 메시지를 전합니다.</div>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">📄</div>
+                    <div class="feature-name">전체공개 가능</div>
+                    <div class="feature-desc">익명 피드에서 서로의 마음을 들여다보세요.</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- ─── CTA Bottom ─── -->
-<section class="cta-bottom">
-    <div class="cta-bottom__glow"></div>
-    <h2 class="reveal">오늘이 <span>가장 많이</span><br>남은 날입니다</h2>
-    <p class="reveal">지금 시작하세요.</p>
-    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-        <a href="https://apps.apple.com/kr/app/StillLeft/id6758637568" class="btn btn--primary reveal">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            App Store
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.brenin.stillleft&hl=ko" class="btn btn--primary reveal">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.5 1.449a1 1 0 0 1 0 1.488l-2.5 1.449-2.527-2.527 2.527-2.86zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.635z"/></svg>
-            Google Play
-        </a>
+<!-- TESTIMONIAL -->
+<section class="testimonial-section">
+    <div class="fade-in">
+        <div class="quote-mark">"</div>
+        <p class="testimonial-text">
+            매일 퇴사 충동과 싸우면서 아무에게도 말 못 했는데,<br>
+            여기에 쏟아내고 나니까 마음이 좀 가벼워졌어요.<br>
+            나만 힘든 게 아니라는 것도 알게 됐고요.
+        </p>
+        <p class="testimonial-author">— <strong>익명의 직장인</strong>, D+347</p>
     </div>
 </section>
 
-<!-- ─── Footer ─── -->
+<!-- CTA -->
+<section class="cta-section" id="download">
+    <div class="fade-in">
+        <div class="section-label">Download</div>
+        <h2 class="cta-title">오늘도 수고한 당신,<br><em>내일은 조금 더 가벼워지길.</em></h2>
+        <p class="cta-desc">지금 무료로 다운로드하세요.</p>
+        <div class="cta-buttons">
+            <a href="https://apps.apple.com/kr/app/Unsubmitte/6758965681" class="store-btn">
+                <svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                <div class="store-label">
+                    <small>Download on the</small>
+                    <span>App Store</span>
+                </div>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.brenin.unsubmittedt&hl=ko" class="store-btn">
+                <svg viewBox="0 0 24 24"><path d="M3.61 1.814L13.793 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.61-.92zm.86-.41L15.674 6.89l-2.85 2.85L4.47 1.404zM20.11 10.486L17.574 9.03l-3.13 3.13 3.13 3.13 2.536-1.456c.95-.546.95-1.802 0-2.348zM4.47 22.596l8.354-8.336 2.85 2.85L4.47 22.596z"/></svg>
+                <div class="store-label">
+                    <small>GET IT ON</small>
+                    <span>Google Play</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-    <p>제이미 대표 최정심 | 사업자등록번호 524-44-01023 | 이메일 : brenin0408@gmail.com | 번호 : 010-6822-9802</p>
-    <p style="margin-top:8px">Copyright &copy; 2026 Still Left. All rights reserved.</p>
+    <div class="footer-left">대표 최정심 | 사업자등록번호 524-44-01023 | 이메일 : justinit.service@gmail.com | 번호 : 010-6822-9802 | © 2026 Unsubmitted. All rights reserved. </div>
+    <div class="footer-right">
+        <a href="./privacy">개인정보처리방침</a>
+        <a href="./terms">이용약관</a>
+    </div>
 </footer>
 
 <script>
-    // ─── Life Grid ───
-    const grid = document.getElementById('lifeGrid');
-    const totalWeeks = 4680;
-    const filledWeeks = Math.floor(totalWeeks * 0.394); // 39.4% 기준
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
 
-    for (let i = 0; i < totalWeeks; i++) {
-      const dot = document.createElement('div');
-      dot.className = 'dot';
-      if (i < filledWeeks) dot.classList.add('filled');
-      else if (i === filledWeeks) dot.classList.add('current');
-      grid.appendChild(dot);
-    }
-
-    // ─── Scroll Reveal ───
-    const reveals = document.querySelectorAll('.reveal');
+    // Fade in on scroll
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
         }
       });
     }, { threshold: 0.15 });
-
-    reveals.forEach(el => observer.observe(el));
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
-
 </body>
 </html>

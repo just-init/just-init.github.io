@@ -3,161 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Still Left - 이용약관</title>
+    <title>계정 삭제 요청 - 내 마음속 사직서 (Unsubmitted)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0F0A1A;
-            color: #E0DCE8;
-            line-height: 1.8;
-            padding: 40px 20px;
-        }
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-        }
-        h1 {
-            font-size: 28px;
-            color: #FFFFFF;
-            margin-bottom: 8px;
-        }
-        .updated {
-            font-size: 14px;
-            color: #8B85A0;
-            margin-bottom: 40px;
-        }
-        h2 {
-            font-size: 20px;
-            color: #FFFFFF;
-            margin-top: 36px;
-            margin-bottom: 12px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        p, li {
-            font-size: 15px;
-            color: #C0BAD0;
-            margin-bottom: 12px;
-        }
-        ul, ol {
-            padding-left: 20px;
-            margin-bottom: 16px;
-        }
-        li { margin-bottom: 6px; }
-        .highlight {
-            background: rgba(106, 77, 255, 0.1);
-            border-left: 3px solid #6A4DFF;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin: 16px 0;
-        }
-        .highlight p { margin-bottom: 0; }
-        .footer {
-            margin-top: 48px;
-            padding-top: 24px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 13px;
-            color: #8B85A0;
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{--bg:#111010;--accent:#e8a992;--text:#f5f0eb;--text2:#c4bab2;--text3:#8a807a;--border:rgba(255,255,255,0.06)}
+        body{background:var(--bg);color:var(--text2);font-family:'Noto Sans KR',sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+
+        nav{padding:20px 48px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border)}
+        .nav-logo{font-family:'Noto Sans KR','Playfair Display',serif;font-size:1.3rem;font-style:italic;color:var(--accent);text-decoration:none}
+        .nav-back{color:var(--text3);text-decoration:none;font-size:0.85rem;transition:color 0.3s}
+        .nav-back:hover{color:var(--accent)}
+
+        main{flex:1;display:flex;align-items:center;justify-content:center;padding:48px 24px}
+        .card{text-align:center;max-width:480px}
+        .page-label{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;font-weight:500}
+        h1{font-family:'Noto Sans KR','Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--text);margin-bottom:16px;letter-spacing:-0.02em}
+        .desc{font-size:0.92rem;font-weight:300;line-height:1.8;margin-bottom:36px}
+        .contact{background:rgba(232,169,146,0.06);border:1px solid rgba(232,169,146,0.12);border-radius:16px;padding:28px 32px;font-size:0.95rem;line-height:2}
+        .contact-row{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
+        .contact-label{color:var(--text3);font-size:0.82rem;font-weight:400}
+        .contact-value{color:var(--text);font-weight:500}
+        .contact-value a{color:var(--accent);text-decoration:none;transition:opacity 0.3s}
+        .contact-value a:hover{opacity:0.7}
+        .divider{color:var(--text3);margin:0 4px}
+
+        footer{padding:32px 48px;border-top:1px solid var(--border);text-align:center;font-size:0.75rem;color:var(--text3)}
+
+        @media(max-width:640px){
+          nav{padding:16px 20px}
+          h1{font-size:1.6rem}
+          .contact{padding:20px}
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>이용약관</h1>
-        <p class="updated">시행일: 2026년 2월 9일 | 최종 수정일: 2026년 2월 9일</p>
 
-        <div class="highlight">
-            <p>본 약관은 Still Left(이하 "앱")의 이용에 관한 조건과 절차, 이용자와 운영자의 권리 및 의무를 규정합니다. 앱을 설치하거나 이용하는 경우 본 약관에 동의한 것으로 간주합니다.</p>
-        </div>
+<nav>
+    <a href="index" class="nav-logo">Unsubmitted</a>
+    <a href="index" class="nav-back">&larr; 돌아가기</a>
+</nav>
 
-        <h2>제1조 (목적)</h2>
-        <p>본 약관은 앱이 제공하는 서비스의 이용과 관련하여 운영자와 이용자 간의 권리, 의무 및 책임사항을 규정하는 것을 목적으로 합니다.</p>
-
-        <h2>제2조 (정의)</h2>
-        <ol>
-            <li><strong>"앱"</strong>이란 Still Left 모바일 애플리케이션을 의미합니다.</li>
-            <li><strong>"이용자"</strong>란 본 약관에 동의하고 앱을 설치하여 사용하는 자를 의미합니다.</li>
-            <li><strong>"서비스"</strong>란 앱을 통해 제공되는 인생 시간 시각화, 활동 관리, 알림 등 모든 기능을 의미합니다.</li>
-            <li><strong>"프리미엄 서비스"</strong>란 인앱 구매를 통해 이용할 수 있는 유료 부가 기능을 의미합니다.</li>
-        </ol>
-
-        <h2>제3조 (약관의 효력 및 변경)</h2>
-        <ol>
-            <li>본 약관은 앱 내 또는 웹페이지를 통해 공시함으로써 효력이 발생합니다.</li>
-            <li>운영자는 관련 법령에 위배되지 않는 범위 내에서 약관을 변경할 수 있으며, 변경 시 앱 업데이트 또는 공지를 통해 안내합니다.</li>
-            <li>변경된 약관에 동의하지 않는 이용자는 앱 이용을 중단하고 삭제할 수 있습니다.</li>
-        </ol>
-
-        <h2>제4조 (서비스의 내용)</h2>
-        <p>앱은 다음의 서비스를 제공합니다:</p>
-        <ul>
-            <li>인생 남은 시간 시각화 (주 단위 그리드)</li>
-            <li>활동별 남은 횟수 계산 및 관리</li>
-            <li>알림 설정 및 발송</li>
-            <li>함께할 사람 관리</li>
-            <li>프리미엄 서비스 (인앱 구매)</li>
-        </ul>
-
-        <h2>제5조 (서비스의 제공 및 변경)</h2>
-        <ol>
-            <li>앱은 이용자의 기기에서 독립적으로 작동하며, 별도의 서버 연결 없이 로컬에서 데이터를 처리합니다.</li>
-            <li>운영자는 서비스의 품질 향상을 위해 서비스 내용을 변경할 수 있으며, 이 경우 앱 업데이트를 통해 제공합니다.</li>
-        </ol>
-
-        <h2>제6조 (서비스의 중단)</h2>
-        <ol>
-            <li>앱은 기기에서 독립적으로 작동하므로 별도의 서비스 중단은 발생하지 않습니다.</li>
-            <li>다만, 앱 스토어 정책 변경이나 기술적 사유로 앱 배포가 중단될 수 있으며, 이 경우 가능한 범위 내에서 사전 공지합니다.</li>
-        </ol>
-
-        <h2>제7조 (이용자의 의무)</h2>
-        <p>이용자는 다음 행위를 하여서는 안 됩니다:</p>
-        <ul>
-            <li>앱의 소스 코드를 역공학, 디컴파일 또는 분해하는 행위</li>
-            <li>앱을 복제, 수정, 배포하는 행위</li>
-            <li>앱의 정상적인 운영을 방해하는 행위</li>
-            <li>기타 관련 법령에 위반되는 행위</li>
-        </ul>
-
-        <h2>제8조 (인앱 구매 및 결제)</h2>
-        <ol>
-            <li>프리미엄 서비스는 Apple App Store 또는 Google Play Store의 인앱 구매를 통해 제공됩니다.</li>
-            <li>결제는 각 앱 스토어의 결제 시스템을 통해 처리되며, 결제 관련 정책은 해당 스토어의 약관을 따릅니다.</li>
-            <li>환불은 각 앱 스토어의 환불 정책에 따라 처리됩니다.</li>
-        </ol>
-
-        <h2>제9조 (지적재산권)</h2>
-        <ol>
-            <li>앱의 디자인, 코드, 콘텐츠 등 모든 지적재산권은 운영자에게 귀속됩니다.</li>
-            <li>이용자는 운영자의 사전 서면 동의 없이 앱의 지적재산을 상업적으로 이용할 수 없습니다.</li>
-        </ol>
-
-        <h2>제10조 (면책조항)</h2>
-        <ol>
-            <li>앱에서 제공하는 기대수명 계산 및 시간 시각화는 통계 기반의 참고 정보이며, 의학적 진단이나 조언이 아닙니다.</li>
-            <li>운영자는 이용자가 앱에 저장한 데이터의 손실에 대해 책임을 지지 않습니다. 데이터는 이용자의 기기에 저장되므로 기기 교체, 앱 삭제 시 데이터가 삭제될 수 있습니다.</li>
-            <li>운영자는 천재지변, 기술적 장애 등 불가항력적 사유로 인한 서비스 이용 장애에 대해 책임을 지지 않습니다.</li>
-        </ol>
-
-        <h2>제11조 (개인정보 보호)</h2>
-        <p>이용자의 개인정보 보호에 관한 사항은 별도의 <strong>개인정보 처리방침</strong>에 따릅니다.</p>
-
-        <h2>제12조 (분쟁 해결)</h2>
-        <ol>
-            <li>본 약관과 관련하여 분쟁이 발생한 경우, 운영자와 이용자는 상호 협의하여 해결하도록 합니다.</li>
-            <li>협의가 이루어지지 않을 경우, 대한민국 법률에 따르며 관할 법원은 운영자 소재지의 법원으로 합니다.</li>
-        </ol>
-
-        <h2>제13조 (문의)</h2>
-        <p>본 약관에 대한 문의사항이 있으시면 아래로 연락해 주세요.</p>
-        <ul>
-            <li>이메일: <strong>justinit.service@gmail.com</strong></li>
-        </ul>
-
-        <div class="footer">
-            <p>&copy; 2026 Still Left. All rights reserved.</p>
+<main>
+    <div class="card">
+        <div class="page-label">Account Deletion</div>
+        <h1>계정 및 데이터 삭제 요청</h1>
+        <p class="desc">데이터 삭제를 원하시면 아래 연락처로 요청해주세요.<br>확인 후 모든 데이터를 안전하게 삭제해드립니다.</p>
+        <div class="contact">
+            <div class="contact-row">
+                <span class="contact-label">이메일</span>
+                <span class="contact-value"><a href="mailto:justinit.service@gmail.com">justinit.service@gmail.com</a></span>
+                <span class="divider">|</span>
+                <span class="contact-label">연락처</span>
+                <span class="contact-value"><a href="tel:010-6822-9802">010-6822-9802</a></span>
+            </div>
         </div>
     </div>
+</main>
+
+<footer>© 2026 Unsubmitted. All rights reserved.</footer>
 </body>
 </html>
