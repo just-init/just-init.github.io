@@ -39,7 +39,6 @@ export default Vue.extend({
     data() {
         return {
             items: [
-                { url: '/podo', title: "진지한 포도" },
                 { url: '/smart-workout-counter', title: "내가만든트레이너" },
                 { url: '/just-clock', title: "JUST-CLOCK" },
                 { url: '/good-job', title: "바른생활" },
