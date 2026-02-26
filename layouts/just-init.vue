@@ -1,5 +1,5 @@
 <template>
-    <v-app dark>
+    <v-app>
         <MainHeader />
         <!--v-if="$route.name!=='login'"-->
         <v-main>

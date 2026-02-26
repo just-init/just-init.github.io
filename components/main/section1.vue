@@ -1,34 +1,27 @@
 <template>
     <div class="banner-wrapper">
         <v-container>
-            <!-- -----------------------------------------------
-              Start Banner
-          ----------------------------------------------- -->
             <v-row justify="center">
-                <v-col cols="12" md="7" lg="6" class="d-flex align-center">
-                    <div class="text-center text-md-left">
-                        <h1 class="banner-title font-weight-bold white--text">
-                            안녕하세요. Just Init 입니다.
-                        </h1>
-                        <h4 class="banner-subtitle white--text font-weight-regular">
-                            저희는 당신의 삶을 좀 더 즐겁고 윤택해지길 바랍니다.
-                        </h4>
-                        <div class="mt-16 pt-2">
-                            <v-btn v-for="item in items" :key="item.title" nuxt large :href="item.url"
-                                class="btn-custom-md mr-1 mb-1" outlined color="white" elevation="0">
-                                {{ item.title }}
-                            </v-btn>
-                        </div>
+                <v-col cols="12" lg="8" class="text-center">
+                    <h1 class="banner-title font-weight-bold">
+                        딸깍공방
+                    </h1>
+                    <h4 class="banner-subtitle">
+                        딸깍 한 번, 일상이 달라지는 순간
+                    </h4>
+                    <div class="app-grid mt-12">
+                        <a
+                            v-for="item in items"
+                            :key="item.title"
+                            :href="item.url"
+                            class="app-card"
+                        >
+                            <span class="app-card-title">{{ item.title }}</span>
+                            <span class="app-card-arrow">&rarr;</span>
+                        </a>
                     </div>
                 </v-col>
-                <v-col cols="12" md="5" lg="6">
-                    <v-img :src="require('@/assets/images/banner-img.png')" alt="banner" />
-                </v-col>
             </v-row>
-
-            <!-- -----------------------------------------------
-              End Banner
-          ----------------------------------------------- -->
         </v-container>
     </div>
 </template>
@@ -52,3 +45,53 @@ export default Vue.extend({
     }
 })
 </script>
+
+<style lang="scss" scoped>
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #1A1A1A;
+    transition: all 0.2s ease;
+    background: #ffffff;
+
+    &:hover {
+        border-color: #1A1A1A;
+        background: #F9FAFB;
+    }
+}
+
+.app-card-title {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.app-card-arrow {
+    font-size: 16px;
+    color: #9CA3AF;
+    transition: color 0.2s ease;
+
+    .app-card:hover & {
+        color: #1A1A1A;
+    }
+}
+
+@media (max-width: 576px) {
+    .app-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>

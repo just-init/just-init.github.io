@@ -27,7 +27,7 @@
       <div class="footer-bottom-bar font-14">
         <div class="d-block d-md-flex align-center">
           <p>
-            Copyright © Jaemi Lab. All rights reserved.
+            Copyright © 딸깍공방. All rights reserved.
           </p>
           <div class="ml-auto">
             <div class="d-flex align-center">

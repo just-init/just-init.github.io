@@ -1,14 +1,20 @@
 <template>
   <div class="logo">
     <NLink to="/">
-      <v-img :src="require('@/assets/images/logo-header.png')" alt="logo" />
+      <span class="logo-text">딸깍공방</span>
     </NLink>
   </div>
 </template>
 
-
 <style lang="scss">
 .logo a {
   display: flex;
+  text-decoration: none;
+}
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1A1A1A;
+  letter-spacing: -0.5px;
 }
 </style>

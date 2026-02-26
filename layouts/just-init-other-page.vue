@@ -1,7 +1,7 @@
 <template>
-    <v-app dark>
+    <v-app>
         <v-main>
-            <v-app-bar color="#607df9">
+            <v-app-bar color="#1A1A1A">
                 <MainLogo />
             </v-app-bar>
             <nuxt />

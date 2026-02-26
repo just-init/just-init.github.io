@@ -10,18 +10,23 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Just Init',
+    title: '딸깍공방',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ko',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'viewport', content: 'height=device-height, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '저희는 당신의 삶을 좀 더 즐겁고 윤택해지길 바랍니다.' },
+      { hid: 'description', name: 'description', content: '딸깍 한 번, 일상이 달라지는 순간' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;500;700&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0' },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -39,6 +44,7 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/tailwindcss',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -51,25 +57,31 @@ export default {
       dark: false,
       themes: {
         dark: {
-          primary: "#316ce8",
-          accent: "#607df9",
-          secondary: "#a73aeb",
-          info: "#0164d3",
-          warning: "#fec500",
-          error: "#ff4d7e",
-          success: "#2cdd9b"
+          primary: "#1A1A1A",
+          accent: "#374151",
+          secondary: "#6B7280",
+          info: "#1F2937",
+          warning: "#D97706",
+          error: "#DC2626",
+          success: "#059669"
         },
         light: {
-          primary: "#316ce8",
-          accent: "#607df9",
-          secondary: "#a73aeb",
-          info: "#0164d3",
-          warning: "#fec500",
-          error: "#ff4d7e",
-          success: "#2cdd9b"
+          primary: "#1A1A1A",
+          accent: "#374151",
+          secondary: "#6B7280",
+          info: "#1F2937",
+          warning: "#D97706",
+          error: "#DC2626",
+          success: "#059669"
         }
       }
     }
+  },
+
+  // Tailwind CSS configuration
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
+    configPath: 'tailwind.config.js',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

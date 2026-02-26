@@ -1,10 +1,10 @@
 <template>
   <div>
-    <MainHeader />
-    <MainSection1 />
-    <MainSection2 />
-    <!-- <MainContact /> -->
-    <MainFooter />
+    <LandingNav />
+    <LandingHero />
+    <LandingApps />
+    <LandingPhilosophy />
+    <LandingFooter />
   </div>
 </template>
 
@@ -12,6 +12,7 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'IndexPage'
+  name: 'IndexPage',
+  layout: 'landing',
 })
 </script>
