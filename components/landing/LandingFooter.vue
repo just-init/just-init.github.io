@@ -51,7 +51,7 @@
     <div
       class="max-w-7xl mx-auto pt-8 border-t border-text-light/10 dark:border-text-dark/10 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-xs opacity-50 gap-4"
     >
-      <p class="dark:text-muted-dark">&copy; {{ new Date().getFullYear() }} Ddalkkak Workshop. All rights reserved.</p>
+      <p class="dark:text-muted-dark">&copy; 2024 Just Init. All rights reserved.</p>
     </div>
   </footer>
 </template>
