@@ -80,8 +80,8 @@ export default {
           tagClass: 'bg-indigo-500/10 text-indigo-600 dark:text-indigo-400',
           platform: 'Android · iOS',
           link: '/honey-sleep',
-          cardBgLight: 'linear-gradient(135deg, #ede8f5 0%, #e4dff0 100%)',
-          cardBgDark: 'linear-gradient(135deg, #2a2638 0%, #252132 100%)',
+          cardBgLight: 'linear-gradient(135deg, #fdf6e3 0%, #f5ecc8 100%)',
+          cardBgDark: 'linear-gradient(135deg, #1e1a0e 0%, #18150a 100%)',
         },
         {
           name: '내가만든트레이너',
