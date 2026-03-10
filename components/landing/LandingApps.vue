@@ -73,6 +73,17 @@ export default {
     return {
       apps: [
         {
+          name: '꿀잠',
+          icon: '/app-icons/honey-sleep.png',
+          desc: '잠들지 못하는 밤을 위한 수면 앱. 수면 명상, 수면 사운드, 수면 이야기로 깊은 잠에 빠져보세요.',
+          tag: '건강',
+          tagClass: 'bg-indigo-500/10 text-indigo-600 dark:text-indigo-400',
+          platform: 'Android · iOS',
+          link: '/honey-sleep',
+          cardBgLight: 'linear-gradient(135deg, #ede8f5 0%, #e4dff0 100%)',
+          cardBgDark: 'linear-gradient(135deg, #2a2638 0%, #252132 100%)',
+        },
+        {
           name: '내가만든트레이너',
           icon: '/app-icons/smart-workout-counter.png',
           desc: '나만의 운동 루틴을 만들고, 스마트하게 카운트하세요. AI가 함께하는 홈트레이닝 파트너.',
