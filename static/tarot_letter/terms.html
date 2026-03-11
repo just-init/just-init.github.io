@@ -1,163 +1,239 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Still Left - 이용약관</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0F0A1A;
-            color: #E0DCE8;
-            line-height: 1.8;
-            padding: 40px 20px;
-        }
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-        }
-        h1 {
-            font-size: 28px;
-            color: #FFFFFF;
-            margin-bottom: 8px;
-        }
-        .updated {
-            font-size: 14px;
-            color: #8B85A0;
-            margin-bottom: 40px;
-        }
-        h2 {
-            font-size: 20px;
-            color: #FFFFFF;
-            margin-top: 36px;
-            margin-bottom: 12px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        p, li {
-            font-size: 15px;
-            color: #C0BAD0;
-            margin-bottom: 12px;
-        }
-        ul, ol {
-            padding-left: 20px;
-            margin-bottom: 16px;
-        }
-        li { margin-bottom: 6px; }
-        .highlight {
-            background: rgba(106, 77, 255, 0.1);
-            border-left: 3px solid #6A4DFF;
-            padding: 16px;
-            border-radius: 0 8px 8px 0;
-            margin: 16px 0;
-        }
-        .highlight p { margin-bottom: 0; }
-        .footer {
-            margin-top: 48px;
-            padding-top: 24px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 13px;
-            color: #8B85A0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이용약관 — 타로레터</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0D1127;
+      --navy-light: #151A36;
+      --navy-card: #1A1F3D;
+      --gold: #C5A55A;
+      --gold-light: #E0CC8A;
+      --text: #E8E4DC;
+      --text-dim: #9A9689;
+      --serif: 'Noto Serif KR', serif;
+      --sans: 'Noto Sans KR', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--navy);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.8;
+    }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 24px;
+      border-bottom: 1px solid rgba(197,165,90,0.1);
+    }
+    .top-bar a {
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .top-bar a:hover { text-decoration: underline; }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+    h1 {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .date {
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      margin-bottom: 48px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-top: 40px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(197,165,90,0.15);
+    }
+    p, li {
+      font-size: 0.92rem;
+      color: var(--text);
+      font-weight: 300;
+      margin-bottom: 8px;
+    }
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    li { margin-bottom: 4px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.88rem;
+    }
+    th, td {
+      border: 1px solid rgba(197,165,90,0.15);
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 300;
+    }
+    th {
+      background: var(--navy-card);
+      color: var(--gold-light);
+      font-weight: 500;
+    }
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid rgba(197,165,90,0.1);
+      color: var(--text-dim);
+      font-size: 0.8rem;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>이용약관</h1>
-        <p class="updated">시행일: 2026년 2월 9일 | 최종 수정일: 2026년 2월 9일</p>
 
-        <div class="highlight">
-            <p>본 약관은 Still Left(이하 "앱")의 이용에 관한 조건과 절차, 이용자와 운영자의 권리 및 의무를 규정합니다. 앱을 설치하거나 이용하는 경우 본 약관에 동의한 것으로 간주합니다.</p>
-        </div>
+<nav class="top-bar">
+  <a href="index.html">&larr; 홈으로</a>
+</nav>
 
-        <h2>제1조 (목적)</h2>
-        <p>본 약관은 앱이 제공하는 서비스의 이용과 관련하여 운영자와 이용자 간의 권리, 의무 및 책임사항을 규정하는 것을 목적으로 합니다.</p>
+<div class="container">
+  <h1>이용약관</h1>
+  <p class="date">시행일: 2026년 3월 11일</p>
 
-        <h2>제2조 (정의)</h2>
-        <ol>
-            <li><strong>"앱"</strong>이란 Still Left 모바일 애플리케이션을 의미합니다.</li>
-            <li><strong>"이용자"</strong>란 본 약관에 동의하고 앱을 설치하여 사용하는 자를 의미합니다.</li>
-            <li><strong>"서비스"</strong>란 앱을 통해 제공되는 인생 시간 시각화, 활동 관리, 알림 등 모든 기능을 의미합니다.</li>
-            <li><strong>"프리미엄 서비스"</strong>란 인앱 구매를 통해 이용할 수 있는 유료 부가 기능을 의미합니다.</li>
-        </ol>
+  <h2>제1조 (목적)</h2>
+  <p>본 약관은 Just Init(이하 "회사")이 제공하는 타로레터 모바일 애플리케이션(이하 "서비스")의 이용 조건 및 절차, 회사와 이용자 간의 권리·의무·책임사항을 규정함을 목적으로 합니다.</p>
 
-        <h2>제3조 (약관의 효력 및 변경)</h2>
-        <ol>
-            <li>본 약관은 앱 내 또는 웹페이지를 통해 공시함으로써 효력이 발생합니다.</li>
-            <li>운영자는 관련 법령에 위배되지 않는 범위 내에서 약관을 변경할 수 있으며, 변경 시 앱 업데이트 또는 공지를 통해 안내합니다.</li>
-            <li>변경된 약관에 동의하지 않는 이용자는 앱 이용을 중단하고 삭제할 수 있습니다.</li>
-        </ol>
+  <h2>제2조 (정의)</h2>
+  <ol>
+    <li><strong>서비스</strong>: 회사가 "타로레터" 앱을 통해 제공하는 타로 리딩, 데일리 시그널 및 관련 부가 기능 일체</li>
+    <li><strong>이용자</strong>: 본 약관에 동의하고 서비스를 이용하는 자</li>
+    <li><strong>별빛</strong>: 서비스 내 유료 리딩에 사용되는 인앱 재화</li>
+    <li><strong>구독</strong>: 월간 정기결제를 통해 별빛을 지급받는 유료 이용 방식</li>
+    <li><strong>리딩</strong>: 이용자의 고민과 선택한 카드를 기반으로 AI가 생성한 타로 편지</li>
+  </ol>
 
-        <h2>제4조 (서비스의 내용)</h2>
-        <p>앱은 다음의 서비스를 제공합니다:</p>
-        <ul>
-            <li>인생 남은 시간 시각화 (주 단위 그리드)</li>
-            <li>활동별 남은 횟수 계산 및 관리</li>
-            <li>알림 설정 및 발송</li>
-            <li>함께할 사람 관리</li>
-            <li>프리미엄 서비스 (인앱 구매)</li>
-        </ul>
+  <h2>제3조 (약관의 효력 및 변경)</h2>
+  <ol>
+    <li>본 약관은 서비스 내 게시하거나 기타 방법으로 이용자에게 공지함으로써 효력이 발생합니다.</li>
+    <li>회사는 관련 법령에 위배되지 않는 범위 내에서 약관을 변경할 수 있으며, 변경 시 적용일 7일 전부터 앱 내 공지합니다.</li>
+    <li>이용자가 변경된 약관에 동의하지 않는 경우 서비스 이용을 중단하고 탈퇴할 수 있습니다.</li>
+  </ol>
 
-        <h2>제5조 (서비스의 제공 및 변경)</h2>
-        <ol>
-            <li>앱은 이용자의 기기에서 독립적으로 작동하며, 별도의 서버 연결 없이 로컬에서 데이터를 처리합니다.</li>
-            <li>운영자는 서비스의 품질 향상을 위해 서비스 내용을 변경할 수 있으며, 이 경우 앱 업데이트를 통해 제공합니다.</li>
-        </ol>
+  <h2>제4조 (회원가입 및 계정)</h2>
+  <ol>
+    <li>이용자는 소셜 로그인(Apple, Google)을 통해 회원가입할 수 있습니다.</li>
+    <li>이용자는 가입 시 닉네임을 설정하며, 허위 정보 입력에 대한 책임은 이용자에게 있습니다.</li>
+    <li>회사는 다음 각 호에 해당하는 경우 가입을 거부하거나 사후에 이용을 제한할 수 있습니다.
+      <ul>
+        <li>타인의 정보를 도용한 경우</li>
+        <li>서비스 운영을 방해하는 행위가 확인된 경우</li>
+        <li>관련 법령 또는 본 약관을 위반한 경우</li>
+      </ul>
+    </li>
+  </ol>
 
-        <h2>제6조 (서비스의 중단)</h2>
-        <ol>
-            <li>앱은 기기에서 독립적으로 작동하므로 별도의 서비스 중단은 발생하지 않습니다.</li>
-            <li>다만, 앱 스토어 정책 변경이나 기술적 사유로 앱 배포가 중단될 수 있으며, 이 경우 가능한 범위 내에서 사전 공지합니다.</li>
-        </ol>
+  <h2>제5조 (서비스의 제공)</h2>
+  <ol>
+    <li>회사는 다음과 같은 서비스를 제공합니다.
+      <ul>
+        <li>고민 기반 3카드 타로 리딩(편지)</li>
+        <li>오늘의 원카드(데일리 시그널)</li>
+        <li>리딩 히스토리 보관 및 열람</li>
+        <li>기타 회사가 추가 개발하는 서비스</li>
+      </ul>
+    </li>
+    <li>서비스는 연중무휴 24시간 제공을 원칙으로 하되, 시스템 점검 등의 사유로 일시 중단될 수 있습니다.</li>
+    <li>리딩 결과는 AI가 생성한 엔터테인먼트 콘텐츠이며, 전문적인 상담·진단·조언을 대체하지 않습니다.</li>
+  </ol>
 
-        <h2>제7조 (이용자의 의무)</h2>
-        <p>이용자는 다음 행위를 하여서는 안 됩니다:</p>
-        <ul>
-            <li>앱의 소스 코드를 역공학, 디컴파일 또는 분해하는 행위</li>
-            <li>앱을 복제, 수정, 배포하는 행위</li>
-            <li>앱의 정상적인 운영을 방해하는 행위</li>
-            <li>기타 관련 법령에 위반되는 행위</li>
-        </ul>
+  <h2>제6조 (유료 서비스 및 결제)</h2>
+  <ol>
+    <li>유료 서비스는 별빛(인앱 재화) 또는 구독을 통해 이용할 수 있습니다.</li>
+    <li>결제는 Apple App Store 또는 Google Play Store의 인앱 결제 시스템을 통해 처리됩니다.</li>
+    <li>구독은 이용자가 직접 해지하지 않는 한 매월 자동 갱신됩니다.</li>
+    <li>구독 해지는 각 스토어의 구독 관리 메뉴에서 가능합니다.</li>
+  </ol>
 
-        <h2>제8조 (인앱 구매 및 결제)</h2>
-        <ol>
-            <li>프리미엄 서비스는 Apple App Store 또는 Google Play Store의 인앱 구매를 통해 제공됩니다.</li>
-            <li>결제는 각 앱 스토어의 결제 시스템을 통해 처리되며, 결제 관련 정책은 해당 스토어의 약관을 따릅니다.</li>
-            <li>환불은 각 앱 스토어의 환불 정책에 따라 처리됩니다.</li>
-        </ol>
+  <h2>제7조 (환불 정책)</h2>
+  <ol>
+    <li>미사용 별빛의 환불은 각 스토어의 환불 정책에 따릅니다.</li>
+    <li>이미 사용(리딩 생성 요청)된 별빛은 환불이 불가합니다.</li>
+    <li>구독 환불은 Apple 및 Google의 구독 환불 정책에 따릅니다.</li>
+    <li>회사의 귀책 사유로 서비스가 제공되지 못한 경우, 해당 별빛을 복구하거나 환불합니다.</li>
+  </ol>
 
-        <h2>제9조 (지적재산권)</h2>
-        <ol>
-            <li>앱의 디자인, 코드, 콘텐츠 등 모든 지적재산권은 운영자에게 귀속됩니다.</li>
-            <li>이용자는 운영자의 사전 서면 동의 없이 앱의 지적재산을 상업적으로 이용할 수 없습니다.</li>
-        </ol>
+  <h2>제8조 (이용자의 의무)</h2>
+  <p>이용자는 다음 행위를 하여서는 안 됩니다.</p>
+  <ul>
+    <li>타인의 개인정보를 도용하거나 허위 정보를 등록하는 행위</li>
+    <li>서비스를 이용하여 얻은 정보를 회사의 사전 승낙 없이 상업적으로 이용하는 행위</li>
+    <li>서비스의 운영을 방해하거나 시스템에 부하를 주는 행위</li>
+    <li>욕설, 혐오 표현 등 반사회적 내용을 입력하는 행위</li>
+    <li>기타 관련 법령 또는 공공질서에 반하는 행위</li>
+  </ul>
 
-        <h2>제10조 (면책조항)</h2>
-        <ol>
-            <li>앱에서 제공하는 기대수명 계산 및 시간 시각화는 통계 기반의 참고 정보이며, 의학적 진단이나 조언이 아닙니다.</li>
-            <li>운영자는 이용자가 앱에 저장한 데이터의 손실에 대해 책임을 지지 않습니다. 데이터는 이용자의 기기에 저장되므로 기기 교체, 앱 삭제 시 데이터가 삭제될 수 있습니다.</li>
-            <li>운영자는 천재지변, 기술적 장애 등 불가항력적 사유로 인한 서비스 이용 장애에 대해 책임을 지지 않습니다.</li>
-        </ol>
+  <h2>제9조 (회사의 의무)</h2>
+  <ol>
+    <li>회사는 관련 법령과 본 약관이 정하는 바에 따라 지속적이고 안정적인 서비스를 제공하기 위해 노력합니다.</li>
+    <li>회사는 이용자의 개인정보를 보호하기 위해 개인정보 처리방침을 공시하고 이를 준수합니다.</li>
+    <li>서비스 개선을 위한 이용자의 의견이나 불만이 정당하다고 인정될 경우 적극 반영합니다.</li>
+  </ol>
 
-        <h2>제11조 (개인정보 보호)</h2>
-        <p>이용자의 개인정보 보호에 관한 사항은 별도의 <strong>개인정보 처리방침</strong>에 따릅니다.</p>
+  <h2>제10조 (서비스의 변경 및 중단)</h2>
+  <ol>
+    <li>회사는 운영상 또는 기술상 필요에 따라 서비스 전부 또는 일부를 변경할 수 있습니다.</li>
+    <li>서비스를 종료하는 경우 30일 전에 앱 내 공지합니다.</li>
+    <li>천재지변, 시스템 장애 등 불가항력으로 서비스가 중단된 경우 회사는 이에 대해 책임을 지지 않습니다.</li>
+  </ol>
 
-        <h2>제12조 (분쟁 해결)</h2>
-        <ol>
-            <li>본 약관과 관련하여 분쟁이 발생한 경우, 운영자와 이용자는 상호 협의하여 해결하도록 합니다.</li>
-            <li>협의가 이루어지지 않을 경우, 대한민국 법률에 따르며 관할 법원은 운영자 소재지의 법원으로 합니다.</li>
-        </ol>
+  <h2>제11조 (면책 조항)</h2>
+  <ol>
+    <li>리딩 결과는 AI가 생성한 엔터테인먼트 목적의 콘텐츠이며, 의학적·법률적·재정적 전문 조언이 아닙니다.</li>
+    <li>이용자가 리딩 결과에 기반하여 내린 결정에 대해 회사는 책임을 지지 않습니다.</li>
+    <li>이용자의 귀책 사유로 발생한 손해에 대해 회사는 책임을 지지 않습니다.</li>
+  </ol>
 
-        <h2>제13조 (문의)</h2>
-        <p>본 약관에 대한 문의사항이 있으시면 아래로 연락해 주세요.</p>
-        <ul>
-            <li>이메일: <strong>justinit.service@gmail.com</strong></li>
-        </ul>
+  <h2>제12조 (회원 탈퇴 및 자격 상실)</h2>
+  <ol>
+    <li>이용자는 앱 내 설정에서 언제든지 회원 탈퇴를 할 수 있습니다.</li>
+    <li>탈퇴 시 이용자의 리딩 기록 및 개인정보는 즉시 삭제됩니다. 단, 법령에 따라 보관이 필요한 정보는 해당 기간 동안 보관 후 삭제합니다.</li>
+    <li>탈퇴 시 미사용 별빛은 소멸되며 환불되지 않습니다.</li>
+  </ol>
 
-        <div class="footer">
-            <p>&copy; 2026 Still Left. All rights reserved.</p>
-        </div>
-    </div>
+  <h2>제13조 (저작권 및 지적재산권)</h2>
+  <ol>
+    <li>서비스에 포함된 디자인, 텍스트, 이미지, 카드 아트워크 등 일체의 콘텐츠에 대한 저작권은 회사에 귀속됩니다.</li>
+    <li>이용자가 서비스를 통해 생성한 리딩 결과의 개인적 이용은 허용되나, 상업적 이용·무단 배포는 금지됩니다.</li>
+  </ol>
+
+  <h2>제14조 (분쟁 해결)</h2>
+  <ol>
+    <li>본 약관에 관한 분쟁은 대한민국 법률을 준거법으로 합니다.</li>
+    <li>서비스 이용과 관련한 분쟁이 발생할 경우 회사의 소재지를 관할하는 법원을 관할 법원으로 합니다.</li>
+  </ol>
+
+  <h2>제15조 (기타)</h2>
+  <p>본 약관에 명시되지 않은 사항은 관련 법령 및 상관례에 따릅니다.</p>
+
+  <p style="margin-top: 32px; color: var(--text-dim);">본 약관은 2026년 3월 11일부터 시행됩니다.</p>
+</div>
+
+<footer>
+  <p>Just Init 대표 최정심 | 사업자등록번호 524-44-01023<br>
+    이메일 : justinit.service@gmail.com | 번호 : 010-6822-9802<br>
+    &copy; 2026 Just Init. All rights reserved.</p>
+</footer>
+
 </body>
 </html>

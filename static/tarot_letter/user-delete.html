@@ -1,66 +1,253 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>계정 삭제 요청 - 내 마음속 사직서 (Unsubmitted)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box}
-        :root{--bg:#111010;--accent:#e8a992;--text:#f5f0eb;--text2:#c4bab2;--text3:#8a807a;--border:rgba(255,255,255,0.06)}
-        body{background:var(--bg);color:var(--text2);font-family:'Noto Sans KR',sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
-
-        nav{padding:20px 48px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border)}
-        .nav-logo{font-family:'Noto Sans KR','Playfair Display',serif;font-size:1.3rem;font-style:italic;color:var(--accent);text-decoration:none}
-        .nav-back{color:var(--text3);text-decoration:none;font-size:0.85rem;transition:color 0.3s}
-        .nav-back:hover{color:var(--accent)}
-
-        main{flex:1;display:flex;align-items:center;justify-content:center;padding:48px 24px}
-        .card{text-align:center;max-width:480px}
-        .page-label{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;font-weight:500}
-        h1{font-family:'Noto Sans KR','Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--text);margin-bottom:16px;letter-spacing:-0.02em}
-        .desc{font-size:0.92rem;font-weight:300;line-height:1.8;margin-bottom:36px}
-        .contact{background:rgba(232,169,146,0.06);border:1px solid rgba(232,169,146,0.12);border-radius:16px;padding:28px 32px;font-size:0.95rem;line-height:2}
-        .contact-row{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
-        .contact-label{color:var(--text3);font-size:0.82rem;font-weight:400}
-        .contact-value{color:var(--text);font-weight:500}
-        .contact-value a{color:var(--accent);text-decoration:none;transition:opacity 0.3s}
-        .contact-value a:hover{opacity:0.7}
-        .divider{color:var(--text3);margin:0 4px}
-
-        footer{padding:32px 48px;border-top:1px solid var(--border);text-align:center;font-size:0.75rem;color:var(--text3)}
-
-        @media(max-width:640px){
-          nav{padding:16px 20px}
-          h1{font-size:1.6rem}
-          .contact{padding:20px}
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>계정 삭제 요청 — 타로 레터</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0D1127;
+      --navy-light: #151A36;
+      --navy-card: #1A1F3D;
+      --gold: #C5A55A;
+      --gold-light: #E0CC8A;
+      --text: #E8E4DC;
+      --text-dim: #9A9689;
+      --serif: 'Noto Serif KR', serif;
+      --sans: 'Noto Sans KR', sans-serif;
+      --red: #E05555;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--navy);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.8;
+    }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 24px;
+      border-bottom: 1px solid rgba(197,165,90,0.1);
+    }
+    .top-bar a {
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .top-bar a:hover { text-decoration: underline; }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+    h1 {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .app-name {
+      color: var(--text-dim);
+      font-size: 0.95rem;
+      margin-bottom: 48px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-top: 40px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(197,165,90,0.15);
+    }
+    p, li {
+      font-size: 0.92rem;
+      color: var(--text);
+      font-weight: 300;
+      margin-bottom: 8px;
+    }
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    ol li { margin-bottom: 10px; }
+    li { margin-bottom: 4px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.88rem;
+    }
+    th, td {
+      border: 1px solid rgba(197,165,90,0.15);
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 300;
+    }
+    th {
+      background: var(--navy-card);
+      color: var(--gold-light);
+      font-weight: 500;
+    }
+    .step-box {
+      background: var(--navy-card);
+      border: 1px solid rgba(197,165,90,0.15);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+    .step-box ol {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+    .step-box li {
+      font-size: 0.95rem;
+      font-weight: 400;
+    }
+    .warning-box {
+      background: rgba(224,85,85,0.08);
+      border: 1px solid rgba(224,85,85,0.25);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .warning-box p {
+      color: #F0A0A0;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    .email-link {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .email-link:hover { text-decoration: underline; }
+    .badge {
+      display: inline-block;
+      background: rgba(197,165,90,0.12);
+      color: var(--gold-light);
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .badge-red {
+      background: rgba(224,85,85,0.12);
+      color: var(--red);
+    }
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid rgba(197,165,90,0.1);
+      color: var(--text-dim);
+      font-size: 0.8rem;
+    }
+  </style>
 </head>
 <body>
 
-<nav>
-    <a href="index" class="nav-logo">Unsubmitted</a>
-    <a href="index" class="nav-back">&larr; 돌아가기</a>
+<nav class="top-bar">
+  <a href="index.html">&larr; 홈으로</a>
 </nav>
 
-<main>
-    <div class="card">
-        <div class="page-label">Account Deletion</div>
-        <h1>계정 및 데이터 삭제 요청</h1>
-        <p class="desc">데이터 삭제를 원하시면 아래 연락처로 요청해주세요.<br>확인 후 모든 데이터를 안전하게 삭제해드립니다.</p>
-        <div class="contact">
-            <div class="contact-row">
-                <span class="contact-label">이메일</span>
-                <span class="contact-value"><a href="mailto:justinit.service@gmail.com">justinit.service@gmail.com</a></span>
-                <span class="divider">|</span>
-                <span class="contact-label">연락처</span>
-                <span class="contact-value"><a href="tel:010-6822-9802">010-6822-9802</a></span>
-            </div>
-        </div>
-    </div>
-</main>
+<div class="container">
+  <h1>계정 및 데이터 삭제 요청</h1>
+  <p class="app-name">타로 레터 (Tarot Letter) — Just Init</p>
 
-<footer>© 2026 Unsubmitted. All rights reserved.</footer>
+  <h2>1. 앱 내에서 직접 삭제하기</h2>
+  <p>가장 빠른 방법입니다. 앱에서 바로 계정을 삭제할 수 있습니다.</p>
+
+  <div class="step-box">
+    <ol>
+      <li>타로 레터 앱을 열고 로그인합니다.</li>
+      <li>홈 화면 우측 상단의 <strong>설정(⚙️)</strong> 아이콘을 탭합니다.</li>
+      <li>화면 하단 <strong>계정</strong> 섹션에서 <strong>"회원 탈퇴"</strong>를 탭합니다.</li>
+      <li>안내 메시지를 확인한 후 <strong>"탈퇴하기"</strong>를 탭합니다.</li>
+      <li>보안을 위해 본인 확인(Apple/Google 재인증)이 진행됩니다.</li>
+      <li>완료되면 모든 데이터가 삭제되고 로그인 화면으로 이동합니다.</li>
+    </ol>
+  </div>
+
+  <h2>2. 이메일로 삭제 요청하기</h2>
+  <p>앱에 접근할 수 없는 경우, 아래 이메일로 삭제를 요청할 수 있습니다.</p>
+  <p><strong>이메일:</strong> <a class="email-link" href="mailto:justinit.service@gmail.com">justinit.service@gmail.com</a></p>
+  <p>요청 시 아래 정보를 포함해 주세요:</p>
+  <ul>
+    <li>제목: <strong>계정 삭제 요청</strong></li>
+    <li>가입에 사용한 소셜 계정 정보 (Apple 또는 Google 이메일)</li>
+    <li>앱에 등록된 닉네임 (기억나는 경우)</li>
+  </ul>
+  <p>요청 접수 후 <strong>영업일 기준 3일 이내</strong>에 처리되며, 완료 시 이메일로 안내드립니다.</p>
+
+  <h2>3. 삭제되는 데이터</h2>
+  <p>계정 삭제 시 아래 데이터가 <strong>즉시 영구 삭제</strong>됩니다.</p>
+
+  <table>
+    <tr>
+      <th>데이터 유형</th>
+      <th>처리 방식</th>
+      <th>삭제 시점</th>
+    </tr>
+    <tr>
+      <td>계정 정보 (UID, 닉네임)</td>
+      <td>영구 삭제 <span class="badge badge-red">복구 불가</span></td>
+      <td>즉시</td>
+    </tr>
+    <tr>
+      <td>타로 리딩 기록 (고민, 카드, 결과)</td>
+      <td>영구 삭제 <span class="badge badge-red">복구 불가</span></td>
+      <td>즉시</td>
+    </tr>
+    <tr>
+      <td>오늘의 카드 기록</td>
+      <td>영구 삭제 <span class="badge badge-red">복구 불가</span></td>
+      <td>즉시</td>
+    </tr>
+    <tr>
+      <td>별빛 잔액 (프리미엄 재화)</td>
+      <td>영구 삭제 <span class="badge badge-red">복구 불가</span></td>
+      <td>즉시</td>
+    </tr>
+    <tr>
+      <td>알림 설정 등 앱 설정</td>
+      <td>영구 삭제</td>
+      <td>즉시</td>
+    </tr>
+    <tr>
+      <td>결제 영수증 기록</td>
+      <td>보관 후 삭제 <span class="badge">법적 보관</span></td>
+      <td>전자상거래법에 따라 5년 보관 후 파기</td>
+    </tr>
+    <tr>
+      <td>접속 로그</td>
+      <td>보관 후 삭제 <span class="badge">법적 보관</span></td>
+      <td>통신비밀보호법에 따라 3개월 보관 후 파기</td>
+    </tr>
+  </table>
+
+  <div class="warning-box">
+    <p>⚠️ 삭제된 계정과 데이터는 복구할 수 없습니다. 구독 중인 경우, 계정 삭제 전에 App Store 또는 Google Play에서 구독을 먼저 해지해 주세요. 계정을 삭제해도 스토어 구독은 자동으로 해지되지 않습니다.</p>
+  </div>
+
+  <h2>4. 문의</h2>
+  <p>계정 삭제와 관련하여 궁금한 점이 있으시면 아래로 연락해 주세요.</p>
+  <ul>
+    <li><strong>이메일:</strong> <a class="email-link" href="mailto:justinit.service@gmail.com">justinit.service@gmail.com</a></li>
+    <li><strong>개인정보 보호책임자:</strong> 최정심 (대표)</li>
+  </ul>
+</div>
+
+<footer>
+  <p>Just Init 대표 최정심 | 사업자등록번호 524-44-01023<br>
+    이메일 : justinit.service@gmail.com | 번호 : 010-6822-9802<br>
+    &copy; 2026 Just Init. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
