@@ -25,6 +25,43 @@
       color: var(--text);
       font-family: var(--sans);
       line-height: 1.8;
+      padding-top: 48px;
+    }
+    .lang-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: flex-end;
+      gap: 4px;
+      padding: 12px 24px;
+      background: rgba(13,17,39,0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(197,165,90,0.08);
+    }
+    .lang-btn {
+      padding: 6px 14px;
+      border: 1px solid rgba(197,165,90,0.25);
+      border-radius: 8px;
+      background: transparent;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: var(--sans);
+    }
+    .lang-btn.active {
+      background: var(--gold);
+      color: var(--navy);
+      border-color: var(--gold);
+      font-weight: 700;
+    }
+    .lang-btn:hover:not(.active) {
+      border-color: var(--gold);
+      color: var(--gold);
     }
     .top-bar {
       display: flex;
@@ -103,137 +140,376 @@
 </head>
 <body>
 
+<nav class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('ko')">KR</button>
+  <button class="lang-btn" onclick="setLang('en')">EN</button>
+  <button class="lang-btn" onclick="setLang('ja')">JP</button>
+</nav>
+
 <nav class="top-bar">
-  <a href="index.html">&larr; 홈으로</a>
+  <a href="index.html" data-i18n="nav-home">&larr; 홈으로</a>
 </nav>
 
 <div class="container">
-  <h1>이용약관</h1>
-  <p class="date">시행일: 2026년 3월 11일</p>
+  <h1 data-i18n="title">이용약관</h1>
+  <p class="date" data-i18n="date">시행일: 2026년 3월 11일</p>
 
-  <h2>제1조 (목적)</h2>
-  <p>본 약관은 Just Init(이하 "회사")이 제공하는 타로레터 모바일 애플리케이션(이하 "서비스")의 이용 조건 및 절차, 회사와 이용자 간의 권리·의무·책임사항을 규정함을 목적으로 합니다.</p>
+  <h2 data-i18n="art1-title">제1조 (목적)</h2>
+  <p data-i18n="art1-body">본 약관은 Just Init(이하 "회사")이 제공하는 타로레터 모바일 애플리케이션(이하 "서비스")의 이용 조건 및 절차, 회사와 이용자 간의 권리·의무·책임사항을 규정함을 목적으로 합니다.</p>
 
-  <h2>제2조 (정의)</h2>
+  <h2 data-i18n="art2-title">제2조 (정의)</h2>
   <ol>
-    <li><strong>서비스</strong>: 회사가 "타로레터" 앱을 통해 제공하는 타로 리딩, 데일리 시그널 및 관련 부가 기능 일체</li>
-    <li><strong>이용자</strong>: 본 약관에 동의하고 서비스를 이용하는 자</li>
-    <li><strong>별빛</strong>: 서비스 내 유료 리딩에 사용되는 인앱 재화</li>
-    <li><strong>구독</strong>: 월간 정기결제를 통해 별빛을 지급받는 유료 이용 방식</li>
-    <li><strong>리딩</strong>: 이용자의 고민과 선택한 카드를 기반으로 AI가 생성한 타로 편지</li>
+    <li data-i18n="art2-1"><strong>서비스</strong>: 회사가 "타로레터" 앱을 통해 제공하는 타로 리딩, 데일리 시그널 및 관련 부가 기능 일체</li>
+    <li data-i18n="art2-2"><strong>이용자</strong>: 본 약관에 동의하고 서비스를 이용하는 자</li>
+    <li data-i18n="art2-3"><strong>별빛</strong>: 서비스 내 유료 리딩에 사용되는 인앱 재화</li>
+    <li data-i18n="art2-4"><strong>구독</strong>: 월간 정기결제를 통해 별빛을 지급받는 유료 이용 방식</li>
+    <li data-i18n="art2-5"><strong>리딩</strong>: 이용자의 고민과 선택한 카드를 기반으로 AI가 생성한 타로 편지</li>
   </ol>
 
-  <h2>제3조 (약관의 효력 및 변경)</h2>
+  <h2 data-i18n="art3-title">제3조 (약관의 효력 및 변경)</h2>
   <ol>
-    <li>본 약관은 서비스 내 게시하거나 기타 방법으로 이용자에게 공지함으로써 효력이 발생합니다.</li>
-    <li>회사는 관련 법령에 위배되지 않는 범위 내에서 약관을 변경할 수 있으며, 변경 시 적용일 7일 전부터 앱 내 공지합니다.</li>
-    <li>이용자가 변경된 약관에 동의하지 않는 경우 서비스 이용을 중단하고 탈퇴할 수 있습니다.</li>
+    <li data-i18n="art3-1">본 약관은 서비스 내 게시하거나 기타 방법으로 이용자에게 공지함으로써 효력이 발생합니다.</li>
+    <li data-i18n="art3-2">회사는 관련 법령에 위배되지 않는 범위 내에서 약관을 변경할 수 있으며, 변경 시 적용일 7일 전부터 앱 내 공지합니다.</li>
+    <li data-i18n="art3-3">이용자가 변경된 약관에 동의하지 않는 경우 서비스 이용을 중단하고 탈퇴할 수 있습니다.</li>
   </ol>
 
-  <h2>제4조 (회원가입 및 계정)</h2>
+  <h2 data-i18n="art4-title">제4조 (회원가입 및 계정)</h2>
   <ol>
-    <li>이용자는 소셜 로그인(Apple, Google)을 통해 회원가입할 수 있습니다.</li>
-    <li>이용자는 가입 시 닉네임을 설정하며, 허위 정보 입력에 대한 책임은 이용자에게 있습니다.</li>
-    <li>회사는 다음 각 호에 해당하는 경우 가입을 거부하거나 사후에 이용을 제한할 수 있습니다.
-      <ul>
-        <li>타인의 정보를 도용한 경우</li>
-        <li>서비스 운영을 방해하는 행위가 확인된 경우</li>
-        <li>관련 법령 또는 본 약관을 위반한 경우</li>
-      </ul>
-    </li>
+    <li data-i18n="art4-1">이용자는 소셜 로그인(Apple, Google)을 통해 회원가입할 수 있습니다.</li>
+    <li data-i18n="art4-2">이용자는 가입 시 닉네임을 설정하며, 허위 정보 입력에 대한 책임은 이용자에게 있습니다.</li>
+    <li data-i18n="art4-3">회사는 다음 각 호에 해당하는 경우 가입을 거부하거나 사후에 이용을 제한할 수 있습니다.<ul><li>타인의 정보를 도용한 경우</li><li>서비스 운영을 방해하는 행위가 확인된 경우</li><li>관련 법령 또는 본 약관을 위반한 경우</li></ul></li>
   </ol>
 
-  <h2>제5조 (서비스의 제공)</h2>
+  <h2 data-i18n="art5-title">제5조 (서비스의 제공)</h2>
   <ol>
-    <li>회사는 다음과 같은 서비스를 제공합니다.
-      <ul>
-        <li>고민 기반 3카드 타로 리딩(편지)</li>
-        <li>오늘의 원카드(데일리 시그널)</li>
-        <li>리딩 히스토리 보관 및 열람</li>
-        <li>기타 회사가 추가 개발하는 서비스</li>
-      </ul>
-    </li>
-    <li>서비스는 연중무휴 24시간 제공을 원칙으로 하되, 시스템 점검 등의 사유로 일시 중단될 수 있습니다.</li>
-    <li>리딩 결과는 AI가 생성한 엔터테인먼트 콘텐츠이며, 전문적인 상담·진단·조언을 대체하지 않습니다.</li>
+    <li data-i18n="art5-1">회사는 다음과 같은 서비스를 제공합니다.<ul><li>고민 기반 3카드 타로 리딩(편지)</li><li>오늘의 원카드(데일리 시그널)</li><li>리딩 히스토리 보관 및 열람</li><li>기타 회사가 추가 개발하는 서비스</li></ul></li>
+    <li data-i18n="art5-2">서비스는 연중무휴 24시간 제공을 원칙으로 하되, 시스템 점검 등의 사유로 일시 중단될 수 있습니다.</li>
+    <li data-i18n="art5-3">리딩 결과는 AI가 생성한 엔터테인먼트 콘텐츠이며, 전문적인 상담·진단·조언을 대체하지 않습니다.</li>
   </ol>
 
-  <h2>제6조 (유료 서비스 및 결제)</h2>
+  <h2 data-i18n="art6-title">제6조 (유료 서비스 및 결제)</h2>
   <ol>
-    <li>유료 서비스는 별빛(인앱 재화) 또는 구독을 통해 이용할 수 있습니다.</li>
-    <li>결제는 Apple App Store 또는 Google Play Store의 인앱 결제 시스템을 통해 처리됩니다.</li>
-    <li>구독은 이용자가 직접 해지하지 않는 한 매월 자동 갱신됩니다.</li>
-    <li>구독 해지는 각 스토어의 구독 관리 메뉴에서 가능합니다.</li>
+    <li data-i18n="art6-1">유료 서비스는 별빛(인앱 재화) 또는 구독을 통해 이용할 수 있습니다.</li>
+    <li data-i18n="art6-2">결제는 Apple App Store 또는 Google Play Store의 인앱 결제 시스템을 통해 처리됩니다.</li>
+    <li data-i18n="art6-3">구독은 이용자가 직접 해지하지 않는 한 매월 자동 갱신됩니다.</li>
+    <li data-i18n="art6-4">구독 해지는 각 스토어의 구독 관리 메뉴에서 가능합니다.</li>
   </ol>
 
-  <h2>제7조 (환불 정책)</h2>
+  <h2 data-i18n="art7-title">제7조 (환불 정책)</h2>
   <ol>
-    <li>미사용 별빛의 환불은 각 스토어의 환불 정책에 따릅니다.</li>
-    <li>이미 사용(리딩 생성 요청)된 별빛은 환불이 불가합니다.</li>
-    <li>구독 환불은 Apple 및 Google의 구독 환불 정책에 따릅니다.</li>
-    <li>회사의 귀책 사유로 서비스가 제공되지 못한 경우, 해당 별빛을 복구하거나 환불합니다.</li>
+    <li data-i18n="art7-1">미사용 별빛의 환불은 각 스토어의 환불 정책에 따릅니다.</li>
+    <li data-i18n="art7-2">이미 사용(리딩 생성 요청)된 별빛은 환불이 불가합니다.</li>
+    <li data-i18n="art7-3">구독 환불은 Apple 및 Google의 구독 환불 정책에 따릅니다.</li>
+    <li data-i18n="art7-4">회사의 귀책 사유로 서비스가 제공되지 못한 경우, 해당 별빛을 복구하거나 환불합니다.</li>
   </ol>
 
-  <h2>제8조 (이용자의 의무)</h2>
-  <p>이용자는 다음 행위를 하여서는 안 됩니다.</p>
+  <h2 data-i18n="art8-title">제8조 (이용자의 의무)</h2>
+  <p data-i18n="art8-intro">이용자는 다음 행위를 하여서는 안 됩니다.</p>
   <ul>
-    <li>타인의 개인정보를 도용하거나 허위 정보를 등록하는 행위</li>
-    <li>서비스를 이용하여 얻은 정보를 회사의 사전 승낙 없이 상업적으로 이용하는 행위</li>
-    <li>서비스의 운영을 방해하거나 시스템에 부하를 주는 행위</li>
-    <li>욕설, 혐오 표현 등 반사회적 내용을 입력하는 행위</li>
-    <li>기타 관련 법령 또는 공공질서에 반하는 행위</li>
+    <li data-i18n="art8-1">타인의 개인정보를 도용하거나 허위 정보를 등록하는 행위</li>
+    <li data-i18n="art8-2">서비스를 이용하여 얻은 정보를 회사의 사전 승낙 없이 상업적으로 이용하는 행위</li>
+    <li data-i18n="art8-3">서비스의 운영을 방해하거나 시스템에 부하를 주는 행위</li>
+    <li data-i18n="art8-4">욕설, 혐오 표현 등 반사회적 내용을 입력하는 행위</li>
+    <li data-i18n="art8-5">기타 관련 법령 또는 공공질서에 반하는 행위</li>
   </ul>
 
-  <h2>제9조 (회사의 의무)</h2>
+  <h2 data-i18n="art9-title">제9조 (회사의 의무)</h2>
   <ol>
-    <li>회사는 관련 법령과 본 약관이 정하는 바에 따라 지속적이고 안정적인 서비스를 제공하기 위해 노력합니다.</li>
-    <li>회사는 이용자의 개인정보를 보호하기 위해 개인정보 처리방침을 공시하고 이를 준수합니다.</li>
-    <li>서비스 개선을 위한 이용자의 의견이나 불만이 정당하다고 인정될 경우 적극 반영합니다.</li>
+    <li data-i18n="art9-1">회사는 관련 법령과 본 약관이 정하는 바에 따라 지속적이고 안정적인 서비스를 제공하기 위해 노력합니다.</li>
+    <li data-i18n="art9-2">회사는 이용자의 개인정보를 보호하기 위해 개인정보 처리방침을 공시하고 이를 준수합니다.</li>
+    <li data-i18n="art9-3">서비스 개선을 위한 이용자의 의견이나 불만이 정당하다고 인정될 경우 적극 반영합니다.</li>
   </ol>
 
-  <h2>제10조 (서비스의 변경 및 중단)</h2>
+  <h2 data-i18n="art10-title">제10조 (서비스의 변경 및 중단)</h2>
   <ol>
-    <li>회사는 운영상 또는 기술상 필요에 따라 서비스 전부 또는 일부를 변경할 수 있습니다.</li>
-    <li>서비스를 종료하는 경우 30일 전에 앱 내 공지합니다.</li>
-    <li>천재지변, 시스템 장애 등 불가항력으로 서비스가 중단된 경우 회사는 이에 대해 책임을 지지 않습니다.</li>
+    <li data-i18n="art10-1">회사는 운영상 또는 기술상 필요에 따라 서비스 전부 또는 일부를 변경할 수 있습니다.</li>
+    <li data-i18n="art10-2">서비스를 종료하는 경우 30일 전에 앱 내 공지합니다.</li>
+    <li data-i18n="art10-3">천재지변, 시스템 장애 등 불가항력으로 서비스가 중단된 경우 회사는 이에 대해 책임을 지지 않습니다.</li>
   </ol>
 
-  <h2>제11조 (면책 조항)</h2>
+  <h2 data-i18n="art11-title">제11조 (면책 조항)</h2>
   <ol>
-    <li>리딩 결과는 AI가 생성한 엔터테인먼트 목적의 콘텐츠이며, 의학적·법률적·재정적 전문 조언이 아닙니다.</li>
-    <li>이용자가 리딩 결과에 기반하여 내린 결정에 대해 회사는 책임을 지지 않습니다.</li>
-    <li>이용자의 귀책 사유로 발생한 손해에 대해 회사는 책임을 지지 않습니다.</li>
+    <li data-i18n="art11-1">리딩 결과는 AI가 생성한 엔터테인먼트 목적의 콘텐츠이며, 의학적·법률적·재정적 전문 조언이 아닙니다.</li>
+    <li data-i18n="art11-2">이용자가 리딩 결과에 기반하여 내린 결정에 대해 회사는 책임을 지지 않습니다.</li>
+    <li data-i18n="art11-3">이용자의 귀책 사유로 발생한 손해에 대해 회사는 책임을 지지 않습니다.</li>
   </ol>
 
-  <h2>제12조 (회원 탈퇴 및 자격 상실)</h2>
+  <h2 data-i18n="art12-title">제12조 (회원 탈퇴 및 자격 상실)</h2>
   <ol>
-    <li>이용자는 앱 내 설정에서 언제든지 회원 탈퇴를 할 수 있습니다.</li>
-    <li>탈퇴 시 이용자의 리딩 기록 및 개인정보는 즉시 삭제됩니다. 단, 법령에 따라 보관이 필요한 정보는 해당 기간 동안 보관 후 삭제합니다.</li>
-    <li>탈퇴 시 미사용 별빛은 소멸되며 환불되지 않습니다.</li>
+    <li data-i18n="art12-1">이용자는 앱 내 설정에서 언제든지 회원 탈퇴를 할 수 있습니다.</li>
+    <li data-i18n="art12-2">탈퇴 시 이용자의 리딩 기록 및 개인정보는 즉시 삭제됩니다. 단, 법령에 따라 보관이 필요한 정보는 해당 기간 동안 보관 후 삭제합니다.</li>
+    <li data-i18n="art12-3">탈퇴 시 미사용 별빛은 소멸되며 환불되지 않습니다.</li>
   </ol>
 
-  <h2>제13조 (저작권 및 지적재산권)</h2>
+  <h2 data-i18n="art13-title">제13조 (저작권 및 지적재산권)</h2>
   <ol>
-    <li>서비스에 포함된 디자인, 텍스트, 이미지, 카드 아트워크 등 일체의 콘텐츠에 대한 저작권은 회사에 귀속됩니다.</li>
-    <li>이용자가 서비스를 통해 생성한 리딩 결과의 개인적 이용은 허용되나, 상업적 이용·무단 배포는 금지됩니다.</li>
+    <li data-i18n="art13-1">서비스에 포함된 디자인, 텍스트, 이미지, 카드 아트워크 등 일체의 콘텐츠에 대한 저작권은 회사에 귀속됩니다.</li>
+    <li data-i18n="art13-2">이용자가 서비스를 통해 생성한 리딩 결과의 개인적 이용은 허용되나, 상업적 이용·무단 배포는 금지됩니다.</li>
   </ol>
 
-  <h2>제14조 (분쟁 해결)</h2>
+  <h2 data-i18n="art14-title">제14조 (분쟁 해결)</h2>
   <ol>
-    <li>본 약관에 관한 분쟁은 대한민국 법률을 준거법으로 합니다.</li>
-    <li>서비스 이용과 관련한 분쟁이 발생할 경우 회사의 소재지를 관할하는 법원을 관할 법원으로 합니다.</li>
+    <li data-i18n="art14-1">본 약관에 관한 분쟁은 대한민국 법률을 준거법으로 합니다.</li>
+    <li data-i18n="art14-2">서비스 이용과 관련한 분쟁이 발생할 경우 회사의 소재지를 관할하는 법원을 관할 법원으로 합니다.</li>
   </ol>
 
-  <h2>제15조 (기타)</h2>
-  <p>본 약관에 명시되지 않은 사항은 관련 법령 및 상관례에 따릅니다.</p>
+  <h2 data-i18n="art15-title">제15조 (기타)</h2>
+  <p data-i18n="art15-body">본 약관에 명시되지 않은 사항은 관련 법령 및 상관례에 따릅니다.</p>
 
-  <p style="margin-top: 32px; color: var(--text-dim);">본 약관은 2026년 3월 11일부터 시행됩니다.</p>
+  <p style="margin-top: 32px; color: var(--text-dim);" data-i18n="effective">본 약관은 2026년 3월 11일부터 시행됩니다.</p>
 </div>
 
 <footer>
-  <p>Just Init 대표 최정심 | 사업자등록번호 524-44-01023<br>
+  <p style="margin-bottom:12px;">
+    <a href="index.html" style="color:var(--text-dim);text-decoration:none;margin:0 8px;" data-i18n="footer-home">홈으로</a> |
+    <a href="privacy.html" style="color:var(--text-dim);text-decoration:none;margin:0 8px;" data-i18n="footer-privacy">개인정보 처리방침</a> |
+    <a href="terms.html" style="color:var(--text-dim);text-decoration:none;margin:0 8px;" data-i18n="footer-terms">이용약관</a>
+  </p>
+  <p data-i18n="footer-info">Just Init 대표 최정심 | 사업자등록번호 524-44-01023<br>
     이메일 : justinit.service@gmail.com | 번호 : 010-6822-9802<br>
     &copy; 2026 Just Init. All rights reserved.</p>
 </footer>
 
+<script>
+// ── i18n data ──
+const i18n = {
+  ko: {
+    'nav-home': '&larr; 홈으로',
+    'title': '이용약관',
+    'date': '시행일: 2026년 3월 11일',
+    'art1-title': '제1조 (목적)',
+    'art1-body': '본 약관은 Just Init(이하 "회사")이 제공하는 타로레터 모바일 애플리케이션(이하 "서비스")의 이용 조건 및 절차, 회사와 이용자 간의 권리·의무·책임사항을 규정함을 목적으로 합니다.',
+    'art2-title': '제2조 (정의)',
+    'art2-1': '<strong>서비스</strong>: 회사가 "타로레터" 앱을 통해 제공하는 타로 리딩, 데일리 시그널 및 관련 부가 기능 일체',
+    'art2-2': '<strong>이용자</strong>: 본 약관에 동의하고 서비스를 이용하는 자',
+    'art2-3': '<strong>별빛</strong>: 서비스 내 유료 리딩에 사용되는 인앱 재화',
+    'art2-4': '<strong>구독</strong>: 월간 정기결제를 통해 별빛을 지급받는 유료 이용 방식',
+    'art2-5': '<strong>리딩</strong>: 이용자의 고민과 선택한 카드를 기반으로 AI가 생성한 타로 편지',
+    'art3-title': '제3조 (약관의 효력 및 변경)',
+    'art3-1': '본 약관은 서비스 내 게시하거나 기타 방법으로 이용자에게 공지함으로써 효력이 발생합니다.',
+    'art3-2': '회사는 관련 법령에 위배되지 않는 범위 내에서 약관을 변경할 수 있으며, 변경 시 적용일 7일 전부터 앱 내 공지합니다.',
+    'art3-3': '이용자가 변경된 약관에 동의하지 않는 경우 서비스 이용을 중단하고 탈퇴할 수 있습니다.',
+    'art4-title': '제4조 (회원가입 및 계정)',
+    'art4-1': '이용자는 소셜 로그인(Apple, Google)을 통해 회원가입할 수 있습니다.',
+    'art4-2': '이용자는 가입 시 닉네임을 설정하며, 허위 정보 입력에 대한 책임은 이용자에게 있습니다.',
+    'art4-3': '회사는 다음 각 호에 해당하는 경우 가입을 거부하거나 사후에 이용을 제한할 수 있습니다.<ul><li>타인의 정보를 도용한 경우</li><li>서비스 운영을 방해하는 행위가 확인된 경우</li><li>관련 법령 또는 본 약관을 위반한 경우</li></ul>',
+    'art5-title': '제5조 (서비스의 제공)',
+    'art5-1': '회사는 다음과 같은 서비스를 제공합니다.<ul><li>고민 기반 3카드 타로 리딩(편지)</li><li>오늘의 원카드(데일리 시그널)</li><li>리딩 히스토리 보관 및 열람</li><li>기타 회사가 추가 개발하는 서비스</li></ul>',
+    'art5-2': '서비스는 연중무휴 24시간 제공을 원칙으로 하되, 시스템 점검 등의 사유로 일시 중단될 수 있습니다.',
+    'art5-3': '리딩 결과는 AI가 생성한 엔터테인먼트 콘텐츠이며, 전문적인 상담·진단·조언을 대체하지 않습니다.',
+    'art6-title': '제6조 (유료 서비스 및 결제)',
+    'art6-1': '유료 서비스는 별빛(인앱 재화) 또는 구독을 통해 이용할 수 있습니다.',
+    'art6-2': '결제는 Apple App Store 또는 Google Play Store의 인앱 결제 시스템을 통해 처리됩니다.',
+    'art6-3': '구독은 이용자가 직접 해지하지 않는 한 매월 자동 갱신됩니다.',
+    'art6-4': '구독 해지는 각 스토어의 구독 관리 메뉴에서 가능합니다.',
+    'art7-title': '제7조 (환불 정책)',
+    'art7-1': '미사용 별빛의 환불은 각 스토어의 환불 정책에 따릅니다.',
+    'art7-2': '이미 사용(리딩 생성 요청)된 별빛은 환불이 불가합니다.',
+    'art7-3': '구독 환불은 Apple 및 Google의 구독 환불 정책에 따릅니다.',
+    'art7-4': '회사의 귀책 사유로 서비스가 제공되지 못한 경우, 해당 별빛을 복구하거나 환불합니다.',
+    'art8-title': '제8조 (이용자의 의무)',
+    'art8-intro': '이용자는 다음 행위를 하여서는 안 됩니다.',
+    'art8-1': '타인의 개인정보를 도용하거나 허위 정보를 등록하는 행위',
+    'art8-2': '서비스를 이용하여 얻은 정보를 회사의 사전 승낙 없이 상업적으로 이용하는 행위',
+    'art8-3': '서비스의 운영을 방해하거나 시스템에 부하를 주는 행위',
+    'art8-4': '욕설, 혐오 표현 등 반사회적 내용을 입력하는 행위',
+    'art8-5': '기타 관련 법령 또는 공공질서에 반하는 행위',
+    'art9-title': '제9조 (회사의 의무)',
+    'art9-1': '회사는 관련 법령과 본 약관이 정하는 바에 따라 지속적이고 안정적인 서비스를 제공하기 위해 노력합니다.',
+    'art9-2': '회사는 이용자의 개인정보를 보호하기 위해 개인정보 처리방침을 공시하고 이를 준수합니다.',
+    'art9-3': '서비스 개선을 위한 이용자의 의견이나 불만이 정당하다고 인정될 경우 적극 반영합니다.',
+    'art10-title': '제10조 (서비스의 변경 및 중단)',
+    'art10-1': '회사는 운영상 또는 기술상 필요에 따라 서비스 전부 또는 일부를 변경할 수 있습니다.',
+    'art10-2': '서비스를 종료하는 경우 30일 전에 앱 내 공지합니다.',
+    'art10-3': '천재지변, 시스템 장애 등 불가항력으로 서비스가 중단된 경우 회사는 이에 대해 책임을 지지 않습니다.',
+    'art11-title': '제11조 (면책 조항)',
+    'art11-1': '리딩 결과는 AI가 생성한 엔터테인먼트 목적의 콘텐츠이며, 의학적·법률적·재정적 전문 조언이 아닙니다.',
+    'art11-2': '이용자가 리딩 결과에 기반하여 내린 결정에 대해 회사는 책임을 지지 않습니다.',
+    'art11-3': '이용자의 귀책 사유로 발생한 손해에 대해 회사는 책임을 지지 않습니다.',
+    'art12-title': '제12조 (회원 탈퇴 및 자격 상실)',
+    'art12-1': '이용자는 앱 내 설정에서 언제든지 회원 탈퇴를 할 수 있습니다.',
+    'art12-2': '탈퇴 시 이용자의 리딩 기록 및 개인정보는 즉시 삭제됩니다. 단, 법령에 따라 보관이 필요한 정보는 해당 기간 동안 보관 후 삭제합니다.',
+    'art12-3': '탈퇴 시 미사용 별빛은 소멸되며 환불되지 않습니다.',
+    'art13-title': '제13조 (저작권 및 지적재산권)',
+    'art13-1': '서비스에 포함된 디자인, 텍스트, 이미지, 카드 아트워크 등 일체의 콘텐츠에 대한 저작권은 회사에 귀속됩니다.',
+    'art13-2': '이용자가 서비스를 통해 생성한 리딩 결과의 개인적 이용은 허용되나, 상업적 이용·무단 배포는 금지됩니다.',
+    'art14-title': '제14조 (분쟁 해결)',
+    'art14-1': '본 약관에 관한 분쟁은 대한민국 법률을 준거법으로 합니다.',
+    'art14-2': '서비스 이용과 관련한 분쟁이 발생할 경우 회사의 소재지를 관할하는 법원을 관할 법원으로 합니다.',
+    'art15-title': '제15조 (기타)',
+    'art15-body': '본 약관에 명시되지 않은 사항은 관련 법령 및 상관례에 따릅니다.',
+    'effective': '본 약관은 2026년 3월 11일부터 시행됩니다.',
+    'footer-home': '홈으로',
+    'footer-privacy': '개인정보 처리방침',
+    'footer-terms': '이용약관',
+    'footer-info': 'Just Init 대표 최정심 | 사업자등록번호 524-44-01023<br>이메일 : justinit.service@gmail.com | 번호 : 010-6822-9802<br>&copy; 2026 Just Init. All rights reserved.',
+  },
+  en: {
+    'nav-home': '&larr; Home',
+    'title': 'Terms of Service',
+    'date': 'Effective: March 11, 2026',
+    'art1-title': 'Article 1 (Purpose)',
+    'art1-body': 'These Terms govern the conditions and procedures for using the Tarot Letter mobile application (the "Service") provided by Just Init (the "Company"), and define the rights, obligations, and responsibilities between the Company and the User.',
+    'art2-title': 'Article 2 (Definitions)',
+    'art2-1': '<strong>Service</strong>: All tarot reading, daily signal, and related features provided by the Company through the "Tarot Letter" app.',
+    'art2-2': '<strong>User</strong>: Any person who agrees to these Terms and uses the Service.',
+    'art2-3': '<strong>Starlight</strong>: In-app currency used for paid readings within the Service.',
+    'art2-4': '<strong>Subscription</strong>: A paid plan that provides Starlight through monthly recurring payments.',
+    'art2-5': '<strong>Reading</strong>: A tarot letter generated by AI based on the User\'s concern and selected cards.',
+    'art3-title': 'Article 3 (Effectiveness and Amendment of Terms)',
+    'art3-1': 'These Terms become effective when posted within the Service or otherwise communicated to Users.',
+    'art3-2': 'The Company may amend these Terms to the extent permitted by applicable laws, and shall notify Users within the app at least 7 days prior to the effective date of any changes.',
+    'art3-3': 'If a User does not agree to the amended Terms, the User may discontinue use of the Service and withdraw their account.',
+    'art4-title': 'Article 4 (Registration and Account)',
+    'art4-1': 'Users may register through social login (Apple, Google).',
+    'art4-2': 'Users shall set a nickname upon registration and are responsible for the accuracy of the information provided.',
+    'art4-3': 'The Company may refuse registration or subsequently restrict use in any of the following cases:<ul><li>Use of another person\'s information</li><li>Acts that interfere with the operation of the Service</li><li>Violation of applicable laws or these Terms</li></ul>',
+    'art5-title': 'Article 5 (Provision of Service)',
+    'art5-1': 'The Company provides the following services:<ul><li>3-card tarot reading (letter) based on your concern</li><li>Daily one-card reading (daily signal)</li><li>Reading history storage and browsing</li><li>Other services additionally developed by the Company</li></ul>',
+    'art5-2': 'The Service is available 24 hours a day, 365 days a year in principle, but may be temporarily suspended for system maintenance or other reasons.',
+    'art5-3': 'Reading results are entertainment content generated by AI and do not replace professional counseling, diagnosis, or advice.',
+    'art6-title': 'Article 6 (Paid Services and Payment)',
+    'art6-1': 'Paid services may be accessed through Starlight (in-app currency) or a subscription.',
+    'art6-2': 'Payments are processed through the in-app purchase systems of the Apple App Store or Google Play Store.',
+    'art6-3': 'Subscriptions are automatically renewed each month unless the User cancels.',
+    'art6-4': 'Subscription cancellation is available through the subscription management menu of each store.',
+    'art7-title': 'Article 7 (Refund Policy)',
+    'art7-1': 'Refunds for unused Starlight are subject to the refund policies of the respective app store.',
+    'art7-2': 'Starlight that has already been used (reading generation requested) is non-refundable.',
+    'art7-3': 'Subscription refunds are subject to the subscription refund policies of Apple and Google.',
+    'art7-4': 'If the Service cannot be provided due to reasons attributable to the Company, the corresponding Starlight shall be restored or refunded.',
+    'art8-title': 'Article 8 (User Obligations)',
+    'art8-intro': 'Users shall not engage in any of the following activities:',
+    'art8-1': 'Misappropriating another person\'s personal information or registering false information.',
+    'art8-2': 'Commercially using information obtained through the Service without the Company\'s prior consent.',
+    'art8-3': 'Interfering with the operation of the Service or imposing excessive load on the system.',
+    'art8-4': 'Entering profanity, hate speech, or other antisocial content.',
+    'art8-5': 'Any other acts that violate applicable laws or public order.',
+    'art9-title': 'Article 9 (Company Obligations)',
+    'art9-1': 'The Company shall endeavor to provide continuous and stable Service in accordance with applicable laws and these Terms.',
+    'art9-2': 'The Company shall publish and comply with a Privacy Policy to protect Users\' personal information.',
+    'art9-3': 'The Company shall actively reflect User opinions or complaints when deemed legitimate for service improvement.',
+    'art10-title': 'Article 10 (Modification and Suspension of Service)',
+    'art10-1': 'The Company may modify all or part of the Service as necessary for operational or technical reasons.',
+    'art10-2': 'If the Service is to be terminated, the Company shall notify Users within the app at least 30 days in advance.',
+    'art10-3': 'The Company shall not be liable for service interruptions caused by force majeure such as natural disasters or system failures.',
+    'art11-title': 'Article 11 (Disclaimer)',
+    'art11-1': 'Reading results are entertainment content generated by AI and do not constitute medical, legal, or financial professional advice.',
+    'art11-2': 'The Company shall not be liable for any decisions made by Users based on reading results.',
+    'art11-3': 'The Company shall not be liable for damages caused by reasons attributable to the User.',
+    'art12-title': 'Article 12 (Account Termination and Disqualification)',
+    'art12-1': 'Users may withdraw their account at any time through the settings within the app.',
+    'art12-2': 'Upon withdrawal, the User\'s reading history and personal information shall be immediately deleted. However, information required to be retained by law shall be retained for the applicable period and then deleted.',
+    'art12-3': 'Upon withdrawal, unused Starlight shall be forfeited and is non-refundable.',
+    'art13-title': 'Article 13 (Copyright and Intellectual Property)',
+    'art13-1': 'All copyrights in the design, text, images, card artwork, and all other content included in the Service belong to the Company.',
+    'art13-2': 'Personal use of reading results generated through the Service is permitted, but commercial use or unauthorized distribution is prohibited.',
+    'art14-title': 'Article 14 (Dispute Resolution)',
+    'art14-1': 'Disputes arising from these Terms shall be governed by the laws of the Republic of Korea.',
+    'art14-2': 'In the event of a dispute related to the use of the Service, the court having jurisdiction over the Company\'s place of business shall have jurisdiction.',
+    'art15-title': 'Article 15 (Miscellaneous)',
+    'art15-body': 'Matters not stipulated in these Terms shall be governed by applicable laws and customary practices.',
+    'effective': 'These Terms of Service are effective as of March 11, 2026.',
+    'footer-home': 'Home',
+    'footer-privacy': 'Privacy Policy',
+    'footer-terms': 'Terms of Service',
+    'footer-info': 'Just Init CEO Jungsim Choi | Business Registration No. 524-44-01023<br>Email: justinit.service@gmail.com | Phone: +82-10-6822-9802<br>&copy; 2026 Just Init. All rights reserved.',
+  },
+  ja: {
+    'nav-home': '&larr; ホームへ',
+    'title': '利用規約',
+    'date': '施行日：2026年3月11日',
+    'art1-title': '第1条（目的）',
+    'art1-body': '本規約は、Just Init（以下「当社」）が提供するタロットレターモバイルアプリケーション（以下「本サービス」）の利用条件および手続き、ならびに当社と利用者間の権利・義務・責任事項を定めることを目的とします。',
+    'art2-title': '第2条（定義）',
+    'art2-1': '<strong>サービス</strong>：当社が「タロットレター」アプリを通じて提供するタロットリーディング、デイリーシグナルおよび関連する付加機能の一切',
+    'art2-2': '<strong>利用者</strong>：本規約に同意し、本サービスを利用する者',
+    'art2-3': '<strong>星の光</strong>：本サービス内の有料リーディングに使用されるアプリ内通貨',
+    'art2-4': '<strong>サブスクリプション</strong>：月額定期決済により星の光を受け取る有料利用方式',
+    'art2-5': '<strong>リーディング</strong>：利用者の悩みと選択したカードに基づきAIが生成したタロットレター',
+    'art3-title': '第3条（規約の効力および変更）',
+    'art3-1': '本規約は、本サービス内に掲載するか、その他の方法で利用者に通知することにより効力が発生します。',
+    'art3-2': '当社は、関連法令に違反しない範囲で規約を変更することができ、変更の際は適用日の7日前からアプリ内で通知します。',
+    'art3-3': '利用者が変更された規約に同意しない場合、サービスの利用を中止し退会することができます。',
+    'art4-title': '第4条（会員登録およびアカウント）',
+    'art4-1': '利用者はソーシャルログイン（Apple、Google）を通じて会員登録することができます。',
+    'art4-2': '利用者は登録時にニックネームを設定し、虚偽の情報入力に対する責任は利用者にあります。',
+    'art4-3': '当社は、次の各号に該当する場合、登録を拒否するか、事後に利用を制限することができます。<ul><li>他人の情報を盗用した場合</li><li>サービス運営を妨害する行為が確認された場合</li><li>関連法令または本規約に違反した場合</li></ul>',
+    'art5-title': '第5条（サービスの提供）',
+    'art5-1': '当社は以下のサービスを提供します。<ul><li>悩みに基づく3カードタロットリーディング（レター）</li><li>今日のワンカード（デイリーシグナル）</li><li>リーディング履歴の保管および閲覧</li><li>その他当社が追加開発するサービス</li></ul>',
+    'art5-2': '本サービスは年中無休24時間の提供を原則としますが、システムメンテナンス等の理由により一時的に中断される場合があります。',
+    'art5-3': 'リーディング結果はAIが生成したエンターテインメントコンテンツであり、専門的なカウンセリング・診断・助言に代わるものではありません。',
+    'art6-title': '第6条（有料サービスおよび決済）',
+    'art6-1': '有料サービスは、星の光（アプリ内通貨）またはサブスクリプションを通じて利用できます。',
+    'art6-2': '決済は、Apple App StoreまたはGoogle Play Storeのアプリ内課金システムを通じて処理されます。',
+    'art6-3': 'サブスクリプションは、利用者が自ら解約しない限り、毎月自動的に更新されます。',
+    'art6-4': 'サブスクリプションの解約は、各ストアのサブスクリプション管理メニューから行えます。',
+    'art7-title': '第7条（返金ポリシー）',
+    'art7-1': '未使用の星の光の返金は、各ストアの返金ポリシーに従います。',
+    'art7-2': '既に使用済み（リーディング生成リクエスト済み）の星の光は返金不可です。',
+    'art7-3': 'サブスクリプションの返金は、AppleおよびGoogleのサブスクリプション返金ポリシーに従います。',
+    'art7-4': '当社の帰責事由によりサービスが提供できなかった場合、該当する星の光を復元または返金します。',
+    'art8-title': '第8条（利用者の義務）',
+    'art8-intro': '利用者は以下の行為を行ってはなりません。',
+    'art8-1': '他人の個人情報を盗用または虚偽の情報を登録する行為',
+    'art8-2': '本サービスを通じて得た情報を当社の事前の承諾なく商業的に利用する行為',
+    'art8-3': '本サービスの運営を妨害するか、システムに過度な負荷をかける行為',
+    'art8-4': '暴言、ヘイト表現等の反社会的な内容を入力する行為',
+    'art8-5': 'その他関連法令または公序良俗に反する行為',
+    'art9-title': '第9条（当社の義務）',
+    'art9-1': '当社は、関連法令および本規約の定めに従い、継続的かつ安定的なサービスの提供に努めます。',
+    'art9-2': '当社は、利用者の個人情報を保護するためにプライバシーポリシーを公開し、これを遵守します。',
+    'art9-3': 'サービス改善のための利用者の意見や苦情が正当と認められた場合、積極的に反映します。',
+    'art10-title': '第10条（サービスの変更および中断）',
+    'art10-1': '当社は、運営上または技術上の必要に応じて、サービスの全部または一部を変更することができます。',
+    'art10-2': 'サービスを終了する場合、30日前にアプリ内で通知します。',
+    'art10-3': '天災地変、システム障害等の不可抗力によりサービスが中断された場合、当社はこれに対して責任を負いません。',
+    'art11-title': '第11条（免責事項）',
+    'art11-1': 'リーディング結果はAIが生成したエンターテインメント目的のコンテンツであり、医学的・法的・財務的な専門的助言ではありません。',
+    'art11-2': '利用者がリーディング結果に基づいて下した判断について、当社は責任を負いません。',
+    'art11-3': '利用者の帰責事由により発生した損害について、当社は責任を負いません。',
+    'art12-title': '第12条（退会および資格喪失）',
+    'art12-1': '利用者は、アプリ内の設定からいつでも退会することができます。',
+    'art12-2': '退会時、利用者のリーディング履歴および個人情報は直ちに削除されます。ただし、法令により保管が必要な情報は該当期間保管した後に削除します。',
+    'art12-3': '退会時、未使用の星の光は消滅し、返金されません。',
+    'art13-title': '第13条（著作権および知的財産権）',
+    'art13-1': '本サービスに含まれるデザイン、テキスト、画像、カードアートワーク等、すべてのコンテンツの著作権は当社に帰属します。',
+    'art13-2': '利用者が本サービスを通じて生成したリーディング結果の個人的な利用は許可されますが、商業的利用・無断配布は禁止されます。',
+    'art14-title': '第14条（紛争解決）',
+    'art14-1': '本規約に関する紛争は、大韓民国の法律を準拠法とします。',
+    'art14-2': '本サービスの利用に関連して紛争が発生した場合、当社の所在地を管轄する裁判所を管轄裁判所とします。',
+    'art15-title': '第15条（その他）',
+    'art15-body': '本規約に明記されていない事項は、関連法令および商慣習に従います。',
+    'effective': '本規約は2026年3月11日より施行されます。',
+    'footer-home': 'ホームへ',
+    'footer-privacy': 'プライバシーポリシー',
+    'footer-terms': '利用規約',
+    'footer-info': 'Just Init 代表 チェ・ジョンシム | 事業者登録番号 524-44-01023<br>メール：justinit.service@gmail.com | 電話：010-6822-9802<br>&copy; 2026 Just Init. All rights reserved.',
+  }
+};
+
+let currentLang = 'ko';
+
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.textContent.trim() === {ko:'KR',en:'EN',ja:'JP'}[lang]);
+  });
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (i18n[lang] && i18n[lang][key]) {
+      el.innerHTML = i18n[lang][key];
+    }
+  });
+  document.documentElement.lang = lang === 'ko' ? 'ko' : lang === 'ja' ? 'ja' : 'en';
+}
+
+// ── Init lang from URL ──
+(function initLang() {
+  const params = new URLSearchParams(location.search);
+  const lang = params.get('lang') || location.hash.replace('#', '') || 'ko';
+  if (['ko', 'en', 'ja'].includes(lang)) setLang(lang);
+})();
+</script>
 </body>
 </html>
