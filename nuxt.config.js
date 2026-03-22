@@ -87,6 +87,16 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   generate: {
-    crawler: false // link href 에 html 도 파일 찾다가 실패해서 추가
+    crawler: false, // link href 에 html 도 파일 찾다가 실패해서 추가
+    routes: [
+      '/cook-flow',
+      '/cook-flow/privacy',
+      '/cook-flow/terms',
+      '/cook-flow/delete-account',
+      '/honey-sleep',
+      '/honey-sleep/privacy',
+      '/honey-sleep/terms',
+      '/honey-sleep/delete-account',
+    ]
   }
 }
