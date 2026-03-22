@@ -73,6 +73,17 @@ export default {
     return {
       apps: [
         {
+          name: 'CookFlow',
+          icon: '/app-icons/cook-flow.png',
+          desc: '어떤 콘텐츠든 내 입맛에 맞는 레시피로 바꿔드립니다. 단계별 가이드로 요리 초보도 한 눈에 이해돼요.',
+          tag: '푸드',
+          tagClass: 'bg-orange-500/10 text-orange-600 dark:text-orange-400',
+          platform: 'Android · iOS',
+          link: '/cook-flow',
+          cardBgLight: 'linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%)',
+          cardBgDark: 'linear-gradient(135deg, #1c1410 0%, #18120a 100%)',
+        },
+        {
           name: '꿀잠',
           icon: '/app-icons/honey-sleep.png',
           desc: '잠들지 못하는 밤을 위한 수면 앱. 수면 명상, 수면 사운드, 수면 이야기로 깊은 잠에 빠져보세요.',
