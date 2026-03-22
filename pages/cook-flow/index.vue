@@ -43,7 +43,6 @@
     </section>
 
     <!-- Features -->
-    <!-- TODO: 스크린샷 준비 후 cf-feature__card 영역을 실제 앱 스크린샷(이미지)으로 교체 -->
     <section class="cf-features">
 
       <!-- 1. AI 레시피 생성 -->
@@ -53,17 +52,8 @@
           <h3 class="cf-feature__title">콘텐츠를 붙여넣으면<br>내 레시피로 완성</h3>
           <p class="cf-feature__desc">영상 링크나 텍스트를 붙여넣으면 AI가 재료와 조리 단계를 자동으로 정리해 드려요. 더 이상 앞뒤로 돌려가며 받아쓸 필요 없어요.</p>
         </div>
-        <div class="cf-feature__card" style="--accent:#F97316">
-          <div class="cf-card-inner">
-            <div class="cf-card-icon" style="background:rgba(249,115,22,0.12);color:#F97316">🤖</div>
-            <div class="cf-card-title" style="color:#F97316">AI 레시피 생성</div>
-            <div class="cf-card-sub">링크 또는 텍스트 붙여넣기</div>
-            <div class="cf-card-steps">
-              <div class="cf-card-step">재료 자동 추출</div>
-              <div class="cf-card-step">단계 정리</div>
-              <div class="cf-card-step">내 레시피 저장</div>
-            </div>
-          </div>
+        <div class="cf-feature__card">
+          <img src="/cook-flow/ss5.png" alt="AI 레시피 생성 화면" class="cf-screenshot" />
         </div>
       </div>
 
@@ -74,38 +64,8 @@
           <h3 class="cf-feature__title">한 문장씩 읽어가며<br>따라하던 건 그만</h3>
           <p class="cf-feature__desc">한 번에 하나의 단계만 보여드려요. 한 눈에 이해되도록 재료와 조리방법을 심플하게 보여드려요. 필요한 내용만 읽으세요.</p>
         </div>
-        <div class="cf-feature__card" style="--accent:#34D399">
-          <div class="cf-card-inner">
-            <div class="cf-card-icon" style="background:rgba(52,211,153,0.12);color:#34D399">👨‍🍳</div>
-            <div class="cf-card-title" style="color:#34D399">단계별 가이드</div>
-            <div class="cf-card-sub">한 번에 하나씩</div>
-            <div class="cf-card-progress">
-              <div class="cf-progress-step cf-progress-step--done">재료 준비</div>
-              <div class="cf-progress-step cf-progress-step--active">양파 200g 볶기</div>
-              <div class="cf-progress-step">간 맞추기</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3. 홈 피드 -->
-      <div class="cf-feature reveal">
-        <div class="cf-feature__text">
-          <span class="cf-feature__label" style="color:#A78BFA">HOME FEED</span>
-          <h3 class="cf-feature__title">요즘 인기 레시피를<br>따라해보세요</h3>
-          <p class="cf-feature__desc">손맛지수가 높은 레시피일수록 믿고 따라할 수 있어요. 다른 사람들이 검증한 레시피로 오늘 요리를 시작해보세요.</p>
-        </div>
-        <div class="cf-feature__card" style="--accent:#A78BFA">
-          <div class="cf-card-inner">
-            <div class="cf-card-icon" style="background:rgba(167,139,250,0.12);color:#A78BFA">🏆</div>
-            <div class="cf-card-title" style="color:#A78BFA">인기 레시피</div>
-            <div class="cf-card-sub">손맛지수 · 신뢰도</div>
-            <div class="cf-card-list">
-              <div class="cf-card-list-item" style="display:flex;justify-content:space-between"><span>🍜 김치찌개</span><span style="color:#A78BFA">손맛 98</span></div>
-              <div class="cf-card-list-item" style="display:flex;justify-content:space-between"><span>🥚 계란볶음밥</span><span style="color:#A78BFA">손맛 95</span></div>
-              <div class="cf-card-list-item" style="display:flex;justify-content:space-between"><span>🥗 닭가슴살 샐러드</span><span style="color:#A78BFA">손맛 91</span></div>
-            </div>
-          </div>
+        <div class="cf-feature__card">
+          <img src="/cook-flow/ss3.png" alt="레시피 상세 화면" class="cf-screenshot" />
         </div>
       </div>
 
@@ -384,107 +344,15 @@ export default {
   display: flex;
   justify-content: center;
 }
-.cf-card-inner {
+.cf-screenshot {
   width: 260px;
-  background: #1A1D26;
-  border: 1px solid rgba(255,255,255,0.07);
   border-radius: 28px;
-  padding: 32px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  text-align: center;
-  box-shadow:
-    0 32px 64px rgba(0,0,0,0.4),
-    0 0 60px -10px color-mix(in srgb, var(--accent, #F97316) 20%, transparent);
+  box-shadow: 0 32px 64px rgba(0,0,0,0.4);
   transition: transform 0.3s, box-shadow 0.3s;
 }
-.cf-card-inner:hover {
+.cf-screenshot:hover {
   transform: translateY(-8px);
-  box-shadow:
-    0 48px 80px rgba(0,0,0,0.5),
-    0 0 80px -5px color-mix(in srgb, var(--accent, #F97316) 30%, transparent);
-}
-.cf-card-icon {
-  width: 56px; height: 56px;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 26px;
-  margin-bottom: 4px;
-}
-.cf-card-title {
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
-.cf-card-sub {
-  font-size: 11px;
-  color: #5A5A5A;
-  font-weight: 400;
-}
-
-/* ── Card: Steps ─────────────────────────────────────────── */
-.cf-card-steps {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-top: 10px;
-  width: 100%;
-}
-.cf-card-step {
-  background: rgba(255,255,255,0.05);
-  border-radius: 8px;
-  font-size: 11px;
-  color: #9A9A9A;
-  padding: 7px 10px;
-  text-align: left;
-}
-
-/* ── Card: Progress ──────────────────────────────────────── */
-.cf-card-progress {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-top: 10px;
-  width: 100%;
-}
-.cf-progress-step {
-  border-radius: 8px;
-  font-size: 11px;
-  padding: 7px 10px;
-  text-align: left;
-  background: rgba(255,255,255,0.04);
-  color: #5A5A5A;
-}
-.cf-progress-step--done {
-  color: #5A5A5A;
-  text-decoration: line-through;
-}
-.cf-progress-step--active {
-  background: rgba(52,211,153,0.1);
-  color: #34D399;
-  font-weight: 600;
-  border: 1px solid rgba(52,211,153,0.2);
-}
-
-/* ── Card: List ──────────────────────────────────────────── */
-.cf-card-list {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-top: 10px;
-  width: 100%;
-}
-.cf-card-list-item {
-  background: rgba(255,255,255,0.05);
-  border-radius: 8px;
-  font-size: 11px;
-  color: #9A9A9A;
-  padding: 7px 10px;
-  text-align: left;
+  box-shadow: 0 48px 80px rgba(0,0,0,0.5);
 }
 
 /* ── CTA Bottom ──────────────────────────────────────────── */
