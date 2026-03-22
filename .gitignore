@@ -91,3 +91,6 @@ sw.*
 
 # Design files
 design/
+
+# oh-my-claudecode
+.omc/
