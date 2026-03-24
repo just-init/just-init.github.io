@@ -16,14 +16,14 @@
     <!-- Hero -->
     <section class="cf-hero">
       <div class="cf-hero__inner">
-        <span class="cf-badge cf-fade-1">🍳 요리 콘텐츠를 내 레시피로</span>
+        <span class="cf-badge cf-fade-1">🍳 요리 영상을 내 레시피로</span>
         <h1 class="cf-hero__title cf-fade-2">
-          동영상 앞뒤로<br>
-          돌려가며 따라하셨나요?
+          링크 하나로<br>
+          레시피 완성
         </h1>
         <p class="cf-hero__sub cf-fade-3">
-          어떤 콘텐츠든 내 입맛에 맞는 레시피로 바꿔드립니다.<br>
-          단계별 가이드로 요리 초보도 한 눈에 이해돼요.
+          요리 영상 링크를 붙여넣으면 AI가 재료와 조리 단계를 자동으로 정리해 드려요.<br>
+          단계별 요리 가이드로 쉽게 따라하세요.
         </p>
         <!-- TODO: App Store 링크를 실제 앱 출시 후 교체 -->
         <div class="cf-hero__cta cf-fade-4">
@@ -49,23 +49,47 @@
       <div class="cf-feature reveal">
         <div class="cf-feature__text">
           <span class="cf-feature__label" style="color:#F97316">AI RECIPE</span>
-          <h3 class="cf-feature__title">콘텐츠를 붙여넣으면<br>내 레시피로 완성</h3>
-          <p class="cf-feature__desc">영상 링크나 텍스트를 붙여넣으면 AI가 재료와 조리 단계를 자동으로 정리해 드려요. 더 이상 앞뒤로 돌려가며 받아쓸 필요 없어요.</p>
+          <h3 class="cf-feature__title">링크를 붙여넣으면<br>AI가 레시피를 만들어요</h3>
+          <p class="cf-feature__desc">유튜브 요리 영상, 블로그 포스트 — 어떤 링크든 OK. AI가 재료, 조리법, 영양정보까지 자동 추출합니다. 요리 영상을 앞뒤로 돌려가며 따라할 필요가 없어요.</p>
         </div>
         <div class="cf-feature__card">
-          <img src="/cook-flow/ss5.png" alt="AI 레시피 생성 화면" class="cf-screenshot" />
+          <img src="/cook-flow/ss-ai.png" alt="AI 레시피 생성 화면" class="cf-screenshot" />
         </div>
       </div>
 
       <!-- 2. 단계별 요리 가이드 -->
       <div class="cf-feature cf-feature--reverse reveal">
         <div class="cf-feature__text">
-          <span class="cf-feature__label" style="color:#34D399">COOKING GUIDE</span>
-          <h3 class="cf-feature__title">한 문장씩 읽어가며<br>따라하던 건 그만</h3>
-          <p class="cf-feature__desc">한 번에 하나의 단계만 보여드려요. 한 눈에 이해되도록 재료와 조리방법을 심플하게 보여드려요. 필요한 내용만 읽으세요.</p>
+          <span class="cf-feature__label" style="color:#34D399">STEP-BY-STEP GUIDE</span>
+          <h3 class="cf-feature__title">단계별 가이드로<br>쉽게 따라해요</h3>
+          <p class="cf-feature__desc">한 화면에 한 동작. 정확한 계량과 조리 순서를 한 눈에 확인하세요. 요리 초보도 쉽게 따라할 수 있습니다.</p>
         </div>
         <div class="cf-feature__card">
-          <img src="/cook-flow/ss3.png" alt="레시피 상세 화면" class="cf-screenshot" />
+          <img src="/cook-flow/ss-guide.png" alt="단계별 요리 가이드 화면" class="cf-screenshot" />
+        </div>
+      </div>
+
+      <!-- 3. 재료·영양정보 -->
+      <div class="cf-feature reveal">
+        <div class="cf-feature__text">
+          <span class="cf-feature__label" style="color:#60A5FA">NUTRITION</span>
+          <h3 class="cf-feature__title">재료부터 영양정보까지<br>한눈에 확인</h3>
+          <p class="cf-feature__desc">칼로리, 탄수화물, 단백질, 지방을 AI가 자동으로 계산해요. 재료와 영양정보를 한 화면에서 깔끔하게 확인하세요.</p>
+        </div>
+        <div class="cf-feature__card">
+          <img src="/cook-flow/ss-detail.png" alt="재료 및 영양정보 화면" class="cf-screenshot" />
+        </div>
+      </div>
+
+      <!-- 4. 내 레시피 관리 -->
+      <div class="cf-feature cf-feature--reverse reveal">
+        <div class="cf-feature__text">
+          <span class="cf-feature__label" style="color:#A78BFA">MY RECIPES</span>
+          <h3 class="cf-feature__title">내 레시피를<br>한곳에 모아</h3>
+          <p class="cf-feature__desc">직접 만든 레시피, AI로 생성한 레시피를 한곳에 모아 언제든 꺼내보세요. 태그와 검색으로 원하는 레시피를 바로 찾을 수 있어요.</p>
+        </div>
+        <div class="cf-feature__card">
+          <img src="/cook-flow/ss-list.png" alt="내 레시피 목록 화면" class="cf-screenshot" />
         </div>
       </div>
 
@@ -74,8 +98,8 @@
     <!-- CTA Bottom -->
     <section class="cf-cta-bottom reveal">
       <div class="cf-cta-bottom__glow" aria-hidden="true"></div>
-      <h2 class="cf-cta-bottom__title">오늘 요리는 CookFlow와 함께</h2>
-      <p class="cf-cta-bottom__sub">콘텐츠는 CookFlow가 내 레시피로 바꿔드립니다.</p>
+      <h2 class="cf-cta-bottom__title">무료로 시작하세요</h2>
+      <p class="cf-cta-bottom__sub">매월 AI 레시피 생성 3회 무료. Pro 구독으로 무제한 AI 생성과 영양정보 분석을 이용하세요.</p>
       <!-- TODO: App Store 링크를 실제 앱 출시 후 교체 -->
       <div class="cf-hero__cta">
         <a href="https://apps.apple.com/app/id0000000000" class="cf-btn cf-btn--primary" target="_blank" rel="noopener">
