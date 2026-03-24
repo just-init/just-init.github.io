@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-white dark:bg-gray-900">
     <div class="max-w-3xl mx-auto px-6 py-16">
-      <nuxt-link to="/honey-sleep" class="text-indigo-600 dark:text-indigo-400 text-sm hover:underline mb-8 block">← 꿀잠</nuxt-link>
+      <nuxt-link to="/honey-sleep" class="text-indigo-600 dark:text-indigo-400 text-sm hover:underline mb-8 block">← HoneySleep</nuxt-link>
       <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">개인정보처리방침</h1>
       <p class="text-gray-500 dark:text-gray-400 text-sm mb-10">시행일: 2026년 3월 10일</p>
 
@@ -9,7 +9,7 @@
 
         <section>
           <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">1. 개인정보의 처리 목적</h2>
-          <p>꿀잠(이하 '서비스')은 다음의 목적을 위해 개인정보를 처리합니다.</p>
+          <p>HoneySleep(이하 '서비스')은 다음의 목적을 위해 개인정보를 처리합니다.</p>
           <ul class="list-disc pl-5 mt-2 space-y-1">
             <li>회원 가입 및 서비스 이용</li>
             <li>구독 결제 및 이용 내역 관리</li>

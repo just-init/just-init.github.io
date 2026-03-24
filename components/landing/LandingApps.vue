@@ -84,7 +84,7 @@ export default {
           cardBgDark: 'linear-gradient(135deg, #1c1410 0%, #18120a 100%)',
         },
         {
-          name: '꿀잠',
+          name: 'HoneySleep',
           icon: '/app-icons/honey-sleep.png',
           desc: '잠들지 못하는 밤을 위한 수면 앱. 수면 명상, 수면 사운드, 수면 이야기로 깊은 잠에 빠져보세요.',
           tag: '건강',

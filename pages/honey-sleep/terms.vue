@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-white dark:bg-gray-900">
     <div class="max-w-3xl mx-auto px-6 py-16">
-      <nuxt-link to="/honey-sleep" class="text-indigo-600 dark:text-indigo-400 text-sm hover:underline mb-8 block">← 꿀잠</nuxt-link>
+      <nuxt-link to="/honey-sleep" class="text-indigo-600 dark:text-indigo-400 text-sm hover:underline mb-8 block">← HoneySleep</nuxt-link>
       <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">이용약관</h1>
       <p class="text-gray-500 dark:text-gray-400 text-sm mb-10">시행일: 2026년 3월 10일</p>
 
@@ -9,7 +9,7 @@
 
         <section>
           <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">1. 서비스 소개</h2>
-          <p>꿀잠은 수면 명상, 수면 사운드, 수면 이야기를 제공하는 모바일 애플리케이션입니다. 본 약관은 꿀잠 서비스 이용에 관한 조건을 정합니다.</p>
+          <p>HoneySleep은 수면 명상, 수면 사운드, 수면 이야기를 제공하는 모바일 애플리케이션입니다. 본 약관은 HoneySleep 서비스 이용에 관한 조건을 정합니다.</p>
         </section>
 
         <section>
@@ -17,7 +17,7 @@
           <ul class="list-disc pl-5 space-y-1">
             <li>서비스는 만 4세 이상 이용 가능합니다.</li>
             <li>일부 콘텐츠는 프리미엄 구독이 필요합니다.</li>
-            <li>서비스 내 콘텐츠의 저작권은 꿀잠에 귀속됩니다.</li>
+            <li>서비스 내 콘텐츠의 저작권은 HoneySleep에 귀속됩니다.</li>
           </ul>
         </section>
 
