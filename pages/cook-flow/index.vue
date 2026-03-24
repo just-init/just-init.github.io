@@ -170,8 +170,8 @@ export default {
 .cf-root {
   position: relative;
   min-height: 100vh;
-  background: #0E0F14;
-  color: #F0EDE8;
+  background: #FFFFFF;
+  color: #212121;
   font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -183,7 +183,7 @@ export default {
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.025;
+  opacity: 0.018;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 128px 128px;
@@ -200,20 +200,20 @@ export default {
   width: 700px; height: 700px;
   top: -200px; left: 50%;
   transform: translateX(-50%);
-  background: radial-gradient(circle, rgba(249,115,22,0.08) 0%, transparent 70%);
-  filter: blur(60px);
+  background: radial-gradient(circle, rgba(249,115,22,0.06) 0%, transparent 70%);
+  filter: blur(80px);
 }
 .cf-orb--mid {
   width: 500px; height: 500px;
   top: 60%; right: -100px;
-  background: radial-gradient(circle, rgba(167,139,250,0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(249,115,22,0.04) 0%, transparent 70%);
   filter: blur(80px);
 }
 .cf-orb--bottom {
   width: 600px; height: 600px;
   bottom: 0; left: 50%;
   transform: translateX(-50%);
-  background: radial-gradient(circle, rgba(249,115,22,0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(249,115,22,0.05) 0%, transparent 70%);
   filter: blur(80px);
 }
 
@@ -223,15 +223,15 @@ export default {
   top: 0;
   z-index: 100;
   padding: 20px 32px;
-  background: rgba(14,15,20,0.8);
+  background: rgba(255,255,255,0.85);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 .cf-nav__back {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #9A9A9A;
+  color: #999;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -262,11 +262,11 @@ export default {
   align-items: center;
   gap: 8px;
   padding: 8px 20px;
-  border: 1px solid rgba(249,115,22,0.25);
+  border: 1px solid rgba(249,115,22,0.2);
   border-radius: 999px;
   font-size: 13px;
   font-weight: 600;
-  color: #F97316;
+  color: #E8650F;
   background: rgba(249,115,22,0.06);
   letter-spacing: 0.02em;
   animation: cfPulse 2.4s ease-in-out infinite;
@@ -276,14 +276,14 @@ export default {
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -2px;
-  color: #F0EDE8;
+  color: #212121;
   margin: 0;
 }
 .cf-hero__sub {
   font-size: clamp(1rem, 2.5vw, 1.15rem);
   font-weight: 300;
   line-height: 1.8;
-  color: #9A9A9A;
+  color: #757575;
   margin: 0;
 }
 
@@ -310,27 +310,27 @@ export default {
 }
 .cf-btn--primary {
   background: #F97316;
-  color: #0E0F14;
-  box-shadow: 0 4px 24px rgba(249,115,22,0.25);
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(249,115,22,0.2);
 }
 .cf-btn--primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(249,115,22,0.4);
+  box-shadow: 0 8px 32px rgba(249,115,22,0.35);
 }
 .cf-btn--ghost {
   background: transparent;
-  color: #F0EDE8;
-  border: 1px solid rgba(255,255,255,0.15);
+  color: #424242;
+  border: 1px solid rgba(0,0,0,0.12);
 }
 .cf-btn--ghost:hover {
   transform: translateY(-2px);
-  border-color: rgba(255,255,255,0.3);
-  background: rgba(255,255,255,0.04);
+  border-color: rgba(0,0,0,0.25);
+  background: rgba(0,0,0,0.02);
 }
 
 /* ── Scroll hint ─────────────────────────────────────────── */
 .cf-scroll-hint {
-  color: rgba(154,154,154,0.4);
+  color: rgba(0,0,0,0.15);
   animation: cfBounce 1.8s ease-in-out infinite;
   margin-top: 16px;
 }
@@ -368,14 +368,14 @@ export default {
   font-weight: 900;
   letter-spacing: -1.5px;
   line-height: 1.15;
-  color: #F0EDE8;
+  color: #212121;
   margin: 0 0 20px;
 }
 .cf-feature__desc {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.8;
-  color: #9A9A9A;
+  color: #757575;
   margin: 0;
 }
 
@@ -406,58 +406,27 @@ export default {
   height: auto;
 }
 
-/* ── Phone color variants ───────────────────────────────── */
-.cf-phone--orange {
-  background: #2A1D14;
-  box-shadow:
-    0 32px 64px rgba(249,115,22,0.15),
-    inset 1px 1px 0 rgba(249,115,22,0.15),
-    inset -1px -1px 0 rgba(0,0,0,0.3);
-}
-.cf-phone--orange:hover {
-  box-shadow:
-    0 48px 80px rgba(249,115,22,0.25),
-    inset 1px 1px 0 rgba(249,115,22,0.2),
-    inset -1px -1px 0 rgba(0,0,0,0.3);
-}
-.cf-phone--green {
-  background: #142A1D;
-  box-shadow:
-    0 32px 64px rgba(52,211,153,0.1),
-    inset 1px 1px 0 rgba(52,211,153,0.15),
-    inset -1px -1px 0 rgba(0,0,0,0.3);
-}
-.cf-phone--green:hover {
-  box-shadow:
-    0 48px 80px rgba(52,211,153,0.2),
-    inset 1px 1px 0 rgba(52,211,153,0.2),
-    inset -1px -1px 0 rgba(0,0,0,0.3);
-}
-.cf-phone--blue {
-  background: #141E2A;
-  box-shadow:
-    0 32px 64px rgba(96,165,250,0.1),
-    inset 1px 1px 0 rgba(96,165,250,0.15),
-    inset -1px -1px 0 rgba(0,0,0,0.3);
-}
-.cf-phone--blue:hover {
-  box-shadow:
-    0 48px 80px rgba(96,165,250,0.2),
-    inset 1px 1px 0 rgba(96,165,250,0.2),
-    inset -1px -1px 0 rgba(0,0,0,0.3);
-}
+/* ── Phone color (warm cream, matches app aesthetic) ─────── */
+.cf-phone--orange,
+.cf-phone--green,
+.cf-phone--blue,
 .cf-phone--purple {
-  background: #1E142A;
+  background: #FFF3EE;
   box-shadow:
-    0 32px 64px rgba(167,139,250,0.1),
-    inset 1px 1px 0 rgba(167,139,250,0.15),
-    inset -1px -1px 0 rgba(0,0,0,0.3);
+    0 20px 40px rgba(107,94,75,0.12),
+    0 6px 12px rgba(0,0,0,0.04),
+    inset 1px 1px 2px rgba(255,255,255,1),
+    inset -1px -1px 2px rgba(162,138,116,0.12);
 }
+.cf-phone--orange:hover,
+.cf-phone--green:hover,
+.cf-phone--blue:hover,
 .cf-phone--purple:hover {
   box-shadow:
-    0 48px 80px rgba(167,139,250,0.2),
-    inset 1px 1px 0 rgba(167,139,250,0.2),
-    inset -1px -1px 0 rgba(0,0,0,0.3);
+    0 32px 56px rgba(107,94,75,0.16),
+    0 10px 20px rgba(0,0,0,0.06),
+    inset 1px 1px 2px rgba(255,255,255,1),
+    inset -1px -1px 2px rgba(162,138,116,0.15);
 }
 
 /* ── CTA Bottom ──────────────────────────────────────────── */
@@ -473,7 +442,7 @@ export default {
   width: 500px; height: 500px;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(249,115,22,0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(249,115,22,0.06) 0%, transparent 70%);
   filter: blur(60px);
   pointer-events: none;
 }
@@ -481,12 +450,12 @@ export default {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
   letter-spacing: -2px;
-  color: #F0EDE8;
+  color: #212121;
   margin: 0 0 16px;
 }
 .cf-cta-bottom__sub {
   font-size: 16px;
-  color: #9A9A9A;
+  color: #757575;
   margin: 0 0 40px;
 }
 
@@ -500,9 +469,9 @@ export default {
   flex-wrap: wrap;
   gap: 12px;
   padding: 28px 32px;
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(0,0,0,0.06);
   font-size: 12px;
-  color: #5A5A5A;
+  color: #BDBDBD;
 }
 .cf-footer__links {
   display: flex;
@@ -511,7 +480,7 @@ export default {
   flex-wrap: wrap;
 }
 .cf-footer__links a {
-  color: #5A5A5A;
+  color: #BDBDBD;
   text-decoration: none;
   transition: color 0.2s;
 }
