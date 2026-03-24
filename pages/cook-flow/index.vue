@@ -53,7 +53,11 @@
           <p class="cf-feature__desc">유튜브 요리 영상, 블로그 포스트 — 어떤 링크든 OK. AI가 재료, 조리법, 영양정보까지 자동 추출합니다. 요리 영상을 앞뒤로 돌려가며 따라할 필요가 없어요.</p>
         </div>
         <div class="cf-feature__card">
-          <img src="/cook-flow/ss-ai.png" alt="AI 레시피 생성 화면" class="cf-screenshot" />
+          <div class="cf-phone cf-phone--orange">
+            <div class="cf-phone__screen">
+              <img src="/cook-flow/ss-ai.png" alt="AI 레시피 생성 화면" />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -65,7 +69,11 @@
           <p class="cf-feature__desc">한 화면에 한 동작. 정확한 계량과 조리 순서를 한 눈에 확인하세요. 요리 초보도 쉽게 따라할 수 있습니다.</p>
         </div>
         <div class="cf-feature__card">
-          <img src="/cook-flow/ss-guide.png" alt="단계별 요리 가이드 화면" class="cf-screenshot" />
+          <div class="cf-phone cf-phone--green">
+            <div class="cf-phone__screen">
+              <img src="/cook-flow/ss-guide.png" alt="단계별 요리 가이드 화면" />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -77,7 +85,11 @@
           <p class="cf-feature__desc">칼로리, 탄수화물, 단백질, 지방을 AI가 자동으로 계산해요. 재료와 영양정보를 한 화면에서 깔끔하게 확인하세요.</p>
         </div>
         <div class="cf-feature__card">
-          <img src="/cook-flow/ss-detail.png" alt="재료 및 영양정보 화면" class="cf-screenshot" />
+          <div class="cf-phone cf-phone--blue">
+            <div class="cf-phone__screen">
+              <img src="/cook-flow/ss-detail.png" alt="재료 및 영양정보 화면" />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -89,7 +101,11 @@
           <p class="cf-feature__desc">직접 만든 레시피, AI로 생성한 레시피를 한곳에 모아 언제든 꺼내보세요. 태그와 검색으로 원하는 레시피를 바로 찾을 수 있어요.</p>
         </div>
         <div class="cf-feature__card">
-          <img src="/cook-flow/ss-list.png" alt="내 레시피 목록 화면" class="cf-screenshot" />
+          <div class="cf-phone cf-phone--purple">
+            <div class="cf-phone__screen">
+              <img src="/cook-flow/ss-list.png" alt="내 레시피 목록 화면" />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -368,15 +384,80 @@ export default {
   display: flex;
   justify-content: center;
 }
-.cf-screenshot {
-  width: 260px;
-  border-radius: 28px;
-  box-shadow: 0 32px 64px rgba(0,0,0,0.4);
+
+/* ── Phone Frame ────────────────────────────────────────── */
+.cf-phone {
+  width: 272px;
+  padding: 10px 10px 14px;
+  border-radius: 36px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-.cf-screenshot:hover {
+.cf-phone:hover {
   transform: translateY(-8px);
-  box-shadow: 0 48px 80px rgba(0,0,0,0.5);
+}
+.cf-phone__screen {
+  border-radius: 26px;
+  overflow: hidden;
+  background: #fff;
+}
+.cf-phone__screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ── Phone color variants ───────────────────────────────── */
+.cf-phone--orange {
+  background: #2A1D14;
+  box-shadow:
+    0 32px 64px rgba(249,115,22,0.15),
+    inset 1px 1px 0 rgba(249,115,22,0.15),
+    inset -1px -1px 0 rgba(0,0,0,0.3);
+}
+.cf-phone--orange:hover {
+  box-shadow:
+    0 48px 80px rgba(249,115,22,0.25),
+    inset 1px 1px 0 rgba(249,115,22,0.2),
+    inset -1px -1px 0 rgba(0,0,0,0.3);
+}
+.cf-phone--green {
+  background: #142A1D;
+  box-shadow:
+    0 32px 64px rgba(52,211,153,0.1),
+    inset 1px 1px 0 rgba(52,211,153,0.15),
+    inset -1px -1px 0 rgba(0,0,0,0.3);
+}
+.cf-phone--green:hover {
+  box-shadow:
+    0 48px 80px rgba(52,211,153,0.2),
+    inset 1px 1px 0 rgba(52,211,153,0.2),
+    inset -1px -1px 0 rgba(0,0,0,0.3);
+}
+.cf-phone--blue {
+  background: #141E2A;
+  box-shadow:
+    0 32px 64px rgba(96,165,250,0.1),
+    inset 1px 1px 0 rgba(96,165,250,0.15),
+    inset -1px -1px 0 rgba(0,0,0,0.3);
+}
+.cf-phone--blue:hover {
+  box-shadow:
+    0 48px 80px rgba(96,165,250,0.2),
+    inset 1px 1px 0 rgba(96,165,250,0.2),
+    inset -1px -1px 0 rgba(0,0,0,0.3);
+}
+.cf-phone--purple {
+  background: #1E142A;
+  box-shadow:
+    0 32px 64px rgba(167,139,250,0.1),
+    inset 1px 1px 0 rgba(167,139,250,0.15),
+    inset -1px -1px 0 rgba(0,0,0,0.3);
+}
+.cf-phone--purple:hover {
+  box-shadow:
+    0 48px 80px rgba(167,139,250,0.2),
+    inset 1px 1px 0 rgba(167,139,250,0.2),
+    inset -1px -1px 0 rgba(0,0,0,0.3);
 }
 
 /* ── CTA Bottom ──────────────────────────────────────────── */
@@ -472,6 +553,8 @@ export default {
   .cf-features { padding: 24px 20px 60px; gap: 80px; }
   .cf-feature { grid-template-columns: 1fr; gap: 40px; }
   .cf-feature--reverse { direction: ltr; }
+  .cf-phone { width: 240px; padding: 8px 8px 12px; border-radius: 32px; }
+  .cf-phone__screen { border-radius: 24px; }
   .cf-hero__cta { flex-direction: column; align-items: center; }
   .cf-footer { flex-direction: column; align-items: flex-start; }
 }
