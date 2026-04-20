@@ -73,13 +73,13 @@ export default {
     return {
       apps: [
         {
-          name: 'CookFlow',
+          name: '레시피얍',
           icon: '/app-icons/cook-flow.png',
           desc: '어떤 콘텐츠든 내 입맛에 맞는 레시피로 바꿔드립니다. 단계별 가이드로 요리 초보도 한 눈에 이해돼요.',
           tag: '푸드',
           tagClass: 'bg-orange-500/10 text-orange-600 dark:text-orange-400',
           platform: 'Android · iOS',
-          link: '/cook-flow',
+          link: '/recipe-yap',
           cardBgLight: 'linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%)',
           cardBgDark: 'linear-gradient(135deg, #1c1410 0%, #18120a 100%)',
         },
