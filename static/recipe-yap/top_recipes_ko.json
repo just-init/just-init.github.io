@@ -1,16 +1,16 @@
 [
   {
-    "id": "1a2768192ba9e3f3",
+    "id": "84607441d0cfc3cb",
     "readCount": 0,
     "recipe": {
       "title": "가성비 최고 콩나물불고기",
-      "description": "콩나물과 대패삼겹살을 켜켜이 쌓아 양념장을 두르고 끓여내는 가성비 좋은 손님맞이 한식 요리.",
+      "description": "콩나물을 듬뿍 깔고 대패삼겹살과 채소, 양념장을 올려 즉석에서 끓여내는 가성비 손님맞이 요리.",
       "tags": [
         "한식",
-        "불고기",
-        "콩나물",
-        "손님맞이",
-        "백종원"
+        "백종원",
+        "콩나물불고기",
+        "손님요리",
+        "대패삼겹살"
       ],
       "servings": 4,
       "estimatedMinutes": 25,
@@ -73,7 +73,7 @@
           "amount": "1/2큰술(2.5g)",
           "category": "양념/소스",
           "order": 6,
-          "stepIndex": 7
+          "stepIndex": 8
         },
         {
           "name": "대패삼겹살",
@@ -122,7 +122,7 @@
           "amount": "적당량",
           "category": "양념/소스",
           "order": 13,
-          "stepIndex": 7
+          "stepIndex": 8
         }
       ],
       "searchTokens": [
@@ -209,8 +209,9 @@
         "불고기",
         "고기",
         "한식",
-        "손님맞이",
         "백종원",
+        "손님요리",
+        "대패삼겹살",
         "양파",
         "대파",
         "청양고추",
@@ -274,7 +275,7 @@
               "category": "채소"
             }
           ],
-          "description": "양파는 두께 0.5cm 정도로 채 썰어 준비한다."
+          "description": "양파는 0.5cm 두께로 채 썬다."
         },
         {
           "cookMethod": "썰기",
@@ -285,7 +286,7 @@
               "category": "채소"
             }
           ],
-          "description": "대파는 반 갈라 길이 5cm 정도로 길게 썬다."
+          "description": "대파는 반으로 갈라 5cm 길이로 길게 썬다."
         },
         {
           "cookMethod": "썰기",
@@ -301,7 +302,7 @@
               "category": "채소"
             }
           ],
-          "description": "청양고추는 송송 썰고, 깻잎은 세로로 반 자른 뒤 두께 1cm 정도로 채 썰어 뭉친 것을 풀어 준비한다."
+          "description": "청양고추는 송송 썰고, 깻잎은 세로로 반 자른 뒤 1cm 두께로 채 썰어 뭉친 부분을 풀어 준비한다."
         },
         {
           "cookMethod": "담기",
@@ -317,7 +318,7 @@
               "category": "육류"
             }
           ],
-          "description": "넓고 낮은 프라이팬에 콩나물을 깔고 그 위에 대패삼겹살을 올린다."
+          "description": "넓고 낮은 프라이팬에 콩나물을 깔고 그 위에 대패삼겹살을 고르게 올린다."
         },
         {
           "cookMethod": "담기",
@@ -343,80 +344,63 @@
               "category": "채소"
             }
           ],
-          "description": "대패삼겹살 위에 대파, 양파, 청양고추, 깻잎을 골고루 올려 담는다."
+          "description": "대패삼겹살 위에 손질한 대파, 양파, 청양고추, 깻잎을 차곡차곡 올린다."
         },
         {
-          "cookMethod": "담기",
+          "cookMethod": "끼얹기",
+          "ingredients": [],
+          "description": "만들어 둔 양념장을 재료 위에 한 바퀴 돌려가며 골고루 붓는다."
+        },
+        {
+          "cookMethod": "뿌리기",
           "ingredients": [
-            {
-              "name": "통깨",
-              "amount": "1/2큰술(2.5g)",
-              "category": "양념/소스"
-            },
             {
               "name": "깨소금",
               "amount": "적당량",
               "category": "양념/소스"
+            },
+            {
+              "name": "통깨",
+              "amount": "1/2큰술(2.5g)",
+              "category": "양념/소스"
             }
           ],
-          "description": "양념장을 재료 위에 한 바퀴 돌려가며 붓고, 통깨와 깨소금을 적당량 뿌려 마무리한다."
+          "description": "깨소금과 통깨를 적당량 뿌려 마무리 준비를 한다."
         },
         {
           "cookMethod": "끓이기",
-          "ingredients": [
-            {
-              "name": "콩나물",
-              "amount": "300g",
-              "category": "채소"
-            },
-            {
-              "name": "대패삼겹살",
-              "amount": "280g",
-              "category": "육류"
-            }
-          ],
-          "description": "가스버너에 팬을 올려 중불로 가열하며 채소에서 수분이 나올 때까지 기다린다."
+          "ingredients": [],
+          "description": "팬을 가스버너에 올리고 중불에서 채소의 수분이 나올 때까지 기다린다."
         },
         {
           "cookMethod": "볶기",
-          "ingredients": [
-            {
-              "name": "콩나물",
-              "amount": "300g",
-              "category": "채소"
-            },
-            {
-              "name": "대패삼겹살",
-              "amount": "280g",
-              "category": "육류"
-            }
-          ],
-          "description": "채소에서 수분이 나오기 시작하면 중불 상태로 골고루 뒤적이며 속까지 익혀 완성한다."
+          "ingredients": [],
+          "description": "수분이 나오기 시작하면 중불을 유지하며 골고루 뒤적여 재료가 완전히 익을 때까지 볶아 완성한다."
         }
       ],
       "nutritionInfo": {
-        "calories": 2180,
-        "carbs": 95,
-        "protein": 95,
-        "fat": 165
+        "calories": 480,
+        "carbs": 22,
+        "protein": 20,
+        "fat": 35
       }
     }
   },
   {
-    "id": "771cad5781d27eb5",
+    "id": "42b5c785afd35fa0",
     "readCount": 0,
     "recipe": {
       "title": "해외여행 가면 생각나는 한국 음식 TOP 1 김치찌개",
-      "description": "백종원 스타일의 간단하고 성공률 높은 돼지고기 김치찌개로 든든한 한 끼 식사로 좋다.",
+      "description": "돼지고기와 신김치를 푹 끓여 진한 국물을 낸 백종원식 김치찌개.",
       "tags": [
         "한식",
-        "찌개",
         "김치찌개",
         "백종원",
-        "집밥"
+        "돼지고기",
+        "찌개"
       ],
       "servings": 2,
-      "estimatedMinutes": 30,
+      "estimatedMinutes": 25,
       "sourceUrl": "https://www.youtube.com/watch?v=qWbHSOplcvY",
       "sourceUrlType": "youtube",
       "thumbnailUrl": "https://i.ytimg.com/vi/qWbHSOplcvY/maxresdefault.jpg",
@@ -740,7 +724,7 @@
         "찌개",
         "한식",
         "백종원",
-        "집밥",
+        "돼지고기",
         "돼지고기(목살)",
         "대파",
         "청양고추",
@@ -783,7 +767,7 @@
         {
           "cookMethod": "끓이기",
           "ingredients": [],
-          "description": "찌개가 끓어오르면 중약불로 줄인 후 고기가 무를 때까지 최소 10분 정도 끓인다."
+          "description": "찌개가 끓어오르면 중약불로 줄인 후 고기가 무를 때까지 최소 10분간 끓인다."
         },
         {
           "cookMethod": "썰기",
@@ -794,7 +778,7 @@
               "category": "채소"
             }
           ],
-          "description": "대파는 두께 0.5cm로 송송 썬다."
+          "description": "대파는 0.5cm 두께로 송송 썬다."
         },
         {
           "cookMethod": "썰기",
@@ -805,7 +789,7 @@
               "category": "채소"
             }
           ],
-          "description": "청양고추는 두께 0.5cm로 어슷 썬다."
+          "description": "청양고추는 0.5cm 두께로 어슷 썬다."
         },
         {
           "cookMethod": "끓이기",
@@ -836,7 +820,7 @@
               "category": "양념/소스"
             }
           ],
-          "description": "10분 후 물이 졸아들면 졸아든 만큼의 물을 보충한 후 신김치, 국간장, 굵은 고춧가루, 고운 고춧가루, 간 마늘을 넣는다."
+          "description": "10분 후 졸아든 만큼 물을 보충하고 신김치, 국간장, 굵은 고춧가루, 고운 고춧가루, 간 마늘을 넣는다."
         },
         {
           "cookMethod": "끓이기",
@@ -852,7 +836,7 @@
               "category": "채소"
             }
           ],
-          "description": "찌개가 팔팔 끓으면 대파, 청양고추를 넣는다."
+          "description": "찌개가 팔팔 끓으면 대파와 청양고추를 넣는다."
         },
         {
           "cookMethod": "담기",
@@ -863,42 +847,42 @@
               "category": "양념/소스"
             }
           ],
-          "description": "완성 직전에 고춧가루를 뿌려 완성한다."
+          "description": "완성 직전 고춧가루를 살짝 뿌려 마무리한다."
         }
       ],
       "nutritionInfo": {
-        "calories": 720,
-        "carbs": 28.5,
+        "calories": 520,
+        "carbs": 22,
         "protein": 38,
-        "fat": 48
+        "fat": 30
       }
     }
   },
   {
-    "id": "180decb5929d26de",
+    "id": "54569c7f74caf656",
     "readCount": 0,
     "recipe": {
       "title": "떡만둣국, 사골 육수 없이 '이것'먼저 넣으면 풍미가 폭발합니다",
-      "description": "사골 육수 없이 양지를 먼저 볶아 풍미를 끌어올린 설날 떡만둣국.",
+      "description": "사골 육수 없이 소 양지를 먼저 볶아 깊은 풍미를 살린 명절용 떡만둣국.",
       "tags": [
         "한식",
-        "설날",
+        "설음식",
         "떡만둣국",
         "백종원",
-        "국물요리"
+        "명절요리"
       ],
       "servings": 4,
-      "estimatedMinutes": 35,
+      "estimatedMinutes": 30,
       "sourceUrl": "https://www.youtube.com/watch?v=At-u3lwsFtk",
       "sourceUrlType": "youtube",
       "thumbnailUrl": "https://i.ytimg.com/vi/At-u3lwsFtk/maxresdefault.jpg",
       "language": "ko",
       "mainIngredients": [
         "떡국 떡",
-        "소 양지",
         "대파",
-        "달걀",
-        "만두"
+        "소 양지",
+        "만두",
+        "간 마늘"
       ],
       "ingredients": [
         {
@@ -906,14 +890,14 @@
           "amount": "2큰술(15g)",
           "category": "양념/소스",
           "order": 0,
-          "stepIndex": 1
+          "stepIndex": 2
         },
         {
           "name": "식용유",
           "amount": "1큰술(8g)",
           "category": "양념/소스",
           "order": 1,
-          "stepIndex": 1
+          "stepIndex": 2
         },
         {
           "name": "떡국 떡",
@@ -927,84 +911,84 @@
           "amount": "8개",
           "category": "가공식품/절임",
           "order": 3,
-          "stepIndex": 5
+          "stepIndex": 4
         },
         {
           "name": "소 양지",
           "amount": "1컵(150g)",
           "category": "육류",
           "order": 4,
-          "stepIndex": 1
+          "stepIndex": 2
         },
         {
           "name": "대파",
           "amount": "1컵(80g)",
           "category": "채소",
           "order": 5,
-          "stepIndex": 3
+          "stepIndex": 1
         },
         {
           "name": "물",
           "amount": "11컵(2L)",
           "category": "양념/소스",
           "order": 6,
-          "stepIndex": 2
+          "stepIndex": 3
         },
         {
           "name": "꽃소금",
           "amount": "1큰술(10g)",
           "category": "양념/소스",
           "order": 7,
-          "stepIndex": 2
+          "stepIndex": 3
         },
         {
           "name": "간 마늘",
           "amount": "1큰술(15g)",
-          "category": "양념/소스",
+          "category": "채소",
           "order": 8,
-          "stepIndex": 5
+          "stepIndex": 4
         },
         {
           "name": "멸치액젓",
           "amount": "2큰술(20g)",
           "category": "양념/소스",
           "order": 9,
-          "stepIndex": 2
+          "stepIndex": 3
         },
         {
           "name": "국간장",
           "amount": "3큰술(30g)",
           "category": "양념/소스",
           "order": 10,
-          "stepIndex": 2
+          "stepIndex": 3
         },
         {
           "name": "달걀",
-          "amount": "4개(200g)",
+          "amount": "2개(100g)",
           "category": "달걀/유제품",
           "order": 11,
-          "stepIndex": 4
+          "stepIndex": 5
         },
         {
           "name": "후춧가루",
           "amount": "적당량",
           "category": "양념/소스",
           "order": 12,
-          "stepIndex": 8
+          "stepIndex": 7
         },
         {
           "name": "김가루",
           "amount": "적당량",
           "category": "가공식품/절임",
           "order": 13,
-          "stepIndex": 8
+          "stepIndex": 7
         },
         {
           "name": "식용유",
           "amount": "적당량",
           "category": "양념/소스",
           "order": 14,
-          "stepIndex": 4
+          "stepIndex": 5
         }
       ],
       "searchTokens": [
@@ -1305,19 +1289,19 @@
         "합니다",
         "니다",
         "한식",
-        "설날",
+        "설음식",
         "백종원",
-        "국물요리",
+        "명절요리",
         "떡국 떡",
-        "소 양지",
         "대파",
-        "달걀",
-        "만두"
+        "소 양지",
+        "만두",
+        "간 마늘"
       ],
       "sourceType": "link",
       "steps": [
         {
-          "cookMethod": "담그기",
+          "cookMethod": "재우기",
           "ingredients": [
             {
               "name": "떡국 떡",
@@ -1325,7 +1309,18 @@
               "category": "곡류/면"
             }
           ],
-          "description": "떡국 떡을 물에 30분 이상 담가 충분히 불려 둔다."
+          "description": "떡국 떡을 찬물에 30분 이상 담가 부드럽게 불려둔다."
+        },
+        {
+          "cookMethod": "썰기",
+          "ingredients": [
+            {
+              "name": "대파",
+              "amount": "1컵(80g)",
+              "category": "채소"
+            }
+          ],
+          "description": "대파를 송송 썰어 고명용으로 따로 준비해둔다."
         },
         {
           "cookMethod": "볶기",
@@ -1346,7 +1341,7 @@
               "category": "육류"
             }
           ],
-          "description": "프라이팬에 참기름과 식용유를 두르고 소 양지를 넣어 노릇하게 볶는다."
+          "description": "프라이팬에 참기름과 식용유를 함께 두르고 중불에서 소 양지를 노릇하게 볶아 고기 풍미를 끌어올린다."
         },
         {
           "cookMethod": "끓이기",
@@ -1372,34 +1367,7 @@
               "category": "양념/소스"
             }
           ],
-          "description": "고기가 노릇하게 볶아지면 먼저 물 500ml를 붓고 꽃소금, 국간장, 멸치액젓을 넣어 함께 끓이며 고기에 간이 배도록 한다. 간이 배면 남은 물 약 1.5L를 추가해 육수가 끓어오를 때까지 더 끓인다."
-        },
-        {
-          "cookMethod": "썰기",
-          "ingredients": [
-            {
-              "name": "대파",
-              "amount": "1컵(80g)",
-              "category": "채소"
-            }
-          ],
-          "description": "대파는 송송 썰어 준비한다."
-        },
-        {
-          "cookMethod": "부치기",
-          "ingredients": [
-            {
-              "name": "달걀",
-              "amount": "4개(200g)",
-              "category": "달걀/유제품"
-            },
-            {
-              "name": "식용유",
-              "amount": "적당량",
-              "category": "양념/소스"
-            }
-          ],
-          "description": "프라이팬에 식용유를 두르고 키친타올로 코팅한 뒤, 달걀 2개의 흰자와 노른자를 분리해 달궈진 팬에 각각 얇게 부치고, 부쳐낸 지단을 말아 얇게 채 썬다."
+          "description": "볶은 고기에 먼저 물 500ml를 붓고 꽃소금·국간장·멸치액젓을 넣어 끓이며 고기에 간을 배게 한 뒤, 남은 물 약 1.5L를 추가해 육수가 팔팔 끓을 때까지 더 끓인다."
         },
         {
           "cookMethod": "끓이기",
@@ -1417,13 +1385,29 @@
             {
               "name": "간 마늘",
               "amount": "1큰술(15g)",
-              "category": "양념/소스"
+              "category": "채소"
             }
           ],
-          "description": "육수가 끓어오르면 불려 둔 떡국 떡, 만두, 간 마늘을 넣고 떡과 만두가 떠오를 때까지 끓인다."
+          "description": "육수가 끓어오르면 불려둔 떡국 떡, 만두, 간 마늘을 넣고 떡과 만두가 떠오를 때까지 끓인다."
         },
         {
-          "cookMethod": "끓이기",
+          "cookMethod": "부치기",
+          "ingredients": [
+            {
+              "name": "식용유",
+              "amount": "적당량",
+              "category": "양념/소스"
+            },
+            {
+              "name": "달걀",
+              "amount": "2개(100g)",
+              "category": "달걀/유제품"
+            }
+          ],
+          "description": "프라이팬에 식용유를 두른 뒤 키친타올로 닦아 얇게 코팅하고, 달걀의 흰자와 노른자를 분리해 약불에서 각각 얇게 부친 다음 돌돌 말아 가늘게 채 썬다."
+        },
+        {
+          "cookMethod": "섞기",
           "ingredients": [
             {
               "name": "꽃소금",
@@ -1434,29 +1418,23 @@
               "name": "멸치액젓",
               "amount": "2큰술(20g)",
               "category": "양념/소스"
-            }
-          ],
-          "description": "국물 맛을 본 뒤 부족하면 꽃소금과 멸치액젓을 조금씩 더해 간을 맞춘다."
-        },
-        {
-          "cookMethod": "섞기",
-          "ingredients": [
-            {
-              "name": "달걀",
-              "amount": "4개(200g)",
-              "category": "달걀/유제품"
             },
             {
-              "name": "대파",
-              "amount": "1컵(80g)",
-              "category": "채소"
+              "name": "달걀",
+              "amount": "2개(100g)",
+              "category": "달걀/유제품"
             }
           ],
-          "description": "그릇에 담기 직전 풀어 둔 달걀 2개를 끓는 국물에 빙 둘러 부어 부드럽게 익히고, 송송 썬 대파도 국물에 넣거나 고명용으로 남겨 둔다."
+          "description": "간을 본 후 꽃소금과 멸치액젓으로 모자란 간을 맞추고, 그릇에 담기 직전에 달걀 2개를 잘 풀어 끓는 육수에 부어 부드럽게 익힌다."
         },
         {
           "cookMethod": "담기",
           "ingredients": [
+            {
+              "name": "대파",
+              "amount": "1컵(80g)",
+              "category": "채소"
+            },
             {
               "name": "후춧가루",
               "amount": "적당량",
@@ -1468,31 +1446,31 @@
               "category": "가공식품/절임"
             }
           ],
-          "description": "완성 그릇에 떡만둣국을 담고 채 썬 지단, 김가루, 후춧가루를 올려 마무리한다."
+          "description": "완성 그릇에 떡만둣국을 담고 송송 썬 대파, 채 썬 지단, 김가루, 후춧가루를 올려 마무리한다."
         }
       ],
       "nutritionInfo": {
-        "calories": 2430,
-        "carbs": 274,
-        "protein": 98,
-        "fat": 103
+        "calories": 2670,
+        "carbs": 315,
+        "protein": 105,
+        "fat": 118
       }
     }
   },
   {
-    "id": "382a8c78c1ba71e0",
+    "id": "e648c213f752614e",
     "readCount": 0,
     "recipe": {
       "title": "[어남선생 레시피] 한번 배워두면 평생 가는 레시피! [평생 김치찌개] 류수영의 각종 꿀팁 총출동 [신상출시 편스토랑/Fun-Staurant] | KBS 240105 방송",
-      "description": "신김치와 앞다리살을 볶아 깊은 맛을 낸 뒤 40분간 푹 끓여 완성하는 진한 김치찌개입니다.",
+      "description": "류수영 어남선생이 알려주는 푹 익은 김치와 돼지고기 앞다리살로 끓이는 진한 김치찌개",
       "tags": [
         "한식",
         "김치찌개",
-        "찌개",
+        "국물요리",
         "돼지고기",
         "어남선생"
       ],
-      "servings": 4,
+      "servings": 3,
       "estimatedMinutes": 55,
       "sourceUrl": "https://www.youtube.com/watch?v=qRa49obXGQE",
       "sourceUrlType": "youtube",
@@ -1511,21 +1489,21 @@
           "amount": "1/4포기(600g)",
           "category": "가공식품/절임",
           "order": 0,
-          "stepIndex": 6
+          "stepIndex": 5
         },
         {
           "name": "돼지고기 앞다리살",
           "amount": "300g",
           "category": "육류",
           "order": 1,
-          "stepIndex": 2
+          "stepIndex": 1
         },
         {
           "name": "김치 국물",
           "amount": "반컵(100ml)",
           "category": "가공식품/절임",
           "order": 2,
-          "stepIndex": 6
+          "stepIndex": 5
         },
         {
           "name": "양파",
@@ -1553,42 +1531,42 @@
           "amount": "1큰술",
           "category": "채소",
           "order": 6,
-          "stepIndex": 3
+          "stepIndex": 2
         },
         {
           "name": "새우젓",
           "amount": "1큰술",
-          "category": "가공식품/절임",
+          "category": "양념/소스",
           "order": 7,
-          "stepIndex": 3
+          "stepIndex": 2
         },
         {
           "name": "진간장",
           "amount": "2큰술",
           "category": "양념/소스",
           "order": 8,
-          "stepIndex": 4
+          "stepIndex": 3
         },
         {
           "name": "고춧가루",
           "amount": "2큰술",
           "category": "양념/소스",
           "order": 9,
-          "stepIndex": 5
+          "stepIndex": 4
         },
         {
           "name": "굵은소금",
           "amount": "1작은술",
           "category": "양념/소스",
           "order": 10,
-          "stepIndex": 7
+          "stepIndex": 6
         },
         {
           "name": "식초",
           "amount": "1큰술",
           "category": "양념/소스",
           "order": 11,
-          "stepIndex": 8
+          "stepIndex": 7
         },
         {
           "name": "식용유",
@@ -1602,7 +1580,7 @@
           "amount": "1L",
           "category": "양념/소스",
           "order": 13,
-          "stepIndex": 6
+          "stepIndex": 5
         }
       ],
       "searchTokens": [
@@ -2463,6 +2441,7 @@
         " 방송",
         "방송",
         "한식",
+        "국물요리",
         "돼지고기",
         "양파",
         "대파",
@@ -2491,29 +2470,23 @@
               "category": "콩/두부"
             }
           ],
-          "description": "양파 1개는 채 썰고, 대파 1대는 송송 썰고, 두부 1/2모는 0.5cm 두께로 썬다."
+          "description": "양파 1개는 채 썰고, 대파 1대는 송송 썰며, 두부 1/2모는 0.5cm 두께로 썰어 준비한다."
         },
         {
-          "cookMethod": "굽기",
+          "cookMethod": "볶기",
           "ingredients": [
             {
               "name": "식용유",
               "amount": "적당량",
               "category": "양념/소스"
-            }
-          ],
-          "description": "뚜껑을 덮고 중불에서 3분 정도 예열한 스텐 냄비(22cm 이상 추천)에 식용유 1바퀴를 두른다. 식용유에 물결이 생기면 충분히 예열된 것이다."
-        },
-        {
-          "cookMethod": "볶기",
-          "ingredients": [
+            },
             {
               "name": "돼지고기 앞다리살",
               "amount": "300g",
               "category": "육류"
             }
           ],
-          "description": "예열된 냄비에 돼지고기 앞다리살 300g을 넣고 노릇해질 때까지 중불에서 볶는다. 연기가 확 올라오면 뚜껑을 잠시 덮어준다."
+          "description": "22cm 이상 스텐 냄비에 뚜껑을 덮고 중불에서 3분 정도 예열한 뒤 식용유를 한 바퀴 두르고(물결이 생기면 충분히 예열된 것), 돼지고기 앞다리살 300g을 넣어 노릇해질 때까지 중불에서 볶는다."
         },
         {
           "cookMethod": "볶기",
@@ -2526,10 +2499,10 @@
             {
               "name": "새우젓",
               "amount": "1큰술",
-              "category": "가공식품/절임"
+              "category": "양념/소스"
             }
           ],
-          "description": "수분이 날아가고 기름이 자글자글 끓는 소리가 나면 다진 마늘 1큰술을 먼저 넣고 매운 냄새가 빠지면 새우젓 1큰술을 넣어 중불에서 볶는다."
+          "description": "수분이 날아가고 기름이 자글자글 끓는 소리가 나면 다진 마늘 1큰술을 먼저 넣어 매운 냄새를 날리고, 이어서 새우젓 1큰술을 넣고 볶는다."
         },
         {
           "cookMethod": "끓이기",
@@ -2540,7 +2513,7 @@
               "category": "양념/소스"
             }
           ],
-          "description": "재료를 냄비 한쪽으로 몰고 빈 공간에 진간장 2큰술을 넣어 바르르 끓여준 뒤 전체적으로 섞어준다."
+          "description": "재료를 한쪽으로 몰고 빈 공간에 진간장 2큰술을 넣어 바르르 끓여준 뒤 전체를 섞어준다."
         },
         {
           "cookMethod": "볶기",
@@ -2551,7 +2524,7 @@
               "category": "양념/소스"
             }
           ],
-          "description": "약불로 줄인 뒤 고춧가루 2큰술을 넣고 불을 끄고 잔열로 잘 볶아 고추기름을 낸다."
+          "description": "약불로 줄이고 고춧가루 2큰술을 넣은 뒤 불을 끄고 잔열로 잘 볶아 고추기름을 낸다."
         },
         {
           "cookMethod": "끓이기",
@@ -2582,7 +2555,7 @@
               "category": "가공식품/절임"
             }
           ],
-          "description": "물 1L를 넣고 강불로 올린 뒤, 썰어둔 양파와 대파, 가위로 먹기 좋게 자른 김치 1/4포기, 김치 국물 반컵(100ml)을 넣고 끓인다."
+          "description": "물 1L를 붓고 강불로 올린 뒤 썰어둔 양파, 대파, 가위로 먹기 좋게 자른 김치, 김치 국물 반컵(100ml)을 넣고 끓인다."
         },
         {
           "cookMethod": "끓이기",
@@ -2593,7 +2566,7 @@
               "category": "양념/소스"
             }
           ],
-          "description": "바글바글 끓기 시작하면 중불로 줄이고 굵은소금 1작은술을 넣은 뒤 뚜껑을 덮어 40분간 끓인다. 20분 후 너무 졸았으면 약불로 줄이고, 30분쯤 간을 보아 짜면 소주잔 한 컵 정도 물을 추가하고 싱거우면 10분 더 졸인다."
+          "description": "바글바글 끓기 시작하면 중불로 줄이고 굵은소금 1작은술을 넣은 뒤 뚜껑을 덮어 40분 정도 끓인다(20분 후 너무 졸았으면 약불, 30분쯤 간을 보고 짜면 소주잔 한 컵 분량의 물 추가, 싱거우면 10분 더 졸인다)."
         },
         {
           "cookMethod": "끓이기",
@@ -2609,120 +2582,134 @@
               "category": "콩/두부"
             }
           ],
-          "description": "마무리 단계에서 식초 1큰술과 썰어둔 두부를 넣고 두부가 따뜻해질 때까지 더 끓여 완성한다."
+          "description": "마무리 단계에 식초 1큰술과 썰어둔 두부 1/2모를 넣고 두부가 따뜻해질 때까지 더 끓여 완성한다."
         }
       ],
       "nutritionInfo": {
-        "calories": 1280,
+        "calories": 1270,
         "carbs": 62,
-        "protein": 88,
-        "fat": 77
+        "protein": 87,
+        "fat": 74
       }
     }
   },
   {
-    "id": "c25bd9f65a4c25f2",
+    "id": "f3e11d405f63298f",
     "readCount": 0,
     "recipe": {
       "title": "[닭고기대파덮밥] 누구나 20분이면 뚝딱 만드는, 정현표 닭고기덮밥👍 양념도 단 3개면 됩니다 [신상출시 편스토랑/Fun_Staurant] | KBS 260327 방송",
-      "description": "닭기름에 볶은 대파·알배추와 간장 양념 닭고기 구이를 밥 위에 올린 20분 완성 퀵 도시락 덮밥.",
+      "description": "20분이면 완성되는 양념 3가지로 만드는 정현표 닭고기 대파 덮밥.",
       "tags": [
         "한식",
         "덮밥",
-        "도시락",
         "닭고기",
-        "간단요리"
+        "간단",
+        "한그릇"
       ],
-      "servings": 1,
+      "servings": 2,
       "estimatedMinutes": 20,
       "sourceUrl": "https://www.youtube.com/watch?v=BnC_gXXmqFk",
       "sourceUrlType": "youtube",
       "thumbnailUrl": "https://i.ytimg.com/vi/BnC_gXXmqFk/maxresdefault.jpg",
       "language": "ko",
       "mainIngredients": [
-        "닭고기",
         "대파",
-        "알배추",
+        "양배추",
+        "순살 닭다리살",
         "꽈리고추",
         "밥"
       ],
       "ingredients": [
         {
-          "name": "닭고기",
-          "amount": "적당량",
+          "name": "순살 닭다리살",
+          "amount": "300g",
           "category": "육류",
           "order": 0,
-          "stepIndex": 0
+          "stepIndex": 1
         },
         {
           "name": "소금",
           "amount": "적당량",
           "category": "양념/소스",
           "order": 1,
-          "stepIndex": 0
+          "stepIndex": 1
         },
         {
-          "name": "식용유",
+          "name": "후추",
           "amount": "적당량",
           "category": "양념/소스",
           "order": 2,
+          "stepIndex": 5
+        },
+        {
+          "name": "아보카도 오일",
+          "amount": "적당량",
+          "category": "양념/소스",
+          "order": 3,
           "stepIndex": 1
         },
         {
           "name": "대파",
-          "amount": "적당량",
-          "category": "채소",
-          "order": 3,
-          "stepIndex": 2
-        },
-        {
-          "name": "알배추",
-          "amount": "적당량",
+          "amount": "1대",
           "category": "채소",
           "order": 4,
-          "stepIndex": 2
+          "stepIndex": 0
         },
         {
-          "name": "꽈리고추",
-          "amount": "적당량",
+          "name": "양배추",
+          "amount": "1/8개",
           "category": "채소",
           "order": 5,
-          "stepIndex": 4
-        },
-        {
-          "name": "간장",
-          "amount": "3큰술",
-          "category": "양념/소스",
-          "order": 6,
-          "stepIndex": 3
-        },
-        {
-          "name": "올리고당",
-          "amount": "2큰술",
-          "category": "양념/소스",
-          "order": 7,
-          "stepIndex": 3
-        },
-        {
-          "name": "식초",
-          "amount": "1큰술",
-          "category": "양념/소스",
-          "order": 8,
-          "stepIndex": 3
+          "stepIndex": 0
         },
         {
           "name": "밥",
-          "amount": "적당량",
+          "amount": "1공기(210g)",
           "category": "곡류/면",
+          "order": 6,
+          "stepIndex": 7
+        },
+        {
+          "name": "양조간장",
+          "amount": "3T",
+          "category": "양념/소스",
+          "order": 7,
+          "stepIndex": 4
+        },
+        {
+          "name": "청주",
+          "amount": "1T",
+          "category": "양념/소스",
+          "order": 8,
+          "stepIndex": 5
+        },
+        {
+          "name": "프락토 올리고당",
+          "amount": "2T",
+          "category": "양념/소스",
           "order": 9,
+          "stepIndex": 5
+        },
+        {
+          "name": "양조식초",
+          "amount": "1T",
+          "category": "양념/소스",
+          "order": 10,
+          "stepIndex": 5
+        },
+        {
+          "name": "꽈리고추",
+          "amount": "2개",
+          "category": "채소",
+          "order": 11,
           "stepIndex": 6
         },
         {
-          "name": "식초",
-          "amount": "적당량",
-          "category": "양념/소스",
-          "order": 10,
-          "stepIndex": 0
+          "name": "반숙 달걀",
+          "amount": "1개",
+          "category": "달걀/유제품",
+          "order": 12,
+          "stepIndex": 7
         }
       ],
       "searchTokens": [
@@ -3580,200 +3567,263 @@
         " 방송",
         "방송",
         "한식",
-        "도시락",
-        "간단요리",
-        "알배추",
+        "간단",
+        "한그릇",
+        "양배추",
+        "순살 닭다리살",
         "꽈리고추"
       ],
       "sourceType": "link",
       "steps": [
         {
-          "cookMethod": "씻기",
+          "cookMethod": "썰기",
           "ingredients": [
             {
-              "name": "닭고기",
-              "amount": "적당량",
-              "category": "육류"
+              "name": "대파",
+              "amount": "1대",
+              "category": "채소"
             },
             {
-              "name": "식초",
-              "amount": "적당량",
-              "category": "양념/소스"
-            },
-            {
-              "name": "소금",
-              "amount": "적당량",
-              "category": "양념/소스"
+              "name": "양배추",
+              "amount": "1/8개",
+              "category": "채소"
             }
           ],
-          "description": "닭고기를 식초로 세척해 비린내를 제거하고 소금으로 밑간한다."
+          "description": "대파 흰대는 4cm 길이로 썰어 반으로 자르고, 초록 부분은 4cm 길이로 썬다. 양배추는 도톰하게 채 썬다."
         },
         {
           "cookMethod": "굽기",
           "ingredients": [
             {
-              "name": "식용유",
+              "name": "순살 닭다리살",
+              "amount": "300g",
+              "category": "육류"
+            },
+            {
+              "name": "소금",
               "amount": "적당량",
               "category": "양념/소스"
             },
             {
-              "name": "닭고기",
+              "name": "아보카도 오일",
               "amount": "적당량",
+              "category": "양념/소스"
+            }
+          ],
+          "description": "닭다리살에 소금을 뿌려 간을 한 뒤, 팬에 기름을 두르고 껍질 쪽부터 올려 중불에서 노릇하게 굽는다."
+        },
+        {
+          "cookMethod": "썰기",
+          "ingredients": [
+            {
+              "name": "순살 닭다리살",
+              "amount": "300g",
               "category": "육류"
             }
           ],
-          "description": "예열한 기름에 닭고기를 껍질이 바닥으로 가게 넣어 감칠맛 나는 닭기름이 나올 때까지 굽는다."
+          "description": "노릇하게 구워진 닭고기를 한입 크기로 자른다."
         },
         {
           "cookMethod": "볶기",
           "ingredients": [
             {
               "name": "대파",
-              "amount": "적당량",
+              "amount": "1대",
               "category": "채소"
             },
             {
-              "name": "알배추",
-              "amount": "적당량",
+              "name": "양배추",
+              "amount": "1/8개",
               "category": "채소"
             }
           ],
-          "description": "닭고기를 구운 닭기름에 대파와 알배추를 넣고 채소 숨이 살짝 죽을 때까지 볶는다."
+          "description": "닭에서 나온 기름에 대파와 양배추를 넣고 숨이 죽을 때까지 함께 볶는다."
         },
         {
-          "cookMethod": "조림",
+          "cookMethod": "끓이기",
           "ingredients": [
             {
-              "name": "간장",
-              "amount": "3큰술",
-              "category": "양념/소스"
-            },
-            {
-              "name": "올리고당",
-              "amount": "2큰술",
-              "category": "양념/소스"
-            },
-            {
-              "name": "식초",
-              "amount": "1큰술",
+              "name": "양조간장",
+              "amount": "3T",
               "category": "양념/소스"
             }
           ],
-          "description": "팬에 간장 3큰술, 올리고당 2큰술, 식초 1큰술을 넣고 닭고기와 채소에 양념이 고루 배도록 졸인다."
+          "description": "채소가 숨이 죽으면 팬 한쪽에 기름을 모은 뒤 간장을 넣고 살짝 태우듯 끓여 불맛을 낸다."
         },
         {
-          "cookMethod": "썰기",
+          "cookMethod": "볶기",
+          "ingredients": [
+            {
+              "name": "청주",
+              "amount": "1T",
+              "category": "양념/소스"
+            },
+            {
+              "name": "프락토 올리고당",
+              "amount": "2T",
+              "category": "양념/소스"
+            },
+            {
+              "name": "양조식초",
+              "amount": "1T",
+              "category": "양념/소스"
+            },
+            {
+              "name": "후추",
+              "amount": "적당량",
+              "category": "양념/소스"
+            }
+          ],
+          "description": "청주 1T, 올리고당 2T, 양조식초 1T를 넣고 볶은 뒤 불을 끄기 전 토치로 한 번 더 불맛을 입히고 마지막에 후추를 뿌려 마무리한다."
+        },
+        {
+          "cookMethod": "볶기",
           "ingredients": [
             {
               "name": "꽈리고추",
-              "amount": "적당량",
+              "amount": "2개",
               "category": "채소"
-            }
-          ],
-          "description": "꽈리고추를 길게 반으로 갈라 씨를 제거한다."
-        },
-        {
-          "cookMethod": "굽기",
-          "ingredients": [
+            },
             {
-              "name": "꽈리고추",
+              "name": "아보카도 오일",
               "amount": "적당량",
-              "category": "채소"
+              "category": "양념/소스"
             }
           ],
-          "description": "씨를 제거한 꽈리고추를 직화로 살짝 그을릴 정도로 구워 불 맛을 입힌다."
+          "description": "꽈리고추 2개를 채 썬 뒤, 팬에 기름을 두르고 살짝 볶은 다음 토치로 불향을 더한다."
         },
         {
           "cookMethod": "담기",
           "ingredients": [
             {
               "name": "밥",
-              "amount": "적당량",
+              "amount": "1공기(210g)",
               "category": "곡류/면"
             },
             {
-              "name": "알배추",
-              "amount": "적당량",
+              "name": "양배추",
+              "amount": "1/8개",
               "category": "채소"
             },
             {
-              "name": "대파",
-              "amount": "적당량",
-              "category": "채소"
-            },
-            {
-              "name": "닭고기",
-              "amount": "적당량",
+              "name": "순살 닭다리살",
+              "amount": "300g",
               "category": "육류"
             },
             {
+              "name": "대파",
+              "amount": "1대",
+              "category": "채소"
+            },
+            {
+              "name": "반숙 달걀",
+              "amount": "1개",
+              "category": "달걀/유제품"
+            },
+            {
               "name": "꽈리고추",
-              "amount": "적당량",
+              "amount": "2개",
               "category": "채소"
             }
           ],
-          "description": "밥 위에 볶은 알배추와 대파를 깔고 닭고기 구이를 껍질이 위로 가게 올린 뒤 구운 꽈리고추를 곁들여 완성한다."
+          "description": "접시나 도시락에 밥 → 양배추 → 닭고기와 대파 순으로 담고, 반으로 자른 반숙 달걀을 한쪽에 올린 뒤 닭고기 위에 꽈리고추 고명을 얹어 완성한다."
         }
       ],
       "nutritionInfo": {
         "calories": 720,
-        "carbs": 92,
-        "protein": 30,
-        "fat": 18
+        "carbs": 95,
+        "protein": 42,
+        "fat": 22
       }
     }
   },
   {
-    "id": "d9aeb4efe8e7b64c",
+    "id": "9a44bb78bf61b914",
     "readCount": 0,
     "recipe": {
       "title": "아기맹수 김시현의 봄동비빔밥 레시피",
-      "description": "끝물 봄동을 소금에 살짝 절이고 된장 한 스푼으로 비벼내는 초간단 봄철 비빔밥",
+      "description": "끝물 봄동을 차돌박이와 된장 양념에 비벼 먹는 초간단 봄동 비빔밥.",
       "tags": [
         "한식",
-        "봄동",
         "비빔밥",
+        "봄동",
         "간단",
-        "봄철"
+        "제철"
       ],
-      "servings": 1,
-      "estimatedMinutes": 15,
+      "servings": 2,
+      "estimatedMinutes": 20,
       "sourceUrl": "https://www.youtube.com/watch?v=dledDnxHrgc",
       "sourceUrlType": "youtube",
       "thumbnailUrl": "https://i.ytimg.com/vi/dledDnxHrgc/maxresdefault.jpg",
       "language": "ko",
       "mainIngredients": [
         "봄동",
+        "차돌박이",
         "밥"
       ],
       "ingredients": [
         {
           "name": "봄동",
-          "amount": "적당량",
+          "amount": "1/2통",
           "category": "채소",
           "order": 0,
           "stepIndex": 0
         },
         {
-          "name": "소금",
-          "amount": "적당량",
-          "category": "양념/소스",
+          "name": "차돌박이",
+          "amount": "150g",
+          "category": "육류",
           "order": 1,
-          "stepIndex": 2
-        },
-        {
-          "name": "된장",
-          "amount": "1스푼",
-          "category": "양념/소스",
-          "order": 2,
           "stepIndex": 3
         },
         {
           "name": "밥",
-          "amount": "1공기",
+          "amount": "2공기",
           "category": "곡류/면",
+          "order": 2,
+          "stepIndex": 4
+        },
+        {
+          "name": "소금",
+          "amount": "적당량",
+          "category": "양념/소스",
           "order": 3,
-          "stepIndex": 3
+          "stepIndex": 2
+        },
+        {
+          "name": "된장",
+          "amount": "1큰술",
+          "category": "양념/소스",
+          "order": 4,
+          "stepIndex": 4
+        },
+        {
+          "name": "간장",
+          "amount": "적당량",
+          "category": "양념/소스",
+          "order": 5,
+          "stepIndex": 4
+        },
+        {
+          "name": "깨",
+          "amount": "적당량",
+          "category": "양념/소스",
+          "order": 6,
+          "stepIndex": 4
+        },
+        {
+          "name": "고춧가루",
+          "amount": "적당량",
+          "category": "양념/소스",
+          "order": 7,
+          "stepIndex": 4
+        },
+        {
+          "name": "참기름",
+          "amount": "적당량",
+          "category": "양념/소스",
+          "order": 8,
+          "stepIndex": 4
         }
       ],
       "searchTokens": [
@@ -3920,7 +3970,8 @@
         "시피",
         "한식",
         "간단",
-        "봄철"
+        "제철",
+        "차돌박이"
       ],
       "sourceType": "link",
       "steps": [
@@ -3929,29 +3980,29 @@
           "ingredients": [
             {
               "name": "봄동",
-              "amount": "적당량",
+              "amount": "1/2통",
               "category": "채소"
             }
           ],
-          "description": "봄동의 뿌리를 잘라낸다. 파인 다이닝식으로 모든 잎이 이븐하게 들어가도록 세로로 반을 가른 뒤 가로로 쭉쭉 썰어 4등분한다."
+          "description": "봄동의 뿌리를 떼어내고, 모든 잎이 이븐하게 씹히도록 세로로 반을 가른 뒤 한입 크기로 쭉쭉 썰어준다."
         },
         {
           "cookMethod": "씻기",
           "ingredients": [
             {
               "name": "봄동",
-              "amount": "적당량",
+              "amount": "1/2통",
               "category": "채소"
             }
           ],
-          "description": "한입 크기로 썬 봄동을 물에 깨끗이 씻은 뒤 물기를 충분히 털어낸다. 봄동 생명 연장 꿀팁."
+          "description": "한입 크기로 썬 봄동을 물에 한 번 씻은 다음 물기를 충분히 털어낸다. (씻은 뒤 보관하면 봄동 생명 연장에도 도움)"
         },
         {
           "cookMethod": "절이기",
           "ingredients": [
             {
               "name": "봄동",
-              "amount": "적당량",
+              "amount": "1/2통",
               "category": "채소"
             },
             {
@@ -3960,44 +4011,80 @@
               "category": "양념/소스"
             }
           ],
-          "description": "씻은 봄동에 소금을 살짝 뿌려 절인다. 양념이 겉돌지 않게 잡아주는 밑간 역할이다."
+          "description": "씻어 둔 봄동에 소금을 살짝 뿌려 가볍게 절여 밑간을 한다. 이렇게 하면 양념이 겉돌지 않고 잘 묻는다."
+        },
+        {
+          "cookMethod": "굽기",
+          "ingredients": [
+            {
+              "name": "차돌박이",
+              "amount": "150g",
+              "category": "육류"
+            }
+          ],
+          "description": "달군 팬에 차돌박이를 펼쳐 올리고 센불에서 노릇하게 구워낸다."
         },
         {
           "cookMethod": "비비기",
           "ingredients": [
             {
               "name": "밥",
-              "amount": "1공기",
+              "amount": "2공기",
               "category": "곡류/면"
             },
             {
               "name": "봄동",
-              "amount": "적당량",
+              "amount": "1/2통",
               "category": "채소"
             },
             {
+              "name": "차돌박이",
+              "amount": "150g",
+              "category": "육류"
+            },
+            {
               "name": "된장",
-              "amount": "1스푼",
+              "amount": "1큰술",
+              "category": "양념/소스"
+            },
+            {
+              "name": "간장",
+              "amount": "적당량",
+              "category": "양념/소스"
+            },
+            {
+              "name": "고춧가루",
+              "amount": "적당량",
+              "category": "양념/소스"
+            },
+            {
+              "name": "깨",
+              "amount": "적당량",
+              "category": "양념/소스"
+            },
+            {
+              "name": "참기름",
+              "amount": "적당량",
               "category": "양념/소스"
             }
           ],
-          "description": "그릇에 밥과 절인 봄동을 담고 된장 1스푼을 올려 골고루 비빈다. 된장은 염도가 센 편이므로 한 스푼 정도면 충분하다."
+          "description": "그릇에 밥을 담고 절인 봄동과 구운 차돌박이를 올린 뒤, 된장 1스푼·간장·고춧가루·깨·참기름을 넣고 골고루 비벼 완성한다. (된장은 염도가 센 편이라 1스푼 정도가 적당)"
         }
       ],
       "nutritionInfo": {
-        "calories": 380,
-        "carbs": 76,
-        "protein": 9,
-        "fat": 2
+        "calories": 620,
+        "carbs": 78,
+        "protein": 22,
+        "fat": 24
       }
     }
   },
   {
-    "id": "3441180f7df3ac33",
+    "id": "02e6d059a8195673",
     "readCount": 0,
     "recipe": {
       "title": "[초간단 자취요리] 고깃집보다 더 맛있는 고깃집 된장찌개 / Doenjang-jjigae",
-      "description": "쌈장과 된장을 함께 넣어 깊은 맛을 내는 고깃집 스타일 된장찌개.",
+      "description": "쌈장과 된장을 섞은 황금 양념으로 끓여낸 고깃집 스타일 된장찌개.",
       "tags": [
         "한식",
         "찌개",
@@ -4035,21 +4122,21 @@
         },
         {
           "name": "양파",
-          "amount": "적당량",
+          "amount": "1개",
           "category": "채소",
           "order": 2,
           "stepIndex": 1
         },
         {
           "name": "애호박",
-          "amount": "적당량",
+          "amount": "1/2개",
           "category": "채소",
           "order": 3,
           "stepIndex": 1
         },
         {
           "name": "쌀뜨물",
-          "amount": "3종이컵",
+          "amount": "종이컵 3컵",
           "category": "곡류/면",
           "order": 4,
           "stepIndex": 2
@@ -4536,37 +4623,27 @@
           "ingredients": [
             {
               "name": "양파",
-              "amount": "적당량",
+              "amount": "1개",
               "category": "채소"
             },
             {
               "name": "애호박",
-              "amount": "적당량",
+              "amount": "1/2개",
               "category": "채소"
             }
           ],
-          "description": "양파와 애호박을 큼직하게 썰어 준비한다."
+          "description": "양파와 애호박을 큼직하게 썰어 뚝배기에 넣는다."
         },
         {
-          "cookMethod": "담기",
+          "cookMethod": "끓이기",
           "ingredients": [
             {
-              "name": "양파",
-              "amount": "적당량",
-              "category": "채소"
-            },
-            {
-              "name": "애호박",
-              "amount": "적당량",
-              "category": "채소"
-            },
-            {
               "name": "쌀뜨물",
-              "amount": "3종이컵",
+              "amount": "종이컵 3컵",
               "category": "곡류/면"
             }
           ],
-          "description": "뚝배기에 썰어둔 양파와 애호박을 담고 쌀뜨물 종이컵 3컵을 부어준다 (육수도 좋고, MSG가 있으면 쌀뜨물만 써도 무방)."
+          "description": "뚝배기에 쌀뜨물 종이컵 3컵을 넣는다(육수도 좋고, MSG 있으면 생략 가능)."
         },
         {
           "cookMethod": "끓이기",
@@ -4592,7 +4669,7 @@
               "category": "양념/소스"
             }
           ],
-          "description": "센불로 올리고 만들어둔 양념을 넣은 뒤 고추가루와 다시다를 1/2스푼씩 추가한다."
+          "description": "센불로 올리고 만들어둔 양념을 투척한 뒤, 고추가루와 다시다를 반스푼씩 넣는다."
         },
         {
           "cookMethod": "끓이기",
@@ -4603,7 +4680,7 @@
               "category": "콩/두부"
             }
           ],
-          "description": "찌개가 끓어오르면 두부 1/2모를 넣어준다."
+          "description": "찌개가 끓어오르면 두부 반모를 넣는다."
         },
         {
           "cookMethod": "끓이기",
@@ -4614,31 +4691,31 @@
               "category": "육류"
             }
           ],
-          "description": "차돌박이(또는 대패삼겹살)를 넣고 고기가 완전히 익을 때까지 센불에서 끓여 마무리한다."
+          "description": "차돌박이 또는 대패삼겹살을 넣고 고기가 익을 때까지 끓이면 완성."
         }
       ],
       "nutritionInfo": {
-        "calories": 920,
-        "carbs": 28,
-        "protein": 48,
-        "fat": 68
+        "calories": 980,
+        "carbs": 44,
+        "protein": 54,
+        "fat": 62
       }
     }
   },
   {
-    "id": "ea5f2f81938855a1",
+    "id": "cbbd6d1c1d49ccc3",
     "readCount": 0,
     "recipe": {
       "title": "[#편스토랑] 류수영의 초대박 제육 레시피!! 😎kbscookㅣKBS 220114 방송",
-      "description": "배 대신 배음료를 활용한 가성비 백반집 스타일 제육볶음 레시피",
+      "description": "고추장 9:간장 3:설탕 2 황금비율과 배 음료·식초로 만드는 백반집 스타일 제육볶음.",
       "tags": [
         "한식",
+        "제육볶음",
         "매운맛",
-        "돼지고기",
-        "백반",
-        "어남선생"
+        "밥반찬",
+        "돼지고기"
       ],
-      "servings": 3,
+      "servings": 4,
       "estimatedMinutes": 30,
       "sourceUrl": "https://www.youtube.com/watch?v=oe_WhcK2X4Q",
       "sourceUrlType": "youtube",
@@ -4672,30 +4749,23 @@
         },
         {
           "name": "고추장",
-          "amount": "3큰술",
+          "amount": "담뿍 3큰술",
           "category": "양념/소스",
           "order": 3,
           "stepIndex": 2
         },
         {
-          "name": "배 음료",
-          "amount": "적당량",
-          "category": "가공식품/절임",
+          "name": "식초",
+          "amount": "2큰술",
+          "category": "양념/소스",
           "order": 4,
           "stepIndex": 3
         },
         {
-          "name": "식초",
-          "amount": "2큰술",
-          "category": "양념/소스",
-          "order": 5,
-          "stepIndex": 3
-        },
-        {
-          "name": "참기름",
+          "name": "배 음료",
           "amount": "적당량",
-          "category": "양념/소스",
-          "order": 6,
+          "category": "가공식품/절임",
+          "order": 5,
           "stepIndex": 3
         }
       ],
@@ -5132,17 +5202,17 @@
         " 방송",
         "방송",
         "한식",
+        "제육볶음",
         "매운맛",
+        "밥반찬",
         "돼지고기",
-        "백반",
-        "어남선생",
         "돼지고기 앞다리살",
         "배 음료"
       ],
       "sourceType": "link",
       "steps": [
         {
-          "cookMethod": "절이기",
+          "cookMethod": "핏물 제거",
           "ingredients": [
             {
               "name": "돼지고기 앞다리살",
@@ -5150,7 +5220,7 @@
               "category": "육류"
             }
           ],
-          "description": "돼지고기 앞다리살을 키친타월로 꾹꾹 눌러 핏물을 완전히 제거한다. 핏물은 고기 잡내의 원인이므로 반드시 제거한다. 기름이 많은 삼겹살보다 앞다리살을 추천한다."
+          "description": "기름 많은 삼겹살 대신 앞다리살을 준비하고, 키친타월로 꾹꾹 눌러 잡내의 원인이 되는 핏물을 완전히 제거한다."
         },
         {
           "cookMethod": "썰기",
@@ -5161,7 +5231,7 @@
               "category": "육류"
             }
           ],
-          "description": "핏물을 뺀 돼지고기를 개인 취향껏 먹기 좋은 사이즈로 썬다."
+          "description": "핏물 뺀 고기를 개인 취향에 맞춰 먹기 좋은 사이즈로 커팅한다."
         },
         {
           "cookMethod": "섞기",
@@ -5178,37 +5248,32 @@
             },
             {
               "name": "고추장",
-              "amount": "3큰술",
+              "amount": "담뿍 3큰술",
               "category": "양념/소스"
             }
           ],
-          "description": "반찬통에 가루-액체-고체 순서로 설탕 2큰술, 간장 3큰술, 고추장 담뿍 3큰술을 넣는다. 양념 비율은 고추장 3 : 간장 3 : 설탕 2가 기본이다."
+          "description": "반찬통에 가루→액체→고체 순서로, 고추장 9 : 간장 3 : 설탕 2 비율을 지켜 설탕 2큰술, 간장 3큰술, 고추장 담뿍 3큰술을 넣는다."
         },
         {
           "cookMethod": "섞기",
           "ingredients": [
-            {
-              "name": "배 음료",
-              "amount": "적당량",
-              "category": "가공식품/절임"
-            },
             {
               "name": "식초",
               "amount": "2큰술",
               "category": "양념/소스"
             },
             {
-              "name": "참기름",
+              "name": "배 음료",
               "amount": "적당량",
-              "category": "양념/소스"
+              "category": "가공식품/절임"
             }
           ],
-          "description": "비싼 배 대신 배 음료를 넣어 수분·연육·과당 역할을 대신한다. 식초 2큰술과 참기름을 추가한다(식초는 가열 시 신맛이 날아간다). 물은 절대 넣지 않는다."
+          "description": "양념장에 비장의 무기인 식초 2큰술을 더하고(가열 시 신맛은 날아감), 비싼 배 대신 배 음료를 부어 수분·연육·과당 역할을 동시에 잡는다. 물은 절대 넣지 않는다."
         },
         {
           "cookMethod": "섞기",
           "ingredients": [],
-          "description": "반찬통의 뚜껑을 닫고 셰킷셰킷 흔들어 양념장을 완성한다."
+          "description": "반찬통 뚜껑을 닫고 위아래로 세게 흔들어 양념을 균일하게 섞는다."
         },
         {
           "cookMethod": "재우기",
@@ -5219,42 +5284,36 @@
               "category": "육류"
             }
           ],
-          "description": "썰어둔 돼지고기에 양념장을 부어 고기가 뭉치지 않게 잘 펴서 양념이 골고루 배도록 재운다."
+          "description": "썰어둔 고기에 완성된 양념장을 부어 고기가 뭉치지 않도록 잘 펴서 골고루 묻힌 뒤 재워 둔다."
         },
         {
           "cookMethod": "볶기",
-          "ingredients": [
-            {
-              "name": "돼지고기 앞다리살",
-              "amount": "600g",
-              "category": "육류"
-            }
-          ],
-          "description": "달군 팬에 양념에 재운 돼지고기를 넣고 중불에서 고기가 완전히 익고 양념이 졸아들어 윤기가 날 때까지 볶는다."
+          "ingredients": [],
+          "description": "달군 팬에 양념에 재운 고기를 올려 중불에서 고기가 익고 양념이 졸아 윤기가 날 때까지 볶는다."
         }
       ],
       "nutritionInfo": {
-        "calories": 1470,
-        "carbs": 60,
-        "protein": 120,
-        "fat": 70
+        "calories": 1520,
+        "carbs": 78,
+        "protein": 122,
+        "fat": 62
       }
     }
   },
   {
-    "id": "de008acc04178f50",
+    "id": "0b8fedab751af0b0",
     "readCount": 0,
     "recipe": {
       "title": "🔥요즘 sns에서 핫한 상하이 버터떡 만들기 + 쫀득바삭 꿀팁 포함! (기본, 고구마맛) | shanghai butter mochi",
-      "description": "겉은 바삭하고 속은 쫀득한 상하이 버터떡, 기본맛과 자색고구마맛 두 가지로 즐기는 홈베이킹 레시피.",
+      "description": "겉은 까눌레처럼 바삭하고 속은 퐁신쫄깃한 SNS 인기 상하이 버터떡",
       "tags": [
-        "홈베이킹",
+        "베이킹",
+        "디저트",
+        "찹쌀",
         "버터떡",
-        "찹쌀디저트",
-        "상하이버터떡",
         "간식"
       ],
-      "servings": 12,
+      "servings": 6,
       "estimatedMinutes": 45,
       "sourceUrl": "https://www.youtube.com/watch?v=ZWfSHqXufog",
       "sourceUrlType": "youtube",
@@ -5262,10 +5321,10 @@
       "language": "ko",
       "mainIngredients": [
         "달걀",
-        "설탕",
         "우유",
         "무염버터",
-        "건식 찹쌀가루"
+        "건식 찹쌀가루",
+        "타피오카 전분"
       ],
       "ingredients": [
         {
@@ -5278,7 +5337,7 @@
         {
           "name": "설탕",
           "amount": "80g",
-          "category": "베이킹",
+          "category": "양념/소스",
           "order": 1,
           "stepIndex": 0
         },
@@ -5306,37 +5365,16 @@
         {
           "name": "건식 찹쌀가루",
           "amount": "112g",
-          "category": "곡류/면",
+          "category": "베이킹",
           "order": 5,
-          "stepIndex": 3
+          "stepIndex": 2
         },
         {
           "name": "타피오카 전분",
           "amount": "48g",
           "category": "베이킹",
           "order": 6,
-          "stepIndex": 3
-        },
-        {
-          "name": "자색고구마 가루",
-          "amount": "16g",
-          "category": "베이킹",
-          "order": 7,
-          "stepIndex": 4
-        },
-        {
-          "name": "고구마 필링",
-          "amount": "적당량",
-          "category": "가공식품/절임",
-          "order": 8,
-          "stepIndex": 6
-        },
-        {
-          "name": "틀용 버터",
-          "amount": "적당량",
-          "category": "달걀/유제품",
-          "order": 9,
-          "stepIndex": 5
+          "stepIndex": 2
         }
       ],
       "searchTokens": [
@@ -6007,15 +6045,15 @@
         "ch",
         "chi",
         "hi",
-        "홈베이킹",
-        "찹쌀디저트",
-        "상하이버터떡",
+        "베이킹",
+        "디저트",
+        "찹쌀",
         "간식",
         "달걀",
-        "설탕",
         "우유",
         "무염버터",
-        "건식 찹쌀가루"
+        "건식 찹쌀가루",
+        "타피오카 전분"
       ],
       "sourceType": "link",
       "steps": [
@@ -6030,7 +6068,7 @@
             {
               "name": "설탕",
               "amount": "80g",
-              "category": "베이킹"
+              "category": "양념/소스"
             },
             {
               "name": "소금",
@@ -6038,7 +6076,7 @@
               "category": "양념/소스"
             }
           ],
-          "description": "볼에 실온의 달걀, 설탕, 소금을 넣고 기포가 생기지 않게 가볍게 섞어준다."
+          "description": "볼에 실온의 달걀, 설탕, 소금을 넣고 기포가 생기지 않게 가볍게 섞는다."
         },
         {
           "cookMethod": "섞기",
@@ -6054,12 +6092,7 @@
               "category": "달걀/유제품"
             }
           ],
-          "description": "우유와 버터를 함께 넣고 전자레인지에 돌려 약 45도 정도로 데워 버터를 녹인다(너무 뜨겁게 데우면 달걀이 익을 수 있다)."
-        },
-        {
-          "cookMethod": "섞기",
-          "ingredients": [],
-          "description": "1번 달걀 혼합물에 데운 우유+버터를 넣고 섞어준다."
+          "description": "우유와 버터를 함께 넣고 전자레인지에 돌려 약 45°C 정도로 버터가 녹을 때까지 데운 후 달걀 반죽에 부어 섞는다. 너무 뜨겁게 데우면 달걀이 익을 수 있으니 주의한다."
         },
         {
           "cookMethod": "섞기",
@@ -6067,7 +6100,7 @@
             {
               "name": "건식 찹쌀가루",
               "amount": "112g",
-              "category": "곡류/면"
+              "category": "베이킹"
             },
             {
               "name": "타피오카 전분",
@@ -6075,67 +6108,29 @@
               "category": "베이킹"
             }
           ],
-          "description": "찹쌀가루와 타피오카 전분을 넣고 가루가 뭉치지 않게 잘 섞어 주르륵 흐르는 농도의 반죽을 만든 뒤 체에 한 번 걸러준다(기본 반죽)."
-        },
-        {
-          "cookMethod": "섞기",
-          "ingredients": [
-            {
-              "name": "건식 찹쌀가루",
-              "amount": "105g",
-              "category": "곡류/면"
-            },
-            {
-              "name": "자색고구마 가루",
-              "amount": "16g",
-              "category": "베이킹"
-            },
-            {
-              "name": "타피오카 전분",
-              "amount": "40g",
-              "category": "베이킹"
-            }
-          ],
-          "description": "고구마맛은 동일한 방식으로 달걀·설탕·소금·우유·버터를 섞은 후 찹쌀가루, 자색고구마 가루, 타피오카 전분을 넣고 잘 섞어 체에 걸러 고구마 반죽을 완성한다."
+          "description": "건식 찹쌀가루와 타피오카 전분을 넣고 가루가 뭉치지 않게 잘 섞은 뒤, 체에 한 번 걸러 주르륵 흐르는 농도의 매끄러운 반죽을 완성한다."
         },
         {
           "cookMethod": "담기",
-          "ingredients": [
-            {
-              "name": "틀용 버터",
-              "amount": "적당량",
-              "category": "달걀/유제품"
-            }
-          ],
-          "description": "밤틀에 버터를 듬뿍 발라준다(많이 발라야 구울 때 버터가 지글지글 끓으며 겉이 바삭해지고 버터 향이 진해진다)."
-        },
-        {
-          "cookMethod": "담기",
-          "ingredients": [
-            {
-              "name": "고구마 필링",
-              "amount": "적당량",
-              "category": "가공식품/절임"
-            }
-          ],
-          "description": "기본 반죽은 1구에 40g씩 담고, 고구마 반죽은 반죽 20g → 고구마 필링 8g → 반죽 10g 순으로 담아준다."
+          "ingredients": [],
+          "description": "밤틀 안쪽에 무염버터를 듬뿍 발라준 뒤, 1구에 반죽을 40g씩 담는다. 버터를 많이 발라야 구울 때 지글지글 끓으며 겉이 더 바삭해지고 버터 향이 진해진다."
         },
         {
           "cookMethod": "굽기",
           "ingredients": [],
-          "description": "200°C로 예열한 오븐에 넣고 180°C로 25분간 굽는다(우녹스 003 기준, 위즈웰 인헨스2는 210°C 예열 후 190°C 10분 → 180°C 25분 굽기)."
+          "description": "200°C로 예열한 오븐에 넣고 180°C로 25분간 굽는다 (우녹스 003 기준, 위즈웰 인헨스2는 210°C 예열 후 190°C 10분→180°C 25분). 노릇노릇한 색이 날 때까지 충분히 구워야 겉바속쫀 식감이 완성된다."
         },
         {
           "cookMethod": "담기",
           "ingredients": [],
-          "description": "노릇노릇하게 구워지면 틀을 뒤집어 버터떡을 바로 꺼내고(바닥이 눅눅해지지 않도록), 한 김 식힌 후 먹는다."
+          "description": "다 구워지면 틀을 뒤집어 버터떡을 바로 꺼내야 바닥이 눅눅해지지 않고 바삭함이 유지된다. 한 김 식힌 후 먹는다."
         }
       ],
       "nutritionInfo": {
-        "calories": 2400,
-        "carbs": 280,
-        "protein": 35,
-        "fat": 110
+        "calories": 1649,
+        "carbs": 221,
+        "protein": 21,
+        "fat": 75
       }
     }
   }
