@@ -1,314 +1,361 @@
 [
   {
-    "id": "10cb046467eaf1cc",
+    "id": "6c9804bda8260070",
     "readCount": 0,
     "recipe": {
-      "title": "Butter Chicken with Garlic Naan",
-      "description": "Creamy, rich Indian butter chicken served with homemade garlic naan bread.",
-      "tags": [
-        "Indian",
-        "curry",
-        "butter chicken",
-        "naan",
-        "dinner"
-      ],
-      "servings": 4,
-      "estimatedMinutes": 75,
-      "sourceUrl": "https://www.youtube.com/watch?v=wPCEC9IPMps",
-      "sourceUrlType": "youtube",
-      "thumbnailUrl": "https://i.ytimg.com/vi/wPCEC9IPMps/maxresdefault.jpg",
-      "language": "en",
-      "mainIngredients": [
-        "Bone-in chicken drumsticks",
-        "Garlic paste",
-        "Red chili powder",
-        "Salt",
-        "Cooking oil"
-      ],
-      "sourceType": "link",
-      "steps": [
-        {
-          "cookMethod": "Slice",
-          "ingredients": [
-            {
-              "name": "Bone-in chicken drumsticks",
-              "amount": "600g",
-              "category": "Meat"
-            }
-          ],
-          "description": "Debone the chicken drumsticks and remove the skin, then cut into bite-sized chunks."
-        },
-        {
-          "cookMethod": "Marinate",
-          "ingredients": [
-            {
-              "name": "Garlic paste",
-              "amount": "1tbsp",
-              "category": "Produce"
-            },
-            {
-              "name": "Red chili powder",
-              "amount": "1tbsp",
-              "category": "Spices"
-            },
-            {
-              "name": "Salt",
-              "amount": "2tsp",
-              "category": "Spices"
-            }
-          ],
-          "description": "Mix chicken with garlic paste, chili powder, and salt. Marinate for at least 15 minutes."
-        },
-        {
-          "cookMethod": "Fry",
-          "ingredients": [
-            {
-              "name": "Cooking oil",
-              "amount": "2tbsp",
-              "category": "Sauces & Oils"
-            }
-          ],
-          "description": "Heat oil in a pan over medium heat and sear the marinated chicken on both sides, then set aside."
-        },
-        {
-          "cookMethod": "Sauté",
-          "ingredients": [
-            {
-              "name": "Onion",
-              "amount": "1",
-              "category": "Produce"
-            },
-            {
-              "name": "Butter",
-              "amount": "1tbsp",
-              "category": "Dairy & Eggs"
-            }
-          ],
-          "description": "In the same pan, sauté chopped onion with butter until soft and golden, scraping up the fond."
-        },
-        {
-          "cookMethod": "Simmer",
-          "ingredients": [
-            {
-              "name": "Tomatoes",
-              "amount": "2",
-              "category": "Produce"
-            },
-            {
-              "name": "Canned tomatoes",
-              "amount": "1cup",
-              "category": "Canned Goods"
-            },
-            {
-              "name": "Walnuts",
-              "amount": "0.25cup",
-              "category": "Baking & Nuts"
-            },
-            {
-              "name": "Garlic paste",
-              "amount": "1tbsp",
-              "category": "Produce"
-            },
-            {
-              "name": "Distilled vinegar",
-              "amount": "2tbsp",
-              "category": "Sauces & Oils"
-            },
-            {
-              "name": "Sugar",
-              "amount": "4tbsp",
-              "category": "Baking & Nuts"
-            },
-            {
-              "name": "Garam masala",
-              "amount": "0.5tsp",
-              "category": "Spices"
-            },
-            {
-              "name": "Paprika",
-              "amount": "1tsp",
-              "category": "Spices"
-            },
-            {
-              "name": "Salt",
-              "amount": "to taste",
-              "category": "Spices"
-            },
-            {
-              "name": "Water",
-              "amount": "0.5cup",
-              "category": "Produce"
-            }
-          ],
-          "description": "Add tomatoes, nuts, garlic, vinegar, sugar, and spices. Simmer 20 minutes until mushy."
-        },
-        {
-          "cookMethod": "Blend",
-          "ingredients": [],
-          "description": "Transfer the mixture to a blender and puree until smooth, then strain to remove seeds and skins."
-        },
-        {
-          "cookMethod": "Simmer",
-          "ingredients": [
-            {
-              "name": "Butter",
-              "amount": "5tbsp",
-              "category": "Dairy & Eggs"
-            },
-            {
-              "name": "Heavy cream",
-              "amount": "2tbsp",
-              "category": "Dairy & Eggs"
-            },
-            {
-              "name": "Crushed kasuri methi",
-              "amount": "1tsp",
-              "category": "Spices"
-            }
-          ],
-          "description": "Return sauce to pan, add butter and cream, then stir in chicken. Simmer 7 minutes and finish with methi."
-        },
-        {
-          "cookMethod": "Mix",
-          "ingredients": [
-            {
-              "name": "All-purpose flour",
-              "amount": "1cup",
-              "category": "Pasta & Grains"
-            },
-            {
-              "name": "Salt",
-              "amount": "1tsp",
-              "category": "Spices"
-            },
-            {
-              "name": "Sugar",
-              "amount": "1tsp",
-              "category": "Baking & Nuts"
-            },
-            {
-              "name": "Nonfat yogurt",
-              "amount": "0.25cup",
-              "category": "Dairy & Eggs"
-            },
-            {
-              "name": "Garlic oil",
-              "amount": "1tbsp",
-              "category": "Sauces & Oils"
-            },
-            {
-              "name": "Baking powder",
-              "amount": "0.5tsp",
-              "category": "Baking & Nuts"
-            },
-            {
-              "name": "Baking soda",
-              "amount": "0.125tsp",
-              "category": "Baking & Nuts"
-            },
-            {
-              "name": "Garlic cloves",
-              "amount": "3",
-              "category": "Produce"
-            },
-            {
-              "name": "Lukewarm water",
-              "amount": "to taste",
-              "category": "Produce"
-            }
-          ],
-          "description": "Combine flour, salt, sugar, yogurt, oil, leaveners, and chopped garlic. Add water to form a smooth dough."
-        },
-        {
-          "cookMethod": "Grill",
-          "ingredients": [
-            {
-              "name": "Sesame seeds",
-              "amount": "1tbsp",
-              "category": "Baking & Nuts"
-            },
-            {
-              "name": "Garlic butter",
-              "amount": "2tbsp",
-              "category": "Dairy & Eggs"
-            },
-            {
-              "name": "Parsley",
-              "amount": "to taste",
-              "category": "Produce"
-            }
-          ],
-          "description": "Rest dough 15 min, roll out, press in sesame seeds, cook on hot pan then over open flame, brush with garlic butter."
-        },
-        {
-          "cookMethod": "Plate",
-          "ingredients": [
-            {
-              "name": "Heavy cream",
-              "amount": "1tbsp",
-              "category": "Dairy & Eggs"
-            },
-            {
-              "name": "Parsley",
-              "amount": "to taste",
-              "category": "Produce"
-            }
-          ],
-          "description": "Ladle butter chicken into a bowl, swirl with cream, and garnish with parsley. Serve with naan."
-        }
-      ],
-      "nutritionInfo": {
-        "calories": 820,
-        "carbs": 62.5,
-        "protein": 42,
-        "fat": 44.5
-      }
-    }
-  },
-  {
-    "id": "3ab017679d93e7fb",
-    "readCount": 0,
-    "recipe": {
-      "title": "Traditional Carbonara",
-      "description": "Classic Italian carbonara with guanciale, eggs, and Pecorino Romano cheese.",
+      "title": "Carbonara | Basics with Babish",
+      "description": "Classic Roman pasta tossed with guanciale, eggs, Pecorino Romano, and black pepper.",
       "tags": [
         "Italian",
         "pasta",
-        "traditional",
-        "quick",
-        "dinner"
+        "classic",
+        "dinner",
+        "weeknight"
       ],
-      "servings": 2,
+      "servings": 4,
       "estimatedMinutes": 25,
       "sourceUrl": "https://www.youtube.com/watch?v=qoHnwOHLiMk",
       "sourceUrlType": "youtube",
       "thumbnailUrl": "https://i.ytimg.com/vi/qoHnwOHLiMk/maxresdefault.jpg",
       "language": "en",
       "mainIngredients": [
+        "Spaghetti",
         "Guanciale",
-        "Eggs",
+        "Large eggs",
         "Egg yolk",
-        "Pecorino Romano cheese",
-        "Parmigiano-Reggiano cheese"
+        "Pecorino Romano cheese"
+      ],
+      "ingredients": [
+        {
+          "name": "Guanciale",
+          "amount": "1/2pound",
+          "category": "Meat",
+          "order": 0,
+          "stepIndex": 1
+        },
+        {
+          "name": "Large eggs",
+          "amount": "3",
+          "category": "Dairy & Eggs",
+          "order": 1,
+          "stepIndex": 3
+        },
+        {
+          "name": "Egg yolk",
+          "amount": "1",
+          "category": "Dairy & Eggs",
+          "order": 2,
+          "stepIndex": 3
+        },
+        {
+          "name": "Pecorino Romano cheese",
+          "amount": "4ounces",
+          "category": "Dairy & Eggs",
+          "order": 3,
+          "stepIndex": 3
+        },
+        {
+          "name": "Ground black pepper",
+          "amount": "to taste",
+          "category": "Spices",
+          "order": 4,
+          "stepIndex": 3
+        },
+        {
+          "name": "Spaghetti",
+          "amount": "to taste",
+          "category": "Pasta & Grains",
+          "order": 5,
+          "stepIndex": 0
+        }
+      ],
+      "searchTokens": [
+        "C",
+        "a",
+        "r",
+        "b",
+        "o",
+        "n",
+        "|",
+        "B",
+        "s",
+        "i",
+        "c",
+        "w",
+        "t",
+        "h",
+        "Ca",
+        "Car",
+        "Carb",
+        "Carbo",
+        "Carbon",
+        "Carbona",
+        "Carbonar",
+        "Carbonara",
+        "Carbonara ",
+        "ar",
+        "arb",
+        "arbo",
+        "arbon",
+        "arbona",
+        "arbonar",
+        "arbonara",
+        "arbonara ",
+        "arbonara |",
+        "rb",
+        "rbo",
+        "rbon",
+        "rbona",
+        "rbonar",
+        "rbonara",
+        "rbonara ",
+        "rbonara |",
+        "rbonara | ",
+        "bo",
+        "bon",
+        "bona",
+        "bonar",
+        "bonara",
+        "bonara ",
+        "bonara |",
+        "bonara | ",
+        "bonara | B",
+        "on",
+        "ona",
+        "onar",
+        "onara",
+        "onara ",
+        "onara |",
+        "onara | ",
+        "onara | B",
+        "onara | Ba",
+        "na",
+        "nar",
+        "nara",
+        "nara ",
+        "nara |",
+        "nara | ",
+        "nara | B",
+        "nara | Ba",
+        "nara | Bas",
+        "ara",
+        "ara ",
+        "ara |",
+        "ara | ",
+        "ara | B",
+        "ara | Ba",
+        "ara | Bas",
+        "ara | Basi",
+        "ra",
+        "ra ",
+        "ra |",
+        "ra | ",
+        "ra | B",
+        "ra | Ba",
+        "ra | Bas",
+        "ra | Basi",
+        "ra | Basic",
+        "a ",
+        "a |",
+        "a | ",
+        "a | B",
+        "a | Ba",
+        "a | Bas",
+        "a | Basi",
+        "a | Basic",
+        "a | Basics",
+        " |",
+        " | ",
+        " | B",
+        " | Ba",
+        " | Bas",
+        " | Basi",
+        " | Basic",
+        " | Basics",
+        " | Basics ",
+        "| ",
+        "| B",
+        "| Ba",
+        "| Bas",
+        "| Basi",
+        "| Basic",
+        "| Basics",
+        "| Basics ",
+        "| Basics w",
+        " B",
+        " Ba",
+        " Bas",
+        " Basi",
+        " Basic",
+        " Basics",
+        " Basics ",
+        " Basics w",
+        " Basics wi",
+        "Ba",
+        "Bas",
+        "Basi",
+        "Basic",
+        "Basics",
+        "Basics ",
+        "Basics w",
+        "Basics wi",
+        "Basics wit",
+        "as",
+        "asi",
+        "asic",
+        "asics",
+        "asics ",
+        "asics w",
+        "asics wi",
+        "asics wit",
+        "asics with",
+        "si",
+        "sic",
+        "sics",
+        "sics ",
+        "sics w",
+        "sics wi",
+        "sics wit",
+        "sics with",
+        "sics with ",
+        "ic",
+        "ics",
+        "ics ",
+        "ics w",
+        "ics wi",
+        "ics wit",
+        "ics with",
+        "ics with ",
+        "ics with B",
+        "cs",
+        "cs ",
+        "cs w",
+        "cs wi",
+        "cs wit",
+        "cs with",
+        "cs with ",
+        "cs with B",
+        "cs with Ba",
+        "s ",
+        "s w",
+        "s wi",
+        "s wit",
+        "s with",
+        "s with ",
+        "s with B",
+        "s with Ba",
+        "s with Bab",
+        " w",
+        " wi",
+        " wit",
+        " with",
+        " with ",
+        " with B",
+        " with Ba",
+        " with Bab",
+        " with Babi",
+        "wi",
+        "wit",
+        "with",
+        "with ",
+        "with B",
+        "with Ba",
+        "with Bab",
+        "with Babi",
+        "with Babis",
+        "it",
+        "ith",
+        "ith ",
+        "ith B",
+        "ith Ba",
+        "ith Bab",
+        "ith Babi",
+        "ith Babis",
+        "ith Babish",
+        "th",
+        "th ",
+        "th B",
+        "th Ba",
+        "th Bab",
+        "th Babi",
+        "th Babis",
+        "th Babish",
+        "h ",
+        "h B",
+        "h Ba",
+        "h Bab",
+        "h Babi",
+        "h Babis",
+        "h Babish",
+        " Bab",
+        " Babi",
+        " Babis",
+        " Babish",
+        "Bab",
+        "Babi",
+        "Babis",
+        "Babish",
+        "ab",
+        "abi",
+        "abis",
+        "abish",
+        "bi",
+        "bis",
+        "bish",
+        "is",
+        "ish",
+        "sh",
+        "Italian",
+        "pasta",
+        "classic",
+        "dinner",
+        "weeknight",
+        "Spaghetti",
+        "Guanciale",
+        "Large eggs",
+        "Egg yolk",
+        "Pecorino Romano cheese"
       ],
       "sourceType": "link",
       "steps": [
         {
-          "cookMethod": "Slice",
+          "cookMethod": "Boil",
+          "ingredients": [
+            {
+              "name": "Spaghetti",
+              "amount": "to taste",
+              "category": "Pasta & Grains"
+            }
+          ],
+          "description": "Bring a large pot of salted water to a boil and cook the spaghetti until al dente, reserving some pasta water."
+        },
+        {
+          "cookMethod": "Dice",
           "ingredients": [
             {
               "name": "Guanciale",
-              "amount": "225g",
+              "amount": "1/2pound",
               "category": "Meat"
             }
           ],
-          "description": "Cut guanciale into relatively sizable chunks and set aside."
+          "description": "Cut the guanciale into small lardons or thin strips."
+        },
+        {
+          "cookMethod": "Sauté",
+          "ingredients": [
+            {
+              "name": "Guanciale",
+              "amount": "1/2pound",
+              "category": "Meat"
+            }
+          ],
+          "description": "Render the guanciale in a cold pan over medium heat until the fat is released and the pieces are crispy."
         },
         {
           "cookMethod": "Mix",
           "ingredients": [
             {
-              "name": "Eggs",
+              "name": "Large eggs",
               "amount": "3",
               "category": "Dairy & Eggs"
             },
@@ -319,12 +366,582 @@
             },
             {
               "name": "Pecorino Romano cheese",
-              "amount": "56g",
+              "amount": "4ounces",
               "category": "Dairy & Eggs"
             },
             {
-              "name": "Parmigiano-Reggiano cheese",
-              "amount": "56g",
+              "name": "Ground black pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "In a bowl, whisk together the eggs, egg yolk, finely grated Pecorino Romano, and plenty of ground black pepper."
+        },
+        {
+          "cookMethod": "Toss",
+          "ingredients": [
+            {
+              "name": "Spaghetti",
+              "amount": "to taste",
+              "category": "Pasta & Grains"
+            },
+            {
+              "name": "Guanciale",
+              "amount": "1/2pound",
+              "category": "Meat"
+            }
+          ],
+          "description": "Add the drained hot spaghetti to the pan with the rendered guanciale and toss to coat in the fat."
+        },
+        {
+          "cookMethod": "Toss",
+          "ingredients": [
+            {
+              "name": "Large eggs",
+              "amount": "3",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Egg yolk",
+              "amount": "1",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Pecorino Romano cheese",
+              "amount": "4ounces",
+              "category": "Dairy & Eggs"
+            }
+          ],
+          "description": "Off the heat, pour in the egg and cheese mixture and toss vigorously, adding splashes of reserved pasta water until silky and creamy."
+        },
+        {
+          "cookMethod": "Plate",
+          "ingredients": [
+            {
+              "name": "Pecorino Romano cheese",
+              "amount": "4ounces",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Ground black pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "Serve immediately, finishing each plate with extra grated Pecorino Romano and freshly ground black pepper."
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 910,
+        "carbs": 75,
+        "protein": 30,
+        "fat": 52
+      }
+    }
+  },
+  {
+    "id": "2e8dd285e3580006",
+    "readCount": 0,
+    "recipe": {
+      "title": "Binging with Babish: Master of None Carbonara",
+      "description": "Classic Roman pasta carbonara inspired by Master of None's Dev.",
+      "tags": [
+        "Italian",
+        "pasta",
+        "quick",
+        "weeknight",
+        "comfort food"
+      ],
+      "servings": 2,
+      "estimatedMinutes": 25,
+      "sourceUrl": "https://www.youtube.com/watch?v=MbRm5s3i2ik",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MbRm5s3i2ik/maxresdefault.jpg",
+      "language": "en",
+      "mainIngredients": [
+        "Guanciale",
+        "Egg yolks",
+        "Whole egg",
+        "Pecorino Romano",
+        "Parmesan"
+      ],
+      "ingredients": [
+        {
+          "name": "Spaghetti",
+          "amount": "200g",
+          "category": "Pasta & Grains",
+          "order": 0,
+          "stepIndex": 2
+        },
+        {
+          "name": "Guanciale",
+          "amount": "100g",
+          "category": "Meat",
+          "order": 1,
+          "stepIndex": 0
+        },
+        {
+          "name": "Egg yolks",
+          "amount": "3",
+          "category": "Dairy & Eggs",
+          "order": 2,
+          "stepIndex": 1
+        },
+        {
+          "name": "Whole egg",
+          "amount": "1",
+          "category": "Dairy & Eggs",
+          "order": 3,
+          "stepIndex": 1
+        },
+        {
+          "name": "Pecorino Romano",
+          "amount": "50g",
+          "category": "Dairy & Eggs",
+          "order": 4,
+          "stepIndex": 1
+        },
+        {
+          "name": "Parmesan",
+          "amount": "25g",
+          "category": "Dairy & Eggs",
+          "order": 5,
+          "stepIndex": 1
+        },
+        {
+          "name": "Black pepper",
+          "amount": "to taste",
+          "category": "Spices",
+          "order": 6,
+          "stepIndex": 1
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "Spices",
+          "order": 7,
+          "stepIndex": 2
+        }
+      ],
+      "searchTokens": [
+        "B",
+        "i",
+        "n",
+        "g",
+        "w",
+        "t",
+        "h",
+        "a",
+        "b",
+        "s",
+        ":",
+        "M",
+        "e",
+        "r",
+        "o",
+        "f",
+        "N",
+        "C",
+        "Bi",
+        "Bin",
+        "Bing",
+        "Bingi",
+        "Bingin",
+        "Binging",
+        "Binging ",
+        "Binging w",
+        "Binging wi",
+        "in",
+        "ing",
+        "ingi",
+        "ingin",
+        "inging",
+        "inging ",
+        "inging w",
+        "inging wi",
+        "inging wit",
+        "ng",
+        "ngi",
+        "ngin",
+        "nging",
+        "nging ",
+        "nging w",
+        "nging wi",
+        "nging wit",
+        "nging with",
+        "gi",
+        "gin",
+        "ging",
+        "ging ",
+        "ging w",
+        "ging wi",
+        "ging wit",
+        "ging with",
+        "ging with ",
+        "ing ",
+        "ing w",
+        "ing wi",
+        "ing wit",
+        "ing with",
+        "ing with ",
+        "ing with B",
+        "ng ",
+        "ng w",
+        "ng wi",
+        "ng wit",
+        "ng with",
+        "ng with ",
+        "ng with B",
+        "ng with Ba",
+        "g ",
+        "g w",
+        "g wi",
+        "g wit",
+        "g with",
+        "g with ",
+        "g with B",
+        "g with Ba",
+        "g with Bab",
+        " w",
+        " wi",
+        " wit",
+        " with",
+        " with ",
+        " with B",
+        " with Ba",
+        " with Bab",
+        " with Babi",
+        "wi",
+        "wit",
+        "with",
+        "with ",
+        "with B",
+        "with Ba",
+        "with Bab",
+        "with Babi",
+        "with Babis",
+        "it",
+        "ith",
+        "ith ",
+        "ith B",
+        "ith Ba",
+        "ith Bab",
+        "ith Babi",
+        "ith Babis",
+        "ith Babish",
+        "th",
+        "th ",
+        "th B",
+        "th Ba",
+        "th Bab",
+        "th Babi",
+        "th Babis",
+        "th Babish",
+        "th Babish:",
+        "h ",
+        "h B",
+        "h Ba",
+        "h Bab",
+        "h Babi",
+        "h Babis",
+        "h Babish",
+        "h Babish:",
+        "h Babish: ",
+        " B",
+        " Ba",
+        " Bab",
+        " Babi",
+        " Babis",
+        " Babish",
+        " Babish:",
+        " Babish: ",
+        " Babish: M",
+        "Ba",
+        "Bab",
+        "Babi",
+        "Babis",
+        "Babish",
+        "Babish:",
+        "Babish: ",
+        "Babish: M",
+        "Babish: Ma",
+        "ab",
+        "abi",
+        "abis",
+        "abish",
+        "abish:",
+        "abish: ",
+        "abish: M",
+        "abish: Ma",
+        "abish: Mas",
+        "bi",
+        "bis",
+        "bish",
+        "bish:",
+        "bish: ",
+        "bish: M",
+        "bish: Ma",
+        "bish: Mas",
+        "bish: Mast",
+        "is",
+        "ish",
+        "ish:",
+        "ish: ",
+        "ish: M",
+        "ish: Ma",
+        "ish: Mas",
+        "ish: Mast",
+        "ish: Maste",
+        "sh",
+        "sh:",
+        "sh: ",
+        "sh: M",
+        "sh: Ma",
+        "sh: Mas",
+        "sh: Mast",
+        "sh: Maste",
+        "sh: Master",
+        "h:",
+        "h: ",
+        "h: M",
+        "h: Ma",
+        "h: Mas",
+        "h: Mast",
+        "h: Maste",
+        "h: Master",
+        "h: Master ",
+        ": ",
+        ": M",
+        ": Ma",
+        ": Mas",
+        ": Mast",
+        ": Maste",
+        ": Master",
+        ": Master ",
+        ": Master o",
+        " M",
+        " Ma",
+        " Mas",
+        " Mast",
+        " Maste",
+        " Master",
+        " Master ",
+        " Master o",
+        " Master of",
+        "Ma",
+        "Mas",
+        "Mast",
+        "Maste",
+        "Master",
+        "Master ",
+        "Master o",
+        "Master of",
+        "Master of ",
+        "as",
+        "ast",
+        "aste",
+        "aster",
+        "aster ",
+        "aster o",
+        "aster of",
+        "aster of ",
+        "aster of N",
+        "st",
+        "ste",
+        "ster",
+        "ster ",
+        "ster o",
+        "ster of",
+        "ster of ",
+        "ster of N",
+        "ster of No",
+        "te",
+        "ter",
+        "ter ",
+        "ter o",
+        "ter of",
+        "ter of ",
+        "ter of N",
+        "ter of No",
+        "ter of Non",
+        "er",
+        "er ",
+        "er o",
+        "er of",
+        "er of ",
+        "er of N",
+        "er of No",
+        "er of Non",
+        "er of None",
+        "r ",
+        "r o",
+        "r of",
+        "r of ",
+        "r of N",
+        "r of No",
+        "r of Non",
+        "r of None",
+        "r of None ",
+        " o",
+        " of",
+        " of ",
+        " of N",
+        " of No",
+        " of Non",
+        " of None",
+        " of None ",
+        " of None C",
+        "of",
+        "of ",
+        "of N",
+        "of No",
+        "of Non",
+        "of None",
+        "of None ",
+        "of None C",
+        "of None Ca",
+        "f ",
+        "f N",
+        "f No",
+        "f Non",
+        "f None",
+        "f None ",
+        "f None C",
+        "f None Ca",
+        "f None Car",
+        " N",
+        " No",
+        " Non",
+        " None",
+        " None ",
+        " None C",
+        " None Ca",
+        " None Car",
+        " None Carb",
+        "No",
+        "Non",
+        "None",
+        "None ",
+        "None C",
+        "None Ca",
+        "None Car",
+        "None Carb",
+        "None Carbo",
+        "on",
+        "one",
+        "one ",
+        "one C",
+        "one Ca",
+        "one Car",
+        "one Carb",
+        "one Carbo",
+        "one Carbon",
+        "ne",
+        "ne ",
+        "ne C",
+        "ne Ca",
+        "ne Car",
+        "ne Carb",
+        "ne Carbo",
+        "ne Carbon",
+        "ne Carbona",
+        "e ",
+        "e C",
+        "e Ca",
+        "e Car",
+        "e Carb",
+        "e Carbo",
+        "e Carbon",
+        "e Carbona",
+        "e Carbonar",
+        " C",
+        " Ca",
+        " Car",
+        " Carb",
+        " Carbo",
+        " Carbon",
+        " Carbona",
+        " Carbonar",
+        " Carbonara",
+        "Ca",
+        "Car",
+        "Carb",
+        "Carbo",
+        "Carbon",
+        "Carbona",
+        "Carbonar",
+        "Carbonara",
+        "ar",
+        "arb",
+        "arbo",
+        "arbon",
+        "arbona",
+        "arbonar",
+        "arbonara",
+        "rb",
+        "rbo",
+        "rbon",
+        "rbona",
+        "rbonar",
+        "rbonara",
+        "bo",
+        "bon",
+        "bona",
+        "bonar",
+        "bonara",
+        "ona",
+        "onar",
+        "onara",
+        "na",
+        "nar",
+        "nara",
+        "ara",
+        "ra",
+        "Italian",
+        "pasta",
+        "quick",
+        "weeknight",
+        "comfort food",
+        "Guanciale",
+        "Egg yolks",
+        "Whole egg",
+        "Pecorino Romano",
+        "Parmesan"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "Slice",
+          "ingredients": [
+            {
+              "name": "Guanciale",
+              "amount": "100g",
+              "category": "Meat"
+            }
+          ],
+          "description": "Slice the guanciale into thin strips or small cubes."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "Egg yolks",
+              "amount": "3",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Whole egg",
+              "amount": "1",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Pecorino Romano",
+              "amount": "50g",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Parmesan",
+              "amount": "25g",
               "category": "Dairy & Eggs"
             },
             {
@@ -333,18 +950,7 @@
               "category": "Spices"
             }
           ],
-          "description": "Finely grate the cheeses, combine with beaten eggs and pepper, and mix until homogenous."
-        },
-        {
-          "cookMethod": "Sauté",
-          "ingredients": [
-            {
-              "name": "Guanciale",
-              "amount": "225g",
-              "category": "Meat"
-            }
-          ],
-          "description": "Place guanciale in a cold pan, turn heat to medium, and cook slowly until fat renders and it's cooked but not crispy."
+          "description": "Whisk the egg yolks, whole egg, grated cheeses, and freshly cracked black pepper in a bowl."
         },
         {
           "cookMethod": "Boil",
@@ -360,610 +966,10 @@
               "category": "Spices"
             }
           ],
-          "description": "Boil spaghetti in heavily salted water, stirring to prevent sticking, until al dente."
-        },
-        {
-          "cookMethod": "Toss",
-          "ingredients": [],
-          "description": "Add cooked pasta directly to the pan with guanciale and toss to coat evenly in rendered fat."
-        },
-        {
-          "cookMethod": "Mix",
-          "ingredients": [],
-          "description": "Quickly add egg and cheese mixture, agitating rigorously to emulsify into a creamy sauce without curdling."
-        },
-        {
-          "cookMethod": "Plate",
-          "ingredients": [],
-          "description": "Season to taste, twirl pasta into a cylinder on a plate, and top with remaining guanciale and sauce."
-        }
-      ],
-      "nutritionInfo": {
-        "calories": 1180,
-        "carbs": 88,
-        "protein": 52,
-        "fat": 68
-      }
-    }
-  },
-  {
-    "id": "068457b6798ed01d",
-    "readCount": 0,
-    "recipe": {
-      "title": "Master of None Carbonara",
-      "description": "Classic homemade spaghetti carbonara with guanciale, eggs, and Parmesan cheese.",
-      "tags": [
-        "Italian",
-        "pasta",
-        "comfort food",
-        "dinner",
-        "classic"
-      ],
-      "servings": 4,
-      "estimatedMinutes": 45,
-      "sourceUrl": "https://www.youtube.com/watch?v=MbRm5s3i2ik",
-      "sourceUrlType": "youtube",
-      "thumbnailUrl": "https://i.ytimg.com/vi/MbRm5s3i2ik/maxresdefault.jpg",
-      "language": "en",
-      "mainIngredients": [
-        "all-purpose flour",
-        "semolina flour",
-        "eggs",
-        "garlic cloves",
-        "guanciale"
-      ],
-      "sourceType": "link",
-      "steps": [
-        {
-          "cookMethod": "Mix",
-          "ingredients": [
-            {
-              "name": "all-purpose flour",
-              "amount": "200g",
-              "category": "Pasta & Grains"
-            },
-            {
-              "name": "semolina flour",
-              "amount": "200g",
-              "category": "Pasta & Grains"
-            },
-            {
-              "name": "eggs",
-              "amount": "4",
-              "category": "Dairy & Eggs"
-            }
-          ],
-          "description": "Create a well in the combined flours, add eggs, and beat with a fork to form a rough dough."
-        },
-        {
-          "cookMethod": "Mix",
-          "ingredients": [],
-          "description": "Knead the dough for 5 minutes until smooth and supple."
-        },
-        {
-          "cookMethod": "Marinate",
-          "ingredients": [],
-          "description": "Wrap in plastic and rest at room temperature for 30 minutes."
-        },
-        {
-          "cookMethod": "Slice",
-          "ingredients": [
-            {
-              "name": "garlic cloves",
-              "amount": "6",
-              "category": "Produce"
-            }
-          ],
-          "description": "Mince the garlic cloves for both carbonara versions."
+          "description": "Bring a large pot of salted water to a boil and cook the spaghetti until al dente."
         },
         {
           "cookMethod": "Fry",
-          "ingredients": [
-            {
-              "name": "guanciale",
-              "amount": "to taste",
-              "category": "Meat"
-            }
-          ],
-          "description": "Fry the guanciale until nice and crisp."
-        },
-        {
-          "cookMethod": "Boil",
-          "ingredients": [],
-          "description": "Boil nests of fresh pasta in salted water for 2 minutes."
-        },
-        {
-          "cookMethod": "Sauté",
-          "ingredients": [
-            {
-              "name": "minced garlic",
-              "amount": "3cloves",
-              "category": "Produce"
-            }
-          ],
-          "description": "Add minced garlic to the sizzling guanciale and sauté for no more than 1 minute."
-        },
-        {
-          "cookMethod": "Toss",
-          "ingredients": [
-            {
-              "name": "eggs",
-              "amount": "2",
-              "category": "Dairy & Eggs"
-            },
-            {
-              "name": "Parmesan cheese",
-              "amount": "1cup",
-              "category": "Dairy & Eggs"
-            },
-            {
-              "name": "black pepper",
-              "amount": "to taste",
-              "category": "Spices"
-            },
-            {
-              "name": "salt",
-              "amount": "to taste",
-              "category": "Spices"
-            }
-          ],
-          "description": "Kill heat, toss pasta with meat, stir in beaten eggs until creamy, then add Parmesan and season."
-        },
-        {
-          "cookMethod": "Plate",
-          "ingredients": [],
-          "description": "Plate the noodles with extra guanciale and a healthy grating of Parmesan on top."
-        },
-        {
-          "cookMethod": "Sauté",
-          "ingredients": [
-            {
-              "name": "shiitake mushrooms",
-              "amount": "150g",
-              "category": "Produce"
-            },
-            {
-              "name": "olive oil",
-              "amount": "3tbsp",
-              "category": "Sauces & Oils"
-            }
-          ],
-          "description": "For the vegetarian version, sauté sliced shiitake mushrooms in olive oil until crisp."
-        },
-        {
-          "cookMethod": "Toss",
-          "ingredients": [
-            {
-              "name": "minced garlic",
-              "amount": "3cloves",
-              "category": "Produce"
-            },
-            {
-              "name": "pasta water",
-              "amount": "0.25cup",
-              "category": "Pasta & Grains"
-            },
-            {
-              "name": "eggs",
-              "amount": "2",
-              "category": "Dairy & Eggs"
-            },
-            {
-              "name": "smoked provolone",
-              "amount": "0.5cup",
-              "category": "Dairy & Eggs"
-            },
-            {
-              "name": "Parmesan cheese",
-              "amount": "0.5cup",
-              "category": "Dairy & Eggs"
-            }
-          ],
-          "description": "Add garlic to mushrooms, toss with pasta and pasta water, then stir in eggs, provolone, and Parmesan."
-        }
-      ],
-      "nutritionInfo": {
-        "calories": 780,
-        "carbs": 82,
-        "protein": 32,
-        "fat": 34
-      }
-    }
-  },
-  {
-    "id": "189c9dee93f80738",
-    "readCount": 0,
-    "recipe": {
-      "title": "Gordon Ramsay's 10 Million Burger",
-      "description": "Juicy beef burger with butter core, bacon, portobello, and sriracha mayo on brioche.",
-      "tags": [
-        "burger",
-        "BBQ",
-        "American",
-        "grill",
-        "weekend"
-      ],
-      "servings": 2,
-      "estimatedMinutes": 35,
-      "sourceUrl": "https://www.youtube.com/watch?v=v191Y8AUk6w",
-      "sourceUrlType": "youtube",
-      "thumbnailUrl": "https://i.ytimg.com/vi/v191Y8AUk6w/maxresdefault.jpg",
-      "language": "en",
-      "mainIngredients": [
-        "Mayonnaise",
-        "Sriracha sauce",
-        "Salt",
-        "Ground beef (85/15 chuck and brisket)",
-        "Frozen unsalted butter"
-      ],
-      "sourceType": "link",
-      "steps": [
-        {
-          "cookMethod": "Mix",
-          "ingredients": [
-            {
-              "name": "Mayonnaise",
-              "amount": "0.25cup",
-              "category": "Sauces & Oils"
-            },
-            {
-              "name": "Sriracha sauce",
-              "amount": "2tbsp",
-              "category": "Sauces & Oils"
-            },
-            {
-              "name": "Salt",
-              "amount": "to taste",
-              "category": "Spices"
-            }
-          ],
-          "description": "Whisk mayo, sriracha, and salt together in a small bowl and refrigerate until needed."
-        },
-        {
-          "cookMethod": "Mix",
-          "ingredients": [
-            {
-              "name": "Ground beef (85/15 chuck and brisket)",
-              "amount": "1lb",
-              "category": "Meat"
-            },
-            {
-              "name": "Frozen unsalted butter",
-              "amount": "2oz",
-              "category": "Dairy & Eggs"
-            },
-            {
-              "name": "Granulated garlic",
-              "amount": "1tbsp",
-              "category": "Spices"
-            },
-            {
-              "name": "Maldon salt",
-              "amount": "1.5tbsp",
-              "category": "Spices"
-            },
-            {
-              "name": "Fresh cracked black pepper",
-              "amount": "1tbsp",
-              "category": "Spices"
-            }
-          ],
-          "description": "Grate frozen butter into the beef, add garlic, salt, and pepper, then gently form two patties."
-        },
-        {
-          "cookMethod": "Fry",
-          "ingredients": [
-            {
-              "name": "Thick cut applewood smoked bacon",
-              "amount": "4slices",
-              "category": "Meat"
-            }
-          ],
-          "description": "Cook bacon in a skillet over medium heat until crisp, then drain on paper towels."
-        },
-        {
-          "cookMethod": "Grill",
-          "ingredients": [
-            {
-              "name": "Portobello mushroom caps",
-              "amount": "2pieces",
-              "category": "Produce"
-            },
-            {
-              "name": "Olive oil",
-              "amount": "1tbsp",
-              "category": "Sauces & Oils"
-            },
-            {
-              "name": "Maldon salt",
-              "amount": "to taste",
-              "category": "Spices"
-            },
-            {
-              "name": "Black pepper",
-              "amount": "to taste",
-              "category": "Spices"
-            }
-          ],
-          "description": "Brush mushroom caps with olive oil, season, and grill 3-4 minutes per side until tender."
-        },
-        {
-          "cookMethod": "Grill",
-          "ingredients": [
-            {
-              "name": "Roma tomato",
-              "amount": "1piece",
-              "category": "Produce"
-            },
-            {
-              "name": "Maldon salt",
-              "amount": "to taste",
-              "category": "Spices"
-            },
-            {
-              "name": "Black pepper",
-              "amount": "to taste",
-              "category": "Spices"
-            }
-          ],
-          "description": "Slice tomato into thick rounds, season, and briefly grill to caramelize the edges."
-        },
-        {
-          "cookMethod": "Grill",
-          "ingredients": [
-            {
-              "name": "Olive oil",
-              "amount": "1tbsp",
-              "category": "Sauces & Oils"
-            },
-            {
-              "name": "Swiss cheese",
-              "amount": "2slices",
-              "category": "Dairy & Eggs"
-            }
-          ],
-          "description": "Oil the patties and grill 3-4 minutes per side, topping with Swiss cheese to melt at the end."
-        },
-        {
-          "cookMethod": "Fry",
-          "ingredients": [
-            {
-              "name": "Large eggs",
-              "amount": "2pieces",
-              "category": "Dairy & Eggs"
-            }
-          ],
-          "description": "Fry the eggs sunny side up in a hot skillet until the whites are set and yolks runny."
-        },
-        {
-          "cookMethod": "Toast",
-          "ingredients": [
-            {
-              "name": "Brioche hamburger buns",
-              "amount": "2pieces",
-              "category": "Bread"
-            },
-            {
-              "name": "Butter",
-              "amount": "to taste",
-              "category": "Dairy & Eggs"
-            }
-          ],
-          "description": "Butter the cut sides of the brioche buns and toast on the grill until golden."
-        },
-        {
-          "cookMethod": "Plate",
-          "ingredients": [
-            {
-              "name": "Baby arugula",
-              "amount": "1cup",
-              "category": "Produce"
-            }
-          ],
-          "description": "Spread sriracha mayo on buns, layer mushroom, patty, bacon, tomato, egg, and arugula, then close."
-        }
-      ],
-      "nutritionInfo": {
-        "calories": 1180,
-        "carbs": 48,
-        "protein": 62,
-        "fat": 82
-      }
-    }
-  },
-  {
-    "id": "666b865764263965",
-    "readCount": 0,
-    "recipe": {
-      "title": "One-Pot Creamy Mushroom Chicken Pasta",
-      "description": "Creamy one-pot pasta with tender chicken, mushrooms, and spinach in a parmesan sauce.",
-      "tags": [
-        "Italian",
-        "one-pot",
-        "pasta",
-        "weeknight",
-        "comfort"
-      ],
-      "servings": 4,
-      "estimatedMinutes": 30,
-      "sourceUrl": "https://www.youtube.com/watch?v=mDlMIsw3jz8",
-      "sourceUrlType": "youtube",
-      "thumbnailUrl": "https://i.ytimg.com/vi/mDlMIsw3jz8/maxresdefault.jpg",
-      "language": "en",
-      "mainIngredients": [
-        "Olive oil",
-        "Chicken breasts",
-        "Yellow onion",
-        "Cremini mushrooms",
-        "Garlic"
-      ],
-      "sourceType": "link",
-      "steps": [
-        {
-          "cookMethod": "Sauté",
-          "ingredients": [
-            {
-              "name": "Olive oil",
-              "amount": "2tbsp",
-              "category": "Sauces & Oils"
-            },
-            {
-              "name": "Chicken breasts",
-              "amount": "750g",
-              "category": "Meat"
-            }
-          ],
-          "description": "Heat olive oil in a large pot over medium heat. Brown chicken through, then set aside."
-        },
-        {
-          "cookMethod": "Sauté",
-          "ingredients": [
-            {
-              "name": "Olive oil",
-              "amount": "1tbsp",
-              "category": "Sauces & Oils"
-            },
-            {
-              "name": "Yellow onion",
-              "amount": "0.5",
-              "category": "Produce"
-            }
-          ],
-          "description": "Add remaining olive oil and diced onion to the pot. Stir and cook for 1-2 minutes."
-        },
-        {
-          "cookMethod": "Stir-fry",
-          "ingredients": [
-            {
-              "name": "Cremini mushrooms",
-              "amount": "2cup",
-              "category": "Produce"
-            },
-            {
-              "name": "Garlic",
-              "amount": "3cloves",
-              "category": "Produce"
-            },
-            {
-              "name": "Salt",
-              "amount": "to taste",
-              "category": "Spices"
-            },
-            {
-              "name": "Pepper",
-              "amount": "to taste",
-              "category": "Spices"
-            },
-            {
-              "name": "Thyme",
-              "amount": "1tsp",
-              "category": "Spices"
-            },
-            {
-              "name": "Paprika",
-              "amount": "2tsp",
-              "category": "Spices"
-            }
-          ],
-          "description": "Add mushrooms and minced garlic. Season with salt, pepper, thyme, and paprika, then stir evenly."
-        },
-        {
-          "cookMethod": "Simmer",
-          "ingredients": [
-            {
-              "name": "Chicken broth",
-              "amount": "4cup",
-              "category": "Canned Goods"
-            },
-            {
-              "name": "Heavy cream",
-              "amount": "1cup",
-              "category": "Dairy & Eggs"
-            },
-            {
-              "name": "Farfalle pasta",
-              "amount": "500g",
-              "category": "Pasta & Grains"
-            }
-          ],
-          "description": "Pour in broth and cream, bring to a boil, then add pasta and stir every 1-2 minutes until al dente."
-        },
-        {
-          "cookMethod": "Mix",
-          "ingredients": [
-            {
-              "name": "Spinach",
-              "amount": "150g",
-              "category": "Produce"
-            },
-            {
-              "name": "Parmesan",
-              "amount": "1cup",
-              "category": "Dairy & Eggs"
-            }
-          ],
-          "description": "Stir in spinach and cooked chicken until wilted. Add parmesan and mix until sauce is smooth."
-        }
-      ],
-      "nutritionInfo": {
-        "calories": 850,
-        "carbs": 72,
-        "protein": 58,
-        "fat": 35
-      }
-    }
-  },
-  {
-    "id": "4954ba7ae3557165",
-    "readCount": 0,
-    "recipe": {
-      "title": "Real Spaghetti Carbonara",
-      "description": "Authentic Roman carbonara with guanciale, egg yolks, and pecorino — no cream.",
-      "tags": [
-        "Italian",
-        "pasta",
-        "Roman",
-        "quick",
-        "classic"
-      ],
-      "servings": 2,
-      "estimatedMinutes": 15,
-      "sourceUrl": "https://www.youtube.com/watch?v=3AAdKl1UYZs",
-      "sourceUrlType": "youtube",
-      "thumbnailUrl": "https://i.ytimg.com/vi/3AAdKl1UYZs/maxresdefault.jpg",
-      "language": "en",
-      "mainIngredients": [
-        "Water",
-        "Salt",
-        "Spaghettoni",
-        "Guanciale",
-        "Olive oil"
-      ],
-      "sourceType": "link",
-      "steps": [
-        {
-          "cookMethod": "Boil",
-          "ingredients": [
-            {
-              "name": "Water",
-              "amount": "2L",
-              "category": "Produce"
-            },
-            {
-              "name": "Salt",
-              "amount": "20g",
-              "category": "Spices"
-            },
-            {
-              "name": "Spaghettoni",
-              "amount": "200g",
-              "category": "Pasta & Grains"
-            }
-          ],
-          "description": "Bring salted water to a boil (10g salt per liter) and cook spaghettoni for about 10 minutes, stirring occasionally. No oil."
-        },
-        {
-          "cookMethod": "Dice",
           "ingredients": [
             {
               "name": "Guanciale",
@@ -971,51 +977,51 @@
               "category": "Meat"
             }
           ],
-          "description": "Cut the guanciale into chunky pieces. Pancetta can be substituted if guanciale is unavailable."
+          "description": "Render the guanciale in a cold pan over medium heat until crispy and golden."
         },
         {
-          "cookMethod": "Sauté",
+          "cookMethod": "Toss",
           "ingredients": [
             {
-              "name": "Olive oil",
-              "amount": "1tbsp",
-              "category": "Sauces & Oils"
+              "name": "Spaghetti",
+              "amount": "200g",
+              "category": "Pasta & Grains"
             }
           ],
-          "description": "Heat olive oil in a pan, add the guanciale, and sauté until the fat renders and the meat crisps."
+          "description": "Transfer the hot drained pasta into the pan with guanciale, off the heat, and toss to coat."
         },
         {
           "cookMethod": "Mix",
           "ingredients": [
             {
               "name": "Egg yolks",
-              "amount": "2",
+              "amount": "3",
               "category": "Dairy & Eggs"
             },
             {
-              "name": "Parmesan cheese",
-              "amount": "2tbsp",
+              "name": "Whole egg",
+              "amount": "1",
               "category": "Dairy & Eggs"
             },
             {
-              "name": "Black pepper",
-              "amount": "to taste",
-              "category": "Spices"
+              "name": "Pecorino Romano",
+              "amount": "50g",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Parmesan",
+              "amount": "25g",
+              "category": "Dairy & Eggs"
             }
           ],
-          "description": "In a bowl, beat egg yolks with grated Parmesan and plenty of black pepper. Do not add cream or salt."
-        },
-        {
-          "cookMethod": "Toss",
-          "ingredients": [],
-          "description": "Turn off heat on the guanciale, add drained pasta to the pan, and toss to coat in the rendered fat. Let cool briefly."
+          "description": "Off the heat, pour in the egg-cheese mixture and toss vigorously, adding pasta water to loosen into a silky sauce."
         },
         {
           "cookMethod": "Plate",
           "ingredients": [
             {
-              "name": "Pecorino cheese",
-              "amount": "1tbsp",
+              "name": "Pecorino Romano",
+              "amount": "50g",
               "category": "Dairy & Eggs"
             },
             {
@@ -1024,209 +1030,1470 @@
               "category": "Spices"
             }
           ],
-          "description": "Pour the egg mixture over the warm pasta and stir quickly to create a creamy sauce. Finish with pecorino and pepper."
+          "description": "Plate the carbonara and top with extra grated Pecorino and cracked black pepper."
         }
       ],
       "nutritionInfo": {
-        "calories": 820,
+        "calories": 780,
         "carbs": 88,
-        "protein": 32,
-        "fat": 38
+        "protein": 34,
+        "fat": 32
       }
     }
   },
   {
-    "id": "8b0159608824460f",
+    "id": "c003f392a55cd565",
     "readCount": 0,
     "recipe": {
-      "title": "Japanese Strawberry Sando",
-      "description": "A Japanese-style fruit sandwich with sweet strawberries and whipped mascarpone cream.",
+      "title": "One-Pot Creamy Mushroom And Chicken Pasta",
+      "description": "Creamy farfalle with chicken, mushrooms, and spinach cooked in one pot.",
       "tags": [
-        "Japanese",
-        "dessert",
-        "sandwich",
-        "strawberry",
-        "no-bake"
+        "one-pot",
+        "pasta",
+        "chicken",
+        "creamy",
+        "weeknight"
       ],
-      "servings": 2,
-      "estimatedMinutes": 25,
-      "sourceUrl": "https://www.youtube.com/watch?v=-aJhdhr0nD8",
+      "servings": 4,
+      "estimatedMinutes": 35,
+      "sourceUrl": "https://www.youtube.com/watch?v=mDlMIsw3jz8",
       "sourceUrlType": "youtube",
-      "thumbnailUrl": "https://i.ytimg.com/vi/-aJhdhr0nD8/maxresdefault.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mDlMIsw3jz8/maxresdefault.jpg",
       "language": "en",
       "mainIngredients": [
-        "Strawberries",
-        "Milk bread",
-        "Mascarpone cheese",
-        "Vanilla extract",
-        "Salt"
+        "olive oil",
+        "chicken breasts",
+        "yellow onion",
+        "cremini mushrooms",
+        "garlic"
       ],
-      "sourceType": "link",
-      "steps": [
+      "ingredients": [
         {
-          "cookMethod": "Slice",
-          "ingredients": [
-            {
-              "name": "Strawberries",
-              "amount": "10",
-              "category": "Produce"
-            }
-          ],
-          "description": "Hull strawberries by cutting around the stem at a 45-degree angle to keep the heart shape."
+          "name": "olive oil",
+          "amount": "3tbsp",
+          "category": "Sauces & Oils",
+          "order": 0,
+          "stepIndex": 0
         },
         {
-          "cookMethod": "Slice",
-          "ingredients": [
-            {
-              "name": "Milk bread",
-              "amount": "4slices",
-              "category": "Bread"
-            }
-          ],
-          "description": "Trim crusts off bread slices to create neat squares."
+          "name": "chicken breasts",
+          "amount": "1+1/2pound(750g)",
+          "category": "Meat",
+          "order": 1,
+          "stepIndex": 0
         },
         {
-          "cookMethod": "Mix",
-          "ingredients": [
-            {
-              "name": "Mascarpone cheese",
-              "amount": "4tbsp",
-              "category": "Dairy & Eggs"
-            },
-            {
-              "name": "Vanilla extract",
-              "amount": "0.5tsp",
-              "category": "Baking & Nuts"
-            },
-            {
-              "name": "Salt",
-              "amount": "to taste",
-              "category": "Spices"
-            },
-            {
-              "name": "Powdered sugar",
-              "amount": "3tbsp",
-              "category": "Baking & Nuts"
-            }
-          ],
-          "description": "Cream mascarpone with vanilla, a tiny pinch of salt, and powdered sugar using a hand mixer."
+          "name": "yellow onion",
+          "amount": "1/2",
+          "category": "Produce",
+          "order": 2,
+          "stepIndex": 1
         },
         {
-          "cookMethod": "Mix",
-          "ingredients": [
-            {
-              "name": "Heavy cream",
-              "amount": "1cup",
-              "category": "Dairy & Eggs"
-            }
-          ],
-          "description": "Whip heavy cream into the mascarpone mixture until very stiff peaks form."
+          "name": "salt",
+          "amount": "to taste",
+          "category": "Spices",
+          "order": 3,
+          "stepIndex": 2
         },
         {
-          "cookMethod": "Plate",
-          "ingredients": [],
-          "description": "Spread a thick 3/8-inch layer of cream on both bread slices."
+          "name": "pepper",
+          "amount": "to taste",
+          "category": "Spices",
+          "order": 4,
+          "stepIndex": 2
         },
         {
-          "cookMethod": "Plate",
-          "ingredients": [],
-          "description": "Arrange 3 whole strawberries tip-to-tail down the center, with a halved berry on each side."
+          "name": "cremini mushrooms",
+          "amount": "2cup",
+          "category": "Produce",
+          "order": 5,
+          "stepIndex": 2
         },
         {
-          "cookMethod": "Plate",
-          "ingredients": [],
-          "description": "Pile more cream around the strawberries, pressing into gaps, then top with second bread slice."
+          "name": "garlic",
+          "amount": "3cloves",
+          "category": "Produce",
+          "order": 6,
+          "stepIndex": 2
         },
         {
-          "cookMethod": "Plate",
-          "ingredients": [],
-          "description": "Smooth cream on the sides, mark the cut direction with a knife, wrap tightly in plastic."
+          "name": "thyme",
+          "amount": "1tsp",
+          "category": "Spices",
+          "order": 7,
+          "stepIndex": 2
         },
         {
-          "cookMethod": "Plate",
-          "ingredients": [],
-          "description": "Refrigerate at least 1 hour, then slice with a serrated knife along the marked line."
+          "name": "paprika",
+          "amount": "2tsp",
+          "category": "Spices",
+          "order": 8,
+          "stepIndex": 2
+        },
+        {
+          "name": "chicken broth",
+          "amount": "4cup",
+          "category": "Canned Goods",
+          "order": 9,
+          "stepIndex": 3
+        },
+        {
+          "name": "heavy cream",
+          "amount": "1cup",
+          "category": "Dairy & Eggs",
+          "order": 10,
+          "stepIndex": 3
+        },
+        {
+          "name": "farfalle pasta",
+          "amount": "1pound(500g)",
+          "category": "Pasta & Grains",
+          "order": 11,
+          "stepIndex": 3
+        },
+        {
+          "name": "spinach",
+          "amount": "5oz(150g)",
+          "category": "Produce",
+          "order": 12,
+          "stepIndex": 5
+        },
+        {
+          "name": "parmesan",
+          "amount": "1cup",
+          "category": "Dairy & Eggs",
+          "order": 13,
+          "stepIndex": 5
         }
       ],
-      "nutritionInfo": {
-        "calories": 620,
-        "carbs": 52,
-        "protein": 9,
-        "fat": 42
-      }
-    }
-  },
-  {
-    "id": "04a4404cde3206f4",
-    "readCount": 0,
-    "recipe": {
-      "title": "Cowboy Cornbread Chicken",
-      "description": "One-pan Southwest-style chicken baked into spiced cornbread with peppers and cheese.",
-      "tags": [
-        "Southwest",
-        "one-pan",
+      "searchTokens": [
+        "O",
+        "n",
+        "e",
+        "-",
+        "P",
+        "o",
+        "t",
+        "C",
+        "r",
+        "a",
+        "m",
+        "y",
+        "M",
+        "u",
+        "s",
+        "h",
+        "A",
+        "d",
+        "i",
+        "c",
+        "k",
+        "On",
+        "One",
+        "One-",
+        "One-P",
+        "One-Po",
+        "One-Pot",
+        "One-Pot ",
+        "One-Pot C",
+        "One-Pot Cr",
+        "ne",
+        "ne-",
+        "ne-P",
+        "ne-Po",
+        "ne-Pot",
+        "ne-Pot ",
+        "ne-Pot C",
+        "ne-Pot Cr",
+        "ne-Pot Cre",
+        "e-",
+        "e-P",
+        "e-Po",
+        "e-Pot",
+        "e-Pot ",
+        "e-Pot C",
+        "e-Pot Cr",
+        "e-Pot Cre",
+        "e-Pot Crea",
+        "-P",
+        "-Po",
+        "-Pot",
+        "-Pot ",
+        "-Pot C",
+        "-Pot Cr",
+        "-Pot Cre",
+        "-Pot Crea",
+        "-Pot Cream",
+        "Po",
+        "Pot",
+        "Pot ",
+        "Pot C",
+        "Pot Cr",
+        "Pot Cre",
+        "Pot Crea",
+        "Pot Cream",
+        "Pot Creamy",
+        "ot",
+        "ot ",
+        "ot C",
+        "ot Cr",
+        "ot Cre",
+        "ot Crea",
+        "ot Cream",
+        "ot Creamy",
+        "ot Creamy ",
+        "t ",
+        "t C",
+        "t Cr",
+        "t Cre",
+        "t Crea",
+        "t Cream",
+        "t Creamy",
+        "t Creamy ",
+        "t Creamy M",
+        " C",
+        " Cr",
+        " Cre",
+        " Crea",
+        " Cream",
+        " Creamy",
+        " Creamy ",
+        " Creamy M",
+        " Creamy Mu",
+        "Cr",
+        "Cre",
+        "Crea",
+        "Cream",
+        "Creamy",
+        "Creamy ",
+        "Creamy M",
+        "Creamy Mu",
+        "Creamy Mus",
+        "re",
+        "rea",
+        "ream",
+        "reamy",
+        "reamy ",
+        "reamy M",
+        "reamy Mu",
+        "reamy Mus",
+        "reamy Mush",
+        "ea",
+        "eam",
+        "eamy",
+        "eamy ",
+        "eamy M",
+        "eamy Mu",
+        "eamy Mus",
+        "eamy Mush",
+        "eamy Mushr",
+        "am",
+        "amy",
+        "amy ",
+        "amy M",
+        "amy Mu",
+        "amy Mus",
+        "amy Mush",
+        "amy Mushr",
+        "amy Mushro",
+        "my",
+        "my ",
+        "my M",
+        "my Mu",
+        "my Mus",
+        "my Mush",
+        "my Mushr",
+        "my Mushro",
+        "my Mushroo",
+        "y ",
+        "y M",
+        "y Mu",
+        "y Mus",
+        "y Mush",
+        "y Mushr",
+        "y Mushro",
+        "y Mushroo",
+        "y Mushroom",
+        " M",
+        " Mu",
+        " Mus",
+        " Mush",
+        " Mushr",
+        " Mushro",
+        " Mushroo",
+        " Mushroom",
+        " Mushroom ",
+        "Mu",
+        "Mus",
+        "Mush",
+        "Mushr",
+        "Mushro",
+        "Mushroo",
+        "Mushroom",
+        "Mushroom ",
+        "Mushroom A",
+        "us",
+        "ush",
+        "ushr",
+        "ushro",
+        "ushroo",
+        "ushroom",
+        "ushroom ",
+        "ushroom A",
+        "ushroom An",
+        "sh",
+        "shr",
+        "shro",
+        "shroo",
+        "shroom",
+        "shroom ",
+        "shroom A",
+        "shroom An",
+        "shroom And",
+        "hr",
+        "hro",
+        "hroo",
+        "hroom",
+        "hroom ",
+        "hroom A",
+        "hroom An",
+        "hroom And",
+        "hroom And ",
+        "ro",
+        "roo",
+        "room",
+        "room ",
+        "room A",
+        "room An",
+        "room And",
+        "room And ",
+        "room And C",
+        "oo",
+        "oom",
+        "oom ",
+        "oom A",
+        "oom An",
+        "oom And",
+        "oom And ",
+        "oom And C",
+        "oom And Ch",
+        "om",
+        "om ",
+        "om A",
+        "om An",
+        "om And",
+        "om And ",
+        "om And C",
+        "om And Ch",
+        "om And Chi",
+        "m ",
+        "m A",
+        "m An",
+        "m And",
+        "m And ",
+        "m And C",
+        "m And Ch",
+        "m And Chi",
+        "m And Chic",
+        " A",
+        " An",
+        " And",
+        " And ",
+        " And C",
+        " And Ch",
+        " And Chi",
+        " And Chic",
+        " And Chick",
+        "An",
+        "And",
+        "And ",
+        "And C",
+        "And Ch",
+        "And Chi",
+        "And Chic",
+        "And Chick",
+        "And Chicke",
+        "nd",
+        "nd ",
+        "nd C",
+        "nd Ch",
+        "nd Chi",
+        "nd Chic",
+        "nd Chick",
+        "nd Chicke",
+        "nd Chicken",
+        "d ",
+        "d C",
+        "d Ch",
+        "d Chi",
+        "d Chic",
+        "d Chick",
+        "d Chicke",
+        "d Chicken",
+        "d Chicken ",
+        " Ch",
+        " Chi",
+        " Chic",
+        " Chick",
+        " Chicke",
+        " Chicken",
+        " Chicken ",
+        " Chicken P",
+        "Ch",
+        "Chi",
+        "Chic",
+        "Chick",
+        "Chicke",
+        "Chicken",
+        "Chicken ",
+        "Chicken P",
+        "Chicken Pa",
+        "hi",
+        "hic",
+        "hick",
+        "hicke",
+        "hicken",
+        "hicken ",
+        "hicken P",
+        "hicken Pa",
+        "hicken Pas",
+        "ic",
+        "ick",
+        "icke",
+        "icken",
+        "icken ",
+        "icken P",
+        "icken Pa",
+        "icken Pas",
+        "icken Past",
+        "ck",
+        "cke",
+        "cken",
+        "cken ",
+        "cken P",
+        "cken Pa",
+        "cken Pas",
+        "cken Past",
+        "cken Pasta",
+        "ke",
+        "ken",
+        "ken ",
+        "ken P",
+        "ken Pa",
+        "ken Pas",
+        "ken Past",
+        "ken Pasta",
+        "en",
+        "en ",
+        "en P",
+        "en Pa",
+        "en Pas",
+        "en Past",
+        "en Pasta",
+        "n ",
+        "n P",
+        "n Pa",
+        "n Pas",
+        "n Past",
+        "n Pasta",
+        " P",
+        " Pa",
+        " Pas",
+        " Past",
+        " Pasta",
+        "Pa",
+        "Pas",
+        "Past",
+        "Pasta",
+        "as",
+        "ast",
+        "asta",
+        "st",
+        "sta",
+        "ta",
+        "one-pot",
+        "pasta",
         "chicken",
-        "cornbread",
-        "comfort food"
-      ],
-      "servings": 6,
-      "estimatedMinutes": 25,
-      "sourceUrl": "https://www.youtube.com/watch?v=KJDKHrvzIII",
-      "sourceUrlType": "youtube",
-      "thumbnailUrl": "https://i.ytimg.com/vi/KJDKHrvzIII/maxresdefault.jpg",
-      "language": "en",
-      "mainIngredients": [
-        "Chicken breast",
-        "Olive oil",
-        "Salt",
-        "Black pepper",
-        "Chipotle pepper"
+        "creamy",
+        "weeknight",
+        "olive oil",
+        "chicken breasts",
+        "yellow onion",
+        "cremini mushrooms",
+        "garlic"
       ],
       "sourceType": "link",
       "steps": [
         {
-          "cookMethod": "Marinate",
+          "cookMethod": "Sauté",
           "ingredients": [
             {
-              "name": "Chicken breast",
-              "amount": "3pieces",
-              "category": "Meat"
-            },
-            {
-              "name": "Olive oil",
-              "amount": "1tbsp",
+              "name": "olive oil",
+              "amount": "2tbsp",
               "category": "Sauces & Oils"
             },
             {
-              "name": "Salt",
-              "amount": "to taste",
-              "category": "Spices"
-            },
-            {
-              "name": "Black pepper",
-              "amount": "to taste",
-              "category": "Spices"
-            },
-            {
-              "name": "Chipotle pepper",
-              "amount": "to taste",
-              "category": "Spices"
+              "name": "chicken breasts",
+              "amount": "1+1/2pound(750g)",
+              "category": "Meat"
             }
           ],
-          "description": "Halve chicken breasts lengthwise, toss with oil, salt, pepper, and chipotle, then chill."
+          "description": "Heat 2 tbsp olive oil in a large pot on medium heat. Brown chicken and cook through, then set aside."
         },
         {
           "cookMethod": "Sauté",
           "ingredients": [
             {
-              "name": "Butter",
-              "amount": "113g",
+              "name": "olive oil",
+              "amount": "1tbsp",
+              "category": "Sauces & Oils"
+            },
+            {
+              "name": "yellow onion",
+              "amount": "1/2",
+              "category": "Produce"
+            }
+          ],
+          "description": "Add 1 tbsp olive oil and diced onion to the pot, stir, and cook down for 1-2 minutes."
+        },
+        {
+          "cookMethod": "Stir-fry",
+          "ingredients": [
+            {
+              "name": "cremini mushrooms",
+              "amount": "2cup",
+              "category": "Produce"
+            },
+            {
+              "name": "garlic",
+              "amount": "3cloves",
+              "category": "Produce"
+            },
+            {
+              "name": "salt",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "thyme",
+              "amount": "1tsp",
+              "category": "Spices"
+            },
+            {
+              "name": "paprika",
+              "amount": "2tsp",
+              "category": "Spices"
+            }
+          ],
+          "description": "Add mushrooms and minced garlic, stir to combine with onion, then season with salt, pepper, thyme, and paprika."
+        },
+        {
+          "cookMethod": "Boil",
+          "ingredients": [
+            {
+              "name": "chicken broth",
+              "amount": "4cup",
+              "category": "Canned Goods"
+            },
+            {
+              "name": "heavy cream",
+              "amount": "1cup",
               "category": "Dairy & Eggs"
             },
             {
-              "name": "Onion",
-              "amount": "1piece",
+              "name": "farfalle pasta",
+              "amount": "1pound(500g)",
+              "category": "Pasta & Grains"
+            }
+          ],
+          "description": "Add chicken broth and heavy cream, stir, and bring to a boil. Then add the farfalle pasta."
+        },
+        {
+          "cookMethod": "Simmer",
+          "ingredients": [],
+          "description": "Cook pasta according to package instructions, stirring every 1-2 minutes to prevent clumping (may take slightly longer than boiling in water)."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "spinach",
+              "amount": "5oz(150g)",
               "category": "Produce"
+            },
+            {
+              "name": "parmesan",
+              "amount": "1cup",
+              "category": "Dairy & Eggs"
+            }
+          ],
+          "description": "Once pasta is al dente, stir in spinach and the cooked chicken until spinach wilts, then add parmesan and stir until smooth."
+        },
+        {
+          "cookMethod": "Plate",
+          "ingredients": [],
+          "description": "Top with extra parmesan and serve."
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 920,
+        "carbs": 95,
+        "protein": 58,
+        "fat": 36
+      }
+    }
+  },
+  {
+    "id": "b086d6e4eb80019f",
+    "readCount": 0,
+    "recipe": {
+      "title": "Creamy Chicken Penne",
+      "description": "Creamy bacon and parmesan penne with chicken, spinach, and tomatoes.",
+      "tags": [
+        "Italian",
+        "pasta",
+        "chicken",
+        "creamy",
+        "weeknight"
+      ],
+      "servings": 4,
+      "estimatedMinutes": 30,
+      "sourceUrl": "https://www.youtube.com/watch?v=Qc2aPjIJk-8",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Qc2aPjIJk-8/maxresdefault.jpg",
+      "language": "en",
+      "mainIngredients": [
+        "bacon",
+        "chicken breasts",
+        "salt",
+        "pepper",
+        "Italian seasoning"
+      ],
+      "ingredients": [
+        {
+          "name": "bacon",
+          "amount": "4slices",
+          "category": "Meat",
+          "order": 0,
+          "stepIndex": 0
+        },
+        {
+          "name": "chicken breasts",
+          "amount": "2",
+          "category": "Meat",
+          "order": 1,
+          "stepIndex": 1
+        },
+        {
+          "name": "salt",
+          "amount": "to taste",
+          "category": "Spices",
+          "order": 2,
+          "stepIndex": 1
+        },
+        {
+          "name": "pepper",
+          "amount": "to taste",
+          "category": "Spices",
+          "order": 3,
+          "stepIndex": 1
+        },
+        {
+          "name": "Italian seasoning",
+          "amount": "2tsp",
+          "category": "Spices",
+          "order": 4,
+          "stepIndex": 1
+        },
+        {
+          "name": "paprika",
+          "amount": "1tsp",
+          "category": "Spices",
+          "order": 5,
+          "stepIndex": 1
+        },
+        {
+          "name": "garlic",
+          "amount": "2cloves",
+          "category": "Produce",
+          "order": 6,
+          "stepIndex": 2
+        },
+        {
+          "name": "spinach",
+          "amount": "2cups",
+          "category": "Produce",
+          "order": 7,
+          "stepIndex": 3
+        },
+        {
+          "name": "tomatoes",
+          "amount": "4small",
+          "category": "Produce",
+          "order": 8,
+          "stepIndex": 3
+        },
+        {
+          "name": "cream",
+          "amount": "1+1/2cups",
+          "category": "Dairy & Eggs",
+          "order": 9,
+          "stepIndex": 4
+        },
+        {
+          "name": "shredded parmesan",
+          "amount": "1cup",
+          "category": "Dairy & Eggs",
+          "order": 10,
+          "stepIndex": 4
+        },
+        {
+          "name": "red pepper flakes",
+          "amount": "1/2tsp",
+          "category": "Spices",
+          "order": 11,
+          "stepIndex": 5
+        },
+        {
+          "name": "penne",
+          "amount": "10ounces",
+          "category": "Pasta & Grains",
+          "order": 12,
+          "stepIndex": 5
+        }
+      ],
+      "searchTokens": [
+        "C",
+        "r",
+        "e",
+        "a",
+        "m",
+        "y",
+        "h",
+        "i",
+        "c",
+        "k",
+        "n",
+        "P",
+        "Cr",
+        "Cre",
+        "Crea",
+        "Cream",
+        "Creamy",
+        "Creamy ",
+        "Creamy C",
+        "Creamy Ch",
+        "Creamy Chi",
+        "re",
+        "rea",
+        "ream",
+        "reamy",
+        "reamy ",
+        "reamy C",
+        "reamy Ch",
+        "reamy Chi",
+        "reamy Chic",
+        "ea",
+        "eam",
+        "eamy",
+        "eamy ",
+        "eamy C",
+        "eamy Ch",
+        "eamy Chi",
+        "eamy Chic",
+        "eamy Chick",
+        "am",
+        "amy",
+        "amy ",
+        "amy C",
+        "amy Ch",
+        "amy Chi",
+        "amy Chic",
+        "amy Chick",
+        "amy Chicke",
+        "my",
+        "my ",
+        "my C",
+        "my Ch",
+        "my Chi",
+        "my Chic",
+        "my Chick",
+        "my Chicke",
+        "my Chicken",
+        "y ",
+        "y C",
+        "y Ch",
+        "y Chi",
+        "y Chic",
+        "y Chick",
+        "y Chicke",
+        "y Chicken",
+        "y Chicken ",
+        " C",
+        " Ch",
+        " Chi",
+        " Chic",
+        " Chick",
+        " Chicke",
+        " Chicken",
+        " Chicken ",
+        " Chicken P",
+        "Ch",
+        "Chi",
+        "Chic",
+        "Chick",
+        "Chicke",
+        "Chicken",
+        "Chicken ",
+        "Chicken P",
+        "Chicken Pe",
+        "hi",
+        "hic",
+        "hick",
+        "hicke",
+        "hicken",
+        "hicken ",
+        "hicken P",
+        "hicken Pe",
+        "hicken Pen",
+        "ic",
+        "ick",
+        "icke",
+        "icken",
+        "icken ",
+        "icken P",
+        "icken Pe",
+        "icken Pen",
+        "icken Penn",
+        "ck",
+        "cke",
+        "cken",
+        "cken ",
+        "cken P",
+        "cken Pe",
+        "cken Pen",
+        "cken Penn",
+        "cken Penne",
+        "ke",
+        "ken",
+        "ken ",
+        "ken P",
+        "ken Pe",
+        "ken Pen",
+        "ken Penn",
+        "ken Penne",
+        "en",
+        "en ",
+        "en P",
+        "en Pe",
+        "en Pen",
+        "en Penn",
+        "en Penne",
+        "n ",
+        "n P",
+        "n Pe",
+        "n Pen",
+        "n Penn",
+        "n Penne",
+        " P",
+        " Pe",
+        " Pen",
+        " Penn",
+        " Penne",
+        "Pe",
+        "Pen",
+        "Penn",
+        "Penne",
+        "enn",
+        "enne",
+        "nn",
+        "nne",
+        "ne",
+        "Italian",
+        "pasta",
+        "chicken",
+        "creamy",
+        "weeknight",
+        "bacon",
+        "chicken breasts",
+        "salt",
+        "pepper",
+        "Italian seasoning"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "Fry",
+          "ingredients": [
+            {
+              "name": "bacon",
+              "amount": "4slices",
+              "category": "Meat"
+            }
+          ],
+          "description": "In a deep skillet, fry the bacon until crispy. Remove to a paper towel to drain, and chop."
+        },
+        {
+          "cookMethod": "Sauté",
+          "ingredients": [
+            {
+              "name": "chicken breasts",
+              "amount": "2",
+              "category": "Meat"
+            },
+            {
+              "name": "salt",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "Italian seasoning",
+              "amount": "2tsp",
+              "category": "Spices"
+            },
+            {
+              "name": "paprika",
+              "amount": "1tsp",
+              "category": "Spices"
+            }
+          ],
+          "description": "In the same skillet, cook the chicken with salt, pepper, Italian seasoning, and paprika."
+        },
+        {
+          "cookMethod": "Sauté",
+          "ingredients": [
+            {
+              "name": "garlic",
+              "amount": "2cloves",
+              "category": "Produce"
+            }
+          ],
+          "description": "Add garlic and cook until soft."
+        },
+        {
+          "cookMethod": "Sauté",
+          "ingredients": [
+            {
+              "name": "spinach",
+              "amount": "2cups",
+              "category": "Produce"
+            },
+            {
+              "name": "tomatoes",
+              "amount": "4small",
+              "category": "Produce"
+            }
+          ],
+          "description": "Add spinach and tomatoes, and cook until spinach is wilted."
+        },
+        {
+          "cookMethod": "Simmer",
+          "ingredients": [
+            {
+              "name": "cream",
+              "amount": "1+1/2cups",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "shredded parmesan",
+              "amount": "1cup",
+              "category": "Dairy & Eggs"
+            }
+          ],
+          "description": "Add the cream and parmesan, and bring to a boil."
+        },
+        {
+          "cookMethod": "Toss",
+          "ingredients": [
+            {
+              "name": "penne",
+              "amount": "10ounces",
+              "category": "Pasta & Grains"
+            },
+            {
+              "name": "bacon",
+              "amount": "4slices",
+              "category": "Meat"
+            },
+            {
+              "name": "red pepper flakes",
+              "amount": "1/2tsp",
+              "category": "Spices"
+            }
+          ],
+          "description": "Add the penne and bacon, and stir until fully coated in sauce. Serve with fresh parsley, parmesan, and red pepper flakes if desired."
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 780,
+        "carbs": 62,
+        "protein": 45,
+        "fat": 38
+      }
+    }
+  },
+  {
+    "id": "ecdf63ad96bfad18",
+    "readCount": 0,
+    "recipe": {
+      "title": "Real Spaghetti Carbonara | Antonio Carluccio",
+      "description": "Authentic Italian spaghetti carbonara with guanciale, egg yolks and pecorino.",
+      "tags": [
+        "Italian",
+        "pasta",
+        "quick",
+        "classic",
+        "weeknight"
+      ],
+      "servings": 2,
+      "estimatedMinutes": 20,
+      "sourceUrl": "https://www.youtube.com/watch?v=3AAdKl1UYZs",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3AAdKl1UYZs/maxresdefault.jpg",
+      "language": "en",
+      "mainIngredients": [
+        "Spaghetti",
+        "Salt",
+        "Guanciale",
+        "Egg yolks",
+        "Pecorino cheese, grated"
+      ],
+      "ingredients": [
+        {
+          "name": "Spaghetti",
+          "amount": "200g",
+          "category": "Pasta & Grains",
+          "order": 0,
+          "stepIndex": 0
+        },
+        {
+          "name": "Guanciale",
+          "amount": "100g",
+          "category": "Meat",
+          "order": 1,
+          "stepIndex": 1
+        },
+        {
+          "name": "Egg yolks",
+          "amount": "3",
+          "category": "Dairy & Eggs",
+          "order": 2,
+          "stepIndex": 2
+        },
+        {
+          "name": "Pecorino cheese, grated",
+          "amount": "50g",
+          "category": "Dairy & Eggs",
+          "order": 3,
+          "stepIndex": 2
+        },
+        {
+          "name": "Black pepper",
+          "amount": "to taste",
+          "category": "Spices",
+          "order": 4,
+          "stepIndex": 2
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "Spices",
+          "order": 5,
+          "stepIndex": 0
+        }
+      ],
+      "searchTokens": [
+        "R",
+        "e",
+        "a",
+        "l",
+        "S",
+        "p",
+        "g",
+        "h",
+        "t",
+        "i",
+        "C",
+        "r",
+        "b",
+        "o",
+        "n",
+        "|",
+        "A",
+        "u",
+        "c",
+        "Re",
+        "Rea",
+        "Real",
+        "Real ",
+        "Real S",
+        "Real Sp",
+        "Real Spa",
+        "Real Spag",
+        "Real Spagh",
+        "ea",
+        "eal",
+        "eal ",
+        "eal S",
+        "eal Sp",
+        "eal Spa",
+        "eal Spag",
+        "eal Spagh",
+        "eal Spaghe",
+        "al",
+        "al ",
+        "al S",
+        "al Sp",
+        "al Spa",
+        "al Spag",
+        "al Spagh",
+        "al Spaghe",
+        "al Spaghet",
+        "l ",
+        "l S",
+        "l Sp",
+        "l Spa",
+        "l Spag",
+        "l Spagh",
+        "l Spaghe",
+        "l Spaghet",
+        "l Spaghett",
+        " S",
+        " Sp",
+        " Spa",
+        " Spag",
+        " Spagh",
+        " Spaghe",
+        " Spaghet",
+        " Spaghett",
+        " Spaghetti",
+        "Sp",
+        "Spa",
+        "Spag",
+        "Spagh",
+        "Spaghe",
+        "Spaghet",
+        "Spaghett",
+        "Spaghetti",
+        "Spaghetti ",
+        "pa",
+        "pag",
+        "pagh",
+        "paghe",
+        "paghet",
+        "paghett",
+        "paghetti",
+        "paghetti ",
+        "paghetti C",
+        "ag",
+        "agh",
+        "aghe",
+        "aghet",
+        "aghett",
+        "aghetti",
+        "aghetti ",
+        "aghetti C",
+        "aghetti Ca",
+        "gh",
+        "ghe",
+        "ghet",
+        "ghett",
+        "ghetti",
+        "ghetti ",
+        "ghetti C",
+        "ghetti Ca",
+        "ghetti Car",
+        "he",
+        "het",
+        "hett",
+        "hetti",
+        "hetti ",
+        "hetti C",
+        "hetti Ca",
+        "hetti Car",
+        "hetti Carb",
+        "et",
+        "ett",
+        "etti",
+        "etti ",
+        "etti C",
+        "etti Ca",
+        "etti Car",
+        "etti Carb",
+        "etti Carbo",
+        "tt",
+        "tti",
+        "tti ",
+        "tti C",
+        "tti Ca",
+        "tti Car",
+        "tti Carb",
+        "tti Carbo",
+        "tti Carbon",
+        "ti",
+        "ti ",
+        "ti C",
+        "ti Ca",
+        "ti Car",
+        "ti Carb",
+        "ti Carbo",
+        "ti Carbon",
+        "ti Carbona",
+        "i ",
+        "i C",
+        "i Ca",
+        "i Car",
+        "i Carb",
+        "i Carbo",
+        "i Carbon",
+        "i Carbona",
+        "i Carbonar",
+        " C",
+        " Ca",
+        " Car",
+        " Carb",
+        " Carbo",
+        " Carbon",
+        " Carbona",
+        " Carbonar",
+        " Carbonara",
+        "Ca",
+        "Car",
+        "Carb",
+        "Carbo",
+        "Carbon",
+        "Carbona",
+        "Carbonar",
+        "Carbonara",
+        "Carbonara ",
+        "ar",
+        "arb",
+        "arbo",
+        "arbon",
+        "arbona",
+        "arbonar",
+        "arbonara",
+        "arbonara ",
+        "arbonara |",
+        "rb",
+        "rbo",
+        "rbon",
+        "rbona",
+        "rbonar",
+        "rbonara",
+        "rbonara ",
+        "rbonara |",
+        "rbonara | ",
+        "bo",
+        "bon",
+        "bona",
+        "bonar",
+        "bonara",
+        "bonara ",
+        "bonara |",
+        "bonara | ",
+        "bonara | A",
+        "on",
+        "ona",
+        "onar",
+        "onara",
+        "onara ",
+        "onara |",
+        "onara | ",
+        "onara | A",
+        "onara | An",
+        "na",
+        "nar",
+        "nara",
+        "nara ",
+        "nara |",
+        "nara | ",
+        "nara | A",
+        "nara | An",
+        "nara | Ant",
+        "ara",
+        "ara ",
+        "ara |",
+        "ara | ",
+        "ara | A",
+        "ara | An",
+        "ara | Ant",
+        "ara | Anto",
+        "ra",
+        "ra ",
+        "ra |",
+        "ra | ",
+        "ra | A",
+        "ra | An",
+        "ra | Ant",
+        "ra | Anto",
+        "ra | Anton",
+        "a ",
+        "a |",
+        "a | ",
+        "a | A",
+        "a | An",
+        "a | Ant",
+        "a | Anto",
+        "a | Anton",
+        "a | Antoni",
+        " |",
+        " | ",
+        " | A",
+        " | An",
+        " | Ant",
+        " | Anto",
+        " | Anton",
+        " | Antoni",
+        " | Antonio",
+        "| ",
+        "| A",
+        "| An",
+        "| Ant",
+        "| Anto",
+        "| Anton",
+        "| Antoni",
+        "| Antonio",
+        "| Antonio ",
+        " A",
+        " An",
+        " Ant",
+        " Anto",
+        " Anton",
+        " Antoni",
+        " Antonio",
+        " Antonio ",
+        " Antonio C",
+        "An",
+        "Ant",
+        "Anto",
+        "Anton",
+        "Antoni",
+        "Antonio",
+        "Antonio ",
+        "Antonio C",
+        "Antonio Ca",
+        "nt",
+        "nto",
+        "nton",
+        "ntoni",
+        "ntonio",
+        "ntonio ",
+        "ntonio C",
+        "ntonio Ca",
+        "ntonio Car",
+        "to",
+        "ton",
+        "toni",
+        "tonio",
+        "tonio ",
+        "tonio C",
+        "tonio Ca",
+        "tonio Car",
+        "tonio Carl",
+        "oni",
+        "onio",
+        "onio ",
+        "onio C",
+        "onio Ca",
+        "onio Car",
+        "onio Carl",
+        "onio Carlu",
+        "ni",
+        "nio",
+        "nio ",
+        "nio C",
+        "nio Ca",
+        "nio Car",
+        "nio Carl",
+        "nio Carlu",
+        "nio Carluc",
+        "io",
+        "io ",
+        "io C",
+        "io Ca",
+        "io Car",
+        "io Carl",
+        "io Carlu",
+        "io Carluc",
+        "io Carlucc",
+        "o ",
+        "o C",
+        "o Ca",
+        "o Car",
+        "o Carl",
+        "o Carlu",
+        "o Carluc",
+        "o Carlucc",
+        "o Carlucci",
+        " Carl",
+        " Carlu",
+        " Carluc",
+        " Carlucc",
+        " Carlucci",
+        " Carluccio",
+        "Carl",
+        "Carlu",
+        "Carluc",
+        "Carlucc",
+        "Carlucci",
+        "Carluccio",
+        "arl",
+        "arlu",
+        "arluc",
+        "arlucc",
+        "arlucci",
+        "arluccio",
+        "rl",
+        "rlu",
+        "rluc",
+        "rlucc",
+        "rlucci",
+        "rluccio",
+        "lu",
+        "luc",
+        "lucc",
+        "lucci",
+        "luccio",
+        "uc",
+        "ucc",
+        "ucci",
+        "uccio",
+        "cc",
+        "cci",
+        "ccio",
+        "ci",
+        "cio",
+        "Italian",
+        "pasta",
+        "quick",
+        "classic",
+        "weeknight",
+        "Salt",
+        "Guanciale",
+        "Egg yolks",
+        "Pecorino cheese, grated"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "Boil",
+          "ingredients": [
+            {
+              "name": "Spaghetti",
+              "amount": "200g",
+              "category": "Pasta & Grains"
             },
             {
               "name": "Salt",
@@ -1234,57 +2501,716 @@
               "category": "Spices"
             }
           ],
-          "description": "Melt butter in a cast iron pan, add diced onion with salt, and cook until translucent."
+          "description": "Bring a large pot of salted water to a boil and cook the spaghetti until al dente."
         },
         {
-          "cookMethod": "Stir-fry",
+          "cookMethod": "Slice",
           "ingredients": [
             {
-              "name": "Red bell pepper",
-              "amount": "0.5piece",
-              "category": "Produce"
-            },
-            {
-              "name": "Green bell pepper",
-              "amount": "0.5piece",
-              "category": "Produce"
-            },
-            {
-              "name": "Garlic",
-              "amount": "1tbsp",
-              "category": "Produce"
+              "name": "Guanciale",
+              "amount": "100g",
+              "category": "Meat"
             }
           ],
-          "description": "Lower heat, add bell peppers and minced garlic, cook 2 minutes until softened, then reserve 3-4 spoons."
+          "description": "Cut the guanciale into small strips or cubes."
         },
         {
           "cookMethod": "Mix",
           "ingredients": [
             {
-              "name": "Self-rising flour",
-              "amount": "1cup",
+              "name": "Egg yolks",
+              "amount": "3",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Pecorino cheese, grated",
+              "amount": "50g",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Black pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "In a bowl, whisk the egg yolks with the grated pecorino and freshly ground black pepper. For an extra creamy taste add one more yolk."
+        },
+        {
+          "cookMethod": "Sauté",
+          "ingredients": [
+            {
+              "name": "Guanciale",
+              "amount": "100g",
+              "category": "Meat"
+            }
+          ],
+          "description": "In a pan over medium heat, sauté the guanciale until golden and the fat has rendered, then reduce heat slightly."
+        },
+        {
+          "cookMethod": "Toss",
+          "ingredients": [
+            {
+              "name": "Spaghetti",
+              "amount": "200g",
               "category": "Pasta & Grains"
             },
+            {
+              "name": "Guanciale",
+              "amount": "100g",
+              "category": "Meat"
+            }
+          ],
+          "description": "Drain the pasta (reserving some cooking water) and toss it in the pan with the guanciale off the heat."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "Egg yolks",
+              "amount": "3",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Pecorino cheese, grated",
+              "amount": "50g",
+              "category": "Dairy & Eggs"
+            }
+          ],
+          "description": "Off the heat, pour in the egg yolk and pecorino mixture and stir quickly to coat, adding a splash of pasta water for a silky sauce."
+        },
+        {
+          "cookMethod": "Plate",
+          "ingredients": [
+            {
+              "name": "Pecorino cheese, grated",
+              "amount": "50g",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Black pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "Serve immediately, topped with extra grated pecorino and freshly ground black pepper."
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 720,
+        "carbs": 78,
+        "protein": 28,
+        "fat": 32
+      }
+    }
+  },
+  {
+    "id": "a4ac35b21cdfc2ad",
+    "readCount": 0,
+    "recipe": {
+      "title": "Cowboy Cornbread Chicken | Food Wishes",
+      "description": "One-pot Southwest-style cornbread baked over seasoned chicken with chipotle hot honey butter.",
+      "tags": [
+        "Southwest",
+        "one-pot",
+        "comfort-food",
+        "chicken",
+        "cornbread"
+      ],
+      "servings": 6,
+      "estimatedMinutes": 60,
+      "sourceUrl": "https://www.youtube.com/watch?v=KJDKHrvzIII",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KJDKHrvzIII/maxresdefault.jpg",
+      "language": "en",
+      "mainIngredients": [
+        "Boneless skinless chicken thighs",
+        "Salt",
+        "Black pepper",
+        "Ground cumin",
+        "Chili powder"
+      ],
+      "ingredients": [
+        {
+          "name": "Boneless skinless chicken thighs",
+          "amount": "2lb",
+          "category": "Meat",
+          "order": 0,
+          "stepIndex": 0
+        },
+        {
+          "name": "Salt",
+          "amount": "to taste",
+          "category": "Spices",
+          "order": 1,
+          "stepIndex": 0
+        },
+        {
+          "name": "Black pepper",
+          "amount": "to taste",
+          "category": "Spices",
+          "order": 2,
+          "stepIndex": 0
+        },
+        {
+          "name": "Ground cumin",
+          "amount": "1tsp",
+          "category": "Spices",
+          "order": 3,
+          "stepIndex": 0
+        },
+        {
+          "name": "Chili powder",
+          "amount": "1tsp",
+          "category": "Spices",
+          "order": 4,
+          "stepIndex": 0
+        },
+        {
+          "name": "Smoked paprika",
+          "amount": "1tsp",
+          "category": "Spices",
+          "order": 5,
+          "stepIndex": 0
+        },
+        {
+          "name": "Olive oil",
+          "amount": "2tbsp",
+          "category": "Sauces & Oils",
+          "order": 6,
+          "stepIndex": 1
+        },
+        {
+          "name": "Yellow onion",
+          "amount": "1",
+          "category": "Produce",
+          "order": 7,
+          "stepIndex": 2
+        },
+        {
+          "name": "Jalapeño",
+          "amount": "1",
+          "category": "Produce",
+          "order": 8,
+          "stepIndex": 2
+        },
+        {
+          "name": "Garlic",
+          "amount": "3cloves",
+          "category": "Produce",
+          "order": 9,
+          "stepIndex": 2
+        },
+        {
+          "name": "Cornmeal",
+          "amount": "1cup",
+          "category": "Pasta & Grains",
+          "order": 10,
+          "stepIndex": 3
+        },
+        {
+          "name": "All-purpose flour",
+          "amount": "1cup",
+          "category": "Pasta & Grains",
+          "order": 11,
+          "stepIndex": 3
+        },
+        {
+          "name": "Baking powder",
+          "amount": "1tbsp",
+          "category": "Baking & Nuts",
+          "order": 12,
+          "stepIndex": 3
+        },
+        {
+          "name": "Sugar",
+          "amount": "2tbsp",
+          "category": "Baking & Nuts",
+          "order": 13,
+          "stepIndex": 3
+        },
+        {
+          "name": "Buttermilk",
+          "amount": "1cup",
+          "category": "Dairy & Eggs",
+          "order": 14,
+          "stepIndex": 3
+        },
+        {
+          "name": "Eggs",
+          "amount": "2",
+          "category": "Dairy & Eggs",
+          "order": 15,
+          "stepIndex": 3
+        },
+        {
+          "name": "Melted butter",
+          "amount": "1/2cup",
+          "category": "Dairy & Eggs",
+          "order": 16,
+          "stepIndex": 3
+        },
+        {
+          "name": "Corn kernels",
+          "amount": "1cup",
+          "category": "Canned Goods",
+          "order": 17,
+          "stepIndex": 3
+        },
+        {
+          "name": "Shredded cheddar cheese",
+          "amount": "1cup",
+          "category": "Dairy & Eggs",
+          "order": 18,
+          "stepIndex": 3
+        },
+        {
+          "name": "Butter",
+          "amount": "1/2cup",
+          "category": "Dairy & Eggs",
+          "order": 19,
+          "stepIndex": 5
+        },
+        {
+          "name": "Honey",
+          "amount": "1/4cup",
+          "category": "Sauces & Oils",
+          "order": 20,
+          "stepIndex": 5
+        },
+        {
+          "name": "Chipotle in adobo",
+          "amount": "1tbsp",
+          "category": "Canned Goods",
+          "order": 21,
+          "stepIndex": 5
+        }
+      ],
+      "searchTokens": [
+        "C",
+        "o",
+        "w",
+        "b",
+        "y",
+        "r",
+        "n",
+        "e",
+        "a",
+        "d",
+        "h",
+        "i",
+        "c",
+        "k",
+        "|",
+        "F",
+        "W",
+        "s",
+        "Co",
+        "Cow",
+        "Cowb",
+        "Cowbo",
+        "Cowboy",
+        "Cowboy ",
+        "Cowboy C",
+        "Cowboy Co",
+        "Cowboy Cor",
+        "ow",
+        "owb",
+        "owbo",
+        "owboy",
+        "owboy ",
+        "owboy C",
+        "owboy Co",
+        "owboy Cor",
+        "owboy Corn",
+        "wb",
+        "wbo",
+        "wboy",
+        "wboy ",
+        "wboy C",
+        "wboy Co",
+        "wboy Cor",
+        "wboy Corn",
+        "wboy Cornb",
+        "bo",
+        "boy",
+        "boy ",
+        "boy C",
+        "boy Co",
+        "boy Cor",
+        "boy Corn",
+        "boy Cornb",
+        "boy Cornbr",
+        "oy",
+        "oy ",
+        "oy C",
+        "oy Co",
+        "oy Cor",
+        "oy Corn",
+        "oy Cornb",
+        "oy Cornbr",
+        "oy Cornbre",
+        "y ",
+        "y C",
+        "y Co",
+        "y Cor",
+        "y Corn",
+        "y Cornb",
+        "y Cornbr",
+        "y Cornbre",
+        "y Cornbrea",
+        " C",
+        " Co",
+        " Cor",
+        " Corn",
+        " Cornb",
+        " Cornbr",
+        " Cornbre",
+        " Cornbrea",
+        " Cornbread",
+        "Cor",
+        "Corn",
+        "Cornb",
+        "Cornbr",
+        "Cornbre",
+        "Cornbrea",
+        "Cornbread",
+        "Cornbread ",
+        "or",
+        "orn",
+        "ornb",
+        "ornbr",
+        "ornbre",
+        "ornbrea",
+        "ornbread",
+        "ornbread ",
+        "ornbread C",
+        "rn",
+        "rnb",
+        "rnbr",
+        "rnbre",
+        "rnbrea",
+        "rnbread",
+        "rnbread ",
+        "rnbread C",
+        "rnbread Ch",
+        "nb",
+        "nbr",
+        "nbre",
+        "nbrea",
+        "nbread",
+        "nbread ",
+        "nbread C",
+        "nbread Ch",
+        "nbread Chi",
+        "br",
+        "bre",
+        "brea",
+        "bread",
+        "bread ",
+        "bread C",
+        "bread Ch",
+        "bread Chi",
+        "bread Chic",
+        "re",
+        "rea",
+        "read",
+        "read ",
+        "read C",
+        "read Ch",
+        "read Chi",
+        "read Chic",
+        "read Chick",
+        "ea",
+        "ead",
+        "ead ",
+        "ead C",
+        "ead Ch",
+        "ead Chi",
+        "ead Chic",
+        "ead Chick",
+        "ead Chicke",
+        "ad",
+        "ad ",
+        "ad C",
+        "ad Ch",
+        "ad Chi",
+        "ad Chic",
+        "ad Chick",
+        "ad Chicke",
+        "ad Chicken",
+        "d ",
+        "d C",
+        "d Ch",
+        "d Chi",
+        "d Chic",
+        "d Chick",
+        "d Chicke",
+        "d Chicken",
+        "d Chicken ",
+        " Ch",
+        " Chi",
+        " Chic",
+        " Chick",
+        " Chicke",
+        " Chicken",
+        " Chicken ",
+        " Chicken |",
+        "Ch",
+        "Chi",
+        "Chic",
+        "Chick",
+        "Chicke",
+        "Chicken",
+        "Chicken ",
+        "Chicken |",
+        "Chicken | ",
+        "hi",
+        "hic",
+        "hick",
+        "hicke",
+        "hicken",
+        "hicken ",
+        "hicken |",
+        "hicken | ",
+        "hicken | F",
+        "ic",
+        "ick",
+        "icke",
+        "icken",
+        "icken ",
+        "icken |",
+        "icken | ",
+        "icken | F",
+        "icken | Fo",
+        "ck",
+        "cke",
+        "cken",
+        "cken ",
+        "cken |",
+        "cken | ",
+        "cken | F",
+        "cken | Fo",
+        "cken | Foo",
+        "ke",
+        "ken",
+        "ken ",
+        "ken |",
+        "ken | ",
+        "ken | F",
+        "ken | Fo",
+        "ken | Foo",
+        "ken | Food",
+        "en",
+        "en ",
+        "en |",
+        "en | ",
+        "en | F",
+        "en | Fo",
+        "en | Foo",
+        "en | Food",
+        "en | Food ",
+        "n ",
+        "n |",
+        "n | ",
+        "n | F",
+        "n | Fo",
+        "n | Foo",
+        "n | Food",
+        "n | Food ",
+        "n | Food W",
+        " |",
+        " | ",
+        " | F",
+        " | Fo",
+        " | Foo",
+        " | Food",
+        " | Food ",
+        " | Food W",
+        " | Food Wi",
+        "| ",
+        "| F",
+        "| Fo",
+        "| Foo",
+        "| Food",
+        "| Food ",
+        "| Food W",
+        "| Food Wi",
+        "| Food Wis",
+        " F",
+        " Fo",
+        " Foo",
+        " Food",
+        " Food ",
+        " Food W",
+        " Food Wi",
+        " Food Wis",
+        " Food Wish",
+        "Fo",
+        "Foo",
+        "Food",
+        "Food ",
+        "Food W",
+        "Food Wi",
+        "Food Wis",
+        "Food Wish",
+        "Food Wishe",
+        "oo",
+        "ood",
+        "ood ",
+        "ood W",
+        "ood Wi",
+        "ood Wis",
+        "ood Wish",
+        "ood Wishe",
+        "ood Wishes",
+        "od",
+        "od ",
+        "od W",
+        "od Wi",
+        "od Wis",
+        "od Wish",
+        "od Wishe",
+        "od Wishes",
+        "d W",
+        "d Wi",
+        "d Wis",
+        "d Wish",
+        "d Wishe",
+        "d Wishes",
+        " W",
+        " Wi",
+        " Wis",
+        " Wish",
+        " Wishe",
+        " Wishes",
+        "Wi",
+        "Wis",
+        "Wish",
+        "Wishe",
+        "Wishes",
+        "is",
+        "ish",
+        "ishe",
+        "ishes",
+        "sh",
+        "she",
+        "shes",
+        "he",
+        "hes",
+        "es",
+        "Southwest",
+        "one-pot",
+        "comfort-food",
+        "chicken",
+        "cornbread",
+        "Boneless skinless chicken thighs",
+        "Salt",
+        "Black pepper",
+        "Ground cumin",
+        "Chili powder"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "Boneless skinless chicken thighs",
+              "amount": "2lb",
+              "category": "Meat"
+            },
+            {
+              "name": "Salt",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "Black pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "Ground cumin",
+              "amount": "1tsp",
+              "category": "Spices"
+            },
+            {
+              "name": "Chili powder",
+              "amount": "1tsp",
+              "category": "Spices"
+            },
+            {
+              "name": "Smoked paprika",
+              "amount": "1tsp",
+              "category": "Spices"
+            }
+          ],
+          "description": "Season the chicken thighs all over with salt, pepper, cumin, chili powder, and smoked paprika."
+        },
+        {
+          "cookMethod": "Fry",
+          "ingredients": [
+            {
+              "name": "Olive oil",
+              "amount": "2tbsp",
+              "category": "Sauces & Oils"
+            },
+            {
+              "name": "Boneless skinless chicken thighs",
+              "amount": "2lb",
+              "category": "Meat"
+            }
+          ],
+          "description": "Heat olive oil in an oven-safe skillet over medium-high heat and sear the chicken until browned on both sides."
+        },
+        {
+          "cookMethod": "Sauté",
+          "ingredients": [
+            {
+              "name": "Yellow onion",
+              "amount": "1",
+              "category": "Produce"
+            },
+            {
+              "name": "Jalapeño",
+              "amount": "1",
+              "category": "Produce"
+            },
+            {
+              "name": "Garlic",
+              "amount": "3cloves",
+              "category": "Produce"
+            }
+          ],
+          "description": "Reduce heat to medium and sauté the diced onion, jalapeño, and garlic until softened and fragrant."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
             {
               "name": "Cornmeal",
               "amount": "1cup",
               "category": "Pasta & Grains"
             },
             {
+              "name": "All-purpose flour",
+              "amount": "1cup",
+              "category": "Pasta & Grains"
+            },
+            {
+              "name": "Baking powder",
+              "amount": "1tbsp",
+              "category": "Baking & Nuts"
+            },
+            {
+              "name": "Sugar",
+              "amount": "2tbsp",
+              "category": "Baking & Nuts"
+            },
+            {
               "name": "Salt",
               "amount": "to taste",
               "category": "Spices"
-            }
-          ],
-          "description": "Whisk together self-rising flour, cornmeal, and salt in a bowl for about 30 seconds."
-        },
-        {
-          "cookMethod": "Mix",
-          "ingredients": [
-            {
-              "name": "Honey",
-              "amount": "3tbsp",
-              "category": "Sauces & Oils"
             },
             {
               "name": "Buttermilk",
@@ -1293,39 +3219,64 @@
             },
             {
               "name": "Eggs",
-              "amount": "2pieces",
-              "category": "Dairy & Eggs"
-            }
-          ],
-          "description": "Add honey, buttermilk, and beaten eggs to the pan with onions and whisk thoroughly."
-        },
-        {
-          "cookMethod": "Mix",
-          "ingredients": [],
-          "description": "Gently fold dry ingredients into the wet mixture until flour just disappears, then level the batter."
-        },
-        {
-          "cookMethod": "Bake",
-          "ingredients": [
-            {
-              "name": "Monterey Jack cheese",
-              "amount": "1cup",
+              "amount": "2",
               "category": "Dairy & Eggs"
             },
             {
-              "name": "Green onions",
-              "amount": "2tbsp",
-              "category": "Produce"
+              "name": "Melted butter",
+              "amount": "1/2cup",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Corn kernels",
+              "amount": "1cup",
+              "category": "Canned Goods"
+            },
+            {
+              "name": "Shredded cheddar cheese",
+              "amount": "1cup",
+              "category": "Dairy & Eggs"
             }
           ],
-          "description": "Press chicken into batter, top with reserved peppers and cheese, bake at 400°F for 40-45 minutes, garnish with green onions."
+          "description": "Whisk cornmeal, flour, baking powder, sugar, and salt with buttermilk, eggs, and melted butter, then fold in corn and cheddar."
+        },
+        {
+          "cookMethod": "Bake",
+          "ingredients": [],
+          "description": "Pour the cornbread batter evenly over the chicken and aromatics in the skillet, then bake at 400°F for about 40-45 minutes until the cornbread is golden and cooked through."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "Butter",
+              "amount": "1/2cup",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Honey",
+              "amount": "1/4cup",
+              "category": "Sauces & Oils"
+            },
+            {
+              "name": "Chipotle in adobo",
+              "amount": "1tbsp",
+              "category": "Canned Goods"
+            }
+          ],
+          "description": "Stir softened butter with honey and minced chipotle in adobo until smooth to make the chipotle hot honey butter."
+        },
+        {
+          "cookMethod": "Plate",
+          "ingredients": [],
+          "description": "Slice the cornbread and chicken and serve with a generous spoonful of chipotle hot honey butter on top."
         }
       ],
       "nutritionInfo": {
-        "calories": 720,
-        "carbs": 52,
-        "protein": 42,
-        "fat": 36
+        "calories": 4800,
+        "carbs": 340,
+        "protein": 240,
+        "fat": 250
       }
     }
   }
