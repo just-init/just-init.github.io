@@ -1,34 +1,232 @@
-
-    
-    
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>바른생활 — 개인정보 처리방침</title>
+  <meta name="description" content="바른생활(Just Init) 개인정보 처리방침">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #EEE2DA;
+      --card: #F7EDE6;
+      --cream: #FCF1E9;
+      --gold: #C0934E;
+      --gold-line: #CEA94B;
+      --stamp: #9B2132;
+      --point: #539297;
+      --text: #5B4A3B;
+      --text-soft: #816F5C;
+      --text-dim: #A2917E;
+      --serif: 'Nanum Myeongjo', serif;
+      --sans: 'Noto Sans KR', sans-serif;
+      --shadow-out-sm: 4px 4px 10px rgba(215,203,195,0.65), -4px -4px 10px rgba(253,239,231,0.8);
+      --shadow-in: inset 4px 4px 9px rgba(215,203,195,0.7), inset -4px -4px 9px rgba(253,239,231,0.85);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+    .topbar {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: center;
+      padding: 16px 24px;
+      background: rgba(238,226,218,0.85);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(206,169,75,0.2);
+    }
+    .brand { display: inline-flex; align-items: center; }
+    .brand-img { height: 26px; width: auto; display: block; image-rendering: -webkit-optimize-contrast; }
 
+    .legal-hero {
+      text-align: center;
+      padding: 64px 24px 40px;
+      background: radial-gradient(ellipse at 50% 0%, rgba(206,169,75,0.10) 0%, transparent 65%);
+    }
+    .legal-hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 800; color: var(--text); margin-bottom: 12px;
+    }
+    .legal-hero .eff-date {
+      display: inline-block;
+      padding: 6px 16px; border-radius: 999px;
+      background: var(--card); box-shadow: var(--shadow-out-sm);
+      color: var(--point); font-size: 0.82rem; font-weight: 600;
+    }
 
-<title>개인정보처리방침</title>
+    .legal-wrap { max-width: 840px; margin: 0 auto; padding: 0 24px 96px; }
+    .legal-card {
+      background: var(--card);
+      border-radius: 24px;
+      box-shadow: var(--shadow-out-sm);
+      padding: clamp(28px, 5vw, 56px);
+    }
+    .intro {
+      color: var(--text-soft); font-size: 0.95rem; font-weight: 300;
+      padding-bottom: 28px; margin-bottom: 16px;
+      border-bottom: 1px solid rgba(206,169,75,0.22);
+    }
+    .article { margin-top: 36px; }
+    .article:first-of-type { margin-top: 8px; }
+    .article h2 {
+      font-family: var(--serif);
+      font-size: 1.15rem; font-weight: 700; color: var(--text);
+      padding-left: 14px; border-left: 3px solid var(--gold-line);
+      margin-bottom: 14px; line-height: 1.5;
+    }
+    .article p { color: var(--text-soft); font-size: 0.95rem; font-weight: 300; margin-bottom: 10px; }
+    .article p strong { color: var(--text); font-weight: 500; }
+    .info-list {
+      list-style: none;
+      background: var(--bg);
+      border-radius: 14px; box-shadow: var(--shadow-in);
+      padding: 18px 22px; margin: 14px 0;
+    }
+    .info-list li { font-size: 0.92rem; color: var(--text-soft); padding: 3px 0; }
+    .info-list li.tt { color: var(--text); font-weight: 600; margin-bottom: 4px; }
+    .info-list li a { color: var(--point); text-decoration: none; }
+
+    footer {
+      text-align: center; padding: 40px 24px;
+      border-top: 1px solid rgba(206,169,75,0.2);
+      color: var(--text-dim); font-size: 0.82rem; line-height: 1.9;
+    }
+    footer a { color: var(--text-soft); text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: var(--gold); }
+  </style>
 </head>
 <body>
-	<p> <p class="ls2 lh6 bs5 ts4"><em class="emphasis">< Just Init >('https://ittaga.github.io/jaemi-lab/good-job'이하 '바른생활')</em>은(는) 「개인정보 보호법」 제30조에 따라 정보주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리방침을 수립·공개합니다.</p><p class="ls2">○ 이 개인정보처리방침은 <em class="emphasis">2022</em>년 <em class="emphasis">1</em>월 <em class="emphasis">1</em>부터 적용됩니다.</p></br><p class='lh6 bs4'><strong>제1조(개인정보의 처리 목적)<br/><br/><em class="emphasis">< Just Init >('https://ittaga.github.io/jaemi-lab/good-job'이하  '바른생활')</em>은(는) 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며 이용 목적이 변경되는 경우에는 「개인정보 보호법」 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.</strong></p><ul class="list_indent2 mgt10"><p class="ls2">1. 재화 또는 서비스 제공</p><p class="ls2">콘텐츠 제공, 요금결제·정산을 목적으로 개인정보를 처리합니다.</p></br></ul></br></br><p class='lh6 bs4'><strong>제2조(개인정보의 처리 및 보유 기간)</strong></br></br>① <em class="emphasis">< Just Init ></em>은(는) 법령에 따른 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다.</br></br>② 각각의 개인정보 처리 및 보유 기간은 다음과 같습니다.</p><ul class='list_indent2 mgt10'><li class='tt'>1.<재화 또는 서비스 제공></li><li class='tt'><재화 또는 서비스 제공>와 관련한 개인정보는 수집.이용에 관한 동의일로부터<5년>까지 위 이용목적을 위하여 보유.이용됩니다.</li><li>보유근거 : 서비스 결제이력</li><li>관련법령 : 대금결제 및 재화 등의 공급에 관한 기록 : 5년</li><li>예외사유 : </li></ul><br/><br/><p class="lh6 bs4"><strong>제3조(정보주체와 법정대리인의 권리·의무 및 그 행사방법)</strong></p><p class="ls2"><br/><br/>① 정보주체는 Just Init에 대해 언제든지 개인정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다.</p><p class='sub_p'>② 제1항에 따른 권리 행사는Just Init에 대해 「개인정보 보호법」 시행령 제41조제1항에 따라 서면, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며 Just Init은(는) 이에 대해 지체 없이 조치하겠습니다.</p><p class='sub_p'>③ 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다.이 경우 “개인정보 처리 방법에 관한 고시(제2020-7호)” 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다.</p><p class='sub_p'>④ 개인정보 열람 및 처리정지 요구는  「개인정보 보호법」  제35조 제4항, 제37조 제2항에 의하여 정보주체의 권리가 제한 될 수 있습니다.</p><p class='sub_p'>⑤ 개인정보의 정정 및 삭제 요구는 다른 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다.</p><p class='sub_p'>⑥ Just Init은(는) 정보주체 권리에 따른 열람의 요구, 정정·삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다.</p></br></br><p class='lh6 bs4'><strong>제4조(처리하는 개인정보의 항목 작성) </strong></br></br> ① <em class="emphasis">< Just Init ></em>은(는) 다음의 개인정보 항목을 처리하고 있습니다.</p><ul class='list_indent2 mgt10'><li class='tt'>1< 재화 또는 서비스 제공 ></li><li>필수항목 : 이메일, 로그인ID</li><li>선택항목 : </li></ul></br></br><p class='lh6 bs4'><strong>제5조(개인정보의 파기)<em class="emphasis"></strong></p><p class='ls2'></br>① < Just Init > 은(는) 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.</br></br>② 정보주체로부터 동의받은 개인정보 보유기간이 경과하거나 처리목적이 달성되었음에도 불구하고 다른 법령에 따라 개인정보를 계속 보존하여야 하는 경우에는, 해당 개인정보를 별도의 데이터베이스(DB)로 옮기거나 보관장소를 달리하여 보존합니다.</br>1. 법령 근거 :</br>2. 보존하는 개인정보 항목 : 계좌정보, 거래날짜</br></br>③ 개인정보 파기의 절차 및 방법은 다음과 같습니다.</br>1. 파기절차</br> < Just Init > 은(는) 파기 사유가 발생한 개인정보를 선정하고, < Jaemi Lab > 의 개인정보 보호책임자의 승인을 받아 개인정보를 파기합니다.</br></p><p class='sub_p mgt10'></p></br></br><p class='lh6 bs4'><strong>제6조(개인정보의 안전성 확보 조치)<em class="emphasis"></br></br>< Jaemi Lab ></em>은(는) 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.</strong></p><p class='sub_p mgt10'>1. 정기적인 자체 감사 실시</br> 개인정보 취급 관련 안정성 확보를 위해 정기적(분기 1회)으로 자체 감사를 실시하고 있습니다.</br></br>2. 개인정보 취급 직원의 최소화 및 교육</br> 개인정보를 취급하는 직원을 지정하고 담당자에 한정시켜 최소화 하여 개인정보를 관리하는 대책을 시행하고 있습니다.</br></br>3. 내부관리계획의 수립 및 시행</br> 개인정보의 안전한 처리를 위하여 내부관리계획을 수립하고 시행하고 있습니다.</br></br></p></br></br><p class="lh6 bs4"><strong>제7조(개인정보 자동 수집 장치의 설치•운영 및 거부에 관한 사항)</strong></p><p class="ls2"><br/><br/>Jaemi Lab 은(는) 정보주체의 이용정보를 저장하고 수시로 불러오는 ‘쿠키(cookie)’를 사용하지 않습니다.<p class='sub_p mgt30'><strong>제8조 (개인정보 보호책임자) </strong></p><p class='sub_p mgt10'> ①  <span class='colorLightBlue'>Jaemi Lab</span> 은(는) 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.</p><ul class='list_indent2 mgt10'><li class='tt'>▶ 개인정보 보호책임자 </li><li>성명 :최정심</li><li>직책 :대표</li><li>직급 :대표</li><li>연락처 :031-449-6449, brenin0408@gmail.com, </li></ul><p class='sub_p'>※ 개인정보 보호 담당부서로 연결됩니다.<p/> <ul class='list_indent2 mgt10'><li class='tt'>▶ 개인정보 보호 담당부서</li><li>부서명 :</li><li>담당자 :</li><li>연락처 :, , </li></ul><p class='sub_p'>② 정보주체께서는 Jaemi Lab 의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관한 사항을 개인정보 보호책임자 및 담당부서로 문의하실 수 있습니다. Jaemi Lab 은(는) 정보주체의 문의에 대해 지체 없이 답변 및 처리해드릴 것입니다.</p><p class='sub_p mgt30'><strong>제9조(개인정보 열람청구)</br> 정보주체는 ｢개인정보 보호법｣ 제35조에 따른 개인정보의 열람 청구를 아래의 부서에 할 수 있습니다.<br/>< Jaemi Lab ></span>은(는) 정보주체의 개인정보 열람청구가 신속하게 처리되도록 노력하겠습니다. </strong></p><ul class='list_indent2 mgt10'><li class='tt'>▶ 개인정보 열람청구 접수·처리 부서 </li><li>부서명 : </li><li>담당자 : </li><li>연락처 : , , </li></ul></br></br><p class='lh6 bs4'><strong>제10조(권익침해 구제방법)<em class="emphasis"></em></strong></p><br/><br/>정보주체는 개인정보침해로 인한 구제를 받기 위하여 개인정보분쟁조정위원회, 한국인터넷진흥원 개인정보침해신고센터 등에 분쟁해결이나 상담 등을 신청할 수 있습니다. 이 밖에 기타 개인정보침해의 신고, 상담에 대하여는 아래의 기관에 문의하시기 바랍니다.<br/><br/>
 
+<header class="topbar">
+  <a href="./index.html" class="brand"><img class="brand-img" src="assets/title.png" alt="바른생활"></a>
+</header>
 
+<section class="legal-hero">
+  <h1>개인정보 처리방침</h1>
+  <span class="eff-date">시행일 : 2022년 1월 1일</span>
+</section>
 
-  1. 개인정보분쟁조정위원회 : (국번없이) 1833-6972 (www.kopico.go.kr)<br/>
+<div class="legal-wrap">
+  <div class="legal-card">
+    <p class="intro">
+      &lt; Just Init &gt;('https://ittaga.github.io/jaemi-lab/good-job' 이하 '바른생활')은(는) 「개인정보 보호법」 제30조에 따라 정보주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리방침을 수립·공개합니다.
+    </p>
 
-  2. 개인정보침해신고센터 : (국번없이) 118 (privacy.kisa.or.kr)<br/>
+    <div class="article">
+      <h2>제1조 (개인정보의 처리 목적)</h2>
+      <p>&lt; Just Init &gt;('바른생활')은(는) 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며 이용 목적이 변경되는 경우에는 「개인정보 보호법」 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.</p>
+      <p><strong>1. 재화 또는 서비스 제공</strong><br>콘텐츠 제공, 요금결제·정산을 목적으로 개인정보를 처리합니다.</p>
+    </div>
 
-  3. 대검찰청 : (국번없이) 1301 (www.spo.go.kr)<br/>
+    <div class="article">
+      <h2>제2조 (개인정보의 처리 및 보유 기간)</h2>
+      <p>① &lt; Just Init &gt;은(는) 법령에 따른 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다.</p>
+      <p>② 각각의 개인정보 처리 및 보유 기간은 다음과 같습니다.</p>
+      <ul class="info-list">
+        <li class="tt">재화 또는 서비스 제공</li>
+        <li>관련 개인정보는 수집·이용에 관한 동의일로부터 5년까지 위 이용목적을 위하여 보유·이용됩니다.</li>
+        <li>보유근거 : 서비스 결제이력</li>
+        <li>관련법령 : 대금결제 및 재화 등의 공급에 관한 기록 (5년)</li>
+      </ul>
+    </div>
 
-  4. 경찰청 : (국번없이) 182 (ecrm.cyber.go.kr)<br/><br/>
+    <div class="article">
+      <h2>제3조 (정보주체와 법정대리인의 권리·의무 및 그 행사방법)</h2>
+      <p>① 정보주체는 Just Init에 대해 언제든지 개인정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다.</p>
+      <p>② 제1항에 따른 권리 행사는 Just Init에 대해 「개인정보 보호법」 시행령 제41조제1항에 따라 서면, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며 Just Init은(는) 이에 대해 지체 없이 조치하겠습니다.</p>
+      <p>③ 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 "개인정보 처리 방법에 관한 고시(제2020-7호)" 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다.</p>
+      <p>④ 개인정보 열람 및 처리정지 요구는 「개인정보 보호법」 제35조 제4항, 제37조 제2항에 의하여 정보주체의 권리가 제한될 수 있습니다.</p>
+      <p>⑤ 개인정보의 정정 및 삭제 요구는 다른 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다.</p>
+      <p>⑥ Just Init은(는) 정보주체 권리에 따른 열람의 요구, 정정·삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다.</p>
+    </div>
 
+    <div class="article">
+      <h2>제4조 (처리하는 개인정보의 항목)</h2>
+      <p>① &lt; Just Init &gt;은(는) 다음의 개인정보 항목을 처리하고 있습니다.</p>
+      <ul class="info-list">
+        <li class="tt">재화 또는 서비스 제공</li>
+        <li>필수항목 : 이메일, 로그인ID</li>
+        <li>선택항목 : 없음</li>
+      </ul>
+    </div>
 
+    <div class="article">
+      <h2>제5조 (개인정보의 파기)</h2>
+      <p>① &lt; Just Init &gt;은(는) 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.</p>
+      <p>② 정보주체로부터 동의받은 개인정보 보유기간이 경과하거나 처리목적이 달성되었음에도 불구하고 다른 법령에 따라 개인정보를 계속 보존하여야 하는 경우에는, 해당 개인정보를 별도의 데이터베이스(DB)로 옮기거나 보관장소를 달리하여 보존합니다.</p>
+      <p>③ 개인정보 파기의 절차 및 방법은 다음과 같습니다.<br>파기절차 : &lt; Just Init &gt;은(는) 파기 사유가 발생한 개인정보를 선정하고, 개인정보 보호책임자의 승인을 받아 개인정보를 파기합니다.</p>
+    </div>
 
-「개인정보보호법」제35조(개인정보의 열람), 제36조(개인정보의 정정·삭제), 제37조(개인정보의 처리정지 등)의 규정에 의한 요구에 대 하여 공공기관의 장이 행한 처분 또는 부작위로 인하여 권리 또는 이익의 침해를 받은 자는 행정심판법이 정하는 바에 따라 행정심판을 청구할 수 있습니다.<br/><br/>
+    <div class="article">
+      <h2>제6조 (개인정보의 안전성 확보 조치)</h2>
+      <p>&lt; Just Init &gt;은(는) 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.</p>
+      <p><strong>1. 정기적인 자체 감사 실시</strong><br>개인정보 취급 관련 안정성 확보를 위해 정기적(분기 1회)으로 자체 감사를 실시하고 있습니다.</p>
+      <p><strong>2. 개인정보 취급 직원의 최소화 및 교육</strong><br>개인정보를 취급하는 직원을 지정하고 담당자에 한정시켜 최소화 하여 개인정보를 관리하는 대책을 시행하고 있습니다.</p>
+      <p><strong>3. 내부관리계획의 수립 및 시행</strong><br>개인정보의 안전한 처리를 위하여 내부관리계획을 수립하고 시행하고 있습니다.</p>
+    </div>
 
+    <div class="article">
+      <h2>제7조 (개인정보 자동 수집 장치의 설치·운영 및 거부에 관한 사항)</h2>
+      <p>&lt; Just Init &gt;은(는) 정보주체의 이용정보를 저장하고 수시로 불러오는 '쿠키(cookie)'를 사용하지 않습니다.</p>
+    </div>
 
+    <div class="article">
+      <h2>제8조 (개인정보 보호책임자)</h2>
+      <p>① &lt; Just Init &gt;은(는) 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.</p>
+      <ul class="info-list">
+        <li class="tt">▶ 개인정보 보호책임자</li>
+        <li>성명 : 최정심</li>
+        <li>직책 : 대표</li>
+        <li>연락처 : 031-449-6449, <a href="mailto:brenin0408@gmail.com">brenin0408@gmail.com</a></li>
+      </ul>
+      <p>② 정보주체께서는 Just Init의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관한 사항을 개인정보 보호책임자에게 문의하실 수 있습니다. Just Init은(는) 정보주체의 문의에 대해 지체 없이 답변 및 처리해드릴 것입니다.</p>
+    </div>
 
-※ 행정심판에 대해 자세한 사항은 중앙행정심판위원회(www.simpan.go.kr) 홈페이지를 참고하시기 바랍니다.</br></br><p class='lh6 bs4'><strong>제11조(개인정보 처리방침 변경)<em class="emphasis"></em></strong></p><br/></p><p class='sub_p'>① 이 개인정보처리방침은 2022년 1월 1부터 적용됩니다.</p><p class='sub_p'></p><p class='sub_p'></p><p class='sub_p'>② 이전의 개인정보 처리방침은 아래에서 확인하실 수 있습니다. </p><p class='sub_p'></p><p class='sub_p'></p><p class='sub_p'>예시 ) - 20XX. X. X ~ 20XX. X. X 적용   (클릭) </p><p class='sub_p'></p><p class='sub_p'></p><p class='sub_p'>예시 ) - 20XX. X. X ~ 20XX. X. X 적용   (클릭) </p><p class='sub_p'></p><p class='sub_p'></p><p class='sub_p'>예시 ) - 20XX. X. X ~ 20XX. X. X 적용   (클릭)</p></p>
+    <div class="article">
+      <h2>제9조 (개인정보 열람청구)</h2>
+      <p>정보주체는 「개인정보 보호법」 제35조에 따른 개인정보의 열람 청구를 위 개인정보 보호책임자에게 하실 수 있습니다. &lt; Just Init &gt;은(는) 정보주체의 개인정보 열람청구가 신속하게 처리되도록 노력하겠습니다.</p>
+    </div>
+
+    <div class="article">
+      <h2>제10조 (권익침해 구제방법)</h2>
+      <p>정보주체는 개인정보침해로 인한 구제를 받기 위하여 개인정보분쟁조정위원회, 한국인터넷진흥원 개인정보침해신고센터 등에 분쟁해결이나 상담 등을 신청할 수 있습니다. 이 밖에 기타 개인정보침해의 신고, 상담에 대하여는 아래의 기관에 문의하시기 바랍니다.</p>
+      <ul class="info-list">
+        <li>1. 개인정보분쟁조정위원회 : (국번없이) 1833-6972 (<a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a>)</li>
+        <li>2. 개인정보침해신고센터 : (국번없이) 118 (<a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>)</li>
+        <li>3. 대검찰청 : (국번없이) 1301 (<a href="https://www.spo.go.kr" target="_blank" rel="noopener">www.spo.go.kr</a>)</li>
+        <li>4. 경찰청 : (국번없이) 182 (<a href="https://ecrm.cyber.go.kr" target="_blank" rel="noopener">ecrm.cyber.go.kr</a>)</li>
+      </ul>
+      <p>「개인정보보호법」 제35조(개인정보의 열람), 제36조(개인정보의 정정·삭제), 제37조(개인정보의 처리정지 등)의 규정에 의한 요구에 대하여 공공기관의 장이 행한 처분 또는 부작위로 인하여 권리 또는 이익의 침해를 받은 자는 행정심판법이 정하는 바에 따라 행정심판을 청구할 수 있습니다.</p>
+      <p>※ 행정심판에 대해 자세한 사항은 중앙행정심판위원회(<a href="https://www.simpan.go.kr" target="_blank" rel="noopener" style="color:var(--point);text-decoration:none;">www.simpan.go.kr</a>) 홈페이지를 참고하시기 바랍니다.</p>
+    </div>
+
+    <div class="article">
+      <h2>제11조 (개인정보 처리방침 변경)</h2>
+      <p>① 이 개인정보처리방침은 2022년 1월 1일부터 적용됩니다.</p>
+      <p>② 법령·정책 또는 보안기술의 변경에 따라 내용의 추가·삭제 및 수정이 있을 시에는 변경되는 개인정보 처리방침을 시행하기 전에 안내하겠습니다.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>
+    <a href="./index.html">홈</a> |
+    <a href="./privacy.html">개인정보 처리방침</a> |
+    <a href="./terms.html">이용약관</a>
+  </p>
+  <p>Just Init 대표 최정심 | 사업자등록번호 524-44-01023<br>
+    이메일 : justinit.service@gmail.com | 번호 : 010-6822-9802<br>
+    &copy; 2026 Just Init. All rights reserved.</p>
+</footer>
+
 </body>
 </html>

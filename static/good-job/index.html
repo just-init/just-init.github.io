@@ -1,67 +1,594 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>바른생활 — 하루를 시간으로 적고, 참 잘했어요 도장으로 채워요</title>
+  <meta name="description" content="하루를 시간대별로 적고, 해낸 일에는 '참 잘했어요' 도장을 찍어보세요. 월간 캘린더로 나의 바른 생활을 한눈에 돌아볼 수 있는 데일리 리포트 앱.">
+  <meta property="og:title" content="바른생활 — 하루를 시간으로 채우는 습관 다이어리">
+  <meta property="og:description" content="시간대별 메모와 '참 잘했어요' 도장으로 하루를 바르게 채워보세요.">
+  <meta property="og:image" content="screenshot/image2.jpg">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* aligned with app ColorCollector */
+      --bg: #EEE2DA;            /* backgroundColor */
+      --bg-warm: #F3E8E0;
+      --card: #F7EDE6;
+      --cream: #FCF1E9;         /* ≈ backgroundColorShadowW */
+      --gold: #C0934E;          /* readable take on yellow #CEA94B */
+      --gold-line: #CEA94B;     /* yellow */
+      --stamp: #9B2132;         /* subColor */
+      --point: #539297;         /* pointColor */
+      --green: #6FAE6F;         /* premium */
+      --text: #5B4A3B;
+      --text-soft: #816F5C;
+      --text-dim: #A2917E;
+      --serif: 'Nanum Myeongjo', serif;
+      --sans: 'Noto Sans KR', sans-serif;
+      /* neumorphic shadows from backgroundColorShadowB / backgroundColorShadowW */
+      --shadow-out: 7px 7px 16px rgba(215,203,195,0.7), -7px -7px 16px rgba(253,239,231,0.85);
+      --shadow-out-sm: 4px 4px 10px rgba(215,203,195,0.65), -4px -4px 10px rgba(253,239,231,0.8);
+      --shadow-in: inset 4px 4px 9px rgba(215,203,195,0.7), inset -4px -4px 9px rgba(253,239,231,0.85);
+    }
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.75;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
 
-    <title>바른생활</title>
+    section { position: relative; z-index: 1; }
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── Top brand bar ── */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 24px;
+      background: rgba(236,224,213,0.82);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201,164,92,0.18);
+    }
+    .brand { display: inline-flex; align-items: center; }
+    .brand-img {
+      height: 26px;
+      width: auto;
+      display: block;
+      image-rendering: -webkit-optimize-contrast;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      text-align: center;
+      padding: 56px 24px 88px;
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,164,92,0.10) 0%, transparent 65%);
+    }
+    .hero-mascot {
+      display: block;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      object-fit: contain;
+      object-position: center;
+      padding: 13px;
+      background: var(--bg);
+      box-shadow: var(--shadow-out-sm);
+      margin: 0 auto 22px;
+    }
+    .hero .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: var(--card);
+      box-shadow: var(--shadow-out-sm);
+      color: var(--point);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin-bottom: 28px;
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(1.9rem, 5.2vw, 3rem);
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.4;
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+    .hero h1 .accent { color: var(--stamp); }
+    .hero .subtitle {
+      font-size: clamp(1rem, 2.4vw, 1.18rem);
+      color: var(--text-soft);
+      max-width: 600px;
+      margin: 0 auto 48px;
+      font-weight: 300;
+    }
+    .hero-phones {
+      position: relative;
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+    .hero-phones img.phone {
+      width: min(220px, 42vw);
+      border-radius: 26px;
+      box-shadow: 12px 18px 48px rgba(120,96,72,0.28);
+      border: 6px solid var(--cream);
+    }
+    .hero-phones img.center { transform: translateY(-16px); }
+
+    /* ── Store badges ── */
+    .store-badges {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 26px;
+      border-radius: 16px;
+      background: var(--card);
+      box-shadow: var(--shadow-out-sm);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .store-badge:hover { transform: translateY(-3px); box-shadow: var(--shadow-out); }
+    .store-badge:active { box-shadow: var(--shadow-in); transform: translateY(0); }
+    .store-badge svg { width: 20px; height: 20px; flex-shrink: 0; }
+    .store-badge .ico-apple { fill: #2A2A2A; }
+
+    /* ── Section common ── */
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(1.5rem, 4vw, 2.3rem);
+      font-weight: 800;
+      color: var(--text);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .section-sub {
+      text-align: center;
+      color: var(--text-soft);
+      font-size: 1rem;
+      margin-bottom: 56px;
+      font-weight: 300;
+    }
+
+    /* ── How it works ── */
+    .how-it-works { padding: 96px 24px; }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 28px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .step {
+      text-align: center;
+      padding: 40px 26px;
+      border-radius: 24px;
+      background: var(--card);
+      box-shadow: var(--shadow-out);
+      transition: transform 0.3s ease;
+    }
+    .step:hover { transform: translateY(-5px); }
+    .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--bg-warm);
+      box-shadow: var(--shadow-in);
+      color: var(--gold);
+      font-family: var(--serif);
+      font-weight: 800;
+      font-size: 1.2rem;
+      margin-bottom: 22px;
+    }
+    .step h3 { font-size: 1.12rem; font-weight: 700; margin-bottom: 10px; color: var(--text); }
+    .step p { font-size: 0.92rem; color: var(--text-soft); font-weight: 300; }
+
+    /* ── Screenshots ── */
+    .screenshots {
+      padding: 96px 0;
+      background: linear-gradient(180deg, transparent, rgba(201,164,92,0.05) 50%, transparent);
+    }
+    .screenshot-track {
+      display: flex;
+      gap: 28px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 8px max(24px, calc((100vw - 1080px) / 2)) 24px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .screenshot-track::-webkit-scrollbar { display: none; }
+    .screenshot-item {
+      scroll-snap-align: center;
+      flex-shrink: 0;
+      width: 260px;
+      text-align: center;
+    }
+    .screenshot-item img {
+      width: 100%;
+      border-radius: 26px;
+      box-shadow: 10px 14px 40px rgba(120,96,72,0.24);
+      border: 6px solid var(--cream);
+      margin-bottom: 22px;
+    }
+    .screenshot-item .caption-main {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .screenshot-item .caption-sub {
+      font-size: 0.86rem;
+      color: var(--text-soft);
+      font-weight: 300;
+    }
+
+    /* ── Features ── */
+    .features { padding: 96px 24px; }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 22px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .feature-card {
+      padding: 34px 30px;
+      border-radius: 22px;
+      background: var(--card);
+      box-shadow: var(--shadow-out);
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover { transform: translateY(-4px); }
+    .feature-icon {
+      font-size: 1.5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      background: var(--bg-warm);
+      box-shadow: var(--shadow-in);
+      margin-bottom: 18px;
+    }
+    .feature-icon img { width: 40px; height: 40px; object-fit: contain; }
+    .feature-card h3 { font-size: 1.08rem; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+    .feature-card p { font-size: 0.92rem; color: var(--text-soft); font-weight: 300; }
+
+    /* ── Target ── */
+    .target {
+      padding: 96px 24px;
+      background: linear-gradient(180deg, transparent, rgba(201,164,92,0.05) 50%, transparent);
+    }
+    .target-list {
+      max-width: 660px;
+      margin: 0 auto;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .target-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 22px 26px;
+      border-radius: 18px;
+      background: var(--card);
+      box-shadow: var(--shadow-out-sm);
+      font-size: 0.98rem;
+      color: var(--text);
+      font-weight: 400;
+    }
+    .target-list li::before {
+      content: '✓';
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      line-height: 26px;
+      text-align: center;
+      border-radius: 50%;
+      background: var(--stamp);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    /* ── Premium banner ── */
+    .premium {
+      padding: 40px 24px 96px;
+    }
+    .premium-card {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 36px;
+      border-radius: 26px;
+      background: linear-gradient(135deg, #8FC489, #6FAE6F);
+      color: #fff;
+      text-align: center;
+      box-shadow: 10px 14px 40px rgba(110,150,100,0.35);
+    }
+    .premium-card .crown { font-size: 2rem; margin-bottom: 12px; }
+    .premium-card h3 { font-family: var(--serif); font-size: 1.5rem; font-weight: 800; margin-bottom: 12px; }
+    .premium-card p { font-weight: 300; opacity: 0.95; }
+    .premium-tags { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 22px; }
+    .premium-tags span {
+      padding: 8px 18px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.22);
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+    /* ── CTA ── */
+    .cta {
+      padding: 110px 24px;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(201,164,92,0.12) 0%, transparent 60%);
+    }
+    .cta h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 4.2vw, 2.4rem);
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .cta p { color: var(--text-soft); margin-bottom: 40px; font-weight: 300; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 44px 24px;
+      border-top: 1px solid rgba(201,164,92,0.18);
+      color: var(--text-dim);
+      font-size: 0.82rem;
+      line-height: 1.9;
+    }
+    footer a { color: var(--text-soft); text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: var(--gold); }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .hero-phones img.phone { width: 44vw; border-radius: 18px; border-width: 4px; }
+      .hero-phones img.center { transform: translateY(-10px); }
+      .screenshot-item { width: 220px; }
+      .steps { grid-template-columns: 1fr; }
+    }
+
+    /* ── Fade-in ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container"><a href="" class="navbar-brand">바른생활</a>
-    </div>
-</nav>
-<main id="main" class="site-main main">
-    <section class="hero">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h2>바른생활</h2>
-                    <p class="lead mb-5">바른생활</p>
-                    <p class="lead mb-5">안녕하세요. Just Init 입니다.</p>
-                    <p>저희는 당신의 삶을 좀 더 즐겁고 윤택해지길 바랍니다.</p>
-                    <p>문의사항은 아래 메일로 편히 연락주세요.</p>
-                    <p>대표 문의 메일 : justinit.service@gmail.com</p>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
 
-<footer class="footer">
-    <div class="container">
-        <div class="footer__inner">
-            <ul id="menu-seller-footer" class="nav sub-nav footer__sub-nav">
-                <li id="menu-item-1335" class="pr-1 menu-item menu-item-type-post_type menu-item-object-page menu-item-1335"><a title="Terms of Service"
-                                                                                                                           href="./terms">약관동의 </a></li>
-                <li id="menu-item-1336" class="pr-1 menu-item menu-item-type-post_type menu-item-object-page menu-item-1335"><a title="Privacy Policy"
-                                                                                                                           href="./privacy">개인정보 방침</a></li>
-                <li id="menu-item-1336" class="pr-1 menu-item menu-item-type-post_type menu-item-object-page menu-item-1335"><a title="Copyright"
-                                                                                                                           href="./copyright">Copyright</a></li>
-            </ul>
-        </div>
-        <div>
-            <p>Just Init 대표 최정심 | 사업자등록번호 524-44-01023 | 이메일 : justinit.service@gmail.com | 번호 : 010-6822-9802 </p>
-            <p>Copyright © Just Init. All rights reserved.</p>
-        </div>
-    </div>
+<!-- Brand bar -->
+<header class="topbar">
+  <a href="./index.html" class="brand"><img class="brand-img" src="assets/title.png" alt="바른생활"></a>
+</header>
 
+<!-- Hero -->
+<section class="hero">
+  <img class="hero-mascot" src="assets/logo.png" alt="바른생활 마스코트">
+  <span class="badge">하루를 바르게 채우는 습관 다이어리</span>
+  <h1>하루를 시간으로 적고,<br><span class="accent">참 잘했어요</span> 도장으로 채워요</h1>
+  <p class="subtitle">아침부터 밤까지, 시간대별로 할 일을 적어보세요.<br>해낸 일에는 도장을 콕 — 오늘 하루가 한눈에 채워집니다.</p>
+  <div class="hero-phones">
+    <img src="screenshot/image3.jpg" alt="시간대별 할 일과 참 잘했어요 도장" class="phone" loading="lazy">
+    <img src="screenshot/image2.jpg" alt="월간 캘린더 화면" class="phone center" loading="lazy">
+    <img src="screenshot/image4.jpg" alt="설정과 프리미엄 화면" class="phone" loading="lazy">
+  </div>
+  <div class="store-badges">
+    <a href="https://apps.apple.com/kr/app/%EB%B0%94%EB%A5%B8%EC%83%9D%ED%99%9C-%EB%8D%B0%EC%9D%BC%EB%A6%AC%EB%A6%AC%ED%8F%AC%ED%8A%B8/id1505252379" class="store-badge" target="_blank" rel="noopener">
+      <svg class="ico-apple" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      <span>App Store</span>
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.ittaga.good_job.free&hl=ko" class="store-badge" target="_blank" rel="noopener">
+      <svg class="ico-google" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0,0h40v40H0V0z"></path><path d="M19.7,19.2L4.3,35.3c0,0,0,0,0,0c0.5,1.7,2.1,3,4,3c0.8,0,1.5-0.2,2.1-0.6l0,0l17.4-9.9L19.7,19.2z" fill="#EA4335"></path><path d="M35.3,16.4L35.3,16.4l-7.5-4.3l-8.4,7.4l8.5,8.3l7.5-4.2c1.3-0.7,2.2-2.1,2.2-3.6C37.5,18.5,36.6,17.1,35.3,16.4z" fill="#FBBC04"></path><path d="M4.3,4.7C4.2,5,4.2,5.4,4.2,5.8v28.5c0,0.4,0,0.7,0.1,1.1l16-15.7L4.3,4.7z" fill="#4285F4"></path><path d="M19.8,20l8-7.9L10.5,2.3C9.9,1.9,9.1,1.7,8.3,1.7c-1.9,0-3.6,1.3-4,3c0,0,0,0,0,0L19.8,20z" fill="#34A853"></path></svg>
+      <span>Google Play</span>
+    </a>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="how-it-works">
+  <div class="container">
+    <h2 class="section-title fade-in">이렇게 사용해요</h2>
+    <p class="section-sub fade-in">세 단계면 하루가 완성됩니다</p>
+    <div class="steps">
+      <div class="step fade-in">
+        <div class="step-num">1</div>
+        <h3>시간대에 할 일을 적어요</h3>
+        <p>오전 6시 영단어 외우기,<br>8시 아침 요가처럼<br>시간마다 할 일을 적어보세요.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-num">2</div>
+        <h3>해내면 도장을 찍어요</h3>
+        <p>완료한 일에는 '참 잘했어요'<br>도장을 콕. 작은 성취가<br>눈에 보이게 쌓입니다.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-num">3</div>
+        <h3>캘린더로 돌아봐요</h3>
+        <p>월간 캘린더에 표시된 점으로<br>어떤 하루를 보냈는지<br>한눈에 돌아볼 수 있어요.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Screenshots -->
+<section class="screenshots">
+  <div class="container">
+    <h2 class="section-title fade-in">미리 만나보세요</h2>
+    <p class="section-sub fade-in">캘린더부터 도장까지, 하나의 흐름으로 이어집니다</p>
+  </div>
+  <div class="screenshot-track">
+    <div class="screenshot-item fade-in">
+      <img src="screenshot/image2.jpg" alt="월간 캘린더 화면" loading="lazy">
+      <p class="caption-main">월간 캘린더 한눈에</p>
+      <p class="caption-sub">달력 위 점으로 그날의 기록을 확인해요</p>
+    </div>
+    <div class="screenshot-item fade-in">
+      <img src="screenshot/image3.jpg" alt="시간대별 할 일과 도장" loading="lazy">
+      <p class="caption-main">시간대별로 채우는 하루</p>
+      <p class="caption-sub">해낸 일마다 '참 잘했어요' 도장을 찍어요</p>
+    </div>
+    <div class="screenshot-item fade-in">
+      <img src="screenshot/image1.jpg" alt="할 일 입력 화면" loading="lazy">
+      <p class="caption-main">바로 적는 시간 메모</p>
+      <p class="caption-sub">하루 메모와 시간별 할 일을 간편하게</p>
+    </div>
+    <div class="screenshot-item fade-in">
+      <img src="screenshot/image4.jpg" alt="설정 및 프리미엄 화면" loading="lazy">
+      <p class="caption-main">나에게 맞춘 하루</p>
+      <p class="caption-sub">시작·마지막 시간, 주 시작 요일을 설정해요</p>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="features">
+  <div class="container">
+    <h2 class="section-title fade-in">주요 기능</h2>
+    <p class="section-sub fade-in">하루를 바르게 채우는 데 필요한 것만</p>
+    <div class="feature-grid">
+      <div class="feature-card fade-in">
+        <span class="feature-icon">🕖</span>
+        <h3>시간대별 메모</h3>
+        <p>오전 6시부터 밤까지, 시간마다 할 일을 적어 하루를 촘촘하게 계획하세요.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon"><img src="assets/active.png" alt="참 잘했어요 도장"></span>
+        <h3>참 잘했어요 도장</h3>
+        <p>해낸 일에는 도장을 콕. 작은 성취가 눈에 보이게 쌓여 동기가 됩니다.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">📅</span>
+        <h3>월간 캘린더</h3>
+        <p>달력 위 점으로 그날의 기록을 표시. 한 달의 흐름을 한눈에 돌아봐요.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">📝</span>
+        <h3>하루 메모</h3>
+        <p>시간에 얽매이지 않는 자유 메모로 그날의 생각과 다짐을 남겨보세요.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">⚙️</span>
+        <h3>나에게 맞춘 설정</h3>
+        <p>하루 시작·마지막 시간과 주 시작 요일을 내 생활 패턴에 맞게 바꿀 수 있어요.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">☁️</span>
+        <h3>클라우드 동기화</h3>
+        <p>프리미엄으로 기기 간 기록을 안전하게 동기화하고 광고 없이 사용하세요.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Target -->
+<section class="target">
+  <div class="container">
+    <h2 class="section-title fade-in">이런 분께 추천해요</h2>
+    <p class="section-sub fade-in">하루를 좀 더 바르게 채우고 싶다면</p>
+    <ul class="target-list">
+      <li class="fade-in">아침부터 저녁까지 시간을 알차게 쓰고 싶은 분</li>
+      <li class="fade-in">할 일을 해냈다는 작은 성취감이 필요한 분</li>
+      <li class="fade-in">복잡한 앱 말고 단순하고 따뜻한 다이어리를 찾는 분</li>
+      <li class="fade-in">꾸준한 습관과 루틴을 만들고 싶은 분</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Premium -->
+<section class="premium">
+  <div class="premium-card fade-in">
+    <div class="crown">👑</div>
+    <h3>바른생활 프리미엄</h3>
+    <p>광고 없이 더 깔끔하게, 기록은 클라우드에 안전하게.</p>
+    <div class="premium-tags">
+      <span>광고 제거</span>
+      <span>클라우드 동기화</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2 class="fade-in">오늘 하루,<br>참 잘했어요 도장으로 채워볼까요?</h2>
+  <p class="fade-in">지금 바른생활을 시작해보세요</p>
+  <div class="store-badges fade-in">
+    <a href="https://apps.apple.com/kr/app/%EB%B0%94%EB%A5%B8%EC%83%9D%ED%99%9C-%EB%8D%B0%EC%9D%BC%EB%A6%AC%EB%A6%AC%ED%8F%AC%ED%8A%B8/id1505252379" class="store-badge" target="_blank" rel="noopener">
+      <svg class="ico-apple" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      <span>App Store</span>
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.ittaga.good_job.free&hl=ko" class="store-badge" target="_blank" rel="noopener">
+      <svg class="ico-google" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0,0h40v40H0V0z"></path><path d="M19.7,19.2L4.3,35.3c0,0,0,0,0,0c0.5,1.7,2.1,3,4,3c0.8,0,1.5-0.2,2.1-0.6l0,0l17.4-9.9L19.7,19.2z" fill="#EA4335"></path><path d="M35.3,16.4L35.3,16.4l-7.5-4.3l-8.4,7.4l8.5,8.3l7.5-4.2c1.3-0.7,2.2-2.1,2.2-3.6C37.5,18.5,36.6,17.1,35.3,16.4z" fill="#FBBC04"></path><path d="M4.3,4.7C4.2,5,4.2,5.4,4.2,5.8v28.5c0,0.4,0,0.7,0.1,1.1l16-15.7L4.3,4.7z" fill="#4285F4"></path><path d="M19.8,20l8-7.9L10.5,2.3C9.9,1.9,9.1,1.7,8.3,1.7c-1.9,0-3.6,1.3-4,3c0,0,0,0,0,0L19.8,20z" fill="#34A853"></path></svg>
+      <span>Google Play</span>
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>
+    <a href="./privacy.html">개인정보 처리방침</a> |
+    <a href="./terms.html">이용약관</a>
+  </p>
+  <p>Just Init 대표 최정심 | 사업자등록번호 524-44-01023<br>
+    이메일 : justinit.service@gmail.com | 번호 : 010-6822-9802<br>
+    &copy; 2026 Just Init. All rights reserved.</p>
 </footer>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
