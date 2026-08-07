@@ -130,7 +130,7 @@ export default {
         {
           name: '결혼하는 마음',
           icon: '/app-icons/marriage-mind.png',
-          desc: '결혼 준비의 모든 순간을 함께합니다. 따뜻한 마음으로 시작하는 웨딩 플래너.',
+          desc: '80문항으로 알아보는 우리 두 사람의 결혼 성향. 답변을 비교하며 대화를 시작하세요.',
           tag: '라이프스타일',
           tagClass: 'bg-pink-500/10 text-pink-600 dark:text-pink-400',
           platform: 'Android · iOS',

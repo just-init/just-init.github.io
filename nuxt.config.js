@@ -101,6 +101,9 @@ export default {
       '/honey-sleep/privacy',
       '/honey-sleep/terms',
       '/honey-sleep/delete-account',
+      '/marriage-mind',
+      '/marriage-mind/privacy',
+      '/marriage-mind/terms',
     ]
   }
 }
