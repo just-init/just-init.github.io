@@ -1,120 +1,242 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>오픈소스 라이선스 · 내가만든트레이너</title>
+  <meta name="description" content="내가만든트레이너(내만트)에 포함된 오픈소스 소프트웨어와 음원의 저작권 고지" />
+  <meta name="theme-color" content="#282b33" />
+  <link rel="icon" href="/app-icons/smart-workout-counter.png" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <style>
+    :root {
+      --s0: #282b33; --s1: #2f333c; --s2: #35373f; --s3: #484a4f;
+      --t1: #fdfdfd; --t2: #bbbbbb; --t3: #797979;
+      --point: #8743ff;
+      --grad-point: linear-gradient(135deg, #4136f1, #8743ff);
+      --hairline: rgba(187, 187, 187, 0.14);
+      --r-md: 12px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--s0); color: var(--t2);
+      font-family: 'Pretendard Variable', Pretendard, 'Noto Sans KR', -apple-system,
+        BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+      font-size: 15.5px; line-height: 1.8; letter-spacing: -0.01em;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: 100%; max-width: 860px; margin: 0 auto; padding: 0 24px; }
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    .nav { position: sticky; top: 0; z-index: 50; background: rgba(40,43,51,.86); backdrop-filter: blur(12px); border-bottom: 1px solid var(--hairline); }
+    .nav .wrap { display: flex; align-items: center; gap: 12px; height: 64px; max-width: 1080px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; color: var(--t1); font-size: 17px; }
+    .brand img { width: 30px; height: 30px; border-radius: 8px; }
+    .nav .grow { flex: 1; }
+    .nav a.lnk { color: var(--t3); font-size: 14px; font-weight: 600; padding: 6px 10px; border-radius: 8px; }
+    .nav a.lnk:hover, .nav a.lnk.on { color: var(--t1); }
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    .doc { padding: 56px 0 40px; }
+    .back { display: inline-block; font-size: 13.5px; font-weight: 600; color: #b795ff; margin-bottom: 26px; }
+    h1 { color: var(--t1); font-size: clamp(28px, 5vw, 38px); font-weight: 800; letter-spacing: -0.03em; margin: 0; line-height: 1.25; }
+    .meta { margin-top: 10px; font-size: 13.5px; color: var(--t3); }
 
-    <title>내가만든트레이너</title>
+    .callout {
+      background: linear-gradient(135deg, #3a2f4d, #33353d); border: 1px solid rgba(135,67,255,.25);
+      border-radius: var(--r-md); padding: 20px 22px; margin: 30px 0 4px; font-size: 14.5px;
+    }
+    .callout > b:first-child { display: block; color: var(--t1); margin-bottom: 6px; font-size: 15.5px; }
+
+    section.grp { padding: 34px 0 0; scroll-margin-top: 80px; }
+    section.grp h2 {
+      color: var(--t1); font-size: 19px; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 4px;
+    }
+    section.grp > p { margin: 0 0 12px; color: var(--t3); font-size: 14px; }
+    h2 { color: var(--t1); font-size: 17px; font-weight: 700; margin: 26px 0 4px; letter-spacing: -0.02em; }
+
+    table {
+      width: 100%; border-collapse: collapse; margin: 8px 0 6px; font-size: 13.5px;
+      display: block; overflow-x: auto;
+    }
+    table thead th {
+      text-align: left; color: var(--t1); font-size: 12px; font-weight: 800; letter-spacing: 0.03em;
+      padding: 9px 12px; background: var(--s1); border-bottom: 1px solid var(--hairline); white-space: nowrap;
+    }
+    table td { padding: 9px 12px; border-bottom: 1px solid var(--hairline); color: var(--t2); vertical-align: top; }
+    table td a { color: var(--t1); font-weight: 600; }
+    table td a:hover { color: #b795ff; }
+    table td.v, table td.l { white-space: nowrap; color: var(--t3); font-variant-numeric: tabular-nums; }
+    table td.c { color: var(--t3); font-size: 12.5px; }
+    @media (min-width: 760px) { table { display: table; } }
+
+    ul { margin: 6px 0 14px; padding-left: 20px; }
+    li { margin-bottom: 5px; }
+    li a { color: #b795ff; }
+    .src { background: var(--s1); border: 1px solid var(--hairline); border-radius: var(--r-md); padding: 18px 22px; margin: 8px 0 6px; }
+    .src b { color: var(--t1); }
+    b, strong { color: var(--t1); font-weight: 700; }
+    hr { border: 0; border-top: 1px solid var(--hairline); margin: 44px 0 0; }
+
+    footer { padding: 40px 0 56px; }
+    footer .links { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px; }
+    footer .links a { font-size: 14px; font-weight: 600; color: var(--t2); }
+    footer .links a:hover { color: var(--t1); }
+    footer p { margin: 4px 0; font-size: 12.5px; color: var(--t3); line-height: 1.7; }
+  </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container"><a href="" class="navbar-brand">내가만든트레이너</a>
+
+<div class="nav">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="/app-icons/smart-workout-counter.png" alt="내가만든트레이너 아이콘" />내만트</a>
+    <span class="grow"></span>
+    <a class="lnk" href="./terms">이용약관</a>
+    <a class="lnk" href="./privacy">개인정보처리방침</a>
+    <a class="lnk on" href="./license">오픈소스</a>
+  </div>
+</div>
+
+<main class="doc">
+  <div class="wrap">
+    <a class="back" href="./">← 내가만든트레이너</a>
+    <h1>오픈소스 라이선스</h1>
+    <p class="meta">기준 버전: 앱 3.2.0 · 2026년 9월 1일</p>
+
+    <div class="callout">
+      <b>이 앱이 빌려 쓴 것들</b>
+      내가만든트레이너는 Just Init이 만들었고, 아래의 오픈소스 소프트웨어와 음원을 사용하고 있습니다.
+      각 저작권은 원저작자에게 있으며, 여기에 그 고지를 옮깁니다.
+      빠진 항목이나 잘못된 표기가 있으면 <a href="mailto:justinit.service@gmail.com" style="color:#b795ff">justinit.service@gmail.com</a> 으로 알려주세요.
     </div>
-</nav>
-<main id="main" class="site-main main">
-    <section class="hero">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h2>오픈소스 라이센스</h2>
-                    <p>This application is copyright © Just Init. All Rights Reserved.</p>
-                    <p>The following sets fourth attribution notices for third party software that may be contained in this application.</p>
-                    <p>If you have any question or concern, please contact us at brenin0408@gmail.com</p>
 
-                    <p>voice file from</p>
-                    <p>- © 2020 FreeTTS https://freetts.com/Home/Index</p>
-                    <p>background music file from</p>
-                    <p>- YOUTUBE: Music by LiQWYD</p>
-                    <p>  Free download: www.bit.ly/lamour-free-download</p>
-                    <p>  Free download: https://soundcloud.com/liqwyd/birthday</p>
-                    <p>  Free download: https://soundcloud.com/liqwyd/work-it-out</p>
-                    <p>  Free download: https://soundcloud.com/liqwyd/glow</p>
-                    <p>  INSTAGRAM: Music by @LiQWYD</p>
-
-                    <p>flutter library</p>
-                    <p>- <a href="https://github.com/hivedb/hive">hive</a></p>
-                    <p>Copyright 2019 Simon Leier</p>
-                    <p>- <a href="https://pub.dev/packages/firebase_core">firebase_core</a></p>
-                    <p>Copyright 2017 The Chromium Authors.</p>
-                    <p>- <a href="https://pub.dev/packages/firebase_analytics">firebase_analytics</a></p>
-                    <p>Copyright 2017 The Chromium Authors.</p>
-
-                    <p>- <a href="https://pub.dev/packages/admob_flutter">admob_flutter</a></p>
-                    <p>Copyright (c) 2018, Youssef Kababe</p>
-                    <p>Copyright (c) 2019, Kevin McGill kevin@mcgilldevtech.com</p>
-
-                    <p>- <a href="https://github.com/leisim/auto_size_text">auto_size_text</a></p>
-                    <p>Copyright (c) 2018 Simon Leier</p>
-                    <p>- <a href="https://pub.dev/packages/drag_and_drop_lists">drag_and_drop_lists</a></p>
-                    <p>Copyright 2020 Philip Brink.</p>
-                    <p>- <a href="https://pub.dev/packages/flutter_svg">flutter_svg</a></p>
-                    <p>Copyright (c) 2018 Dan Field</p>
-                    <p>- <a href="https://pub.dev/packages/scroll_to_index">scroll_to_index</a></p>
-                    <p>Copyright (c) 2019 Quire</p>
-                    <p>- <a href="https://pub.dev/packages/material_design_icons_flutter">material_design_icons_flutter</a></p>
-                    <p>Copyright (c) 2018 胖叔叔</p>
-                    <p>- <a href="https://pub.dev/packages/flip_card">flip_card</a></p>
-                    <p>Copyright 2014, the Dart project authors.</p>
-                    <p>- <a href="https://pub.dev/packages/flutter_picker">flutter_picker</a></p>
-                    <p>Copyright (c) 2019 XinoSoft</p>
-                    <p>- <a href="https://pub.dev/packages/flutter_xlider">flutter_xlider</a></p>
-                    <p>Copyright (c) 2018 - 2019</p>
-                    
-                    <p>- <a href="https://pub.dev/packages/time">time</a></p>
-                    <p>Copyright (c) 2019 Jeremiah Ogbomo</p>
-                    <p>- <a href="https://pub.dev/packages/uuid">uuid</a></p>
-                    <p>Copyright (c) 2012 Yulian Kuncheff</p>
-                    <p>- <a href="https://pub.dev/packages/url_launcher">url_launcher</a></p>
-                    <p>Copyright 2017 The Chromium Authors.</p>
-                    <p>- <a href="https://pub.dev/packages/audioplayers">audioplayers</a></p>
-                    <p>Copyright (c) 2017 Luan Nico</p>
-                    <p>- <a href="https://pub.dev/packages/path_provider">path_provider</a></p>
-                    <p>Copyright 2017, the Flutter project authors</p>
-                    <p>- <a href="https://pub.dev/packages/isolate_handler">isolate_handler</a></p>
-                    <p>Copyright (c) 2019-2020 Krista Koivisto, Gábor DEÁK JAHN</p>
-                    <p>- <a href="https://pub.dev/packages/in_app_review">in_app_review</a></p>
-                    <p>Copyright (c) 2020 Britannio Jarrett</p>
-                    <p>- <a href="https://pub.dev/packages/wakelock">wakelock</a></p>
-                    <p>Copyright (c) 2020-2021, creativecreatorormaybenot</p>
-
-                </div>
-            </div>
-        </div>
+    <section class="grp">
+      <h2 style="font-size:19px;margin-top:0">음성 · 음원</h2>
+      <div class="src">
+        <p style="margin:0 0 8px"><b>안내 음성</b> — © 2020 <a href="https://freetts.com/Home/Index" target="_blank" rel="noopener">FreeTTS</a></p>
+        <p style="margin:0"><b>배경 음악</b> — Music by <b>LiQWYD</b></p>
+        <ul style="margin-top:6px;margin-bottom:0">
+          <li><a href="https://soundcloud.com/liqwyd/lamour" target="_blank" rel="noopener">L'amour</a></li>
+          <li><a href="https://soundcloud.com/liqwyd/birthday" target="_blank" rel="noopener">Birthday</a></li>
+          <li><a href="https://soundcloud.com/liqwyd/work-it-out" target="_blank" rel="noopener">Work It Out</a></li>
+          <li><a href="https://soundcloud.com/liqwyd/glow" target="_blank" rel="noopener">Glow</a></li>
+        </ul>
+      </div>
     </section>
+
+    <section class="grp">
+      <h2 style="font-size:19px">Flutter 패키지</h2>
+      <p>앱에서 직접 사용하는 패키지 47개입니다. 버전은 앱 3.2.0 빌드 기준이며, 이름을 누르면 pub.dev로 이동합니다.</p>
+      <h2>Firebase · 광고 · 결제</h2>
+      <table>
+        <thead><tr><th>패키지</th><th>버전</th><th>라이선스</th><th>저작권</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://pub.dev/packages/firebase_core" target="_blank" rel="noopener">firebase_core</a></td><td class="v">4.13.0</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2017 The Chromium Authors. All rights reserved.</td></tr>
+          <tr><td><a href="https://pub.dev/packages/cloud_firestore" target="_blank" rel="noopener">cloud_firestore</a></td><td class="v">6.8.0</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2017, the Chromium project authors. All rights reserved.</td></tr>
+          <tr><td><a href="https://pub.dev/packages/firebase_analytics" target="_blank" rel="noopener">firebase_analytics</a></td><td class="v">12.4.6</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2017, the Chromium project authors. All rights reserved.</td></tr>
+          <tr><td><a href="https://pub.dev/packages/firebase_crashlytics" target="_blank" rel="noopener">firebase_crashlytics</a></td><td class="v">5.2.7</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2019 The Chromium Authors. All rights reserved.</td></tr>
+          <tr><td><a href="https://pub.dev/packages/google_mobile_ads" target="_blank" rel="noopener">google_mobile_ads</a></td><td class="v">9.0.0</td><td class="l">Apache-2.0</td><td class="c">—</td></tr>
+          <tr><td><a href="https://pub.dev/packages/in_app_purchase" target="_blank" rel="noopener">in_app_purchase</a></td><td class="v">3.3.0</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2013 The Flutter Authors</td></tr>
+          <tr><td><a href="https://pub.dev/packages/in_app_purchase_android" target="_blank" rel="noopener">in_app_purchase_android</a></td><td class="v">0.5.2</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2013 The Flutter Authors</td></tr>
+          <tr><td><a href="https://pub.dev/packages/in_app_purchase_storekit" target="_blank" rel="noopener">in_app_purchase_storekit</a></td><td class="v">0.4.11</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2013 The Flutter Authors</td></tr>
+          <tr><td><a href="https://pub.dev/packages/in_app_review" target="_blank" rel="noopener">in_app_review</a></td><td class="v">2.0.12</td><td class="l">MIT</td><td class="c">Copyright (c) 2020 Britannio Jarrett</td></tr>
+          <tr><td><a href="https://pub.dev/packages/http" target="_blank" rel="noopener">http</a></td><td class="v">1.6.0</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2014, the Dart project authors.</td></tr>
+        </tbody>
+      </table>
+      <h2>저장 · 기기 정보</h2>
+      <table>
+        <thead><tr><th>패키지</th><th>버전</th><th>라이선스</th><th>저작권</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://pub.dev/packages/hive_ce" target="_blank" rel="noopener">hive_ce</a></td><td class="v">2.19.3</td><td class="l">Apache-2.0</td><td class="c">Copyright 2025 Aaron DeLory</td></tr>
+          <tr><td><a href="https://pub.dev/packages/hive_ce_flutter" target="_blank" rel="noopener">hive_ce_flutter</a></td><td class="v">2.3.4</td><td class="l">Apache-2.0</td><td class="c">Copyright 2025 Aaron DeLory</td></tr>
+          <tr><td><a href="https://pub.dev/packages/shared_preferences" target="_blank" rel="noopener">shared_preferences</a></td><td class="v">2.5.5</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2013 The Flutter Authors</td></tr>
+          <tr><td><a href="https://pub.dev/packages/path_provider" target="_blank" rel="noopener">path_provider</a></td><td class="v">2.1.5</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2013 The Flutter Authors. All rights reserved.</td></tr>
+          <tr><td><a href="https://pub.dev/packages/platform_device_id_plus" target="_blank" rel="noopener">platform_device_id_plus</a></td><td class="v">1.0.7</td><td class="l">BSD-3-Clause</td><td class="c">Copyright (c) 2020, Shea</td></tr>
+          <tr><td><a href="https://pub.dev/packages/device_info_plus" target="_blank" rel="noopener">device_info_plus</a></td><td class="v">11.5.0</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2017 The Chromium Authors. All rights reserved.</td></tr>
+          <tr><td><a href="https://pub.dev/packages/win32" target="_blank" rel="noopener">win32</a></td><td class="v">5.14.0</td><td class="l">BSD-3-Clause</td><td class="c">Copyright (c) 2024, Halil Durmus</td></tr>
+        </tbody>
+      </table>
+      <h2>소리 · 화면 유지</h2>
+      <table>
+        <thead><tr><th>패키지</th><th>버전</th><th>라이선스</th><th>저작권</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://pub.dev/packages/audioplayers" target="_blank" rel="noopener">audioplayers</a></td><td class="v">6.5.1</td><td class="l">MIT</td><td class="c">Copyright (c) 2017 Blue Fire</td></tr>
+          <tr><td><a href="https://pub.dev/packages/flutter_tts" target="_blank" rel="noopener">flutter_tts</a></td><td class="v">4.2.3</td><td class="l">MIT</td><td class="c">Copyright (c) 2018 Daniel Lutton</td></tr>
+          <tr><td><a href="https://pub.dev/packages/wakelock_plus" target="_blank" rel="noopener">wakelock_plus</a></td><td class="v">1.3.2</td><td class="l">BSD-3-Clause</td><td class="c">Copyright (c) 2020-2023, creativecreatorormaybenot</td></tr>
+        </tbody>
+      </table>
+      <h2>화면 · 그래프 · 애니메이션</h2>
+      <table>
+        <thead><tr><th>패키지</th><th>버전</th><th>라이선스</th><th>저작권</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://pub.dev/packages/flutter_svg" target="_blank" rel="noopener">flutter_svg</a></td><td class="v">2.2.0</td><td class="l">MIT</td><td class="c">Copyright (c) 2018 Dan Field</td></tr>
+          <tr><td><a href="https://pub.dev/packages/auto_size_text" target="_blank" rel="noopener">auto_size_text</a></td><td class="v">3.0.0</td><td class="l">MIT</td><td class="c">Copyright (c) 2018 Simon Leier</td></tr>
+          <tr><td><a href="https://pub.dev/packages/drag_and_drop_lists" target="_blank" rel="noopener">drag_and_drop_lists</a></td><td class="v">0.4.2</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2020 Philip Brink.</td></tr>
+          <tr><td><a href="https://pub.dev/packages/scroll_to_index" target="_blank" rel="noopener">scroll_to_index</a></td><td class="v">3.0.1</td><td class="l">MIT</td><td class="c">Copyright (c) 2019 Quire</td></tr>
+          <tr><td><a href="https://pub.dev/packages/flutter_material_design_icons" target="_blank" rel="noopener">flutter_material_design_icons</a></td><td class="v">3.1.0+7447</td><td class="l">MIT</td><td class="c">Copyright (c) 2023 Fabian Freund</td></tr>
+          <tr><td><a href="https://pub.dev/packages/flutter_picker" target="_blank" rel="noopener">flutter_picker</a></td><td class="v">2.1.0</td><td class="l">MIT</td><td class="c">Copyright (c) 2018 - 2019</td></tr>
+          <tr><td><a href="https://pub.dev/packages/fl_chart" target="_blank" rel="noopener">fl_chart</a></td><td class="v">0.69.2</td><td class="l">MIT</td><td class="c">Copyright (c) 2022 Flutter 4 Fun</td></tr>
+          <tr><td><a href="https://pub.dev/packages/flutter_spinkit" target="_blank" rel="noopener">flutter_spinkit</a></td><td class="v">5.2.2</td><td class="l">MIT</td><td class="c">Copyright (c) 2018 Jeremiah Ogbomo</td></tr>
+          <tr><td><a href="https://pub.dev/packages/percent_indicator" target="_blank" rel="noopener">percent_indicator</a></td><td class="v">4.2.5</td><td class="l">BSD-2-Clause</td><td class="c">Copyright (c) 2018, diegoveloper@gmail.com</td></tr>
+          <tr><td><a href="https://pub.dev/packages/flutter_ruler_picker" target="_blank" rel="noopener">flutter_ruler_picker</a></td><td class="v">1.0.6</td><td class="l">MIT</td><td class="c">Copyright (c) 2014 DirectCode</td></tr>
+          <tr><td><a href="https://pub.dev/packages/modal_bottom_sheet" target="_blank" rel="noopener">modal_bottom_sheet</a></td><td class="v">3.0.0</td><td class="l">MIT</td><td class="c">Copyright (c) 2020 Jaime Blasco</td></tr>
+          <tr><td><a href="https://pub.dev/packages/flutter_easyloading" target="_blank" rel="noopener">flutter_easyloading</a></td><td class="v">3.0.5</td><td class="l">MIT</td><td class="c">Copyright (c) 2020 nslogx</td></tr>
+          <tr><td><a href="https://pub.dev/packages/table_calendar" target="_blank" rel="noopener">table_calendar</a></td><td class="v">3.2.0</td><td class="l">Apache-2.0</td><td class="c">—</td></tr>
+          <tr><td><a href="https://pub.dev/packages/cupertino_icons" target="_blank" rel="noopener">cupertino_icons</a></td><td class="v">1.0.9</td><td class="l">MIT</td><td class="c">Copyright (c) 2016 Vladimir Kharlampidi</td></tr>
+          <tr><td><a href="https://pub.dev/packages/flutter_native_splash" target="_blank" rel="noopener">flutter_native_splash</a></td><td class="v">2.4.6</td><td class="l">MIT</td><td class="c">Copyright (c) 2022 Jon Hanson</td></tr>
+          <tr><td><a href="https://pub.dev/packages/device_preview" target="_blank" rel="noopener">device_preview</a></td><td class="v">1.3.1</td><td class="l">MIT</td><td class="c">Copyright (c) 2021 Aloïs Deniel</td></tr>
+        </tbody>
+      </table>
+      <h2>앱 구조 · 유틸리티</h2>
+      <table>
+        <thead><tr><th>패키지</th><th>버전</th><th>라이선스</th><th>저작권</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://pub.dev/packages/auto_route" target="_blank" rel="noopener">auto_route</a></td><td class="v">10.3.0</td><td class="l">MIT</td><td class="c">Copyright (c) 2019 Milad Akarie</td></tr>
+          <tr><td><a href="https://pub.dev/packages/provider" target="_blank" rel="noopener">provider</a></td><td class="v">6.1.5+1</td><td class="l">MIT</td><td class="c">Copyright (c) 2019 Remi Rousselet</td></tr>
+          <tr><td><a href="https://pub.dev/packages/uuid" target="_blank" rel="noopener">uuid</a></td><td class="v">4.5.1</td><td class="l">MIT</td><td class="c">Copyright (c) 2021 Yulian Kuncheff</td></tr>
+          <tr><td><a href="https://pub.dev/packages/json_annotation" target="_blank" rel="noopener">json_annotation</a></td><td class="v">4.11.0</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2017, the Dart project authors. All rights reserved.</td></tr>
+          <tr><td><a href="https://pub.dev/packages/intl" target="_blank" rel="noopener">intl</a></td><td class="v">0.20.2</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2013, the Dart project authors.</td></tr>
+          <tr><td><a href="https://pub.dev/packages/url_launcher" target="_blank" rel="noopener">url_launcher</a></td><td class="v">6.3.2</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2013 The Flutter Authors. All rights reserved.</td></tr>
+          <tr><td><a href="https://pub.dev/packages/synchronized" target="_blank" rel="noopener">synchronized</a></td><td class="v">3.4.0</td><td class="l">MIT</td><td class="c">Copyright (c) 2016, Alexandre Roux Tekartik.</td></tr>
+          <tr><td><a href="https://pub.dev/packages/isolate_handler" target="_blank" rel="noopener">isolate_handler</a></td><td class="v">1.0.2</td><td class="l">MIT</td><td class="c">Copyright (c) 2019-2020 Krista Koivisto, Gábor DEÁK JAHN</td></tr>
+          <tr><td><a href="https://pub.dev/packages/time" target="_blank" rel="noopener">time</a></td><td class="v">2.1.5</td><td class="l">MIT</td><td class="c">Copyright (c) 2019 Jeremiah Ogbomo</td></tr>
+          <tr><td><a href="https://pub.dev/packages/easy_localization" target="_blank" rel="noopener">easy_localization</a></td><td class="v">3.0.8</td><td class="l">MIT</td><td class="c">Copyright (c) 2018</td></tr>
+          <tr><td><a href="https://pub.dev/packages/share_plus" target="_blank" rel="noopener">share_plus</a></td><td class="v">11.1.0</td><td class="l">BSD-3-Clause</td><td class="c">Copyright 2017, the Flutter project authors. All rights reserved.</td></tr>
+        </tbody>
+      </table>    </section>
+
+    <section class="grp">
+      <h2 style="font-size:19px">라이선스 전문</h2>
+      <p>위 표에 적힌 각 라이선스의 전문은 아래에서 확인할 수 있습니다.</p>
+      <ul>
+        <li><a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT License</a></li>
+        <li><a href="https://opensource.org/licenses/BSD-3-Clause" target="_blank" rel="noopener">BSD 3-Clause License</a></li>
+        <li><a href="https://opensource.org/licenses/BSD-2-Clause" target="_blank" rel="noopener">BSD 2-Clause License</a></li>
+        <li><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener">Apache License 2.0</a></li>
+      </ul>
+      <p style="margin-top:14px">
+        앱 자체에 대한 저작권은 Just Init에 있습니다. This application is copyright © Just Init. All rights reserved.
+      </p>
+    </section>
+
+    <hr />
+  </div>
 </main>
 
-<footer class="footer">
-    <div class="container">
-        <div class="footer__inner">
-            <ul id="menu-seller-footer" class="nav sub-nav footer__sub-nav">
-                <li id="menu-item-1335" class="pr-1 menu-item menu-item-type-post_type menu-item-object-page menu-item-1335"><a title="Terms of Service"
-                                                                                                                           href="./terms">약관동의 </a></li>
-                <li id="menu-item-1336" class="pr-1 menu-item menu-item-type-post_type menu-item-object-page menu-item-1335"><a title="Privacy Policy"
-                                                                                                                           href="./privacy">개인정보 방침</a></li>
-            </ul>
-        </div>
-        <div>
-            <p>Just Init 대표 최정심 | 사업자등록번호 524-44-01023 | 이메일 : brenin0408@gmail.com | 번호 : 010-6822-9802 </p>
-            <p>Copyright © Just Init. All rights reserved.</p>
-        </div>
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="./">내가만든트레이너</a>
+      <a href="./terms">이용약관</a>
+      <a href="./privacy">개인정보처리방침</a>
+      <a href="./license">오픈소스 라이선스</a>
+      <a href="mailto:justinit.service@gmail.com">문의하기</a>
     </div>
-
+    <p>Just Init · 대표 최정심 · 사업자등록번호 524-44-01023</p>
+    <p>이메일 justinit.service@gmail.com · 전화 010-6822-9802</p>
+    <p style="margin-top:12px">Copyright © Just Init. All rights reserved.</p>
+  </div>
 </footer>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
