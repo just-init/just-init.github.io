@@ -1,0 +1,1332 @@
+[
+  {
+    "id": "10cb046467eaf1cc",
+    "readCount": 0,
+    "recipe": {
+      "title": "Butter Chicken with Garlic Naan",
+      "description": "Creamy, rich Indian butter chicken served with homemade garlic naan bread.",
+      "tags": [
+        "Indian",
+        "curry",
+        "butter chicken",
+        "naan",
+        "dinner"
+      ],
+      "servings": 4,
+      "estimatedMinutes": 75,
+      "sourceUrl": "https://www.youtube.com/watch?v=wPCEC9IPMps",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wPCEC9IPMps/maxresdefault.jpg",
+      "language": "en",
+      "mainIngredients": [
+        "Bone-in chicken drumsticks",
+        "Garlic paste",
+        "Red chili powder",
+        "Salt",
+        "Cooking oil"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "Slice",
+          "ingredients": [
+            {
+              "name": "Bone-in chicken drumsticks",
+              "amount": "600g",
+              "category": "Meat"
+            }
+          ],
+          "description": "Debone the chicken drumsticks and remove the skin, then cut into bite-sized chunks."
+        },
+        {
+          "cookMethod": "Marinate",
+          "ingredients": [
+            {
+              "name": "Garlic paste",
+              "amount": "1tbsp",
+              "category": "Produce"
+            },
+            {
+              "name": "Red chili powder",
+              "amount": "1tbsp",
+              "category": "Spices"
+            },
+            {
+              "name": "Salt",
+              "amount": "2tsp",
+              "category": "Spices"
+            }
+          ],
+          "description": "Mix chicken with garlic paste, chili powder, and salt. Marinate for at least 15 minutes."
+        },
+        {
+          "cookMethod": "Fry",
+          "ingredients": [
+            {
+              "name": "Cooking oil",
+              "amount": "2tbsp",
+              "category": "Sauces & Oils"
+            }
+          ],
+          "description": "Heat oil in a pan over medium heat and sear the marinated chicken on both sides, then set aside."
+        },
+        {
+          "cookMethod": "Sauté",
+          "ingredients": [
+            {
+              "name": "Onion",
+              "amount": "1",
+              "category": "Produce"
+            },
+            {
+              "name": "Butter",
+              "amount": "1tbsp",
+              "category": "Dairy & Eggs"
+            }
+          ],
+          "description": "In the same pan, sauté chopped onion with butter until soft and golden, scraping up the fond."
+        },
+        {
+          "cookMethod": "Simmer",
+          "ingredients": [
+            {
+              "name": "Tomatoes",
+              "amount": "2",
+              "category": "Produce"
+            },
+            {
+              "name": "Canned tomatoes",
+              "amount": "1cup",
+              "category": "Canned Goods"
+            },
+            {
+              "name": "Walnuts",
+              "amount": "0.25cup",
+              "category": "Baking & Nuts"
+            },
+            {
+              "name": "Garlic paste",
+              "amount": "1tbsp",
+              "category": "Produce"
+            },
+            {
+              "name": "Distilled vinegar",
+              "amount": "2tbsp",
+              "category": "Sauces & Oils"
+            },
+            {
+              "name": "Sugar",
+              "amount": "4tbsp",
+              "category": "Baking & Nuts"
+            },
+            {
+              "name": "Garam masala",
+              "amount": "0.5tsp",
+              "category": "Spices"
+            },
+            {
+              "name": "Paprika",
+              "amount": "1tsp",
+              "category": "Spices"
+            },
+            {
+              "name": "Salt",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "Water",
+              "amount": "0.5cup",
+              "category": "Produce"
+            }
+          ],
+          "description": "Add tomatoes, nuts, garlic, vinegar, sugar, and spices. Simmer 20 minutes until mushy."
+        },
+        {
+          "cookMethod": "Blend",
+          "ingredients": [],
+          "description": "Transfer the mixture to a blender and puree until smooth, then strain to remove seeds and skins."
+        },
+        {
+          "cookMethod": "Simmer",
+          "ingredients": [
+            {
+              "name": "Butter",
+              "amount": "5tbsp",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Heavy cream",
+              "amount": "2tbsp",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Crushed kasuri methi",
+              "amount": "1tsp",
+              "category": "Spices"
+            }
+          ],
+          "description": "Return sauce to pan, add butter and cream, then stir in chicken. Simmer 7 minutes and finish with methi."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "All-purpose flour",
+              "amount": "1cup",
+              "category": "Pasta & Grains"
+            },
+            {
+              "name": "Salt",
+              "amount": "1tsp",
+              "category": "Spices"
+            },
+            {
+              "name": "Sugar",
+              "amount": "1tsp",
+              "category": "Baking & Nuts"
+            },
+            {
+              "name": "Nonfat yogurt",
+              "amount": "0.25cup",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Garlic oil",
+              "amount": "1tbsp",
+              "category": "Sauces & Oils"
+            },
+            {
+              "name": "Baking powder",
+              "amount": "0.5tsp",
+              "category": "Baking & Nuts"
+            },
+            {
+              "name": "Baking soda",
+              "amount": "0.125tsp",
+              "category": "Baking & Nuts"
+            },
+            {
+              "name": "Garlic cloves",
+              "amount": "3",
+              "category": "Produce"
+            },
+            {
+              "name": "Lukewarm water",
+              "amount": "to taste",
+              "category": "Produce"
+            }
+          ],
+          "description": "Combine flour, salt, sugar, yogurt, oil, leaveners, and chopped garlic. Add water to form a smooth dough."
+        },
+        {
+          "cookMethod": "Grill",
+          "ingredients": [
+            {
+              "name": "Sesame seeds",
+              "amount": "1tbsp",
+              "category": "Baking & Nuts"
+            },
+            {
+              "name": "Garlic butter",
+              "amount": "2tbsp",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Parsley",
+              "amount": "to taste",
+              "category": "Produce"
+            }
+          ],
+          "description": "Rest dough 15 min, roll out, press in sesame seeds, cook on hot pan then over open flame, brush with garlic butter."
+        },
+        {
+          "cookMethod": "Plate",
+          "ingredients": [
+            {
+              "name": "Heavy cream",
+              "amount": "1tbsp",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Parsley",
+              "amount": "to taste",
+              "category": "Produce"
+            }
+          ],
+          "description": "Ladle butter chicken into a bowl, swirl with cream, and garnish with parsley. Serve with naan."
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 820,
+        "carbs": 62.5,
+        "protein": 42,
+        "fat": 44.5
+      }
+    }
+  },
+  {
+    "id": "3ab017679d93e7fb",
+    "readCount": 0,
+    "recipe": {
+      "title": "Traditional Carbonara",
+      "description": "Classic Italian carbonara with guanciale, eggs, and Pecorino Romano cheese.",
+      "tags": [
+        "Italian",
+        "pasta",
+        "traditional",
+        "quick",
+        "dinner"
+      ],
+      "servings": 2,
+      "estimatedMinutes": 25,
+      "sourceUrl": "https://www.youtube.com/watch?v=qoHnwOHLiMk",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qoHnwOHLiMk/maxresdefault.jpg",
+      "language": "en",
+      "mainIngredients": [
+        "Guanciale",
+        "Eggs",
+        "Egg yolk",
+        "Pecorino Romano cheese",
+        "Parmigiano-Reggiano cheese"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "Slice",
+          "ingredients": [
+            {
+              "name": "Guanciale",
+              "amount": "225g",
+              "category": "Meat"
+            }
+          ],
+          "description": "Cut guanciale into relatively sizable chunks and set aside."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "Eggs",
+              "amount": "3",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Egg yolk",
+              "amount": "1",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Pecorino Romano cheese",
+              "amount": "56g",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Parmigiano-Reggiano cheese",
+              "amount": "56g",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Black pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "Finely grate the cheeses, combine with beaten eggs and pepper, and mix until homogenous."
+        },
+        {
+          "cookMethod": "Sauté",
+          "ingredients": [
+            {
+              "name": "Guanciale",
+              "amount": "225g",
+              "category": "Meat"
+            }
+          ],
+          "description": "Place guanciale in a cold pan, turn heat to medium, and cook slowly until fat renders and it's cooked but not crispy."
+        },
+        {
+          "cookMethod": "Boil",
+          "ingredients": [
+            {
+              "name": "Spaghetti",
+              "amount": "200g",
+              "category": "Pasta & Grains"
+            },
+            {
+              "name": "Salt",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "Boil spaghetti in heavily salted water, stirring to prevent sticking, until al dente."
+        },
+        {
+          "cookMethod": "Toss",
+          "ingredients": [],
+          "description": "Add cooked pasta directly to the pan with guanciale and toss to coat evenly in rendered fat."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [],
+          "description": "Quickly add egg and cheese mixture, agitating rigorously to emulsify into a creamy sauce without curdling."
+        },
+        {
+          "cookMethod": "Plate",
+          "ingredients": [],
+          "description": "Season to taste, twirl pasta into a cylinder on a plate, and top with remaining guanciale and sauce."
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 1180,
+        "carbs": 88,
+        "protein": 52,
+        "fat": 68
+      }
+    }
+  },
+  {
+    "id": "068457b6798ed01d",
+    "readCount": 0,
+    "recipe": {
+      "title": "Master of None Carbonara",
+      "description": "Classic homemade spaghetti carbonara with guanciale, eggs, and Parmesan cheese.",
+      "tags": [
+        "Italian",
+        "pasta",
+        "comfort food",
+        "dinner",
+        "classic"
+      ],
+      "servings": 4,
+      "estimatedMinutes": 45,
+      "sourceUrl": "https://www.youtube.com/watch?v=MbRm5s3i2ik",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MbRm5s3i2ik/maxresdefault.jpg",
+      "language": "en",
+      "mainIngredients": [
+        "all-purpose flour",
+        "semolina flour",
+        "eggs",
+        "garlic cloves",
+        "guanciale"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "all-purpose flour",
+              "amount": "200g",
+              "category": "Pasta & Grains"
+            },
+            {
+              "name": "semolina flour",
+              "amount": "200g",
+              "category": "Pasta & Grains"
+            },
+            {
+              "name": "eggs",
+              "amount": "4",
+              "category": "Dairy & Eggs"
+            }
+          ],
+          "description": "Create a well in the combined flours, add eggs, and beat with a fork to form a rough dough."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [],
+          "description": "Knead the dough for 5 minutes until smooth and supple."
+        },
+        {
+          "cookMethod": "Marinate",
+          "ingredients": [],
+          "description": "Wrap in plastic and rest at room temperature for 30 minutes."
+        },
+        {
+          "cookMethod": "Slice",
+          "ingredients": [
+            {
+              "name": "garlic cloves",
+              "amount": "6",
+              "category": "Produce"
+            }
+          ],
+          "description": "Mince the garlic cloves for both carbonara versions."
+        },
+        {
+          "cookMethod": "Fry",
+          "ingredients": [
+            {
+              "name": "guanciale",
+              "amount": "to taste",
+              "category": "Meat"
+            }
+          ],
+          "description": "Fry the guanciale until nice and crisp."
+        },
+        {
+          "cookMethod": "Boil",
+          "ingredients": [],
+          "description": "Boil nests of fresh pasta in salted water for 2 minutes."
+        },
+        {
+          "cookMethod": "Sauté",
+          "ingredients": [
+            {
+              "name": "minced garlic",
+              "amount": "3cloves",
+              "category": "Produce"
+            }
+          ],
+          "description": "Add minced garlic to the sizzling guanciale and sauté for no more than 1 minute."
+        },
+        {
+          "cookMethod": "Toss",
+          "ingredients": [
+            {
+              "name": "eggs",
+              "amount": "2",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Parmesan cheese",
+              "amount": "1cup",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "black pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "salt",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "Kill heat, toss pasta with meat, stir in beaten eggs until creamy, then add Parmesan and season."
+        },
+        {
+          "cookMethod": "Plate",
+          "ingredients": [],
+          "description": "Plate the noodles with extra guanciale and a healthy grating of Parmesan on top."
+        },
+        {
+          "cookMethod": "Sauté",
+          "ingredients": [
+            {
+              "name": "shiitake mushrooms",
+              "amount": "150g",
+              "category": "Produce"
+            },
+            {
+              "name": "olive oil",
+              "amount": "3tbsp",
+              "category": "Sauces & Oils"
+            }
+          ],
+          "description": "For the vegetarian version, sauté sliced shiitake mushrooms in olive oil until crisp."
+        },
+        {
+          "cookMethod": "Toss",
+          "ingredients": [
+            {
+              "name": "minced garlic",
+              "amount": "3cloves",
+              "category": "Produce"
+            },
+            {
+              "name": "pasta water",
+              "amount": "0.25cup",
+              "category": "Pasta & Grains"
+            },
+            {
+              "name": "eggs",
+              "amount": "2",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "smoked provolone",
+              "amount": "0.5cup",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Parmesan cheese",
+              "amount": "0.5cup",
+              "category": "Dairy & Eggs"
+            }
+          ],
+          "description": "Add garlic to mushrooms, toss with pasta and pasta water, then stir in eggs, provolone, and Parmesan."
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 780,
+        "carbs": 82,
+        "protein": 32,
+        "fat": 34
+      }
+    }
+  },
+  {
+    "id": "189c9dee93f80738",
+    "readCount": 0,
+    "recipe": {
+      "title": "Gordon Ramsay's 10 Million Burger",
+      "description": "Juicy beef burger with butter core, bacon, portobello, and sriracha mayo on brioche.",
+      "tags": [
+        "burger",
+        "BBQ",
+        "American",
+        "grill",
+        "weekend"
+      ],
+      "servings": 2,
+      "estimatedMinutes": 35,
+      "sourceUrl": "https://www.youtube.com/watch?v=v191Y8AUk6w",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/v191Y8AUk6w/maxresdefault.jpg",
+      "language": "en",
+      "mainIngredients": [
+        "Mayonnaise",
+        "Sriracha sauce",
+        "Salt",
+        "Ground beef (85/15 chuck and brisket)",
+        "Frozen unsalted butter"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "Mayonnaise",
+              "amount": "0.25cup",
+              "category": "Sauces & Oils"
+            },
+            {
+              "name": "Sriracha sauce",
+              "amount": "2tbsp",
+              "category": "Sauces & Oils"
+            },
+            {
+              "name": "Salt",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "Whisk mayo, sriracha, and salt together in a small bowl and refrigerate until needed."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "Ground beef (85/15 chuck and brisket)",
+              "amount": "1lb",
+              "category": "Meat"
+            },
+            {
+              "name": "Frozen unsalted butter",
+              "amount": "2oz",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Granulated garlic",
+              "amount": "1tbsp",
+              "category": "Spices"
+            },
+            {
+              "name": "Maldon salt",
+              "amount": "1.5tbsp",
+              "category": "Spices"
+            },
+            {
+              "name": "Fresh cracked black pepper",
+              "amount": "1tbsp",
+              "category": "Spices"
+            }
+          ],
+          "description": "Grate frozen butter into the beef, add garlic, salt, and pepper, then gently form two patties."
+        },
+        {
+          "cookMethod": "Fry",
+          "ingredients": [
+            {
+              "name": "Thick cut applewood smoked bacon",
+              "amount": "4slices",
+              "category": "Meat"
+            }
+          ],
+          "description": "Cook bacon in a skillet over medium heat until crisp, then drain on paper towels."
+        },
+        {
+          "cookMethod": "Grill",
+          "ingredients": [
+            {
+              "name": "Portobello mushroom caps",
+              "amount": "2pieces",
+              "category": "Produce"
+            },
+            {
+              "name": "Olive oil",
+              "amount": "1tbsp",
+              "category": "Sauces & Oils"
+            },
+            {
+              "name": "Maldon salt",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "Black pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "Brush mushroom caps with olive oil, season, and grill 3-4 minutes per side until tender."
+        },
+        {
+          "cookMethod": "Grill",
+          "ingredients": [
+            {
+              "name": "Roma tomato",
+              "amount": "1piece",
+              "category": "Produce"
+            },
+            {
+              "name": "Maldon salt",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "Black pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "Slice tomato into thick rounds, season, and briefly grill to caramelize the edges."
+        },
+        {
+          "cookMethod": "Grill",
+          "ingredients": [
+            {
+              "name": "Olive oil",
+              "amount": "1tbsp",
+              "category": "Sauces & Oils"
+            },
+            {
+              "name": "Swiss cheese",
+              "amount": "2slices",
+              "category": "Dairy & Eggs"
+            }
+          ],
+          "description": "Oil the patties and grill 3-4 minutes per side, topping with Swiss cheese to melt at the end."
+        },
+        {
+          "cookMethod": "Fry",
+          "ingredients": [
+            {
+              "name": "Large eggs",
+              "amount": "2pieces",
+              "category": "Dairy & Eggs"
+            }
+          ],
+          "description": "Fry the eggs sunny side up in a hot skillet until the whites are set and yolks runny."
+        },
+        {
+          "cookMethod": "Toast",
+          "ingredients": [
+            {
+              "name": "Brioche hamburger buns",
+              "amount": "2pieces",
+              "category": "Bread"
+            },
+            {
+              "name": "Butter",
+              "amount": "to taste",
+              "category": "Dairy & Eggs"
+            }
+          ],
+          "description": "Butter the cut sides of the brioche buns and toast on the grill until golden."
+        },
+        {
+          "cookMethod": "Plate",
+          "ingredients": [
+            {
+              "name": "Baby arugula",
+              "amount": "1cup",
+              "category": "Produce"
+            }
+          ],
+          "description": "Spread sriracha mayo on buns, layer mushroom, patty, bacon, tomato, egg, and arugula, then close."
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 1180,
+        "carbs": 48,
+        "protein": 62,
+        "fat": 82
+      }
+    }
+  },
+  {
+    "id": "666b865764263965",
+    "readCount": 0,
+    "recipe": {
+      "title": "One-Pot Creamy Mushroom Chicken Pasta",
+      "description": "Creamy one-pot pasta with tender chicken, mushrooms, and spinach in a parmesan sauce.",
+      "tags": [
+        "Italian",
+        "one-pot",
+        "pasta",
+        "weeknight",
+        "comfort"
+      ],
+      "servings": 4,
+      "estimatedMinutes": 30,
+      "sourceUrl": "https://www.youtube.com/watch?v=mDlMIsw3jz8",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mDlMIsw3jz8/maxresdefault.jpg",
+      "language": "en",
+      "mainIngredients": [
+        "Olive oil",
+        "Chicken breasts",
+        "Yellow onion",
+        "Cremini mushrooms",
+        "Garlic"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "Sauté",
+          "ingredients": [
+            {
+              "name": "Olive oil",
+              "amount": "2tbsp",
+              "category": "Sauces & Oils"
+            },
+            {
+              "name": "Chicken breasts",
+              "amount": "750g",
+              "category": "Meat"
+            }
+          ],
+          "description": "Heat olive oil in a large pot over medium heat. Brown chicken through, then set aside."
+        },
+        {
+          "cookMethod": "Sauté",
+          "ingredients": [
+            {
+              "name": "Olive oil",
+              "amount": "1tbsp",
+              "category": "Sauces & Oils"
+            },
+            {
+              "name": "Yellow onion",
+              "amount": "0.5",
+              "category": "Produce"
+            }
+          ],
+          "description": "Add remaining olive oil and diced onion to the pot. Stir and cook for 1-2 minutes."
+        },
+        {
+          "cookMethod": "Stir-fry",
+          "ingredients": [
+            {
+              "name": "Cremini mushrooms",
+              "amount": "2cup",
+              "category": "Produce"
+            },
+            {
+              "name": "Garlic",
+              "amount": "3cloves",
+              "category": "Produce"
+            },
+            {
+              "name": "Salt",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "Pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "Thyme",
+              "amount": "1tsp",
+              "category": "Spices"
+            },
+            {
+              "name": "Paprika",
+              "amount": "2tsp",
+              "category": "Spices"
+            }
+          ],
+          "description": "Add mushrooms and minced garlic. Season with salt, pepper, thyme, and paprika, then stir evenly."
+        },
+        {
+          "cookMethod": "Simmer",
+          "ingredients": [
+            {
+              "name": "Chicken broth",
+              "amount": "4cup",
+              "category": "Canned Goods"
+            },
+            {
+              "name": "Heavy cream",
+              "amount": "1cup",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Farfalle pasta",
+              "amount": "500g",
+              "category": "Pasta & Grains"
+            }
+          ],
+          "description": "Pour in broth and cream, bring to a boil, then add pasta and stir every 1-2 minutes until al dente."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "Spinach",
+              "amount": "150g",
+              "category": "Produce"
+            },
+            {
+              "name": "Parmesan",
+              "amount": "1cup",
+              "category": "Dairy & Eggs"
+            }
+          ],
+          "description": "Stir in spinach and cooked chicken until wilted. Add parmesan and mix until sauce is smooth."
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 850,
+        "carbs": 72,
+        "protein": 58,
+        "fat": 35
+      }
+    }
+  },
+  {
+    "id": "4954ba7ae3557165",
+    "readCount": 0,
+    "recipe": {
+      "title": "Real Spaghetti Carbonara",
+      "description": "Authentic Roman carbonara with guanciale, egg yolks, and pecorino — no cream.",
+      "tags": [
+        "Italian",
+        "pasta",
+        "Roman",
+        "quick",
+        "classic"
+      ],
+      "servings": 2,
+      "estimatedMinutes": 15,
+      "sourceUrl": "https://www.youtube.com/watch?v=3AAdKl1UYZs",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3AAdKl1UYZs/maxresdefault.jpg",
+      "language": "en",
+      "mainIngredients": [
+        "Water",
+        "Salt",
+        "Spaghettoni",
+        "Guanciale",
+        "Olive oil"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "Boil",
+          "ingredients": [
+            {
+              "name": "Water",
+              "amount": "2L",
+              "category": "Produce"
+            },
+            {
+              "name": "Salt",
+              "amount": "20g",
+              "category": "Spices"
+            },
+            {
+              "name": "Spaghettoni",
+              "amount": "200g",
+              "category": "Pasta & Grains"
+            }
+          ],
+          "description": "Bring salted water to a boil (10g salt per liter) and cook spaghettoni for about 10 minutes, stirring occasionally. No oil."
+        },
+        {
+          "cookMethod": "Dice",
+          "ingredients": [
+            {
+              "name": "Guanciale",
+              "amount": "100g",
+              "category": "Meat"
+            }
+          ],
+          "description": "Cut the guanciale into chunky pieces. Pancetta can be substituted if guanciale is unavailable."
+        },
+        {
+          "cookMethod": "Sauté",
+          "ingredients": [
+            {
+              "name": "Olive oil",
+              "amount": "1tbsp",
+              "category": "Sauces & Oils"
+            }
+          ],
+          "description": "Heat olive oil in a pan, add the guanciale, and sauté until the fat renders and the meat crisps."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "Egg yolks",
+              "amount": "2",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Parmesan cheese",
+              "amount": "2tbsp",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Black pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "In a bowl, beat egg yolks with grated Parmesan and plenty of black pepper. Do not add cream or salt."
+        },
+        {
+          "cookMethod": "Toss",
+          "ingredients": [],
+          "description": "Turn off heat on the guanciale, add drained pasta to the pan, and toss to coat in the rendered fat. Let cool briefly."
+        },
+        {
+          "cookMethod": "Plate",
+          "ingredients": [
+            {
+              "name": "Pecorino cheese",
+              "amount": "1tbsp",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Black pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "Pour the egg mixture over the warm pasta and stir quickly to create a creamy sauce. Finish with pecorino and pepper."
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 820,
+        "carbs": 88,
+        "protein": 32,
+        "fat": 38
+      }
+    }
+  },
+  {
+    "id": "8b0159608824460f",
+    "readCount": 0,
+    "recipe": {
+      "title": "Japanese Strawberry Sando",
+      "description": "A Japanese-style fruit sandwich with sweet strawberries and whipped mascarpone cream.",
+      "tags": [
+        "Japanese",
+        "dessert",
+        "sandwich",
+        "strawberry",
+        "no-bake"
+      ],
+      "servings": 2,
+      "estimatedMinutes": 25,
+      "sourceUrl": "https://www.youtube.com/watch?v=-aJhdhr0nD8",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-aJhdhr0nD8/maxresdefault.jpg",
+      "language": "en",
+      "mainIngredients": [
+        "Strawberries",
+        "Milk bread",
+        "Mascarpone cheese",
+        "Vanilla extract",
+        "Salt"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "Slice",
+          "ingredients": [
+            {
+              "name": "Strawberries",
+              "amount": "10",
+              "category": "Produce"
+            }
+          ],
+          "description": "Hull strawberries by cutting around the stem at a 45-degree angle to keep the heart shape."
+        },
+        {
+          "cookMethod": "Slice",
+          "ingredients": [
+            {
+              "name": "Milk bread",
+              "amount": "4slices",
+              "category": "Bread"
+            }
+          ],
+          "description": "Trim crusts off bread slices to create neat squares."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "Mascarpone cheese",
+              "amount": "4tbsp",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Vanilla extract",
+              "amount": "0.5tsp",
+              "category": "Baking & Nuts"
+            },
+            {
+              "name": "Salt",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "Powdered sugar",
+              "amount": "3tbsp",
+              "category": "Baking & Nuts"
+            }
+          ],
+          "description": "Cream mascarpone with vanilla, a tiny pinch of salt, and powdered sugar using a hand mixer."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "Heavy cream",
+              "amount": "1cup",
+              "category": "Dairy & Eggs"
+            }
+          ],
+          "description": "Whip heavy cream into the mascarpone mixture until very stiff peaks form."
+        },
+        {
+          "cookMethod": "Plate",
+          "ingredients": [],
+          "description": "Spread a thick 3/8-inch layer of cream on both bread slices."
+        },
+        {
+          "cookMethod": "Plate",
+          "ingredients": [],
+          "description": "Arrange 3 whole strawberries tip-to-tail down the center, with a halved berry on each side."
+        },
+        {
+          "cookMethod": "Plate",
+          "ingredients": [],
+          "description": "Pile more cream around the strawberries, pressing into gaps, then top with second bread slice."
+        },
+        {
+          "cookMethod": "Plate",
+          "ingredients": [],
+          "description": "Smooth cream on the sides, mark the cut direction with a knife, wrap tightly in plastic."
+        },
+        {
+          "cookMethod": "Plate",
+          "ingredients": [],
+          "description": "Refrigerate at least 1 hour, then slice with a serrated knife along the marked line."
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 620,
+        "carbs": 52,
+        "protein": 9,
+        "fat": 42
+      }
+    }
+  },
+  {
+    "id": "04a4404cde3206f4",
+    "readCount": 0,
+    "recipe": {
+      "title": "Cowboy Cornbread Chicken",
+      "description": "One-pan Southwest-style chicken baked into spiced cornbread with peppers and cheese.",
+      "tags": [
+        "Southwest",
+        "one-pan",
+        "chicken",
+        "cornbread",
+        "comfort food"
+      ],
+      "servings": 6,
+      "estimatedMinutes": 25,
+      "sourceUrl": "https://www.youtube.com/watch?v=KJDKHrvzIII",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KJDKHrvzIII/maxresdefault.jpg",
+      "language": "en",
+      "mainIngredients": [
+        "Chicken breast",
+        "Olive oil",
+        "Salt",
+        "Black pepper",
+        "Chipotle pepper"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "Marinate",
+          "ingredients": [
+            {
+              "name": "Chicken breast",
+              "amount": "3pieces",
+              "category": "Meat"
+            },
+            {
+              "name": "Olive oil",
+              "amount": "1tbsp",
+              "category": "Sauces & Oils"
+            },
+            {
+              "name": "Salt",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "Black pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            },
+            {
+              "name": "Chipotle pepper",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "Halve chicken breasts lengthwise, toss with oil, salt, pepper, and chipotle, then chill."
+        },
+        {
+          "cookMethod": "Sauté",
+          "ingredients": [
+            {
+              "name": "Butter",
+              "amount": "113g",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Onion",
+              "amount": "1piece",
+              "category": "Produce"
+            },
+            {
+              "name": "Salt",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "Melt butter in a cast iron pan, add diced onion with salt, and cook until translucent."
+        },
+        {
+          "cookMethod": "Stir-fry",
+          "ingredients": [
+            {
+              "name": "Red bell pepper",
+              "amount": "0.5piece",
+              "category": "Produce"
+            },
+            {
+              "name": "Green bell pepper",
+              "amount": "0.5piece",
+              "category": "Produce"
+            },
+            {
+              "name": "Garlic",
+              "amount": "1tbsp",
+              "category": "Produce"
+            }
+          ],
+          "description": "Lower heat, add bell peppers and minced garlic, cook 2 minutes until softened, then reserve 3-4 spoons."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "Self-rising flour",
+              "amount": "1cup",
+              "category": "Pasta & Grains"
+            },
+            {
+              "name": "Cornmeal",
+              "amount": "1cup",
+              "category": "Pasta & Grains"
+            },
+            {
+              "name": "Salt",
+              "amount": "to taste",
+              "category": "Spices"
+            }
+          ],
+          "description": "Whisk together self-rising flour, cornmeal, and salt in a bowl for about 30 seconds."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [
+            {
+              "name": "Honey",
+              "amount": "3tbsp",
+              "category": "Sauces & Oils"
+            },
+            {
+              "name": "Buttermilk",
+              "amount": "1cup",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Eggs",
+              "amount": "2pieces",
+              "category": "Dairy & Eggs"
+            }
+          ],
+          "description": "Add honey, buttermilk, and beaten eggs to the pan with onions and whisk thoroughly."
+        },
+        {
+          "cookMethod": "Mix",
+          "ingredients": [],
+          "description": "Gently fold dry ingredients into the wet mixture until flour just disappears, then level the batter."
+        },
+        {
+          "cookMethod": "Bake",
+          "ingredients": [
+            {
+              "name": "Monterey Jack cheese",
+              "amount": "1cup",
+              "category": "Dairy & Eggs"
+            },
+            {
+              "name": "Green onions",
+              "amount": "2tbsp",
+              "category": "Produce"
+            }
+          ],
+          "description": "Press chicken into batter, top with reserved peppers and cheese, bake at 400°F for 40-45 minutes, garnish with green onions."
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 720,
+        "carbs": 52,
+        "protein": 42,
+        "fat": 36
+      }
+    }
+  }
+]

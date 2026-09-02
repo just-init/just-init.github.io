@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 마음속 사직서 - Unsubmitted</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{
+          --bg:#111010;
+          --bg2:#1a1816;
+          --bg3:#231f1c;
+          --accent:#e8a992;
+          --accent2:#d4856b;
+          --accent-glow:rgba(232,169,146,0.12);
+          --text:#f5f0eb;
+          --text2:#c4bab2;
+          --text3:#8a807a;
+        }
+        html{scroll-behavior:smooth}
+        body{background:var(--bg);color:var(--text);font-family:'Noto Sans KR',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+        /* ── NAV ── */
+        nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 48px;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(20px);background:rgba(17,16,16,0.7);border-bottom:1px solid rgba(232,169,146,0.06);transition:all 0.3s}
+        nav.scrolled{padding:14px 48px;background:rgba(17,16,16,0.92)}
+        .nav-logo{font-family:'Noto Sans KR','Playfair Display',serif;font-size:1.3rem;font-style:italic;color:var(--accent);letter-spacing:-0.02em}
+        .nav-links{display:flex;gap:32px;align-items:center}
+        .nav-links a{color:var(--text3);text-decoration:none;font-size:0.85rem;font-weight:400;letter-spacing:0.03em;transition:color 0.3s}
+        .nav-links a:hover{color:var(--accent)}
+        .nav-cta{background:var(--accent)!important;color:var(--bg)!important;padding:10px 24px;border-radius:100px;font-weight:600!important;font-size:0.82rem!important;transition:all 0.3s!important}
+        .nav-cta:hover{background:var(--accent2)!important;transform:translateY(-1px)}
+
+        /* ── HERO ── */
+        .hero{min-height:100vh;display:flex;align-items:center;position:relative;padding:120px 48px 80px;overflow:hidden}
+        .hero::before{content:'';position:absolute;top:-200px;right:-200px;width:800px;height:800px;background:radial-gradient(circle,rgba(232,169,146,0.06) 0%,transparent 70%);pointer-events:none}
+        .hero::after{content:'';position:absolute;bottom:-100px;left:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,169,146,0.04) 0%,transparent 70%);pointer-events:none}
+        .hero-content{max-width:1280px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+        .hero-text{position:relative;z-index:2}
+        .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:rgba(232,169,146,0.08);border:1px solid rgba(232,169,146,0.15);border-radius:100px;font-size:0.75rem;color:var(--accent);letter-spacing:0.05em;margin-bottom:32px}
+        .hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
+        @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+        .hero h1{font-family:'Noto Sans KR','Playfair Display',serif;font-size:3.8rem;font-weight:900;line-height:1.2;letter-spacing:-0.03em;margin-bottom:24px;color:var(--text)}
+        .hero h1 em{font-style:italic;color:var(--accent);display:block}
+        .hero-desc{font-size:1.05rem;line-height:1.8;color:var(--text2);font-weight:300;margin-bottom:40px;max-width:440px}
+        .hero-actions{display:flex;gap:16px;align-items:center}
+        .btn-primary{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:var(--accent);color:var(--bg);border-radius:100px;text-decoration:none;font-weight:700;font-size:0.95rem;transition:all 0.3s;border:none;cursor:pointer}
+        .btn-primary:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 12px 40px rgba(232,169,146,0.25)}
+        .btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:16px 28px;background:transparent;color:var(--text2);border:1px solid rgba(255,255,255,0.1);border-radius:100px;text-decoration:none;font-weight:400;font-size:0.9rem;transition:all 0.3s}
+        .btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
+
+        .hero-phone-group{position:relative;display:flex;justify-content:center;align-items:center;height:580px}
+        .hero-phone{position:absolute;width:240px;height:480px;border-radius:30px;overflow:hidden;background:#000;box-shadow:0 8px 60px rgba(0,0,0,0.6),0 0 0 1px rgba(255,255,255,0.05)}
+        .hero-phone img{width:100%;height:100%;object-fit:cover}
+        .hero-phone:nth-child(1){z-index:3;transform:translateX(-30px) rotate(-3deg)}
+        .hero-phone:nth-child(2){z-index:4;transform:translateX(30px) translateY(-10px) rotate(2deg)}
+        .hero-phone::after{content:'';position:absolute;inset:0;border-radius:30px;box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08)}
+
+        .hero-stat{position:absolute;bottom:-60px;left:50%;transform:translateX(-50%);display:flex;gap:40px;z-index:5}
+        .hero-stat-item{text-align:center}
+        .hero-stat-item .num{font-family:'Noto Sans KR','Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--accent)}
+        .hero-stat-item .label{font-size:0.7rem;color:var(--text3);margin-top:2px;letter-spacing:0.05em}
+
+        /* ── SECTION COMMON ── */
+        section{padding:120px 48px}
+        .section-label{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;font-weight:500}
+        .section-title{font-family:'Noto Sans KR','Playfair Display',serif;font-size:2.6rem;font-weight:700;line-height:1.3;margin-bottom:20px;letter-spacing:-0.02em}
+        .section-desc{font-size:1rem;color:var(--text2);font-weight:300;line-height:1.7;max-width:500px}
+
+        /* ── HOW IT WORKS ── */
+        .how-section{background:var(--bg2);position:relative}
+        .how-section::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(232,169,146,0.15),transparent)}
+        .how-header{text-align:center;margin-bottom:80px}
+        .how-header .section-desc{margin:0 auto}
+        .how-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;max-width:1200px;margin:0 auto}
+        .step-card{text-align:center;padding:40px 20px;border-radius:24px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.04);transition:all 0.4s}
+        .step-card:hover{background:rgba(232,169,146,0.04);border-color:rgba(232,169,146,0.1);transform:translateY(-4px)}
+        .step-num{font-family:'Noto Sans KR','Playfair Display',serif;font-size:2.4rem;font-weight:700;color:var(--accent);opacity:0.5;margin-bottom:20px}
+        .step-phone{width:160px;height:320px;border-radius:22px;overflow:hidden;margin:0 auto 24px;background:#000;box-shadow:0 4px 30px rgba(0,0,0,0.4)}
+        .step-phone img{width:100%;height:100%;object-fit:cover}
+        .step-title{font-size:1rem;font-weight:700;margin-bottom:8px;line-height:1.4}
+        .step-desc{font-size:0.82rem;color:var(--text3);line-height:1.6;font-weight:300}
+
+        /* ── FEATURES ── */
+        .features-section{background:var(--bg)}
+        .features-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;max-width:1200px;margin:0 auto;align-items:center}
+        .features-list{display:flex;flex-direction:column;gap:24px}
+        .feature-item{padding:28px 32px;border-radius:20px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.02);transition:all 0.3s;cursor:default}
+        .feature-item:hover{background:rgba(232,169,146,0.05);border-color:rgba(232,169,146,0.12)}
+        .feature-icon{font-size:1.6rem;margin-bottom:12px}
+        .feature-name{font-size:1rem;font-weight:700;margin-bottom:6px}
+        .feature-desc{font-size:0.85rem;color:var(--text3);line-height:1.6;font-weight:300}
+        .features-visual{display:flex;justify-content:center;position:relative}
+        .features-phone{width:260px;height:520px;border-radius:32px;overflow:hidden;background:#000;box-shadow:0 8px 60px rgba(0,0,0,0.5),0 0 80px rgba(232,169,146,0.06);position:relative}
+        .features-phone img{width:100%;height:100%;object-fit:cover}
+        .features-phone::after{content:'';position:absolute;inset:0;border-radius:32px;box-shadow:inset 0 0 0 1px rgba(255,255,255,0.06)}
+        .features-glow{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(232,169,146,0.08),transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0}
+
+        /* ── TESTIMONIAL ── */
+        .testimonial-section{background:var(--bg2);text-align:center;position:relative}
+        .testimonial-section::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(232,169,146,0.15),transparent)}
+        .quote-mark{font-family:'Noto Sans KR','Playfair Display',serif;font-size:6rem;color:var(--accent);opacity:0.2;line-height:1;margin-bottom:-20px}
+        .testimonial-text{font-size:1.4rem;font-weight:300;line-height:1.8;max-width:680px;margin:0 auto 32px;color:var(--text2)}
+        .testimonial-author{font-size:0.85rem;color:var(--text3)}
+        .testimonial-author strong{color:var(--accent);font-weight:500}
+
+        /* ── CTA ── */
+        .cta-section{text-align:center;padding:140px 48px;position:relative}
+        .cta-section::before{content:'';position:absolute;top:50%;left:50%;width:600px;height:600px;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(232,169,146,0.06),transparent 60%);pointer-events:none}
+        .cta-title{font-family:'Noto Sans KR','Playfair Display',serif;font-size:3rem;font-weight:900;margin-bottom:16px;letter-spacing:-0.02em}
+        .cta-title em{font-style:italic;color:var(--accent)}
+        .cta-desc{font-size:1rem;color:var(--text2);font-weight:300;margin-bottom:40px;line-height:1.7}
+        .cta-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+        .store-btn{display:inline-flex;align-items:center;gap:12px;padding:14px 28px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;text-decoration:none;color:var(--text);transition:all 0.3s}
+        .store-btn:hover{background:rgba(232,169,146,0.08);border-color:rgba(232,169,146,0.2);transform:translateY(-2px)}
+        .store-btn svg{width:28px;height:28px;fill:var(--text)}
+        .store-label{text-align:left}
+        .store-label small{font-size:0.65rem;color:var(--text3);display:block}
+        .store-label span{font-size:0.95rem;font-weight:600}
+
+        /* ── FOOTER ── */
+        footer{padding:40px 48px;border-top:1px solid rgba(255,255,255,0.04);display:flex;justify-content:space-between;align-items:center}
+        .footer-left{font-size:0.75rem;color:var(--text3)}
+        .footer-right{display:flex;gap:20px}
+        .footer-right a{color:var(--text3);text-decoration:none;font-size:0.75rem;transition:color 0.3s}
+        .footer-right a:hover{color:var(--accent)}
+
+        /* ── ANIMATIONS ── */
+        .fade-in{opacity:0;transform:translateY(30px);transition:all 0.8s cubic-bezier(0.23,1,0.32,1)}
+        .fade-in.visible{opacity:1;transform:translateY(0)}
+
+        /* ── RESPONSIVE ── */
+        @media(max-width:1024px){
+          .hero-content{grid-template-columns:1fr;text-align:center;gap:60px}
+          .hero-desc{margin:0 auto 40px}
+          .hero-actions{justify-content:center}
+          .hero-phone-group{height:400px}
+          .hero-phone{width:180px;height:360px;border-radius:24px}
+          .how-steps{grid-template-columns:repeat(2,1fr)}
+          .features-grid{grid-template-columns:1fr;text-align:center}
+          .features-list{order:2}
+          .features-visual{order:1}
+          section{padding:80px 24px}
+        }
+        @media(max-width:640px){
+          nav{padding:16px 20px}
+          .nav-links{display:none}
+          .hero{padding:100px 24px 60px}
+          .hero h1{font-size:2.4rem}
+          .hero-phone-group{height:340px}
+          .hero-phone{width:150px;height:300px}
+          .how-steps{grid-template-columns:1fr 1fr;gap:16px}
+          .step-phone{width:120px;height:240px;border-radius:18px}
+          .section-title{font-size:2rem}
+          .cta-title{font-size:2.2rem}
+          footer{flex-direction:column;gap:16px;text-align:center}
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+    <div class="nav-logo">Unsubmitted</div>
+    <div class="nav-links">
+        <a href="#how">사용법</a>
+        <a href="#features">기능</a>
+        <a href="#download" class="nav-cta">다운로드</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <div class="hero-badge">
+                <span>감정 기록 앱</span>
+            </div>
+            <h1>
+                퇴사하고 싶을 때,
+                <em>마음속 사직서</em>
+            </h1>
+            <p class="hero-desc">
+                꾹꾹 눌러 참았던 마음, 여기에 쏟아내세요.<br>
+                AI가 격식 있는 사직서로 바꿔드리고,<br>
+                따뜻한 위로까지 전합니다.
+            </p>
+            <div class="hero-actions">
+                <a href="#download" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    무료 다운로드
+                </a>
+                <a href="#how" class="btn-secondary">어떻게 쓰나요?</a>
+            </div>
+        </div>
+        <div class="hero-phone-group">
+            <div class="hero-phone" style="z-index:3;transform:translateX(-40px) rotate(-4deg)">
+                <img src="images/main1.PNG" alt="작성화면">
+            </div>
+            <div class="hero-phone" style="z-index:4;transform:translateX(40px) translateY(-10px) rotate(3deg)">
+                <img src="images/main2.PNG" alt="변환결과">
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-item">
+                    <div class="num">100%</div>
+                    <div class="label">안전한 데이터 보장</div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="num">AI</div>
+                    <div class="label">사직서 변환</div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="num">24h</div>
+                    <div class="label">봉인 후 열람</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section" id="how">
+    <div class="how-header">
+        <div class="section-label">How it works</div>
+        <h2 class="section-title">3단계로 마음을 정리하세요</h2>
+        <p class="section-desc">복잡한 건 없어요. 감정을 적고, 봉인하고, 다음 날 열어보세요.</p>
+    </div>
+    <div class="how-steps">
+        <div class="step-card fade-in">
+            <div class="step-num">01</div>
+            <div class="step-phone">
+                <img src="images/main1.PNG" alt="작성">
+            </div>
+            <div class="step-title">감정을 쏟아내세요</div>
+            <div class="step-desc">대충 적어도 괜찮아요.<br>지금 느끼는 그대로.</div>
+        </div>
+        <div class="step-card fade-in">
+            <div class="step-num">02</div>
+            <div class="step-phone">
+                <img src="images/main2.PNG" alt="변환">
+            </div>
+            <div class="step-title">AI가 변환해드려요</div>
+            <div class="step-desc">날것의 감정이 격식 있는<br>사직서로 다시 태어납니다.</div>
+        </div>
+        <div class="step-card fade-in">
+            <div class="step-num">03</div>
+            <div class="step-phone">
+                <img src="images/main3.PNG" alt="보관">
+            </div>
+            <div class="step-title">마음속에 간직하세요</div>
+            <div class="step-desc">봉인한 사직서와 함께<br>위로 메시지를 받아보세요.</div>
+        </div>
+        <div class="step-card fade-in">
+            <div class="step-num">04</div>
+            <div class="step-phone">
+                <img src="images/main4.PNG" alt="피드">
+            </div>
+            <div class="step-title">나만 힘든 게 아니었어</div>
+            <div class="step-desc">피드에서 서로의<br>마음을 들여다보세요.</div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section" id="features">
+    <div class="features-grid">
+        <div class="features-visual">
+            <div class="features-glow"></div>
+            <div class="features-phone" style="position:relative;z-index:1">
+                <img src="images/main2.PNG" alt="기능">
+            </div>
+        </div>
+        <div>
+            <div class="section-label">Features</div>
+            <h2 class="section-title" style="margin-bottom:40px">당신의 감정을<br>소중히 다룹니다</h2>
+            <div class="features-list">
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">🔒</div>
+                    <div class="feature-name">안전한 데이터 보장</div>
+                    <div class="feature-desc">가명으로 누가 썼는지 절대 알 수 없습니다. 안심하고 솔직해지세요.</div>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">✨</div>
+                    <div class="feature-name">AI 사직서 변환</div>
+                    <div class="feature-desc">날것의 감정이 격식 있는 사직서로 변환됩니다.</div>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">💌</div>
+                    <div class="feature-name">위로 메시지</div>
+                    <div class="feature-desc">AI가 당신의 마음을 읽고 따뜻한 공감 메시지를 전합니다.</div>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">📄</div>
+                    <div class="feature-name">전체공개 가능</div>
+                    <div class="feature-desc">전체공개 피드에서 서로의 마음을 들여다보세요.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial-section">
+    <div class="fade-in">
+        <div class="quote-mark">"</div>
+        <p class="testimonial-text">
+            매일 퇴사 충동과 싸우면서 아무에게도 말 못 했는데,<br>
+            여기에 쏟아내고 나니까 마음이 좀 가벼워졌어요.<br>
+            나만 힘든 게 아니라는 것도 알게 됐고요.
+        </p>
+        <p class="testimonial-author">— <strong>익명의 직장인</strong>, D+347</p>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="download">
+    <div class="fade-in">
+        <div class="section-label">Download</div>
+        <h2 class="cta-title">오늘도 수고한 당신,<br><em>내일은 조금 더 가벼워지길.</em></h2>
+        <p class="cta-desc">지금 무료로 다운로드하세요.</p>
+        <div class="cta-buttons">
+            <a href="https://apps.apple.com/kr/app/Unsubmitted/6758965681" class="store-btn">
+                <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                <div class="store-label">
+                    <small>Download on the</small>
+                    <span>App Store</span>
+                </div>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.brenin.unsubmittedt&hl=ko" class="store-btn">
+                <svg viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.5 1.449a1 1 0 0 1 0 1.488l-2.5 1.449-2.527-2.527 2.527-2.86zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.635z"/></svg>
+                <div class="store-label">
+                    <small>GET IT ON</small>
+                    <span>Google Play</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-left">대표 최정심 | 사업자등록번호 524-44-01023 | 이메일 : justinit.service@gmail.com | 번호 : 010-6822-9802 | © 2026 Unsubmitted. All rights reserved. </div>
+    <div class="footer-right">
+        <a href="./privacy">개인정보처리방침</a>
+        <a href="./terms">이용약관</a>
+    </div>
+</footer>
+
+<script>
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Fade in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

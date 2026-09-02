@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/cook-flow/terms", {data:[{}],fetch:{},mutations:void 0});
