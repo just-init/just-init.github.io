@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/marriage-mind/privacy", {data:[{}],fetch:{},mutations:void 0});
