@@ -104,6 +104,10 @@ export default {
       '/marriage-mind',
       '/marriage-mind/privacy',
       '/marriage-mind/terms',
+      '/nukkikok',
+      '/nukkikok/privacy',
+      '/nukkikok/terms',
+      '/nukkikok/delete-account',
     ]
   }
 }
