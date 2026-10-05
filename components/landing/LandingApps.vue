@@ -73,6 +73,17 @@ export default {
     return {
       apps: [
         {
+          name: '누끼콕',
+          icon: '/app-icons/nukkikok.png',
+          desc: '사진 속 우리 아기, 강아지, 고양이, 최애만 콕! 자동으로 누끼 따서 나만의 스티커로 만들어요.',
+          tag: '사진',
+          tagClass: 'bg-pink-500/10 text-pink-600 dark:text-pink-400',
+          platform: 'Android · 출시 예정',
+          link: '/nukkikok',
+          cardBgLight: 'linear-gradient(135deg, #fbfaf7 0%, #ffe3ea 100%)',
+          cardBgDark: 'linear-gradient(135deg, #2e2a2b 0%, #36282d 100%)',
+        },
+        {
           name: '레시피얍',
           icon: '/app-icons/cook-flow.png',
           desc: '어떤 콘텐츠든 내 입맛에 맞는 레시피로 바꿔드립니다. 단계별 가이드로 요리 초보도 한 눈에 이해돼요.',

@@ -1,13 +1,5 @@
 <template>
   <div class="nk-root">
-    <!-- Nav -->
-    <nav class="nk-nav">
-      <nuxt-link to="/" class="nk-nav__back">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        딸깍공방
-      </nuxt-link>
-    </nav>
-
     <!-- Hero -->
     <section class="nk-hero">
       <div class="nk-hero__text">
@@ -174,28 +166,6 @@ export default {
   background-size: 24px 24px;
   background-position: 0 0, 0 12px, 12px -12px, -12px 0;
 }
-
-/* ── Nav ──────────────────────────────────────────────── */
-.nk-nav {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  padding: 18px 32px;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--line);
-}
-.nk-nav__back {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--ink-soft);
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-.nk-nav__back:hover { color: var(--ink); }
 
 /* ── Hero ─────────────────────────────────────────────── */
 .nk-hero {
@@ -468,7 +438,6 @@ export default {
 
 /* ── Mobile ───────────────────────────────────────────── */
 @media (max-width: 768px) {
-  .nk-nav { padding: 16px 20px; }
   .nk-hero {
     grid-template-columns: 1fr;
     padding: 48px 20px 64px;
