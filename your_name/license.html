@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오픈소스 라이선스 - 아기이름연구소</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --cream: #F8F5F0;
+      --warm-beige: #EDE8E0;
+      --brown: #5C4A3A;
+      --text-dark: #2C2420;
+      --text-mid: #6B5D52;
+      --text-light: #9B8E82;
+      --white: #FFFFFF;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: var(--cream);
+      color: var(--text-dark);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(248, 245, 240, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 1px 20px rgba(0,0,0,0.06);
+    }
+
+    .nav-logo {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--brown);
+      text-decoration: none;
+    }
+
+    .nav-back {
+      color: var(--text-mid);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-back:hover { color: var(--brown); }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 120px 40px 80px;
+    }
+
+    .page-title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .page-desc {
+      font-size: 15px;
+      color: var(--text-light);
+      margin-bottom: 48px;
+      line-height: 1.7;
+    }
+
+    .license-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    .license-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+    }
+
+    .license-card .license-type {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--brown);
+      background: var(--cream);
+      padding: 3px 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .license-card p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-mid);
+    }
+
+    .license-card a {
+      color: var(--brown);
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .license-card a:hover {
+      text-decoration: underline;
+    }
+
+    .category {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+
+    .category:first-of-type {
+      margin-top: 0;
+    }
+
+    .footer {
+      background: var(--text-dark);
+      color: var(--text-light);
+      padding: 48px 40px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 18px;
+      color: var(--warm-beige);
+      margin-bottom: 16px;
+    }
+
+    .footer-text {
+      font-size: 13px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .footer-links {
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--warm-beige); }
+
+    @media (max-width: 600px) {
+      .content { padding: 100px 20px 60px; }
+      .nav { padding: 16px 20px; }
+      .page-title { font-size: 28px; }
+      .license-card { padding: 20px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">아기이름연구소</a>
+    <a href="index.html" class="nav-back">&larr; 홈으로</a>
+  </nav>
+
+  <div class="content">
+    <h1 class="page-title">오픈소스 라이선스</h1>
+    <p class="page-desc">아기이름연구소는 다음의 오픈소스 라이브러리를 사용하고 있습니다.<br>각 라이브러리의 라이선스를 존중하며, 원저작자에게 감사드립니다.</p>
+
+    <p class="category">Framework</p>
+
+    <div class="license-card">
+      <h3>Flutter</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>Google의 크로스플랫폼 UI 프레임워크</p>
+      <a href="https://github.com/flutter/flutter/blob/master/LICENSE">라이선스 보기</a>
+    </div>
+
+    <p class="category">상태 관리 / DI</p>
+
+    <div class="license-card">
+      <h3>flutter_bloc</h3>
+      <span class="license-type">MIT</span>
+      <p>BLoC 패턴 기반 상태 관리 라이브러리</p>
+      <a href="https://pub.dev/packages/flutter_bloc/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>equatable</h3>
+      <span class="license-type">MIT</span>
+      <p>값 비교를 위한 유틸리티</p>
+      <a href="https://pub.dev/packages/equatable/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>get_it</h3>
+      <span class="license-type">MIT</span>
+      <p>서비스 로케이터 기반 의존성 주입</p>
+      <a href="https://pub.dev/packages/get_it/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>injectable</h3>
+      <span class="license-type">MIT</span>
+      <p>get_it을 위한 코드 생성 기반 DI</p>
+      <a href="https://pub.dev/packages/injectable/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>dartz</h3>
+      <span class="license-type">MIT</span>
+      <p>함수형 프로그래밍 유틸리티</p>
+      <a href="https://pub.dev/packages/dartz/license">라이선스 보기</a>
+    </div>
+
+    <p class="category">코드 생성</p>
+
+    <div class="license-card">
+      <h3>freezed_annotation / freezed</h3>
+      <span class="license-type">MIT</span>
+      <p>불변 데이터 클래스 코드 생성</p>
+      <a href="https://pub.dev/packages/freezed/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>json_annotation / json_serializable</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>JSON 직렬화/역직렬화 코드 생성</p>
+      <a href="https://pub.dev/packages/json_serializable/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>build_runner</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>코드 생성 빌드 시스템</p>
+      <a href="https://pub.dev/packages/build_runner/license">라이선스 보기</a>
+    </div>
+
+    <p class="category">Firebase</p>
+
+    <div class="license-card">
+      <h3>firebase_core</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>Firebase 코어 플러그인</p>
+      <a href="https://pub.dev/packages/firebase_core/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>firebase_analytics</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>Firebase 앱 분석</p>
+      <a href="https://pub.dev/packages/firebase_analytics/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>firebase_crashlytics</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>앱 충돌 분석</p>
+      <a href="https://pub.dev/packages/firebase_crashlytics/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>firebase_auth</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>Firebase 인증</p>
+      <a href="https://pub.dev/packages/firebase_auth/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>cloud_firestore</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>Cloud Firestore 데이터베이스</p>
+      <a href="https://pub.dev/packages/cloud_firestore/license">라이선스 보기</a>
+    </div>
+
+    <p class="category">결제 / 광고</p>
+
+    <div class="license-card">
+      <h3>in_app_purchase</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>인앱 결제</p>
+      <a href="https://pub.dev/packages/in_app_purchase/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>google_mobile_ads</h3>
+      <span class="license-type">Apache 2.0</span>
+      <p>Google AdMob 광고</p>
+      <a href="https://pub.dev/packages/google_mobile_ads/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>app_tracking_transparency</h3>
+      <span class="license-type">MIT</span>
+      <p>iOS 앱 추적 투명성</p>
+      <a href="https://pub.dev/packages/app_tracking_transparency/license">라이선스 보기</a>
+    </div>
+
+    <p class="category">라우팅 / URL</p>
+
+    <div class="license-card">
+      <h3>go_router</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>선언형 라우팅</p>
+      <a href="https://pub.dev/packages/go_router/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>url_launcher</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>URL 열기</p>
+      <a href="https://pub.dev/packages/url_launcher/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>app_links</h3>
+      <span class="license-type">Apache 2.0</span>
+      <p>딥링크 처리</p>
+      <a href="https://pub.dev/packages/app_links/license">라이선스 보기</a>
+    </div>
+
+    <p class="category">저장 / 보안</p>
+
+    <div class="license-card">
+      <h3>shared_preferences</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>간단한 키-값 로컬 저장</p>
+      <a href="https://pub.dev/packages/shared_preferences/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>path_provider</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>파일 시스템 경로 제공</p>
+      <a href="https://pub.dev/packages/path_provider/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>encrypt</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>AES 등 암호화 유틸리티</p>
+      <a href="https://pub.dev/packages/encrypt/license">라이선스 보기</a>
+    </div>
+
+    <p class="category">유틸리티</p>
+
+    <div class="license-card">
+      <h3>share_plus</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>콘텐츠 공유</p>
+      <a href="https://pub.dev/packages/share_plus/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>connectivity_plus</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>네트워크 연결 상태 확인</p>
+      <a href="https://pub.dev/packages/connectivity_plus/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>in_app_review</h3>
+      <span class="license-type">MIT</span>
+      <p>인앱 리뷰 요청</p>
+      <a href="https://pub.dev/packages/in_app_review/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>package_info_plus</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>앱 패키지 정보</p>
+      <a href="https://pub.dev/packages/package_info_plus/license">라이선스 보기</a>
+    </div>
+
+    <p class="category">PDF / 문서</p>
+
+    <div class="license-card">
+      <h3>flutter_pdfview</h3>
+      <span class="license-type">MIT</span>
+      <p>PDF 뷰어</p>
+      <a href="https://pub.dev/packages/flutter_pdfview/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>open_filex</h3>
+      <span class="license-type">BSD 3-Clause</span>
+      <p>파일 열기</p>
+      <a href="https://pub.dev/packages/open_filex/license">라이선스 보기</a>
+    </div>
+
+    <p class="category">사주 / 만세력</p>
+
+    <div class="license-card">
+      <h3>lunar</h3>
+      <span class="license-type">MIT</span>
+      <p>음양력 변환, 간지, 절기, 오행 계산</p>
+      <a href="https://pub.dev/packages/lunar/license">라이선스 보기</a>
+    </div>
+
+    <p class="category">UI / 폰트</p>
+
+    <div class="license-card">
+      <h3>google_fonts</h3>
+      <span class="license-type">Apache 2.0</span>
+      <p>Google Fonts 사용</p>
+      <a href="https://pub.dev/packages/google_fonts/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>bottom_picker</h3>
+      <span class="license-type">MIT</span>
+      <p>날짜/시간 선택 피커</p>
+      <a href="https://pub.dev/packages/bottom_picker/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>cupertino_icons</h3>
+      <span class="license-type">MIT</span>
+      <p>iOS 스타일 아이콘</p>
+      <a href="https://pub.dev/packages/cupertino_icons/license">라이선스 보기</a>
+    </div>
+
+    <div class="license-card">
+      <h3>Noto Serif CJK</h3>
+      <span class="license-type">OFL 1.1</span>
+      <p>Google/Adobe CJK 한자 지원 세리프 폰트</p>
+      <a href="https://github.com/googlefonts/noto-cjk/blob/main/LICENSE">라이선스 보기</a>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-logo">아기이름연구소</div>
+    <p class="footer-text">
+      Just Init 대표 최정심 | 사업자등록번호 524-44-01023<br>
+      이메일 : justinit.service@gmail.com | 번호 : 010-6822-9802<br>
+      &copy; 2026 Just Init. All rights reserved.
+    </p>
+    <div class="footer-links">
+      <a href="privacy.html">개인정보처리방침</a>
+      <a href="terms.html">이용약관</a>
+      <a href="index.html">홈</a>
+    </div>
+  </footer>
+
+</body>
+</html>
