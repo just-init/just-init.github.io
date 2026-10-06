@@ -3,42 +3,47 @@
     <div class="max-w-3xl mx-auto px-6 py-16">
       <nuxt-link to="/nukkikok" class="text-pink-700 dark:text-pink-300 text-sm hover:underline mb-8 block">← 누끼콕</nuxt-link>
       <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">계정 및 데이터 삭제 요청</h1>
-      <p class="text-gray-500 dark:text-gray-400 text-sm mb-10">시행일: 2026년 10월 4일</p>
+      <p class="text-gray-500 dark:text-gray-400 text-sm mb-10">시행일: 2026년 10월 5일</p>
 
       <div class="text-gray-700 dark:text-gray-300 leading-relaxed space-y-6">
-        <p>누끼콕 계정과 개인 데이터 삭제를 원하시면, 로그인에 사용한 이메일로 아래 주소에 요청해 주세요.</p>
+        <p>누끼콕 계정은 앱에서 바로 삭제할 수 있어요. 앱을 쓸 수 없다면 이메일로 요청해 주세요.</p>
 
         <div class="bg-pink-50 dark:bg-gray-800 rounded-2xl p-6 border border-pink-200 dark:border-gray-700">
-          <p class="font-semibold text-gray-900 dark:text-white mb-1">삭제 요청 이메일</p>
+          <p class="font-semibold text-gray-900 dark:text-white mb-1">앱에서 삭제하기</p>
+          <p class="text-sm">누끼콕 앱 → <strong>내 정보</strong> → <strong>계정 삭제</strong></p>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">로그인한 지 오래됐다면 본인 확인을 위해 한 번 더 로그인해야 할 수 있어요.</p>
+        </div>
+
+        <div class="rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
+          <p class="font-semibold text-gray-900 dark:text-white mb-1">이메일로 요청하기</p>
           <a href="mailto:justinit.service@gmail.com?subject=[누끼콕] 계정 삭제 요청"
              class="text-pink-700 dark:text-pink-300 hover:underline">
             justinit.service@gmail.com
           </a>
           <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">제목: [누끼콕] 계정 삭제 요청</p>
-          <p class="text-sm text-gray-500 dark:text-gray-400">본문: 로그인 방식(Google 또는 Apple)과 계정 이메일</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">본문: 로그인 방식(Google, Apple 또는 카카오)과 계정 이메일</p>
         </div>
 
         <div>
-          <p class="font-semibold text-gray-900 dark:text-white mb-2">삭제되는 데이터</p>
+          <p class="font-semibold text-gray-900 dark:text-white mb-2">바로 삭제되는 데이터</p>
           <ul class="list-disc pl-5 space-y-1 text-sm">
-            <li>계정 정보 (이메일, 이름, 계정 식별자)</li>
-            <li>계정에 연결된 구매 내역 정보</li>
-            <li>문의 내용과 첨부 사진·파일 (아래 '법령에 따라 보관하는 데이터' 제외)</li>
+            <li>로그인 계정 (이메일, 이름·닉네임)</li>
+            <li>카카오로 로그인했다면 카카오 계정과 누끼콕의 연결도 끊어요.</li>
           </ul>
         </div>
 
         <div>
           <p class="font-semibold text-gray-900 dark:text-white mb-2">법령에 따라 보관하는 데이터</p>
-          <p class="text-sm mb-2">「전자상거래 등에서의 소비자보호에 관한 법률」에 따라 아래 정보는 정해진 기간 동안 따로 보관한 뒤 파기합니다. 이 기간에는 법령에서 정한 목적 외에는 쓰지 않습니다.</p>
+          <p class="text-sm mb-2">「전자상거래 등에서의 소비자보호에 관한 법률」에 따라 아래 정보는 다른 정보와 분리해 정해진 기간 동안 보관한 뒤 파기합니다. 이 기간에는 법령에서 정한 목적과 구매 관련 문의 응대 외에는 쓰지 않습니다.</p>
           <ul class="list-disc pl-5 space-y-1 text-sm">
-            <li>구매 기록: 5년</li>
-            <li>소비자 불만·분쟁 처리 기록(문의): 3년</li>
+            <li>회원·구매 기록 (계정 식별자, 로그인 방식, 가입·삭제 일시, 구매 상태): 5년</li>
+            <li>문의 내용과 첨부 사진·동영상 (소비자 불만·분쟁 처리 기록): 3년</li>
           </ul>
         </div>
 
         <div>
           <p class="font-semibold text-gray-900 dark:text-white mb-2">처리 기간</p>
-          <p class="text-sm">요청 접수 후 영업일 기준 7일 이내에 처리하고, 처리 결과를 이메일로 알려드립니다.</p>
+          <p class="text-sm">앱에서 삭제하면 바로 처리돼요. 이메일 요청은 접수 후 영업일 기준 7일 이내에 처리하고, 결과를 이메일로 알려드립니다.</p>
         </div>
 
         <div>

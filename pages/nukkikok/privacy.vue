@@ -3,7 +3,7 @@
     <div class="max-w-3xl mx-auto px-6 py-16">
       <nuxt-link to="/nukkikok" class="text-pink-700 dark:text-pink-300 text-sm hover:underline mb-8 block">← 누끼콕</nuxt-link>
       <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">개인정보처리방침</h1>
-      <p class="text-gray-500 dark:text-gray-400 text-sm mb-10">시행일: 2026년 10월 4일</p>
+      <p class="text-gray-500 dark:text-gray-400 text-sm mb-10">시행일: 2026년 10월 5일</p>
 
       <div class="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 leading-relaxed space-y-8">
 
@@ -13,6 +13,7 @@
           <h2 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">사진은 기기 밖으로 나가지 않습니다</h2>
           <p>스티커를 만들기 위해 고른 사진과 그 결과물은 <strong>모두 이용자의 기기 안에서만 처리</strong>됩니다. 피사체 추출, 얼굴 인식(머리카락 다듬기), 영역 보정은 기기에 내장된 기능과 앱에 포함된 모델로 동작하며, 운영자는 이 사진을 서버로 전송하거나 수집하지 않습니다.</p>
           <p class="mt-2">'이전 작업 계속하기'를 위해 마지막으로 자른 사진이 앱 내부 저장공간에 보관되며, 앱을 삭제하면 함께 지워집니다.</p>
+          <p class="mt-2">단, 이용자가 문의하기에 직접 첨부한 사진·동영상은 문의 답변을 위해 서버에 저장됩니다(아래 1항 '문의' 참고).</p>
         </section>
 
         <section>
@@ -29,7 +30,7 @@
               <tbody class="align-top">
                 <tr class="border-b border-gray-100 dark:border-gray-800">
                   <td class="py-2 pr-4 whitespace-nowrap">로그인 (선택)</td>
-                  <td class="py-2 pr-4">이메일 주소, 이름(소셜 계정이 제공하는 경우), 계정 고유 식별자</td>
+                  <td class="py-2 pr-4">Google·Apple·카카오 계정의 이메일 주소와 이름(닉네임), 계정 고유 식별자, 로그인 방식, 기기 종류(Android/iOS), 가입·최근 로그인 시각</td>
                   <td class="py-2">구매 내역을 계정에 연결해 재설치·기기 변경 후에도 유지, 문의 응대</td>
                 </tr>
                 <tr class="border-b border-gray-100 dark:border-gray-800">
@@ -39,7 +40,7 @@
                 </tr>
                 <tr class="border-b border-gray-100 dark:border-gray-800">
                   <td class="py-2 pr-4 whitespace-nowrap">문의</td>
-                  <td class="py-2 pr-4">문의 내용, 이용자가 직접 첨부한 사진·파일, 계정 식별자, 앱 버전·기기 정보</td>
+                  <td class="py-2 pr-4">문의 유형·제목·내용, 이용자가 직접 첨부한 사진·동영상, 계정 식별자, 앱 버전·기기 정보</td>
                   <td class="py-2">문의 확인 및 답변</td>
                 </tr>
                 <tr class="border-b border-gray-100 dark:border-gray-800">
@@ -61,7 +62,8 @@
         <section>
           <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">2. 보유 및 이용 기간</h2>
           <ul class="list-disc pl-5 space-y-1">
-            <li>계정 정보: 계정 삭제 시까지. 삭제 요청을 받으면 지체 없이 파기합니다.</li>
+            <li>로그인 계정(이메일, 이름): 계정 삭제 시 즉시 삭제합니다.</li>
+            <li>회원 기록(계정 식별자, 로그인 방식, 가입·삭제 일시, 구매 상태): 계정 삭제 후 다른 정보와 분리해 5년간 보관한 뒤 파기합니다. 구매 기록 보관 의무를 지키고 구매 관련 문의에 답하기 위해서입니다.</li>
             <li>문의 내용과 첨부 파일: 문의 처리 후 3년 (「전자상거래 등에서의 소비자보호에 관한 법률」에 따른 소비자 불만·분쟁 처리 기록)</li>
             <li>구매 기록: 5년 (같은 법률에 따른 대금 결제 및 재화 공급 기록)</li>
             <li>이용 통계: 수집일로부터 최대 14개월</li>
@@ -75,7 +77,7 @@
 
         <section>
           <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">4. 처리 위탁 및 국외 이전</h2>
-          <p>서비스 운영을 위해 아래 업체에 개인정보 처리를 맡기고 있으며, 이 과정에서 정보가 국외에 저장될 수 있습니다. 정보는 서비스 이용 시 네트워크를 통해 전송되며, 위 2항의 기간 또는 위탁 계약 종료 시까지 보관됩니다.</p>
+          <p>서비스 운영을 위해 아래 업체에 개인정보 처리를 맡기고 있으며, 카카오를 제외한 업체는 정보를 국외에 저장할 수 있습니다. 정보는 서비스 이용 시 네트워크를 통해 전송되며, 위 2항의 기간 또는 위탁 계약 종료 시까지 보관됩니다.</p>
           <div class="overflow-x-auto mt-3">
             <table class="w-full text-sm border-collapse">
               <thead>
@@ -97,14 +99,19 @@
                   <td class="py-2">계정 정보, 구매 확인 정보</td>
                 </tr>
                 <tr class="border-b border-gray-100 dark:border-gray-800">
+                  <td class="py-2 pr-4">Kakao Corp. (대한민국)</td>
+                  <td class="py-2 pr-4">카카오 로그인</td>
+                  <td class="py-2">이용자가 동의한 카카오 계정 정보(이메일, 닉네임), 계정 식별자</td>
+                </tr>
+                <tr class="border-b border-gray-100 dark:border-gray-800">
                   <td class="py-2 pr-4">Cloudflare, Inc. (미국)</td>
                   <td class="py-2 pr-4">문의 첨부 파일 저장 및 전송</td>
-                  <td class="py-2">문의 첨부 사진·파일</td>
+                  <td class="py-2">문의 첨부 사진·동영상</td>
                 </tr>
                 <tr>
                   <td class="py-2 pr-4">Discord Inc. (미국)</td>
                   <td class="py-2 pr-4">새 문의 접수 알림 (운영자 확인용)</td>
-                  <td class="py-2">문의 번호, 문의 내용</td>
+                  <td class="py-2">문의 유형·제목·내용, 기기 정보, 첨부 링크와 첫 번째 사진 미리보기</td>
                 </tr>
               </tbody>
             </table>
@@ -122,7 +129,7 @@
 
         <section>
           <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">6. 이용자의 권리와 행사 방법</h2>
-          <p>이용자는 언제든지 자신의 개인정보 열람, 정정, 삭제, 처리 정지를 요청할 수 있습니다. 계정과 관련 데이터의 삭제는 <nuxt-link to="/nukkikok/delete-account" class="text-pink-700 dark:text-pink-300 hover:underline">계정 삭제 요청 페이지</nuxt-link>의 안내에 따라 신청해 주시면 확인 후 지체 없이 처리합니다. 법령에 따라 보관해야 하는 정보는 해당 기간이 지난 뒤 파기합니다.</p>
+          <p>이용자는 언제든지 자신의 개인정보 열람, 정정, 삭제, 처리 정지를 요청할 수 있습니다. 계정은 앱의 <strong>내 정보 → 계정 삭제</strong>에서 바로 삭제할 수 있으며, 앱을 쓸 수 없다면 <nuxt-link to="/nukkikok/delete-account" class="text-pink-700 dark:text-pink-300 hover:underline">계정 삭제 요청 페이지</nuxt-link>의 안내에 따라 이메일로 신청할 수 있습니다. 법령에 따라 보관해야 하는 정보는 해당 기간이 지난 뒤 파기합니다.</p>
         </section>
 
         <section>

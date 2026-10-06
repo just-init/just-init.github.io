@@ -3,7 +3,7 @@
     <div class="max-w-3xl mx-auto px-6 py-16">
       <nuxt-link to="/nukkikok" class="text-pink-700 dark:text-pink-300 text-sm hover:underline mb-8 block">← 누끼콕</nuxt-link>
       <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">이용약관</h1>
-      <p class="text-gray-500 dark:text-gray-400 text-sm mb-10">시행일: 2026년 10월 4일</p>
+      <p class="text-gray-500 dark:text-gray-400 text-sm mb-10">시행일: 2026년 10월 5일</p>
 
       <div class="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 leading-relaxed space-y-8">
 
@@ -24,8 +24,9 @@
         <section>
           <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">3. 계정</h2>
           <ul class="list-disc pl-5 space-y-1">
-            <li>서비스는 로그인 없이도 쓸 수 있습니다. 유료 상품 구매와 문의에는 Google 또는 Apple 계정으로 로그인해야 할 수 있습니다.</li>
+            <li>서비스는 로그인 없이도 쓸 수 있습니다. 유료 상품 구매와 문의에는 Google, Apple 또는 카카오 계정으로 로그인해야 할 수 있습니다.</li>
             <li>이용자는 자신의 계정을 직접 관리해야 하며, 타인의 계정을 쓰면 안 됩니다.</li>
+            <li>이용자는 언제든지 앱의 내 정보 → 계정 삭제에서 계정을 삭제할 수 있습니다.</li>
           </ul>
         </section>
 
