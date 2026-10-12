@@ -3,7 +3,7 @@
     <div class="max-w-3xl mx-auto px-6 py-16">
       <nuxt-link to="/nukkikok" class="text-pink-700 dark:text-pink-300 text-sm hover:underline mb-8 block">← 누끼콕</nuxt-link>
       <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">개인정보처리방침</h1>
-      <p class="text-gray-500 dark:text-gray-400 text-sm mb-10">시행일: 2026년 10월 5일</p>
+      <p class="text-gray-500 dark:text-gray-400 text-sm mb-10">시행일: 2026년 10월 12일</p>
 
       <div class="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 leading-relaxed space-y-8">
 
@@ -48,10 +48,15 @@
                   <td class="py-2 pr-4">광고 식별자(Android 광고 ID / iOS IDFA, 허용한 경우), 기기·앱 정보, IP 주소</td>
                   <td class="py-2">보상형 광고 제공(광고 시청 시 워터마크 1회 해제), 광고 성과 측정, 부정 사용 방지</td>
                 </tr>
-                <tr>
+                <tr class="border-b border-gray-100 dark:border-gray-800">
                   <td class="py-2 pr-4 whitespace-nowrap">이용 통계</td>
                   <td class="py-2 pr-4">앱 인스턴스 ID, 화면 조회, 스티커 저장·구매 시도 등 이용 이벤트, 기기·OS 정보, 대략적 위치(국가·지역)</td>
                   <td class="py-2">서비스 개선 및 오류 파악</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pr-4 whitespace-nowrap">비정상 종료 로그</td>
+                  <td class="py-2 pr-4">앱이 비정상 종료되거나 오류가 났을 때의 오류 내용과 발생 위치, 발생 시각, 기기 모델·OS·앱 버전, 앱 설치 식별자</td>
+                  <td class="py-2">앱 오류 파악 및 수정</td>
                 </tr>
               </tbody>
             </table>
@@ -67,6 +72,7 @@
             <li>문의 내용과 첨부 파일: 문의 처리 후 3년 (「전자상거래 등에서의 소비자보호에 관한 법률」에 따른 소비자 불만·분쟁 처리 기록)</li>
             <li>구매 기록: 5년 (같은 법률에 따른 대금 결제 및 재화 공급 기록)</li>
             <li>이용 통계: 수집일로부터 최대 14개월</li>
+            <li>비정상 종료 로그: 수집일로부터 90일</li>
           </ul>
         </section>
 
@@ -90,8 +96,8 @@
               <tbody class="align-top">
                 <tr class="border-b border-gray-100 dark:border-gray-800">
                   <td class="py-2 pr-4">Google LLC (미국)</td>
-                  <td class="py-2 pr-4">Firebase 로그인·데이터 저장, Firebase Analytics 이용 통계, AdMob 광고, Google Play 결제</td>
-                  <td class="py-2">계정 정보, 문의 내용, 구매 확인 정보, 이용 이벤트, 광고 식별자, 기기 정보</td>
+                  <td class="py-2 pr-4">Firebase 로그인·데이터 저장, Firebase Analytics 이용 통계, Firebase Crashlytics 비정상 종료 로그, AdMob 광고, Google Play 결제</td>
+                  <td class="py-2">계정 정보, 문의 내용, 구매 확인 정보, 이용 이벤트, 비정상 종료 로그, 광고 식별자, 기기 정보</td>
                 </tr>
                 <tr class="border-b border-gray-100 dark:border-gray-800">
                   <td class="py-2 pr-4">Apple Inc. (미국)</td>
