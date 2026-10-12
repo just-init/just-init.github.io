@@ -7,10 +7,10 @@
         <h1 class="nk-hero__title nk-fade-2">사진 속 그 아이만,<br><span class="nk-pink-mark">콕!</span></h1>
         <p class="nk-hero__sub nk-fade-3">우리 아기, 강아지, 고양이, 최애까지.<br>누끼콕이 자동으로 누끼를 따서 스티커로 만들어 드려요.</p>
         <div class="nk-hero__cta nk-fade-4">
-          <span class="nk-btn nk-btn--primary" aria-disabled="true">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.37.6 1.23 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/></svg>
-            Google Play 출시 준비 중
-          </span>
+          <a href="https://play.google.com/store/apps/details?id=com.brenin.nukkikok" class="nk-btn nk-btn--primary" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.5 1.449a1 1 0 0 1 0 1.488l-2.5 1.449-2.527-2.527 2.527-2.86zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.635z"/></svg>
+            Google Play에서 받기
+          </a>
         </div>
       </div>
       <div class="nk-hero__visual nk-fade-3">
@@ -86,8 +86,14 @@
 
     <!-- CTA Bottom -->
     <section class="nk-cta reveal">
-      <h2 class="nk-cta__title">곧 만나요</h2>
-      <p class="nk-cta__sub">누끼콕은 2026년 11월 Google Play에 먼저 출시할 예정이에요.</p>
+      <h2 class="nk-cta__title">지금 바로 만들어 보세요</h2>
+      <p class="nk-cta__sub">누끼콕은 Google Play에서 무료로 받을 수 있어요. iOS 버전은 준비 중이에요.</p>
+      <div class="nk-cta__btn">
+        <a href="https://play.google.com/store/apps/details?id=com.brenin.nukkikok" class="nk-btn nk-btn--primary" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.5 1.449a1 1 0 0 1 0 1.488l-2.5 1.449-2.527-2.527 2.527-2.86zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.635z"/></svg>
+          Google Play에서 받기
+        </a>
+      </div>
     </section>
 
     <!-- Footer -->
@@ -111,7 +117,7 @@ export default {
   name: 'NukkiKokPage',
   head() {
     return {
-      title: '누끼콕 - 아기·반려동물·최애 사진 스티커 만들기',
+      title: '누끼콕 - 나만의 스티커 만들기',
       meta: [
         { hid: 'description', name: 'description', content: '사진 속 우리 아기, 강아지, 고양이, 최애만 콕! 자동으로 누끼 따서 나만의 스티커로 만들어요.' },
       ],
@@ -224,7 +230,11 @@ export default {
   background: var(--ink);
   color: #fff;
 }
-.nk-btn[aria-disabled='true'] { cursor: default; }
+.nk-btn--primary { transition: transform 0.2s, box-shadow 0.2s; }
+.nk-btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(17, 17, 17, 0.18);
+}
 
 .nk-hero__visual {
   display: flex;
@@ -379,7 +389,7 @@ export default {
 .nk-cta__sub {
   font-size: 16px;
   color: var(--ink-soft);
-  margin: 0;
+  margin: 0 0 32px;
 }
 
 /* ── Footer ───────────────────────────────────────────── */
