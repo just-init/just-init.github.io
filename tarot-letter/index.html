@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>타로레터 — 고민을 쓰면, 우주가 편지를 보내줘요</title>
+  <meta name="description" content="마음속 고민을 편지처럼 적고, 직감으로 카드 세 장을 고르면 당신만을 위한 타로 편지가 도착합니다.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0D1127;
+      --navy-light: #151A36;
+      --navy-card: #1A1F3D;
+      --gold: #C5A55A;
+      --gold-light: #E0CC8A;
+      --gold-dim: rgba(197, 165, 90, 0.15);
+      --text: #E8E4DC;
+      --text-dim: #9A9689;
+      --serif: 'Noto Serif KR', serif;
+      --sans: 'Noto Sans KR', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--navy);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── Stars background ── */
+    .stars {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .stars span {
+      position: absolute;
+      border-radius: 50%;
+      background: #fff;
+      animation: twinkle var(--dur) ease-in-out infinite alternate;
+    }
+    @keyframes twinkle {
+      from { opacity: 0.15; }
+      to { opacity: 0.7; }
+    }
+
+    /* ── Layout ── */
+    section {
+      position: relative;
+      z-index: 1;
+    }
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px;
+      background: radial-gradient(ellipse at 50% 30%, rgba(197,165,90,0.06) 0%, transparent 70%);
+    }
+    .hero-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 24px;
+      margin-bottom: 32px;
+      box-shadow: 0 8px 40px rgba(197,165,90,0.25);
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      color: var(--gold);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    .hero .subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: var(--text-dim);
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+    .hero-phones {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+    .hero-phones img {
+      width: min(200px, 30vw);
+      border-radius: 20px;
+      box-shadow: 0 16px 60px rgba(0,0,0,0.5);
+    }
+    .store-badges {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border: 1.5px solid var(--gold);
+      border-radius: 12px;
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.3s;
+      background: rgba(197,165,90,0.05);
+    }
+    .store-badge:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+    .store-badge svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    /* ── Section common ── */
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: var(--gold);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .section-sub {
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 1rem;
+      margin-bottom: 56px;
+      font-weight: 300;
+    }
+
+    /* ── How it works ── */
+    .how-it-works {
+      padding: 100px 24px;
+      background: linear-gradient(180deg, transparent 0%, rgba(197,165,90,0.03) 50%, transparent 100%);
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 32px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .step {
+      text-align: center;
+      padding: 36px 24px;
+      border-radius: 20px;
+      background: var(--navy-card);
+      border: 1px solid rgba(197,165,90,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .step:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(197,165,90,0.1);
+    }
+    .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--gold-dim);
+      color: var(--gold);
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .step h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .step p {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      font-weight: 300;
+    }
+
+    /* ── Screenshots carousel ── */
+    .screenshots {
+      padding: 100px 0;
+    }
+    .screenshot-track {
+      display: flex;
+      gap: 28px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 0 max(24px, calc((100vw - 1080px) / 2));
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .screenshot-track::-webkit-scrollbar { display: none; }
+    .screenshot-item {
+      scroll-snap-align: center;
+      flex-shrink: 0;
+      width: 260px;
+      text-align: center;
+    }
+    .screenshot-item img {
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.4);
+      margin-bottom: 20px;
+    }
+    .screenshot-item .caption-main {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 4px;
+    }
+    .screenshot-item .caption-sub {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      font-weight: 300;
+    }
+
+    /* ── Features ── */
+    .features {
+      padding: 100px 24px;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .feature-card {
+      padding: 32px 28px;
+      border-radius: 20px;
+      background: var(--navy-card);
+      border: 1px solid rgba(197,165,90,0.08);
+      transition: border-color 0.3s;
+    }
+    .feature-card:hover {
+      border-color: rgba(197,165,90,0.3);
+    }
+    .feature-icon {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+      display: block;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      border-radius: 14px;
+      background: var(--gold-dim);
+    }
+    .feature-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .feature-card p {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      font-weight: 300;
+    }
+
+    /* ── Who is it for ── */
+    .target {
+      padding: 100px 24px;
+      background: linear-gradient(180deg, transparent 0%, rgba(197,165,90,0.03) 50%, transparent 100%);
+    }
+    .target-list {
+      max-width: 640px;
+      margin: 0 auto;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .target-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px 24px;
+      border-radius: 16px;
+      background: var(--navy-card);
+      border: 1px solid rgba(197,165,90,0.08);
+      font-size: 0.95rem;
+      font-weight: 400;
+    }
+    .target-list li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      margin-top: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    /* ── CTA ── */
+    .cta {
+      padding: 120px 24px;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(197,165,90,0.08) 0%, transparent 60%);
+    }
+    .cta h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .cta p {
+      color: var(--text-dim);
+      margin-bottom: 40px;
+      font-weight: 300;
+    }
+
+    /* ── Footer ── */
+    footer {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid rgba(197,165,90,0.1);
+      color: var(--text-dim);
+      font-size: 0.8rem;
+    }
+
+    /* ── Lang switcher ── */
+    .lang-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: flex-end;
+      gap: 4px;
+      padding: 12px 24px;
+      background: rgba(13,17,39,0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(197,165,90,0.08);
+    }
+    .lang-btn {
+      padding: 6px 14px;
+      border: 1px solid rgba(197,165,90,0.25);
+      border-radius: 8px;
+      background: transparent;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: var(--sans);
+    }
+    .lang-btn.active {
+      background: var(--gold);
+      color: var(--navy);
+      border-color: var(--gold);
+      font-weight: 700;
+    }
+    .lang-btn:hover:not(.active) {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .hero-phones img { width: 140px; border-radius: 14px; }
+      .screenshot-item { width: 200px; }
+      .steps { grid-template-columns: 1fr; }
+    }
+
+    /* ── Fade-in animation ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Language switcher -->
+<nav class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('ko')">KR</button>
+  <button class="lang-btn" onclick="setLang('en')">EN</button>
+  <button class="lang-btn" onclick="setLang('ja')">JP</button>
+</nav>
+
+<!-- Stars -->
+<div class="stars" id="stars"></div>
+
+<!-- Hero -->
+<section class="hero">
+  <img class="hero-icon" src="images/app-icon-1024.jpg" alt="타로레터 앱 아이콘">
+  <h1 data-i18n="hero-title">고민을 쓰면, 우주가 편지를 보내줘요</h1>
+  <p class="subtitle" data-i18n="hero-sub">마음속 고민을 적고, 카드를 고르면 — 당신만을 위한 타로 편지가 도착합니다</p>
+  <div class="hero-phones">
+    <img src="images/image1.PNG" alt="홈 화면" data-lang-img="1">
+    <img src="images/image5.png" alt="편지 도착" data-lang-img="5">
+    <img src="images/image6.png" alt="리딩 결과" data-lang-img="6">
+  </div>
+  <div class="store-badges">
+    <a href="https://apps.apple.com/app/id6759655220" class="store-badge" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      <span>App Store</span>
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.brenin.tarotletter" class="store-badge" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.5 1.449a1 1 0 0 1 0 1.488l-2.5 1.449-2.527-2.527 2.527-2.86zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.635z"/></svg>
+      <span>Google Play</span>
+    </a>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="how-it-works">
+  <div class="container">
+    <h2 class="section-title fade-in" data-i18n="how-title">이렇게 사용하세요</h2>
+    <p class="section-sub fade-in" data-i18n="how-sub">세 단계면 충분해요</p>
+    <div class="steps">
+      <div class="step fade-in">
+        <div class="step-num">1</div>
+        <h3 data-i18n="step1-title">고민을 적어주세요</h3>
+        <p data-i18n="step1-desc">마음에 걸리는 이야기를</br>편하게 적어주세요.</br>무엇이든 괜찮아요.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-num">2</div>
+        <h3 data-i18n="step2-title">카드 세 장을 고르세요</h3>
+        <p data-i18n="step2-desc">직감을 믿고</br>끌리는 카드를 골라보세요.</br>세 장이면 충분합니다.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-num">3</div>
+        <h3 data-i18n="step3-title">5분 후, 편지가 도착해요</h3>
+        <p data-i18n="step3-desc">타로가 당신의 고민을 읽고</br>편지를 씁니다.</br>잠시만 기다려주세요.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Screenshots -->
+<section class="screenshots">
+  <div class="container">
+    <h2 class="section-title fade-in" data-i18n="ss-title">미리 만나보세요</h2>
+    <p class="section-sub fade-in" data-i18n="ss-sub">고민부터 편지까지, 하나의 흐름으로 이어집니다</p>
+  </div>
+  <div class="screenshot-track">
+    <div class="screenshot-item fade-in">
+      <img src="images/image1.PNG" alt="홈 화면" data-lang-img="1">
+      <p class="caption-main" data-i18n="ss1-main">우주가 보내는 편지</p>
+      <p class="caption-sub" data-i18n="ss1-sub">고민을 적으면, 타로가 편지로 답해드려요</p>
+    </div>
+    <div class="screenshot-item fade-in">
+      <img src="images/image2.PNG" alt="고민 입력" data-lang-img="2">
+      <p class="caption-main" data-i18n="ss2-main">오늘, 어떤 고민이 있으세요?</p>
+      <p class="caption-sub" data-i18n="ss2-sub">편하게 적어주세요 — 무엇이든 괜찮아요</p>
+    </div>
+    <div class="screenshot-item fade-in">
+      <img src="images/image3.png" alt="카드 선택" data-lang-img="3">
+      <p class="caption-main" data-i18n="ss3-main">직감을 믿고 카드를 골라보세요</p>
+      <p class="caption-sub" data-i18n="ss3-sub">끌리는 세 장이 당신의 이야기를 읽어줄 거예요</p>
+    </div>
+    <div class="screenshot-item fade-in">
+      <img src="images/image4.PNG" alt="봉인 대기" data-lang-img="4">
+      <p class="caption-main" data-i18n="ss4-main">5분만 기다려주세요</p>
+      <p class="caption-sub" data-i18n="ss4-sub">타로가 당신의 고민을 읽고 편지를 쓰고 있어요</p>
+    </div>
+    <div class="screenshot-item fade-in">
+      <img src="images/image5.png" alt="편지 도착" data-lang-img="5">
+      <p class="caption-main" data-i18n="ss5-main">당신을 위한 편지가 도착했어요</p>
+      <p class="caption-sub" data-i18n="ss5-sub">세 장의 카드가 전하는 당신만의 이야기</p>
+    </div>
+    <div class="screenshot-item fade-in">
+      <img src="images/image6.png" alt="리딩 편지" data-lang-img="6">
+      <p class="caption-main" data-i18n="ss6-main">우주의 편지</p>
+      <p class="caption-sub" data-i18n="ss6-sub">당신의 이야기가 담긴 개인화 리딩</p>
+    </div>
+    <div class="screenshot-item fade-in">
+      <img src="images/image7.png" alt="카드 리딩" data-lang-img="7">
+      <p class="caption-main" data-i18n="ss7-main">카드 리딩</p>
+      <p class="caption-sub" data-i18n="ss7-sub">현재 · 원인 · 행동, 세 관점으로 풀어드려요</p>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="features">
+  <div class="container">
+    <h2 class="section-title fade-in" data-i18n="feat-title">주요 기능</h2>
+    <p class="section-sub fade-in" data-i18n="feat-sub">당신의 고민에 진심으로 답합니다</p>
+    <div class="feature-grid">
+      <div class="feature-card fade-in">
+        <span class="feature-icon">&#9997;&#65039;</span>
+        <h3 data-i18n="f1-title">맞춤 타로 편지</h3>
+        <p data-i18n="f1-desc">내 고민 맥락이 담긴 개인화 리딩. 같은 카드라도 나만의 이야기가 됩니다.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">&#127183;</span>
+        <h3 data-i18n="f2-title">3카드 스프레드</h3>
+        <p data-i18n="f2-desc">현재 · 원인 · 행동 — 세 가지 관점으로 고민을 풀어드려요.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">&#10024;</span>
+        <h3 data-i18n="f3-title">오늘의 원카드</h3>
+        <p data-i18n="f3-desc">매일 한 장, 가볍게 뽑는 데일리 리딩으로 하루를 시작하세요.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">&#128218;</span>
+        <h3 data-i18n="f4-title">리딩 보관함</h3>
+        <p data-i18n="f4-desc">지난 편지를 다시 꺼내볼 수 있어요. 시간이 지나면 새롭게 읽힙니다.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">&#128276;</span>
+        <h3 data-i18n="f5-title">5분 후 알림</h3>
+        <p data-i18n="f5-desc">편지가 완성되면 알림으로 알려드려요. 기다리는 동안 앱을 닫아도 괜찮아요.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">&#128278;</span>
+        <h3 data-i18n="f6-title">고민 카테고리</h3>
+        <p data-i18n="f6-desc">연애, 커리어, 관계, 자기감정 등 고민 주제를 선택하면 더 깊은 리딩을 받을 수 있어요.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Target audience -->
+<section class="target">
+  <div class="container">
+    <h2 class="section-title fade-in" data-i18n="who-title">이런 분께 추천합니다</h2>
+    <p class="section-sub fade-in" data-i18n="who-sub">마음속 이야기를 꺼낼 곳이 필요하다면</p>
+    <ul class="target-list">
+      <li class="fade-in" data-i18n="who1">연애, 이직, 관계 고민이 머릿속에서 떠나지 않는 분</li>
+      <li class="fade-in" data-i18n="who2">타로가 궁금하지만 대면 상담은 부담스러운 분</li>
+      <li class="fade-in" data-i18n="who3">중요한 결정 앞에서 다른 시각이 필요한 분</li>
+      <li class="fade-in" data-i18n="who4">밤마다 혼자 생각이 많아지는 분</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2 class="fade-in" data-i18n="cta-title">고민을 적어보세요.<br>우주가 보내는 편지가 도착합니다.</h2>
+  <p class="fade-in" data-i18n="cta-sub">지금 타로레터를 만나보세요</p>
+  <div class="store-badges fade-in">
+    <a href="https://apps.apple.com/app/id6759655220" class="store-badge" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      <span>App Store</span>
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.brenin.tarotletter" class="store-badge" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.5 1.449a1 1 0 0 1 0 1.488l-2.5 1.449-2.527-2.527 2.527-2.86zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.635z"/></svg>
+      <span>Google Play</span>
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p style="margin-bottom:12px;">
+    <a href="privacy.html" style="color:var(--text-dim);text-decoration:none;margin:0 8px;">개인정보 처리방침</a> |
+    <a href="terms.html" style="color:var(--text-dim);text-decoration:none;margin:0 8px;">이용약관</a>
+  </p>
+  <p>Just Init 대표 최정심 | 사업자등록번호 524-44-01023<br>
+      이메일 : justinit.service@gmail.com | 번호 : 010-6822-9802<br>
+      &copy; 2026 Just Init. All rights reserved.</p>
+</footer>
+
+<script>
+// ── i18n data ──
+const i18n = {
+  ko: {
+    'hero-title': '고민을 쓰면, 우주가 편지를 보내줘요',
+    'hero-sub': '마음속 고민을 적고, 카드를 고르면 — 당신만을 위한 타로 편지가 도착합니다',
+    'how-title': '이렇게 사용하세요',
+    'how-sub': '세 단계면 충분해요',
+    'step1-title': '고민을 적어주세요',
+    'step1-desc': '마음에 걸리는 이야기를 편하게 적어주세요. 무엇이든 괜찮아요.',
+    'step2-title': '카드 세 장을 고르세요',
+    'step2-desc': '직감을 믿고 끌리는 카드를 골라보세요. 세 장이면 충분합니다.',
+    'step3-title': '5분 후, 편지가 도착해요',
+    'step3-desc': '타로가 당신의 고민을 읽고 편지를 씁니다. 잠시만 기다려주세요.',
+    'ss-title': '미리 만나보세요',
+    'ss-sub': '고민부터 편지까지, 하나의 흐름으로 이어집니다',
+    'ss1-main': '우주가 보내는 편지',
+    'ss1-sub': '고민을 적으면, 타로가 편지로 답해드려요',
+    'ss2-main': '오늘, 어떤 고민이 있으세요?',
+    'ss2-sub': '편하게 적어주세요 — 무엇이든 괜찮아요',
+    'ss3-main': '직감을 믿고 카드를 골라보세요',
+    'ss3-sub': '끌리는 세 장이 당신의 이야기를 읽어줄 거예요',
+    'ss4-main': '5분만 기다려주세요',
+    'ss4-sub': '타로가 당신의 고민을 읽고 편지를 쓰고 있어요',
+    'ss5-main': '당신을 위한 편지가 도착했어요',
+    'ss5-sub': '세 장의 카드가 전하는 당신만의 이야기',
+    'ss6-main': '우주의 편지',
+    'ss6-sub': '당신의 이야기가 담긴 개인화 리딩',
+    'ss7-main': '카드 리딩',
+    'ss7-sub': '현재 · 원인 · 행동, 세 관점으로 풀어드려요',
+    'feat-title': '주요 기능',
+    'feat-sub': '당신의 고민에 진심으로 답합니다',
+    'f1-title': '맞춤 타로 편지',
+    'f1-desc': '내 고민 맥락이 담긴 개인화 리딩. 같은 카드라도 나만의 이야기가 됩니다.',
+    'f2-title': '3카드 스프레드',
+    'f2-desc': '현재 · 원인 · 행동 — 세 가지 관점으로 고민을 풀어드려요.',
+    'f3-title': '오늘의 원카드',
+    'f3-desc': '매일 한 장, 가볍게 뽑는 데일리 리딩으로 하루를 시작하세요.',
+    'f4-title': '리딩 보관함',
+    'f4-desc': '지난 편지를 다시 꺼내볼 수 있어요. 시간이 지나면 새롭게 읽힙니다.',
+    'f5-title': '5분 후 알림',
+    'f5-desc': '편지가 완성되면 알림으로 알려드려요. 기다리는 동안 앱을 닫아도 괜찮아요.',
+    'f6-title': '고민 카테고리',
+    'f6-desc': '연애, 커리어, 관계, 자기감정 등 고민 주제를 선택하면 더 깊은 리딩을 받을 수 있어요.',
+    'who-title': '이런 분께 추천합니다',
+    'who-sub': '마음속 이야기를 꺼낼 곳이 필요하다면',
+    'who1': '연애, 이직, 관계 고민이 머릿속에서 떠나지 않는 분',
+    'who2': '타로가 궁금하지만 대면 상담은 부담스러운 분',
+    'who3': '중요한 결정 앞에서 다른 시각이 필요한 분',
+    'who4': '밤마다 혼자 생각이 많아지는 분',
+    'cta-title': '고민을 적어보세요.<br>우주가 보내는 편지가 도착합니다.',
+    'cta-sub': '지금 타로레터를 만나보세요',
+  },
+  en: {
+    'hero-title': 'Write your worries,<br>the universe writes back',
+    'hero-sub': 'Write your concerns, pick three tarot cards — a personalized tarot letter arrives just for you',
+    'how-title': 'How it works',
+    'how-sub': 'Three simple steps',
+    'step1-title': 'Write your concern',
+    'step1-desc': 'Write down what\'s weighing on your mind. Anything is okay.',
+    'step2-title': 'Pick three cards',
+    'step2-desc': 'Trust your instincts and choose the cards that call to you.',
+    'step3-title': 'Letter arrives in 5 min',
+    'step3-desc': 'The tarot reads your concern and writes a letter. Just wait a moment.',
+    'ss-title': 'Take a peek',
+    'ss-sub': 'From concern to letter — one seamless flow',
+    'ss1-main': 'A letter from the universe',
+    'ss1-sub': 'Write your worries, and tarot writes back',
+    'ss2-main': 'What\'s on your mind today?',
+    'ss2-sub': 'Feel free to write — anything is okay',
+    'ss3-main': 'Trust your instincts and pick your cards',
+    'ss3-sub': 'Three cards will read your story',
+    'ss4-main': 'Just 5 minutes, please',
+    'ss4-sub': 'The tarot is reading your concern and writing a letter',
+    'ss5-main': 'A letter just for you has arrived',
+    'ss5-sub': 'Your own story told through three cards',
+    'ss6-main': 'Letter from the universe',
+    'ss6-sub': 'A personalized reading woven around your story',
+    'ss7-main': 'Card reading',
+    'ss7-sub': 'Present · Cause · Action — three perspectives',
+    'feat-title': 'Key Features',
+    'feat-sub': 'Genuine answers to your concerns',
+    'f1-title': 'Tarot Letters',
+    'f1-desc': 'Personalized readings woven around your story. Same cards, your unique narrative.',
+    'f2-title': '3-Card Spread',
+    'f2-desc': 'Present · Cause · Action — three lenses on your concern.',
+    'f3-title': 'Daily One-Card',
+    'f3-desc': 'A quick daily pull for everyday guidance to start your day.',
+    'f4-title': 'Reading Archive',
+    'f4-desc': 'Revisit your past letters anytime. They read differently over time.',
+    'f5-title': 'Notification in 5 min',
+    'f5-desc': 'Get notified when your letter is ready. Feel free to close the app while you wait.',
+    'f6-title': 'Concern Categories',
+    'f6-desc': 'Choose a topic — love, career, relationships, emotions — for a deeper, more tailored reading.',
+    'who-title': 'Perfect for',
+    'who-sub': 'When you need a place to pour your heart out',
+    'who1': 'Anyone tangled in love, career, or relationship worries',
+    'who2': 'Tarot-curious people who prefer a private, quiet experience',
+    'who3': 'Anyone who needs a fresh perspective before a big decision',
+    'who4': 'Night thinkers who want to untangle their thoughts',
+    'cta-title': 'Write your concern.<br>A letter from the universe awaits.',
+    'cta-sub': 'Try Tomorrow Tarot today',
+  },
+  ja: {
+    'hero-title': '悩みを書けば、宇宙が手紙を届けます',
+    'hero-sub': '心の中の悩みを書いて、カードを選べば — あなただけのタロットレターが届きます',
+    'how-title': '使い方',
+    'how-sub': '3ステップで完了',
+    'step1-title': '悩みを書いてください',
+    'step1-desc': '気になることを気軽に書いてください。何でも大丈夫です。',
+    'step2-title': 'カードを3枚選んで',
+    'step2-desc': '直感を信じて、惹かれるカードを選んでください。',
+    'step3-title': '5分後、手紙が届きます',
+    'step3-desc': 'タロットがあなたの悩みを読んで手紙を書きます。少しだけお待ちください。',
+    'ss-title': '先に見てみましょう',
+    'ss-sub': '悩みから手紙まで、一つの流れでつながります',
+    'ss1-main': '宇宙が届ける手紙',
+    'ss1-sub': '悩みを書けば、タロットが手紙で答えます',
+    'ss2-main': '今日、どんな悩みがありますか？',
+    'ss2-sub': '気軽に書いてください — 何でも大丈夫です',
+    'ss3-main': '直感を信じてカードを選んで',
+    'ss3-sub': '惹かれる3枚があなたの物語を読み解きます',
+    'ss4-main': '5分だけお待ちください',
+    'ss4-sub': 'タロットがあなたの悩みを読んで手紙を書いています',
+    'ss5-main': 'あなたへの手紙が届きました',
+    'ss5-sub': '3枚のカードが伝える、あなただけの物語',
+    'ss6-main': '宇宙の手紙',
+    'ss6-sub': 'あなたの物語が込められた個別リーディング',
+    'ss7-main': 'カードリーディング',
+    'ss7-sub': '現在・原因・行動、3つの視点で読み解きます',
+    'feat-title': '主な機能',
+    'feat-sub': 'あなたの悩みに真剣に答えます',
+    'f1-title': 'パーソナルタロットレター',
+    'f1-desc': '悩みに寄り添った個別リーディング。同じカードでも、あなただけの物語になります。',
+    'f2-title': '3カードスプレッド',
+    'f2-desc': '現在・原因・行動 — 3つの視点で悩みを読み解きます。',
+    'f3-title': '今日のワンカード',
+    'f3-desc': '毎日1枚、気軽に引くデイリーリーディングで一日を始めましょう。',
+    'f4-title': 'リーディング保管庫',
+    'f4-desc': '過去の手紙をいつでも見返せます。時間が経つと新しく読めます。',
+    'f5-title': '5分後に通知',
+    'f5-desc': '手紙が完成したら通知でお知らせします。待っている間、アプリを閉じても大丈夫です。',
+    'f6-title': '悩みカテゴリ',
+    'f6-desc': '恋愛、キャリア、人間関係、感情など、悩みのテーマを選ぶとより深いリーディングが届きます。',
+    'who-title': 'こんな方におすすめ',
+    'who-sub': '心の中の話を出せる場所が必要なら',
+    'who1': '恋愛、転職、人間関係の悩みが頭から離れない方',
+    'who2': 'タロットに興味はあるけど、対面鑑定は気が引ける方',
+    'who3': '大事な決断の前に、別の視点がほしい方',
+    'who4': '夜になると一人で考えが止まらなくなる方',
+    'cta-title': '悩みを書いてみてください。<br>宇宙からの手紙が届きます。',
+    'cta-sub': '今すぐ明日タロットを体験してください',
+  }
+};
+
+let currentLang = 'ko';
+
+const langImages = {
+  1: { ko: 'images/image1.PNG', en: 'images/image1_en.png', ja: 'images/image1_ja.png' },
+  2: { ko: 'images/image2.PNG', en: 'images/image2_en.png', ja: 'images/image2_ja.png' },
+  3: { ko: 'images/image3.png', en: 'images/image3_en.png', ja: 'images/image3_ja.png' },
+  4: { ko: 'images/image4.PNG', en: 'images/image4_en.png', ja: 'images/image4_ja.png' },
+  5: { ko: 'images/image5.png', en: 'images/image5_en.png', ja: 'images/image5_ja.png' },
+  6: { ko: 'images/image6.png', en: 'images/image6_en.png', ja: 'images/image6_ja.png' },
+  7: { ko: 'images/image7.png', en: 'images/image7_en.png', ja: 'images/image7_ja.png' },
+};
+
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.textContent.trim() === {ko:'KR',en:'EN',ja:'JP'}[lang]);
+  });
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (i18n[lang] && i18n[lang][key]) {
+      el.innerHTML = i18n[lang][key];
+    }
+  });
+  document.querySelectorAll('[data-lang-img]').forEach(img => {
+    const num = img.getAttribute('data-lang-img');
+    if (langImages[num] && langImages[num][lang]) {
+      img.src = langImages[num][lang];
+    }
+  });
+  document.documentElement.lang = lang === 'ko' ? 'ko' : lang === 'ja' ? 'ja' : 'en';
+}
+
+// ── Stars ──
+(function createStars() {
+  const container = document.getElementById('stars');
+  for (let i = 0; i < 80; i++) {
+    const s = document.createElement('span');
+    const size = Math.random() * 2 + 1;
+    s.style.cssText = `
+      width:${size}px;height:${size}px;
+      left:${Math.random()*100}%;top:${Math.random()*100}%;
+      --dur:${Math.random()*3+2}s;
+    `;
+    container.appendChild(s);
+  }
+})();
+
+// ── Intersection observer for fade-in ──
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// ── Init lang from URL ──
+(function initLang() {
+  const params = new URLSearchParams(location.search);
+  const lang = params.get('lang') || location.hash.replace('#', '') || 'ko';
+  if (['ko', 'en', 'ja'].includes(lang)) setLang(lang);
+})();
+</script>
+</body>
+</html>

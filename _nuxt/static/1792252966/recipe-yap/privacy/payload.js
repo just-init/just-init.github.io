@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/recipe-yap/privacy", {data:[{}],fetch:{},mutations:void 0});

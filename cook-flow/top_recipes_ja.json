@@ -1,0 +1,1309 @@
+[
+  {
+    "id": "5f71ea91ef92720d",
+    "readCount": 0,
+    "recipe": {
+      "title": "至高のカルボナーラ",
+      "description": "生クリーム不使用、卵とチーズの黄金比で仕上げる濃厚でさっぱりとした本格カルボナーラ。",
+      "tags": [
+        "イタリアン",
+        "パスタ",
+        "カルボナーラ",
+        "濃厚",
+        "簡単"
+      ],
+      "servings": 1,
+      "estimatedMinutes": 20,
+      "sourceUrl": "https://www.youtube.com/watch?v=NtjPlr_-W18",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NtjPlr_-W18/maxresdefault.jpg",
+      "language": "ja",
+      "mainIngredients": [
+        "にんにく",
+        "ベーコン",
+        "黒胡椒（ホール）",
+        "卵（Lサイズ）",
+        "粉チーズ"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "みじん切り",
+          "ingredients": [
+            {
+              "name": "にんにく",
+              "amount": "1片",
+              "category": "青果"
+            }
+          ],
+          "description": "にんにくの端を切り落として潰し、芽を取り除いてから粗みじん切りにします。"
+        },
+        {
+          "cookMethod": "切る",
+          "ingredients": [
+            {
+              "name": "ベーコン",
+              "amount": "40g",
+              "category": "肉"
+            }
+          ],
+          "description": "ベーコンを千切り状に細めにスライスします。麺と絡みやすくするためです。"
+        },
+        {
+          "cookMethod": "刻む",
+          "ingredients": [
+            {
+              "name": "黒胡椒（ホール）",
+              "amount": "15粒",
+              "category": "調味料"
+            }
+          ],
+          "description": "ホールの黒胡椒を包丁で粗く砕きます。使う直前に砕くと香りが立ちます。"
+        },
+        {
+          "cookMethod": "混ぜる",
+          "ingredients": [
+            {
+              "name": "卵（Lサイズ）",
+              "amount": "1個",
+              "category": "卵・乳製品"
+            },
+            {
+              "name": "粉チーズ",
+              "amount": "30g",
+              "category": "卵・乳製品"
+            }
+          ],
+          "description": "ボウルにLサイズの卵を割り入れ、粉チーズ30gを加えて黄身を潰しながらよく混ぜ合わせて卵液を作ります。"
+        },
+        {
+          "cookMethod": "炒める",
+          "ingredients": [
+            {
+              "name": "オリーブ油",
+              "amount": "大さじ1",
+              "category": "調味料"
+            },
+            {
+              "name": "にんにく",
+              "amount": "1片",
+              "category": "青果"
+            },
+            {
+              "name": "ベーコン",
+              "amount": "40g",
+              "category": "肉"
+            },
+            {
+              "name": "鷹の爪",
+              "amount": "1本",
+              "category": "調味料"
+            }
+          ],
+          "description": "冷たいフライパンにオリーブ油とにんにくを入れて強火にかけ、フツフツしてきたらベーコンを加えて油を全体に回し、中火にして鷹の爪を加えます。ベーコンの表面に気泡が出てきたら火を止めて冷まします。"
+        },
+        {
+          "cookMethod": "茹でる",
+          "ingredients": [
+            {
+              "name": "パスタ（2mm）",
+              "amount": "100g",
+              "category": "米・麺"
+            },
+            {
+              "name": "塩",
+              "amount": "小さじ1.5",
+              "category": "調味料"
+            }
+          ],
+          "description": "たっぷりの湯に塩を加え約1%の塩分（味噌汁程度）にし、パスタを表示時間より1分半早めに茹で上げます。"
+        },
+        {
+          "cookMethod": "和える",
+          "ingredients": [
+            {
+              "name": "茹で汁",
+              "amount": "大さじ2",
+              "category": "調味料"
+            }
+          ],
+          "description": "冷めたフライパンに茹で汁大さじ1を加え、茹で上げたパスタを入れて絡めます。固い場合は茹で汁を少量追加します。"
+        },
+        {
+          "cookMethod": "煮る",
+          "ingredients": [],
+          "description": "極弱火にかけ、卵液を全量加えてゴムベラで鍋底からすくうように絶えず混ぜ、クリーム状になるまで絡めます。固いと感じたら茹で汁を少し足します。"
+        },
+        {
+          "cookMethod": "盛る",
+          "ingredients": [
+            {
+              "name": "オリーブ油",
+              "amount": "小さじ2",
+              "category": "調味料"
+            },
+            {
+              "name": "黒胡椒（砕いたもの）",
+              "amount": "適量",
+              "category": "調味料"
+            }
+          ],
+          "description": "仕上げにオリーブ油小さじ2を回しかけて香りづけし、温めた皿に盛り付けて砕いた黒胡椒をたっぷり振って完成です。熱いうちにいただきます。"
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 880,
+        "carbs": 78,
+        "protein": 36,
+        "fat": 46
+      }
+    }
+  },
+  {
+    "id": "2abf4cd8df8f8f65",
+    "readCount": 0,
+    "recipe": {
+      "title": "材料2つ！フライパンでなめらか茶碗蒸し",
+      "description": "卵とめんつゆだけで作る、フライパンで簡単にできるとろとろなめらかな茶碗蒸し。",
+      "tags": [
+        "和食",
+        "簡単",
+        "卵料理",
+        "時短",
+        "茶碗蒸し"
+      ],
+      "servings": 2,
+      "estimatedMinutes": 20,
+      "sourceUrl": "https://www.youtube.com/watch?v=ileTWmycZJI",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ileTWmycZJI/maxresdefault.jpg",
+      "language": "ja",
+      "mainIngredients": [
+        "めんつゆ（2倍希釈）",
+        "水",
+        "卵",
+        "塩",
+        "卵液"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "混ぜる",
+          "ingredients": [
+            {
+              "name": "めんつゆ（2倍希釈）",
+              "amount": "20ml",
+              "category": "調味料"
+            },
+            {
+              "name": "水",
+              "amount": "180ml",
+              "category": "調味料"
+            }
+          ],
+          "description": "計量カップにめんつゆを入れ、水を加えて合計200mlにする。"
+        },
+        {
+          "cookMethod": "混ぜる",
+          "ingredients": [
+            {
+              "name": "卵",
+              "amount": "1個",
+              "category": "卵・乳製品"
+            },
+            {
+              "name": "塩",
+              "amount": "適量",
+              "category": "調味料"
+            }
+          ],
+          "description": "ボウルに卵を割り入れ、白身を切るようにしっかり溶きほぐす。好みで塩ひとつまみを加える。"
+        },
+        {
+          "cookMethod": "混ぜる",
+          "ingredients": [
+            {
+              "name": "卵液",
+              "amount": "適量",
+              "category": "卵・乳製品"
+            },
+            {
+              "name": "めんつゆ水",
+              "amount": "200ml",
+              "category": "調味料"
+            }
+          ],
+          "description": "溶いた卵に先ほどのめんつゆ水を加えてよく混ぜ合わせる。"
+        },
+        {
+          "cookMethod": "盛る",
+          "ingredients": [
+            {
+              "name": "茶碗蒸し液",
+              "amount": "適量",
+              "category": "卵・乳製品"
+            }
+          ],
+          "description": "小さめの茶碗やマグカップに卵液を漉しながら静かに注ぎ入れ、表面の泡を取り除く。"
+        },
+        {
+          "cookMethod": "蒸す",
+          "ingredients": [
+            {
+              "name": "水",
+              "amount": "適量",
+              "category": "調味料"
+            }
+          ],
+          "description": "高さのあるフライパンに1cmほどの水を入れて加熱し、沸騰したら茶碗を置く。蓋に布巾を巻いて被せ、ごく弱火で表面がフラフラ揺れる程度に蒸す。"
+        },
+        {
+          "cookMethod": "蒸す",
+          "ingredients": [
+            {
+              "name": "茶碗蒸し",
+              "amount": "適量",
+              "category": "卵・乳製品"
+            }
+          ],
+          "description": "表面が少し膨らんで揺らすとプルプルする状態になったら火を止め、蓋をしたまま余熱で蒸らしてとろとろに仕上げる。"
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 90,
+        "carbs": 3.5,
+        "protein": 7.5,
+        "fat": 5
+      }
+    }
+  },
+  {
+    "id": "dbd6accd2d7edb5b",
+    "readCount": 0,
+    "recipe": {
+      "title": "鶏ももと手羽先の唐揚げ",
+      "description": "薄力粉と片栗粉のダブル使い、二度揚げで中はジューシー外はカリカリに仕上げる本格唐揚げ。",
+      "tags": [
+        "和食",
+        "唐揚げ",
+        "鶏肉",
+        "揚げ物",
+        "おかず"
+      ],
+      "servings": 4,
+      "estimatedMinutes": 30,
+      "sourceUrl": "https://www.youtube.com/watch?v=6a6QFtoM9kc",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6a6QFtoM9kc/maxresdefault.jpg",
+      "language": "ja",
+      "mainIngredients": [
+        "鶏もも肉",
+        "醤油",
+        "酒",
+        "砂糖",
+        "おろしニンニク"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "切る",
+          "ingredients": [
+            {
+              "name": "鶏もも肉",
+              "amount": "2枚",
+              "category": "肉"
+            }
+          ],
+          "description": "鶏もも肉は残った骨や余分な脂、筋を取り除き、大きめの一口大に切る。肉汁を逃さないよう筋は切らず引っ張って取る。"
+        },
+        {
+          "cookMethod": "漬ける",
+          "ingredients": [
+            {
+              "name": "鶏もも肉",
+              "amount": "2枚",
+              "category": "肉"
+            },
+            {
+              "name": "醤油",
+              "amount": "大さじ3",
+              "category": "調味料"
+            },
+            {
+              "name": "酒",
+              "amount": "大さじ3",
+              "category": "調味料"
+            },
+            {
+              "name": "砂糖",
+              "amount": "小さじ2",
+              "category": "調味料"
+            },
+            {
+              "name": "おろしニンニク",
+              "amount": "小さじ2",
+              "category": "青果"
+            },
+            {
+              "name": "おろし生姜",
+              "amount": "小さじ2",
+              "category": "青果"
+            },
+            {
+              "name": "塩",
+              "amount": "2つまみ",
+              "category": "調味料"
+            }
+          ],
+          "description": "鶏もも肉に醤油、酒、砂糖、おろしニンニク、おろし生姜、塩を加えてよく揉み込み、30分以上漬け込んで味を染み込ませる。"
+        },
+        {
+          "cookMethod": "漬ける",
+          "ingredients": [
+            {
+              "name": "手羽先",
+              "amount": "8本",
+              "category": "肉"
+            },
+            {
+              "name": "塩",
+              "amount": "小さじ1",
+              "category": "調味料"
+            },
+            {
+              "name": "おろしニンニク",
+              "amount": "小さじ2",
+              "category": "青果"
+            },
+            {
+              "name": "ごま油",
+              "amount": "大さじ1",
+              "category": "調味料"
+            }
+          ],
+          "description": "手羽先は全体にフォークで穴を開け、皮に味が入りやすくする。塩、おろしニンニク、ごま油を揉み込み、テカった状態になるまで馴染ませて30分以上漬ける。"
+        },
+        {
+          "cookMethod": "混ぜる",
+          "ingredients": [
+            {
+              "name": "鶏もも肉(漬け込み済み)",
+              "amount": "適量",
+              "category": "肉"
+            },
+            {
+              "name": "薄力粉",
+              "amount": "適量",
+              "category": "調味料"
+            }
+          ],
+          "description": "漬け込んだ鶏ももから余分な汁気を捨て、薄力粉を加えてねっとりするまで揉み混ぜる。残った調味液を薄力粉が吸って味が衣にしっかりまとわりつく。"
+        },
+        {
+          "cookMethod": "揚げる",
+          "ingredients": [
+            {
+              "name": "鶏もも肉(衣付き)",
+              "amount": "適量",
+              "category": "肉"
+            },
+            {
+              "name": "片栗粉",
+              "amount": "適量",
+              "category": "調味料"
+            },
+            {
+              "name": "揚げ油",
+              "amount": "適量",
+              "category": "調味料"
+            }
+          ],
+          "description": "鶏ももに片栗粉を全体にまぶし、皮を外側に整える。170℃の油で皮目を下にして入れ、1分は触らず周りが固まるまで待ち、3分揚げて取り出し、3分休ませ、さらに2分ほど空気に触れさせながら二度揚げする。"
+        },
+        {
+          "cookMethod": "揚げる",
+          "ingredients": [
+            {
+              "name": "手羽先(漬け込み済み)",
+              "amount": "8本",
+              "category": "肉"
+            },
+            {
+              "name": "強力粉",
+              "amount": "適量",
+              "category": "調味料"
+            },
+            {
+              "name": "ホワイトペッパー",
+              "amount": "少々",
+              "category": "調味料"
+            },
+            {
+              "name": "塩",
+              "amount": "少々",
+              "category": "調味料"
+            },
+            {
+              "name": "揚げ油",
+              "amount": "適量",
+              "category": "調味料"
+            }
+          ],
+          "description": "手羽先に強力粉をまぶし、170℃の油で3分揚げて取り出す。3分休ませてから、もう2分揚げて油を切り、仕上げにホワイトペッパーと塩をふる。"
+        },
+        {
+          "cookMethod": "揚げる",
+          "ingredients": [
+            {
+              "name": "パセリ",
+              "amount": "適量",
+              "category": "青果"
+            },
+            {
+              "name": "揚げ油",
+              "amount": "適量",
+              "category": "調味料"
+            }
+          ],
+          "description": "パセリを170℃の油でさっと素揚げし、カリッとした食感に仕上げて器の添え物にする。"
+        },
+        {
+          "cookMethod": "盛る",
+          "ingredients": [
+            {
+              "name": "レモン",
+              "amount": "0.5個",
+              "category": "青果"
+            },
+            {
+              "name": "パセリの素揚げ",
+              "amount": "適量",
+              "category": "青果"
+            }
+          ],
+          "description": "揚げた鶏ももと手羽先をそれぞれ器に盛り付け、くし形に切ったレモンとパセリの素揚げを添えて完成。"
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 3000,
+        "carbs": 98,
+        "protein": 165,
+        "fat": 202
+      }
+    }
+  },
+  {
+    "id": "727c214d660b7a68",
+    "readCount": 0,
+    "recipe": {
+      "title": "スーパーの豚バラで作るラーメン屋さん風チャーシュー",
+      "description": "スーパーの豚バラブロックで作る、香ばしく柔らかいラーメン屋さん風チャーシュー。煮卵も一緒に仕込める一品。",
+      "tags": [
+        "和食",
+        "チャーシュー",
+        "豚肉料理",
+        "煮込み",
+        "作り置き"
+      ],
+      "servings": 4,
+      "estimatedMinutes": 40,
+      "sourceUrl": "https://www.youtube.com/watch?v=qswo0SW2KC8",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qswo0SW2KC8/maxresdefault.jpg",
+      "language": "ja",
+      "mainIngredients": [
+        "豚バラブロック",
+        "サラダ油",
+        "長ネギの青い部分",
+        "生姜",
+        "ニンニク"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "焼き目をつける",
+          "ingredients": [
+            {
+              "name": "豚バラブロック",
+              "amount": "500g",
+              "category": "肉"
+            },
+            {
+              "name": "サラダ油",
+              "amount": "適量",
+              "category": "調味料"
+            }
+          ],
+          "description": "豚バラブロックをタコ糸で崩れないように縛り、油をひいたフライパンで表面全体に焼き色がつくまで焼き、余分な脂を拭き取ります。"
+        },
+        {
+          "cookMethod": "茹でる",
+          "ingredients": [
+            {
+              "name": "豚バラブロック",
+              "amount": "500g",
+              "category": "肉"
+            },
+            {
+              "name": "長ネギの青い部分",
+              "amount": "1本分",
+              "category": "青果"
+            },
+            {
+              "name": "生姜",
+              "amount": "20g",
+              "category": "青果"
+            },
+            {
+              "name": "ニンニク",
+              "amount": "2片",
+              "category": "青果"
+            },
+            {
+              "name": "水",
+              "amount": "適量",
+              "category": "調味料"
+            }
+          ],
+          "description": "鍋に焼いた豚肉を入れ、かぶるくらいの水、長ネギの青い部分、スライスした生姜、潰したニンニクを加え、弱火で30分ほど茹でて臭みを抜きます。"
+        },
+        {
+          "cookMethod": "茹でる",
+          "ingredients": [
+            {
+              "name": "卵",
+              "amount": "2個",
+              "category": "卵・乳製品"
+            }
+          ],
+          "description": "別の鍋に湯を沸かし、卵を入れて7分ほど茹でて半熟に仕上げ、冷水で冷やしてから殻をむきます。"
+        },
+        {
+          "cookMethod": "煮込む",
+          "ingredients": [
+            {
+              "name": "醤油",
+              "amount": "100ml",
+              "category": "調味料"
+            },
+            {
+              "name": "砂糖",
+              "amount": "大さじ4",
+              "category": "調味料"
+            },
+            {
+              "name": "茹で汁",
+              "amount": "200ml",
+              "category": "調味料"
+            },
+            {
+              "name": "ニンニク",
+              "amount": "2片",
+              "category": "青果"
+            }
+          ],
+          "description": "鍋に醤油、砂糖、豚肉の茹で汁、潰したニンニクを入れて火にかけ、沸騰したら煮汁を作ります。"
+        },
+        {
+          "cookMethod": "漬ける",
+          "ingredients": [
+            {
+              "name": "豚バラブロック",
+              "amount": "500g",
+              "category": "肉"
+            },
+            {
+              "name": "卵",
+              "amount": "2個",
+              "category": "卵・乳製品"
+            }
+          ],
+          "description": "茹で上がった豚肉のタコ糸を外し、ゆで卵と一緒に煮汁に漬け込み、味が染み込むまで30分以上置きます。食べる際は薄くスライスして盛り付けます。"
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 720,
+        "carbs": 18.5,
+        "protein": 32,
+        "fat": 55
+      }
+    }
+  },
+  {
+    "id": "a612bcb6c98199a6",
+    "readCount": 0,
+    "recipe": {
+      "title": "漬け玉ねぎ",
+      "description": "玉ねぎを甘辛い調味液に漬けるだけで完成する、ご飯が進むやみつきの作り置きレシピです。",
+      "tags": [
+        "作り置き",
+        "簡単",
+        "時短",
+        "玉ねぎ",
+        "ご飯のお供"
+      ],
+      "servings": 4,
+      "estimatedMinutes": 10,
+      "sourceUrl": "https://www.youtube.com/watch?v=Ew7VQuc-I6s",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ew7VQuc-I6s/maxresdefault.jpg",
+      "language": "ja",
+      "mainIngredients": [
+        "玉ねぎ",
+        "砂糖",
+        "しょうゆ",
+        "酢",
+        "みりん"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "切る",
+          "ingredients": [
+            {
+              "name": "玉ねぎ",
+              "amount": "2個",
+              "category": "青果"
+            }
+          ],
+          "description": "玉ねぎの皮をむき、繊維を断つように薄切りにします。"
+        },
+        {
+          "cookMethod": "混ぜる",
+          "ingredients": [
+            {
+              "name": "砂糖",
+              "amount": "大さじ2",
+              "category": "調味料"
+            },
+            {
+              "name": "しょうゆ",
+              "amount": "大さじ4",
+              "category": "調味料"
+            },
+            {
+              "name": "酢",
+              "amount": "大さじ4",
+              "category": "調味料"
+            },
+            {
+              "name": "みりん",
+              "amount": "大さじ4",
+              "category": "調味料"
+            },
+            {
+              "name": "塩",
+              "amount": "小さじ0.5",
+              "category": "調味料"
+            },
+            {
+              "name": "ごま油",
+              "amount": "小さじ2",
+              "category": "調味料"
+            }
+          ],
+          "description": "耐熱容器に砂糖、しょうゆ、酢、みりん、塩、ごま油を入れてよく混ぜ合わせ、調味液を作ります。"
+        },
+        {
+          "cookMethod": "漬ける",
+          "ingredients": [
+            {
+              "name": "玉ねぎ",
+              "amount": "適量",
+              "category": "青果"
+            }
+          ],
+          "description": "調味液に切った玉ねぎを加えて全体にしっかり絡め、冷蔵庫で味が染み込むまで漬け込んで完成です。"
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 480,
+        "carbs": 78.5,
+        "protein": 6.5,
+        "fat": 10.5
+      }
+    }
+  },
+  {
+    "id": "2f25a3924c0f62b7",
+    "readCount": 0,
+    "recipe": {
+      "title": "サクサクかき揚げ",
+      "description": "小麦粉と水を冷やしグルテンを抑え、170℃で揚げるサクサク食感のかき揚げです。",
+      "tags": [
+        "和食",
+        "揚げ物",
+        "かき揚げ",
+        "天ぷら",
+        "野菜"
+      ],
+      "servings": 2,
+      "estimatedMinutes": 30,
+      "sourceUrl": "https://www.youtube.com/watch?v=-wNE4ojK6xo",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-wNE4ojK6xo/maxresdefault.jpg",
+      "language": "ja",
+      "mainIngredients": [
+        "薄力粉",
+        "水",
+        "しいたけ",
+        "玉ねぎ",
+        "にんじん"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "混ぜる",
+          "ingredients": [
+            {
+              "name": "薄力粉",
+              "amount": "150g",
+              "category": "米・麺"
+            }
+          ],
+          "description": "薄力粉150gをふるいにかけ、空気を含ませて仕上がりを良くします。"
+        },
+        {
+          "cookMethod": "冷やす",
+          "ingredients": [
+            {
+              "name": "水",
+              "amount": "200cc",
+              "category": "調味料"
+            }
+          ],
+          "description": "水200ccを冷蔵庫でしっかり冷やし、グルテンの発生を抑えて食感を良くします。"
+        },
+        {
+          "cookMethod": "切る",
+          "ingredients": [
+            {
+              "name": "しいたけ",
+              "amount": "2個",
+              "category": "青果"
+            },
+            {
+              "name": "玉ねぎ",
+              "amount": "0.25個",
+              "category": "青果"
+            },
+            {
+              "name": "にんじん",
+              "amount": "30g",
+              "category": "青果"
+            },
+            {
+              "name": "万能ねぎ",
+              "amount": "適量",
+              "category": "青果"
+            }
+          ],
+          "description": "しいたけ、玉ねぎ、にんじんを同じ厚さに切り揃え、万能ねぎは斜め切りにします。"
+        },
+        {
+          "cookMethod": "煮る",
+          "ingredients": [
+            {
+              "name": "かつおだし",
+              "amount": "100cc",
+              "category": "調味料"
+            },
+            {
+              "name": "醤油",
+              "amount": "20cc",
+              "category": "調味料"
+            },
+            {
+              "name": "みりん",
+              "amount": "20cc",
+              "category": "調味料"
+            }
+          ],
+          "description": "かつおだし100cc、醤油20cc、みりん20ccを鍋に入れ、ひと煮立ちさせて天つゆを作ります。"
+        },
+        {
+          "cookMethod": "混ぜる",
+          "ingredients": [
+            {
+              "name": "卵黄",
+              "amount": "1個",
+              "category": "卵・乳製品"
+            },
+            {
+              "name": "水",
+              "amount": "180cc",
+              "category": "調味料"
+            },
+            {
+              "name": "薄力粉",
+              "amount": "90g",
+              "category": "米・麺"
+            }
+          ],
+          "description": "冷水180ccに卵黄1個を溶き、ふるった薄力粉90gを2〜3回に分けて加え、溶かすように軽く混ぜて天ぷら衣を作ります。"
+        },
+        {
+          "cookMethod": "和える",
+          "ingredients": [
+            {
+              "name": "薄力粉",
+              "amount": "適量",
+              "category": "米・麺"
+            }
+          ],
+          "description": "切った具材に薄力粉を少量まぶし、全体に行き渡らせてから天ぷら衣を少量加えてさっと和えます。"
+        },
+        {
+          "cookMethod": "揚げる",
+          "ingredients": [
+            {
+              "name": "サラダ油",
+              "amount": "適量",
+              "category": "調味料"
+            }
+          ],
+          "description": "油を170℃に熱し、具材を入れて形を整えます。温度を安定させ、揚げ上がり30秒前に火を強めて箸で穴を開け、サクッと揚げます。"
+        },
+        {
+          "cookMethod": "盛る",
+          "ingredients": [
+            {
+              "name": "大根おろし",
+              "amount": "適量",
+              "category": "青果"
+            }
+          ],
+          "description": "揚げたかき揚げを器に盛り、大根おろしを添えて天つゆと一緒にいただきます。"
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 520,
+        "carbs": 58,
+        "protein": 10.5,
+        "fat": 26
+      }
+    }
+  },
+  {
+    "id": "e0cbec4f72f74a54",
+    "readCount": 0,
+    "recipe": {
+      "title": "悪魔のおにぎり（基本＆アレンジ）",
+      "description": "天かすと青のりにめんつゆとごま油を混ぜ込む、やみつきになる簡単おにぎりです。",
+      "tags": [
+        "和食",
+        "簡単",
+        "おにぎり",
+        "時短",
+        "お弁当"
+      ],
+      "servings": 2,
+      "estimatedMinutes": 15,
+      "sourceUrl": "https://www.youtube.com/watch?v=W3bfvaIh83g",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/W3bfvaIh83g/maxresdefault.jpg",
+      "language": "ja",
+      "mainIngredients": [
+        "ご飯",
+        "天かす",
+        "青のり",
+        "めんつゆ",
+        "ごま油"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "混ぜる",
+          "ingredients": [
+            {
+              "name": "ご飯",
+              "amount": "茶碗2杯",
+              "category": "米・麺"
+            },
+            {
+              "name": "天かす",
+              "amount": "大さじ3",
+              "category": "缶詰・乾物"
+            },
+            {
+              "name": "青のり",
+              "amount": "大さじ1",
+              "category": "缶詰・乾物"
+            },
+            {
+              "name": "めんつゆ",
+              "amount": "大さじ1",
+              "category": "調味料"
+            },
+            {
+              "name": "ごま油",
+              "amount": "小さじ1",
+              "category": "調味料"
+            }
+          ],
+          "description": "炊きたてのご飯をボウルに入れ、天かす、青のり、めんつゆ、ごま油を加えて全体がなじむようにさっくりと混ぜ合わせます。"
+        },
+        {
+          "cookMethod": "刻む",
+          "ingredients": [
+            {
+              "name": "小ねぎ",
+              "amount": "適量",
+              "category": "青果"
+            },
+            {
+              "name": "紅生姜",
+              "amount": "適量",
+              "category": "豆腐・漬物"
+            },
+            {
+              "name": "ベビーチーズ",
+              "amount": "2個",
+              "category": "卵・乳製品"
+            }
+          ],
+          "description": "アレンジ用に小ねぎを小口切りに、紅生姜とベビーチーズを粗めのみじん切りにして食べやすい大きさにします。"
+        },
+        {
+          "cookMethod": "混ぜる",
+          "ingredients": [
+            {
+              "name": "ご飯",
+              "amount": "茶碗2杯",
+              "category": "米・麺"
+            },
+            {
+              "name": "天かす",
+              "amount": "大さじ3",
+              "category": "缶詰・乾物"
+            },
+            {
+              "name": "小ねぎ",
+              "amount": "適量",
+              "category": "青果"
+            },
+            {
+              "name": "紅生姜",
+              "amount": "適量",
+              "category": "豆腐・漬物"
+            },
+            {
+              "name": "ベビーチーズ",
+              "amount": "2個",
+              "category": "卵・乳製品"
+            },
+            {
+              "name": "めんつゆ",
+              "amount": "大さじ1",
+              "category": "調味料"
+            },
+            {
+              "name": "ごま油",
+              "amount": "小さじ1",
+              "category": "調味料"
+            }
+          ],
+          "description": "炊きたてのご飯に天かす、小ねぎ、紅生姜、ベビーチーズを加え、めんつゆとごま油で味付けしてチーズが溶けないよう手早く混ぜます。"
+        },
+        {
+          "cookMethod": "握る",
+          "ingredients": [
+            {
+              "name": "焼きのり",
+              "amount": "適量",
+              "category": "缶詰・乾物"
+            }
+          ],
+          "description": "混ぜたご飯を三角形に握り、仕上げに焼きのりを巻いて完成させます。具材が見えるように帯状に巻くと見た目も綺麗です。"
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 520,
+        "carbs": 78,
+        "protein": 10.5,
+        "fat": 17.5
+      }
+    }
+  },
+  {
+    "id": "1775a9dec8870917",
+    "readCount": 0,
+    "recipe": {
+      "title": "お好み焼き",
+      "description": "キャベツと山芋を加えた生地を香ばしく焼き上げる、定番の家庭の味のお好み焼きです。",
+      "tags": [
+        "和食",
+        "お好み焼き",
+        "粉もの",
+        "家庭料理",
+        "簡単"
+      ],
+      "servings": 1,
+      "estimatedMinutes": 20,
+      "sourceUrl": "https://www.youtube.com/watch?v=SfVG6GQg6FM",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SfVG6GQg6FM/maxresdefault.jpg",
+      "language": "ja",
+      "mainIngredients": [
+        "キャベツ",
+        "青ねぎ",
+        "小麦粉",
+        "かつおだしの素",
+        "ベーキングパウダー"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "刻む",
+          "ingredients": [
+            {
+              "name": "キャベツ",
+              "amount": "100g",
+              "category": "青果"
+            },
+            {
+              "name": "青ねぎ",
+              "amount": "30g",
+              "category": "青果"
+            }
+          ],
+          "description": "キャベツを細かく刻み、青ねぎを小口切りにしておきます。"
+        },
+        {
+          "cookMethod": "混ぜる",
+          "ingredients": [
+            {
+              "name": "小麦粉",
+              "amount": "50g",
+              "category": "缶詰・乾物"
+            },
+            {
+              "name": "かつおだしの素",
+              "amount": "小さじ1",
+              "category": "調味料"
+            },
+            {
+              "name": "ベーキングパウダー",
+              "amount": "小さじ0.125",
+              "category": "調味料"
+            },
+            {
+              "name": "塩",
+              "amount": "適量",
+              "category": "調味料"
+            }
+          ],
+          "description": "ボウルに小麦粉、かつおだしの素、ベーキングパウダー、塩を入れてよく混ぜ、お好み焼き粉を作ります。"
+        },
+        {
+          "cookMethod": "混ぜる",
+          "ingredients": [
+            {
+              "name": "お好み焼き粉",
+              "amount": "50g",
+              "category": "缶詰・乾物"
+            },
+            {
+              "name": "水",
+              "amount": "80ml",
+              "category": "調味料"
+            },
+            {
+              "name": "山芋",
+              "amount": "20g",
+              "category": "青果"
+            },
+            {
+              "name": "卵",
+              "amount": "1個",
+              "category": "卵・乳製品"
+            }
+          ],
+          "description": "別のボウルにお好み焼き粉と水を入れて混ぜ、すりおろした山芋と卵を加えてなめらかになるまで混ぜ合わせます。"
+        },
+        {
+          "cookMethod": "混ぜる",
+          "ingredients": [
+            {
+              "name": "キャベツ",
+              "amount": "100g",
+              "category": "青果"
+            },
+            {
+              "name": "青ねぎ",
+              "amount": "30g",
+              "category": "青果"
+            }
+          ],
+          "description": "生地に刻んだキャベツと青ねぎを加え、全体が均一になるようにさっくりと混ぜます。"
+        },
+        {
+          "cookMethod": "焼く",
+          "ingredients": [
+            {
+              "name": "お好み焼き生地",
+              "amount": "適量",
+              "category": "缶詰・乾物"
+            }
+          ],
+          "description": "熱したフライパンに生地を丸く流し入れ、中火で両面に焼き目がつくまでじっくりと焼きます。"
+        },
+        {
+          "cookMethod": "盛る",
+          "ingredients": [
+            {
+              "name": "お好み焼きソース",
+              "amount": "適量",
+              "category": "調味料"
+            },
+            {
+              "name": "日本のマヨネーズ",
+              "amount": "適量",
+              "category": "調味料"
+            }
+          ],
+          "description": "焼き上がったお好み焼きをお皿に盛り、お好み焼きソースとマヨネーズを好みに合わせてかけて仕上げます。"
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 450,
+        "carbs": 55,
+        "protein": 17,
+        "fat": 18
+      }
+    }
+  },
+  {
+    "id": "600360c5c5f83b75",
+    "readCount": 0,
+    "recipe": {
+      "title": "日本風カレーライス",
+      "description": "玉ねぎと牛肉をベースに市販のカレールーで仕上げる、日本の定番家庭料理カレーライスです。",
+      "tags": [
+        "和食",
+        "家庭料理",
+        "カレー",
+        "定番",
+        "簡単"
+      ],
+      "servings": 4,
+      "estimatedMinutes": 40,
+      "sourceUrl": "https://www.youtube.com/watch?v=dvjyLxyfAoM",
+      "sourceUrlType": "youtube",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dvjyLxyfAoM/maxresdefault.jpg",
+      "language": "ja",
+      "mainIngredients": [
+        "玉ねぎ",
+        "にんじん",
+        "じゃがいも",
+        "牛肉",
+        "サラダ油"
+      ],
+      "sourceType": "link",
+      "steps": [
+        {
+          "cookMethod": "切る",
+          "ingredients": [
+            {
+              "name": "玉ねぎ",
+              "amount": "2個",
+              "category": "青果"
+            },
+            {
+              "name": "にんじん",
+              "amount": "1本",
+              "category": "青果"
+            },
+            {
+              "name": "じゃがいも",
+              "amount": "2個",
+              "category": "青果"
+            },
+            {
+              "name": "牛肉",
+              "amount": "300g",
+              "category": "肉"
+            }
+          ],
+          "description": "玉ねぎはくし形切り、にんじんとじゃがいもは一口大の乱切り、牛肉は食べやすい大きさに切ります。"
+        },
+        {
+          "cookMethod": "炒める",
+          "ingredients": [
+            {
+              "name": "サラダ油",
+              "amount": "大さじ2",
+              "category": "調味料"
+            },
+            {
+              "name": "玉ねぎ",
+              "amount": "2個",
+              "category": "青果"
+            }
+          ],
+          "description": "鍋に油を熱し、玉ねぎを強火で飴色になるまでしっかり炒めて甘みと香ばしさを引き出します。"
+        },
+        {
+          "cookMethod": "炒める",
+          "ingredients": [
+            {
+              "name": "牛肉",
+              "amount": "300g",
+              "category": "肉"
+            },
+            {
+              "name": "にんじん",
+              "amount": "1本",
+              "category": "青果"
+            },
+            {
+              "name": "じゃがいも",
+              "amount": "2個",
+              "category": "青果"
+            }
+          ],
+          "description": "牛肉を加えて表面の色が変わるまで炒め、にんじんとじゃがいもも入れて油が全体になじむまで炒め合わせます。"
+        },
+        {
+          "cookMethod": "煮込む",
+          "ingredients": [
+            {
+              "name": "水",
+              "amount": "800ml",
+              "category": "調味料"
+            }
+          ],
+          "description": "水を注いで沸騰したらアクを取り、弱火で20分ほど野菜が柔らかくなるまで煮込みます。"
+        },
+        {
+          "cookMethod": "煮る",
+          "ingredients": [
+            {
+              "name": "カレールー",
+              "amount": "1箱",
+              "category": "調味料"
+            }
+          ],
+          "description": "火を止めてカレールーを割り入れ、完全に溶かしてから再び弱火で10分ほどとろみがつくまで煮ます。"
+        },
+        {
+          "cookMethod": "盛る",
+          "ingredients": [
+            {
+              "name": "ご飯",
+              "amount": "4杯分",
+              "category": "米・麺"
+            }
+          ],
+          "description": "器にご飯をよそい、その横に出来上がったカレーをたっぷりかけて完成です。"
+        }
+      ],
+      "nutritionInfo": {
+        "calories": 720,
+        "carbs": 95,
+        "protein": 25,
+        "fat": 25
+      }
+    }
+  }
+]

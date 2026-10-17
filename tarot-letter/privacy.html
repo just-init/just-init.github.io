@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보 처리방침 — 타로레터</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0D1127;
+      --navy-light: #151A36;
+      --navy-card: #1A1F3D;
+      --gold: #C5A55A;
+      --gold-light: #E0CC8A;
+      --text: #E8E4DC;
+      --text-dim: #9A9689;
+      --serif: 'Noto Serif KR', serif;
+      --sans: 'Noto Sans KR', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--navy);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.8;
+      padding-top: 48px;
+    }
+    .lang-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: flex-end;
+      gap: 4px;
+      padding: 12px 24px;
+      background: rgba(13,17,39,0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(197,165,90,0.08);
+    }
+    .lang-btn {
+      padding: 6px 14px;
+      border: 1px solid rgba(197,165,90,0.25);
+      border-radius: 8px;
+      background: transparent;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: var(--sans);
+    }
+    .lang-btn.active {
+      background: var(--gold);
+      color: var(--navy);
+      border-color: var(--gold);
+      font-weight: 700;
+    }
+    .lang-btn:hover:not(.active) {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 24px;
+      border-bottom: 1px solid rgba(197,165,90,0.1);
+    }
+    .top-bar a {
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .top-bar a:hover { text-decoration: underline; }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+    h1 {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .date {
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      margin-bottom: 48px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-top: 40px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(197,165,90,0.15);
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+    p, li {
+      font-size: 0.92rem;
+      color: var(--text);
+      font-weight: 300;
+      margin-bottom: 8px;
+    }
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    li { margin-bottom: 4px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.88rem;
+    }
+    th, td {
+      border: 1px solid rgba(197,165,90,0.15);
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 300;
+    }
+    th {
+      background: var(--navy-card);
+      color: var(--gold-light);
+      font-weight: 500;
+    }
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid rgba(197,165,90,0.1);
+      color: var(--text-dim);
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Language switcher -->
+<nav class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('ko')">KR</button>
+  <button class="lang-btn" onclick="setLang('en')">EN</button>
+  <button class="lang-btn" onclick="setLang('ja')">JP</button>
+</nav>
+
+<nav class="top-bar">
+  <a href="index.html" data-i18n="nav-home">&larr; 홈으로</a>
+</nav>
+
+<div class="container">
+  <h1 data-i18n="title">개인정보 처리방침</h1>
+  <p class="date" data-i18n="date">시행일: 2026년 3월 11일</p>
+
+  <p data-i18n="intro">Just Init(이하 "회사")은 「개인정보 보호법」에 따라 이용자의 개인정보를 보호하고 이와 관련한 고충을 신속하게 처리하기 위해 다음과 같이 개인정보 처리방침을 수립·공개합니다.</p>
+
+  <h2 data-i18n="s1-title">1. 수집하는 개인정보 항목 및 수집 방법</h2>
+
+  <h3 data-i18n="s1a-title">가. 수집 항목</h3>
+  <table>
+    <tr>
+      <th data-i18n="t1-h1">구분</th>
+      <th data-i18n="t1-h2">수집 항목</th>
+      <th data-i18n="t1-h3">수집 목적</th>
+    </tr>
+    <tr>
+      <td data-i18n="t1-r1c1">회원가입(소셜 로그인)</td>
+      <td data-i18n="t1-r1c2">소셜 계정 고유 식별자(UID), 닉네임</td>
+      <td data-i18n="t1-r1c3">회원 식별 및 서비스 제공</td>
+    </tr>
+    <tr>
+      <td data-i18n="t1-r2c1">서비스 이용</td>
+      <td data-i18n="t1-r2c2">고민 내용(텍스트), 선택한 카드 정보, 리딩 결과</td>
+      <td data-i18n="t1-r2c3">타로 리딩 서비스 제공</td>
+    </tr>
+    <tr>
+      <td data-i18n="t1-r3c1">결제</td>
+      <td data-i18n="t1-r3c2">구매 내역(앱스토어/구글플레이 처리, 회사는 결제 정보를 직접 수집하지 않음)</td>
+      <td data-i18n="t1-r3c3">유료 서비스 제공 및 환불 처리</td>
+    </tr>
+    <tr>
+      <td data-i18n="t1-r4c1">자동 수집</td>
+      <td data-i18n="t1-r4c2">기기 정보(OS, 기기 모델), 앱 버전, 접속 로그</td>
+      <td data-i18n="t1-r4c3">서비스 개선 및 오류 분석</td>
+    </tr>
+  </table>
+
+  <h3 data-i18n="s1b-title">나. 수집 방법</h3>
+  <ul>
+    <li data-i18n="s1b-li1">앱 내 소셜 로그인(Apple, Google) 과정</li>
+    <li data-i18n="s1b-li2">서비스 이용 과정에서 이용자가 직접 입력</li>
+    <li data-i18n="s1b-li3">앱 실행 시 자동 수집(Firebase Analytics, Crashlytics)</li>
+  </ul>
+
+  <h2 data-i18n="s2-title">2. 개인정보의 처리 목적</h2>
+  <ul>
+    <li data-i18n="s2-li1">회원 관리: 회원 식별, 서비스 부정이용 방지</li>
+    <li data-i18n="s2-li2">서비스 제공: 타로 리딩(고민 기반 편지) 생성 및 전달, 리딩 히스토리 보관</li>
+    <li data-i18n="s2-li3">결제 및 환불: 인앱 결제(별빛/구독) 처리</li>
+    <li data-i18n="s2-li4">서비스 개선: 이용 통계 분석, 오류 진단 및 해결</li>
+    <li data-i18n="s2-li5">고객 지원: 문의 대응 및 공지사항 전달</li>
+  </ul>
+
+  <h2 data-i18n="s3-title">3. 개인정보의 보유 및 이용 기간</h2>
+  <table>
+    <tr>
+      <th data-i18n="t3-h1">구분</th>
+      <th data-i18n="t3-h2">보유 기간</th>
+    </tr>
+    <tr>
+      <td data-i18n="t3-r1c1">회원 정보</td>
+      <td data-i18n="t3-r1c2">회원 탈퇴 시까지 (탈퇴 후 즉시 파기)</td>
+    </tr>
+    <tr>
+      <td data-i18n="t3-r2c1">리딩 기록(고민, 카드, 결과)</td>
+      <td data-i18n="t3-r2c2">회원 탈퇴 시까지</td>
+    </tr>
+    <tr>
+      <td data-i18n="t3-r3c1">결제 기록</td>
+      <td data-i18n="t3-r3c2">전자상거래법에 따라 5년 보관</td>
+    </tr>
+    <tr>
+      <td data-i18n="t3-r4c1">접속 로그</td>
+      <td data-i18n="t3-r4c2">통신비밀보호법에 따라 3개월 보관</td>
+    </tr>
+  </table>
+
+  <h2 data-i18n="s4-title">4. 개인정보의 제3자 제공</h2>
+  <p data-i18n="s4-p1">회사는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우 예외로 합니다.</p>
+  <ul>
+    <li data-i18n="s4-li1">이용자가 사전에 동의한 경우</li>
+    <li data-i18n="s4-li2">법령의 규정에 의하거나 수사 목적으로 법령에 정해진 절차에 따른 요청이 있는 경우</li>
+  </ul>
+
+  <h2 data-i18n="s5-title">5. 개인정보 처리 위탁</h2>
+  <table>
+    <tr>
+      <th data-i18n="t5-h1">수탁업체</th>
+      <th data-i18n="t5-h2">위탁 업무</th>
+    </tr>
+    <tr>
+      <td>Google (Firebase)</td>
+      <td data-i18n="t5-r1c2">데이터 저장, 인증, 분석, 오류 수집</td>
+    </tr>
+    <tr>
+      <td>OpenAI</td>
+      <td data-i18n="t5-r2c2">AI 기반 타로 리딩 텍스트 생성</td>
+    </tr>
+    <tr>
+      <td>Apple / Google</td>
+      <td data-i18n="t5-r3c2">인앱 결제 처리</td>
+    </tr>
+  </table>
+
+  <h2 data-i18n="s6-title">6. 개인정보의 파기 절차 및 방법</h2>
+  <p data-i18n="s6-p1">보유 기간이 경과하거나 처리 목적이 달성된 경우, 해당 개인정보를 지체 없이 파기합니다.</p>
+  <ul>
+    <li data-i18n="s6-li1">전자적 파일: 복구 불가능한 방법으로 영구 삭제</li>
+    <li data-i18n="s6-li2">기록물: 분쇄 또는 소각</li>
+  </ul>
+
+  <h2 data-i18n="s7-title">7. 이용자의 권리와 행사 방법</h2>
+  <p data-i18n="s7-p1">이용자는 언제든지 다음 권리를 행사할 수 있습니다.</p>
+  <ul>
+    <li data-i18n="s7-li1">개인정보 열람, 정정, 삭제, 처리 정지 요구</li>
+    <li data-i18n="s7-li2">회원 탈퇴(앱 내 설정 &gt; 계정 삭제)</li>
+    <li data-i18n="s7-li3">이메일(justinit.service@gmail.com)을 통한 요청</li>
+  </ul>
+  <p data-i18n="s7-p2">요청 접수 후 10일 이내에 처리하며, 정당한 사유가 있을 경우 사유를 알려드립니다.</p>
+
+  <h2 data-i18n="s8-title">8. 개인정보의 안전성 확보 조치</h2>
+  <ul>
+    <li data-i18n="s8-li1">데이터 암호화: 전송 구간 SSL/TLS 암호화, 저장 시 Firebase 보안 규칙 적용</li>
+    <li data-i18n="s8-li2">접근 제한: 관리자 계정 최소 권한 원칙, 2단계 인증</li>
+    <li data-i18n="s8-li3">로그 관리: 접근 로그 기록 및 정기 점검</li>
+  </ul>
+
+  <h2 data-i18n="s9-title">9. 만 14세 미만 아동의 개인정보</h2>
+  <p data-i18n="s9-p1">회사는 만 14세 미만 아동의 개인정보를 수집하지 않으며, 만 14세 미만임이 확인될 경우 해당 정보를 즉시 삭제합니다.</p>
+
+  <h2 data-i18n="s10-title">10. 개인정보 보호책임자</h2>
+  <table>
+    <tr>
+      <th data-i18n="t10-h1">항목</th>
+      <th data-i18n="t10-h2">내용</th>
+    </tr>
+    <tr>
+      <td data-i18n="t10-r1c1">성명</td>
+      <td data-i18n="t10-r1c2">최정심</td>
+    </tr>
+    <tr>
+      <td data-i18n="t10-r2c1">직위</td>
+      <td data-i18n="t10-r2c2">대표</td>
+    </tr>
+    <tr>
+      <td data-i18n="t10-r3c1">이메일</td>
+      <td>justinit.service@gmail.com</td>
+    </tr>
+    <tr>
+      <td data-i18n="t10-r4c1">전화</td>
+      <td>010-6822-9802</td>
+    </tr>
+  </table>
+
+  <h2 data-i18n="s11-title">11. 개인정보 처리방침 변경</h2>
+  <p data-i18n="s11-p1">본 개인정보 처리방침은 2026년 3월 11일부터 적용됩니다. 변경 사항이 있을 경우 앱 내 공지 또는 팝업을 통해 사전 고지합니다.</p>
+</div>
+
+<footer>
+  <p data-i18n="footer-info">Just Init 대표 최정심 | 사업자등록번호 524-44-01023<br>
+    이메일 : justinit.service@gmail.com | 번호 : 010-6822-9802<br>
+    &copy; 2026 Just Init. All rights reserved.</p>
+</footer>
+
+<script>
+// ── i18n data ──
+const i18n = {
+  ko: {
+    'nav-home': '&larr; 홈으로',
+    'title': '개인정보 처리방침',
+    'date': '시행일: 2026년 3월 11일',
+    'intro': 'Just Init(이하 "회사")은 「개인정보 보호법」에 따라 이용자의 개인정보를 보호하고 이와 관련한 고충을 신속하게 처리하기 위해 다음과 같이 개인정보 처리방침을 수립·공개합니다.',
+    's1-title': '1. 수집하는 개인정보 항목 및 수집 방법',
+    's1a-title': '가. 수집 항목',
+    't1-h1': '구분',
+    't1-h2': '수집 항목',
+    't1-h3': '수집 목적',
+    't1-r1c1': '회원가입(소셜 로그인)',
+    't1-r1c2': '소셜 계정 고유 식별자(UID), 닉네임',
+    't1-r1c3': '회원 식별 및 서비스 제공',
+    't1-r2c1': '서비스 이용',
+    't1-r2c2': '고민 내용(텍스트), 선택한 카드 정보, 리딩 결과',
+    't1-r2c3': '타로 리딩 서비스 제공',
+    't1-r3c1': '결제',
+    't1-r3c2': '구매 내역(앱스토어/구글플레이 처리, 회사는 결제 정보를 직접 수집하지 않음)',
+    't1-r3c3': '유료 서비스 제공 및 환불 처리',
+    't1-r4c1': '자동 수집',
+    't1-r4c2': '기기 정보(OS, 기기 모델), 앱 버전, 접속 로그',
+    't1-r4c3': '서비스 개선 및 오류 분석',
+    's1b-title': '나. 수집 방법',
+    's1b-li1': '앱 내 소셜 로그인(Apple, Google) 과정',
+    's1b-li2': '서비스 이용 과정에서 이용자가 직접 입력',
+    's1b-li3': '앱 실행 시 자동 수집(Firebase Analytics, Crashlytics)',
+    's2-title': '2. 개인정보의 처리 목적',
+    's2-li1': '회원 관리: 회원 식별, 서비스 부정이용 방지',
+    's2-li2': '서비스 제공: 타로 리딩(고민 기반 편지) 생성 및 전달, 리딩 히스토리 보관',
+    's2-li3': '결제 및 환불: 인앱 결제(별빛/구독) 처리',
+    's2-li4': '서비스 개선: 이용 통계 분석, 오류 진단 및 해결',
+    's2-li5': '고객 지원: 문의 대응 및 공지사항 전달',
+    's3-title': '3. 개인정보의 보유 및 이용 기간',
+    't3-h1': '구분',
+    't3-h2': '보유 기간',
+    't3-r1c1': '회원 정보',
+    't3-r1c2': '회원 탈퇴 시까지 (탈퇴 후 즉시 파기)',
+    't3-r2c1': '리딩 기록(고민, 카드, 결과)',
+    't3-r2c2': '회원 탈퇴 시까지',
+    't3-r3c1': '결제 기록',
+    't3-r3c2': '전자상거래법에 따라 5년 보관',
+    't3-r4c1': '접속 로그',
+    't3-r4c2': '통신비밀보호법에 따라 3개월 보관',
+    's4-title': '4. 개인정보의 제3자 제공',
+    's4-p1': '회사는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우 예외로 합니다.',
+    's4-li1': '이용자가 사전에 동의한 경우',
+    's4-li2': '법령의 규정에 의하거나 수사 목적으로 법령에 정해진 절차에 따른 요청이 있는 경우',
+    's5-title': '5. 개인정보 처리 위탁',
+    't5-h1': '수탁업체',
+    't5-h2': '위탁 업무',
+    't5-r1c2': '데이터 저장, 인증, 분석, 오류 수집',
+    't5-r2c2': 'AI 기반 타로 리딩 텍스트 생성',
+    't5-r3c2': '인앱 결제 처리',
+    's6-title': '6. 개인정보의 파기 절차 및 방법',
+    's6-p1': '보유 기간이 경과하거나 처리 목적이 달성된 경우, 해당 개인정보를 지체 없이 파기합니다.',
+    's6-li1': '전자적 파일: 복구 불가능한 방법으로 영구 삭제',
+    's6-li2': '기록물: 분쇄 또는 소각',
+    's7-title': '7. 이용자의 권리와 행사 방법',
+    's7-p1': '이용자는 언제든지 다음 권리를 행사할 수 있습니다.',
+    's7-li1': '개인정보 열람, 정정, 삭제, 처리 정지 요구',
+    's7-li2': '회원 탈퇴(앱 내 설정 > 계정 삭제)',
+    's7-li3': '이메일(justinit.service@gmail.com)을 통한 요청',
+    's7-p2': '요청 접수 후 10일 이내에 처리하며, 정당한 사유가 있을 경우 사유를 알려드립니다.',
+    's8-title': '8. 개인정보의 안전성 확보 조치',
+    's8-li1': '데이터 암호화: 전송 구간 SSL/TLS 암호화, 저장 시 Firebase 보안 규칙 적용',
+    's8-li2': '접근 제한: 관리자 계정 최소 권한 원칙, 2단계 인증',
+    's8-li3': '로그 관리: 접근 로그 기록 및 정기 점검',
+    's9-title': '9. 만 14세 미만 아동의 개인정보',
+    's9-p1': '회사는 만 14세 미만 아동의 개인정보를 수집하지 않으며, 만 14세 미만임이 확인될 경우 해당 정보를 즉시 삭제합니다.',
+    's10-title': '10. 개인정보 보호책임자',
+    't10-h1': '항목',
+    't10-h2': '내용',
+    't10-r1c1': '성명',
+    't10-r1c2': '최정심',
+    't10-r2c1': '직위',
+    't10-r2c2': '대표',
+    't10-r3c1': '이메일',
+    't10-r4c1': '전화',
+    's11-title': '11. 개인정보 처리방침 변경',
+    's11-p1': '본 개인정보 처리방침은 2026년 3월 11일부터 적용됩니다. 변경 사항이 있을 경우 앱 내 공지 또는 팝업을 통해 사전 고지합니다.',
+    'footer-info': 'Just Init 대표 최정심 | 사업자등록번호 524-44-01023<br>이메일 : justinit.service@gmail.com | 번호 : 010-6822-9802<br>&copy; 2026 Just Init. All rights reserved.',
+  },
+  en: {
+    'nav-home': '&larr; Home',
+    'title': 'Privacy Policy',
+    'date': 'Effective: March 11, 2026',
+    'intro': 'Just Init (hereinafter "the Company") establishes and discloses this Privacy Policy in accordance with the Personal Information Protection Act to protect users\' personal information and to promptly address related grievances.',
+    's1-title': '1. Personal Information Collected and Collection Methods',
+    's1a-title': 'A. Information Collected',
+    't1-h1': 'Category',
+    't1-h2': 'Items Collected',
+    't1-h3': 'Purpose of Collection',
+    't1-r1c1': 'Sign-up (Social Login)',
+    't1-r1c2': 'Social account unique identifier (UID), Nickname',
+    't1-r1c3': 'User identification and service provision',
+    't1-r2c1': 'Service Usage',
+    't1-r2c2': 'Concern text, selected card information, reading results',
+    't1-r2c3': 'Tarot reading service provision',
+    't1-r3c1': 'Payment',
+    't1-r3c2': 'Purchase history (processed by App Store/Google Play; the Company does not directly collect payment information)',
+    't1-r3c3': 'Paid service provision and refund processing',
+    't1-r4c1': 'Automatically Collected',
+    't1-r4c2': 'Device information (OS, device model), app version, access logs',
+    't1-r4c3': 'Service improvement and error analysis',
+    's1b-title': 'B. Collection Methods',
+    's1b-li1': 'Social login process within the app (Apple, Google)',
+    's1b-li2': 'Direct input by the user during service usage',
+    's1b-li3': 'Automatic collection upon app launch (Firebase Analytics, Crashlytics)',
+    's2-title': '2. Purpose of Processing Personal Information',
+    's2-li1': 'Member management: User identification, prevention of fraudulent use',
+    's2-li2': 'Service provision: Generation and delivery of tarot readings (concern-based letters), reading history storage',
+    's2-li3': 'Payment and refunds: In-app purchase (Starlight/subscription) processing',
+    's2-li4': 'Service improvement: Usage statistics analysis, error diagnosis and resolution',
+    's2-li5': 'Customer support: Inquiry response and notice delivery',
+    's3-title': '3. Retention and Usage Period of Personal Information',
+    't3-h1': 'Category',
+    't3-h2': 'Retention Period',
+    't3-r1c1': 'Member information',
+    't3-r1c2': 'Until account deletion (destroyed immediately upon withdrawal)',
+    't3-r2c1': 'Reading records (concerns, cards, results)',
+    't3-r2c2': 'Until account deletion',
+    't3-r3c1': 'Payment records',
+    't3-r3c2': '5 years in accordance with the Act on Consumer Protection in Electronic Commerce',
+    't3-r4c1': 'Access logs',
+    't3-r4c2': '3 months in accordance with the Protection of Communications Secrets Act',
+    's4-title': '4. Provision of Personal Information to Third Parties',
+    's4-p1': 'The Company does not, in principle, provide users\' personal information to external parties. However, exceptions are made in the following cases:',
+    's4-li1': 'When the user has given prior consent',
+    's4-li2': 'When required by law or upon request through legally prescribed procedures for investigative purposes',
+    's5-title': '5. Entrustment of Personal Information Processing',
+    't5-h1': 'Entrusted Company',
+    't5-h2': 'Entrusted Tasks',
+    't5-r1c2': 'Data storage, authentication, analytics, error collection',
+    't5-r2c2': 'AI-based tarot reading text generation',
+    't5-r3c2': 'In-app payment processing',
+    's6-title': '6. Procedures and Methods for Destroying Personal Information',
+    's6-p1': 'When the retention period has expired or the processing purpose has been achieved, the relevant personal information is destroyed without delay.',
+    's6-li1': 'Electronic files: Permanently deleted using irrecoverable methods',
+    's6-li2': 'Physical records: Shredded or incinerated',
+    's7-title': '7. Rights of Users and How to Exercise Them',
+    's7-p1': 'Users may exercise the following rights at any time:',
+    's7-li1': 'Request to access, correct, delete, or suspend processing of personal information',
+    's7-li2': 'Account deletion (Settings > Delete Account within the app)',
+    's7-li3': 'Requests via email (justinit.service@gmail.com)',
+    's7-p2': 'Requests will be processed within 10 days of receipt. If there is a legitimate reason for delay, we will notify you of the reason.',
+    's8-title': '8. Measures to Ensure the Security of Personal Information',
+    's8-li1': 'Data encryption: SSL/TLS encryption for data in transit, Firebase security rules applied for stored data',
+    's8-li2': 'Access control: Principle of least privilege for admin accounts, two-factor authentication',
+    's8-li3': 'Log management: Access log recording and regular audits',
+    's9-title': '9. Personal Information of Children Under 14',
+    's9-p1': 'The Company does not collect personal information from children under the age of 14. If it is determined that a user is under 14, their information will be deleted immediately.',
+    's10-title': '10. Privacy Officer',
+    't10-h1': 'Item',
+    't10-h2': 'Details',
+    't10-r1c1': 'Name',
+    't10-r1c2': 'Jungsim Choi',
+    't10-r2c1': 'Position',
+    't10-r2c2': 'CEO',
+    't10-r3c1': 'Email',
+    't10-r4c1': 'Phone',
+    's11-title': '11. Changes to the Privacy Policy',
+    's11-p1': 'This Privacy Policy is effective as of March 11, 2026. Any changes will be announced in advance through in-app notices or pop-ups.',
+    'footer-info': 'Just Init CEO Jungsim Choi | Business Registration No. 524-44-01023<br>Email: justinit.service@gmail.com | Phone: 010-6822-9802<br>&copy; 2026 Just Init. All rights reserved.',
+  },
+  ja: {
+    'nav-home': '&larr; ホームへ',
+    'title': '個人情報処理方針',
+    'date': '施行日：2026年3月11日',
+    'intro': 'Just Init（以下「当社」）は、「個人情報保護法」に基づき、利用者の個人情報を保護し、これに関する苦情を迅速に処理するため、以下のとおり個人情報処理方針を策定・公開いたします。',
+    's1-title': '1. 収集する個人情報の項目および収集方法',
+    's1a-title': 'ア. 収集項目',
+    't1-h1': '区分',
+    't1-h2': '収集項目',
+    't1-h3': '収集目的',
+    't1-r1c1': '会員登録（ソーシャルログイン）',
+    't1-r1c2': 'ソーシャルアカウント固有識別子（UID）、ニックネーム',
+    't1-r1c3': '会員識別およびサービス提供',
+    't1-r2c1': 'サービス利用',
+    't1-r2c2': '悩みの内容（テキスト）、選択したカード情報、リーディング結果',
+    't1-r2c3': 'タロットリーディングサービスの提供',
+    't1-r3c1': '決済',
+    't1-r3c2': '購入履歴（App Store/Google Playで処理。当社は決済情報を直接収集しません）',
+    't1-r3c3': '有料サービスの提供および返金処理',
+    't1-r4c1': '自動収集',
+    't1-r4c2': '端末情報（OS、端末モデル）、アプリバージョン、アクセスログ',
+    't1-r4c3': 'サービス改善およびエラー分析',
+    's1b-title': 'イ. 収集方法',
+    's1b-li1': 'アプリ内ソーシャルログイン（Apple、Google）の過程',
+    's1b-li2': 'サービス利用過程における利用者の直接入力',
+    's1b-li3': 'アプリ起動時の自動収集（Firebase Analytics、Crashlytics）',
+    's2-title': '2. 個人情報の処理目的',
+    's2-li1': '会員管理：会員識別、サービスの不正利用防止',
+    's2-li2': 'サービス提供：タロットリーディング（悩みに基づく手紙）の生成・配信、リーディング履歴の保管',
+    's2-li3': '決済および返金：アプリ内課金（スターライト/サブスクリプション）の処理',
+    's2-li4': 'サービス改善：利用統計分析、エラー診断および解決',
+    's2-li5': 'カスタマーサポート：お問い合わせ対応およびお知らせの配信',
+    's3-title': '3. 個人情報の保有および利用期間',
+    't3-h1': '区分',
+    't3-h2': '保有期間',
+    't3-r1c1': '会員情報',
+    't3-r1c2': '退会時まで（退会後直ちに破棄）',
+    't3-r2c1': 'リーディング記録（悩み、カード、結果）',
+    't3-r2c2': '退会時まで',
+    't3-r3c1': '決済記録',
+    't3-r3c2': '電子商取引法に基づき5年間保管',
+    't3-r4c1': 'アクセスログ',
+    't3-r4c2': '通信秘密保護法に基づき3か月間保管',
+    's4-title': '4. 個人情報の第三者提供',
+    's4-p1': '当社は、原則として利用者の個人情報を外部に提供いたしません。ただし、以下の場合は例外とします。',
+    's4-li1': '利用者が事前に同意した場合',
+    's4-li2': '法令の規定に基づく場合、または捜査目的で法令に定められた手続きに従った要請がある場合',
+    's5-title': '5. 個人情報の処理委託',
+    't5-h1': '受託業者',
+    't5-h2': '委託業務',
+    't5-r1c2': 'データ保存、認証、分析、エラー収集',
+    't5-r2c2': 'AIベースのタロットリーディングテキスト生成',
+    't5-r3c2': 'アプリ内決済処理',
+    's6-title': '6. 個人情報の破棄手続きおよび方法',
+    's6-p1': '保有期間が経過した場合、または処理目的が達成された場合、該当する個人情報を遅滞なく破棄いたします。',
+    's6-li1': '電子ファイル：復元不可能な方法で永久削除',
+    's6-li2': '記録物：裁断または焼却',
+    's7-title': '7. 利用者の権利と行使方法',
+    's7-p1': '利用者はいつでも以下の権利を行使することができます。',
+    's7-li1': '個人情報の閲覧、訂正、削除、処理停止の要求',
+    's7-li2': '退会（アプリ内の設定 > アカウント削除）',
+    's7-li3': 'メール（justinit.service@gmail.com）によるリクエスト',
+    's7-p2': 'リクエスト受付後10日以内に処理いたします。正当な理由がある場合は、その理由をお知らせいたします。',
+    's8-title': '8. 個人情報の安全性確保措置',
+    's8-li1': 'データ暗号化：通信区間のSSL/TLS暗号化、保存時のFirebaseセキュリティルール適用',
+    's8-li2': 'アクセス制限：管理者アカウントの最小権限の原則、二段階認証',
+    's8-li3': 'ログ管理：アクセスログの記録および定期点検',
+    's9-title': '9. 14歳未満の児童の個人情報',
+    's9-p1': '当社は14歳未満の児童の個人情報を収集いたしません。14歳未満であることが確認された場合、該当情報を直ちに削除いたします。',
+    's10-title': '10. 個人情報保護責任者',
+    't10-h1': '項目',
+    't10-h2': '内容',
+    't10-r1c1': '氏名',
+    't10-r1c2': 'チェ・ジョンシム',
+    't10-r2c1': '役職',
+    't10-r2c2': '代表',
+    't10-r3c1': 'メール',
+    't10-r4c1': '電話',
+    's11-title': '11. 個人情報処理方針の変更',
+    's11-p1': '本個人情報処理方針は2026年3月11日より適用されます。変更がある場合は、アプリ内のお知らせまたはポップアップにて事前に告知いたします。',
+    'footer-info': 'Just Init 代表 チェ・ジョンシム | 事業者登録番号 524-44-01023<br>メール：justinit.service@gmail.com | 電話：010-6822-9802<br>&copy; 2026 Just Init. All rights reserved.',
+  }
+};
+
+let currentLang = 'ko';
+
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.textContent.trim() === {ko:'KR',en:'EN',ja:'JP'}[lang]);
+  });
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (i18n[lang] && i18n[lang][key]) {
+      el.innerHTML = i18n[lang][key];
+    }
+  });
+  document.documentElement.lang = lang === 'ko' ? 'ko' : lang === 'ja' ? 'ja' : 'en';
+}
+
+// ── Init lang from URL ──
+(function initLang() {
+  const params = new URLSearchParams(location.search);
+  const lang = params.get('lang') || location.hash.replace('#', '') || 'ko';
+  if (['ko', 'en', 'ja'].includes(lang)) setLang(lang);
+})();
+</script>
+</body>
+</html>

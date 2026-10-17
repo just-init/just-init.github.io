@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/nukkikok/delete-account", {data:[{}],fetch:{},mutations:void 0});

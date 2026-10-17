@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/honey-sleep/terms", {data:[{}],fetch:{},mutations:void 0});

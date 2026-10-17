@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/recipe-yap/terms", {data:[{}],fetch:{},mutations:void 0});

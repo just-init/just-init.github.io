@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/cook-flow/delete-account", {data:[{}],fetch:{},mutations:void 0});
