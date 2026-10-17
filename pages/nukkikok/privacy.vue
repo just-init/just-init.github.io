@@ -3,7 +3,7 @@
     <div class="max-w-3xl mx-auto px-6 py-16">
       <nuxt-link to="/nukkikok" class="text-pink-700 dark:text-pink-300 text-sm hover:underline mb-8 block">← 누끼콕</nuxt-link>
       <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">개인정보처리방침</h1>
-      <p class="text-gray-500 dark:text-gray-400 text-sm mb-10">시행일: 2026년 10월 12일</p>
+      <p class="text-gray-500 dark:text-gray-400 text-sm mb-10">시행일: 2026년 10월 17일</p>
 
       <div class="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 leading-relaxed space-y-8">
 
@@ -11,9 +11,32 @@
 
         <section class="rounded-xl border border-pink-200 bg-pink-50 dark:bg-gray-800 dark:border-gray-700 p-5">
           <h2 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">사진은 기기 밖으로 나가지 않습니다</h2>
-          <p>스티커를 만들기 위해 고른 사진과 그 결과물은 <strong>모두 이용자의 기기 안에서만 처리</strong>됩니다. 피사체 추출, 얼굴 인식(머리카락 다듬기), 영역 보정은 기기에 내장된 기능과 앱에 포함된 모델로 동작하며, 운영자는 이 사진을 서버로 전송하거나 수집하지 않습니다.</p>
+          <p>스티커를 만들기 위해 고른 사진과 그 결과물은 <strong>모두 이용자의 기기 안에서만 처리</strong>됩니다. 피사체 추출, 얼굴 위치 찾기(머리카락 다듬기), 영역 보정은 기기에 내장된 기능과 앱에 포함된 모델로 동작하며, 운영자는 이 사진을 서버로 전송하거나 수집하지 않습니다.</p>
           <p class="mt-2">'이전 작업 계속하기'를 위해 마지막으로 자른 사진이 앱 내부 저장공간에 보관되며, 앱을 삭제하면 함께 지워집니다.</p>
           <p class="mt-2">단, 이용자가 문의하기에 직접 첨부한 사진·동영상은 문의 답변을 위해 서버에 저장됩니다(아래 1항 '문의' 참고).</p>
+        </section>
+
+        <section id="face-data" class="scroll-mt-8">
+          <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">얼굴 정보 (Face Data)</h2>
+          <p>누끼콕은 스티커 미리보기의 <strong>'머리카락 다듬기'</strong> 기능을 위해 사진 속 얼굴의 위치를 찾습니다. 이 정보는 아래와 같이 처리합니다.</p>
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li><strong>처리하는 정보</strong>: 사진에서 얼굴이 있는 사각형 영역의 위치와 크기(x, y, 너비, 높이)만 사용합니다. 얼굴 특징점(눈·코·입의 위치), 얼굴 인식·식별용 데이터(얼굴 템플릿 등), 표정·나이·성별 같은 속성은 만들지 않으며, 사람이 누구인지 식별하지 않습니다.</li>
+            <li><strong>처리 방법과 장소</strong>: iOS는 Apple Vision 프레임워크, Android는 Google ML Kit 얼굴 감지 기능으로 <strong>이용자의 기기 안에서만</strong> 처리합니다.</li>
+            <li><strong>이용 목적</strong>: 머리카락 경계를 다듬을 범위를 정하는 데에만 씁니다. 광고, 분석, 신원 확인, 기계 학습 모델 학습 등 다른 목적으로는 쓰지 않습니다.</li>
+            <li><strong>공유와 전송</strong>: 얼굴 정보는 서버로 전송하지 않으며, 운영자를 포함한 누구와도 공유하지 않습니다. 이용 통계와 비정상 종료 로그에도 포함되지 않습니다.</li>
+            <li><strong>보관과 삭제</strong>: 얼굴 정보는 기기에도 저장하지 않습니다. 작업 중 메모리에서만 쓰고, 스티커 미리보기 화면을 벗어나거나 앱을 종료하면 즉시 사라집니다.</li>
+          </ul>
+          <div class="mt-4 rounded-xl bg-gray-50 dark:bg-gray-800 p-4 text-sm" lang="en">
+            <p class="font-semibold text-gray-900 dark:text-white mb-1">Face Data (English)</p>
+            <p>NukkiKok detects where faces are in a photo only to power the "Hair refinement" option in the sticker preview.</p>
+            <ul class="list-disc pl-5 mt-2 space-y-1">
+              <li><strong>What we use</strong>: only the position and size of the rectangle around each face (x, y, width, height). We do not create facial landmarks, face templates, face recognition or identification data, or attributes such as expression, age or gender, and we never identify who a person is.</li>
+              <li><strong>How and where</strong>: processed entirely on the user's device, using Apple's Vision framework on iOS and Google ML Kit face detection on Android.</li>
+              <li><strong>Use</strong>: solely to decide which area of the sticker's edge to refine as hair. Never used for advertising, analytics, identity verification or training machine learning models.</li>
+              <li><strong>Sharing</strong>: face data is never sent to any server and is not shared with us or any third party. It is not included in analytics or crash logs.</li>
+              <li><strong>Retention and deletion</strong>: face data is not stored, even on the device. It is kept in memory only while editing and is discarded as soon as the user leaves the sticker preview screen or closes the app.</li>
+            </ul>
+          </div>
         </section>
 
         <section>
